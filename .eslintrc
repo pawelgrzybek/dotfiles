@@ -39,7 +39,7 @@
     // This rule is aimed at enforcing a particular comma style
     "comma-style": [
       2,
-      "first"
+      "last"
     ],
 
     // This rule aims to maintain consistency around the spacing inside of computed properties
