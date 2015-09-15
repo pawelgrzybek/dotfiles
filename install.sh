@@ -2,27 +2,51 @@
 # http://www.placona.co.uk/1224/linux/managing-your-dotfiles-the-right-way/
 
 # Variables
-dir=~/.dotfiles          # dotfiles directory
-olddir=~/.dotfiles_old   # old dotfiles backup directory
-files=".bash_profile .hushlogin .eslintrc .scss-lint.yml"    # list of files/folders to symlink in homedir
+dir=~/.dotfiles
+dirold=~/.dotfiles_backup
+files=".bash_profile .hushlogin .eslintrc .scss-lint.yml"
 
-# create dotfiles_old in homedir
-echo "Creating $olddir for backup of any existing dotfiles in ~"
-mkdir -p $olddir
-echo "...done"
+# create dotfiles_backup in homedir
+echo "Creating $dirold for backup of any existing dotfiles in ~"
+mkdir -p $dirold
+
+# Lets make it look nicer
+echo " "
+echo "* * * * * * * * * * * *"
+echo " "
 
 # change to the dotfiles directory
 echo "Changing to the $dir directory"
 cd $dir
-echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
+# Lets make it look nicer
+echo " "
+echo "* * * * * * * * * * * *"
+echo " "
+
+# move any existing dotfiles in homedir to dotfiles_backup directory
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/$file ~/.dotfiles_old/
+    echo "Moving any existing dotfiles from ~ to $dirold"
+    mv ~/$file $dirold
+done
+
+# Lets make it look nicer
+echo " "
+echo "* * * * * * * * * * * *"
+echo " "
+
+# Create symlinks
+for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done
+
+# Lets make it look nicer
+echo " "
+echo "* * * * * * * * * * * *"
+echo " "
+echo "All done :-)"
+echo " "
 
 # initialize new settings
 source ~/.bash_profile
