@@ -59,6 +59,11 @@
       "always"
     ],
 
+    // Disallow Use of console
+    "no-console": [
+      0
+    ],
+
     // Flagging any lines of code that are indented with a mixture of tabs and spaces
     "no-mixed-spaces-and-tabs": [
       2,
@@ -68,6 +73,11 @@
     // Disallow Nested Ternaries
     "no-nested-ternary": [
       2
+    ],
+
+    // Disallow Undeclared Variables ie. $ from jQuery
+    "no-undef": [
+      0
     ],
 
     // Disallow or enforce spaces inside of curly braces in objects
