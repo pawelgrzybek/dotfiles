@@ -55,7 +55,7 @@
 
      // Empty newlines are required or disallowed after var, let, or const
     "newline-after-var": [
-      2,
+      0,
       "always"
     ],
 
