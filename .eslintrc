@@ -164,5 +164,9 @@
     "browser": true
   },
 
+  "ecmaFeatures": {
+    "modules": true
+  },
+
   "extends": "eslint:recommended"
 }
