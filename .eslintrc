@@ -164,8 +164,13 @@
     "browser": true
   },
 
+  "plugins": [
+    "react"
+  ],
+
   "ecmaFeatures": {
-    "modules": true
+    "modules": true,
+    "jsx": true
   },
 
   "extends": "eslint:recommended"
