@@ -1,4 +1,22 @@
 {
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "destructuring": true,
+    "forOf": true,
+    "modules": true,
+    "jsx": true
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jquery": true
+  },
+  "plugins": [
+    "react"
+  ],
   "rules": {
 
     // Disallow or enforce spaces inside of brackets
@@ -73,11 +91,6 @@
     // Disallow Nested Ternaries
     "no-nested-ternary": [
       2
-    ],
-
-    // Disallow Undeclared Variables ie. $ from jQuery
-    "no-undef": [
-      0
     ],
 
     // Disallow or enforce spaces inside of curly braces in objects
@@ -157,21 +170,5 @@
       }
     ],
   },
-
-  "env": {
-    "es6": true,
-    "node": true,
-    "browser": true
-  },
-
-  "plugins": [
-    "react"
-  ],
-
-  "ecmaFeatures": {
-    "modules": true,
-    "jsx": true
-  },
-
   "extends": "eslint:recommended"
 }
