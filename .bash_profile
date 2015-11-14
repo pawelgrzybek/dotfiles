@@ -17,6 +17,7 @@ alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias gc="git commit"
 alias ga="git add -A"
+alias gb="git branch"
 
 # show / hide hidden files
 alias show="defaults write com.apple.finder AppleShowAllFiles YES ; killall Finder"
