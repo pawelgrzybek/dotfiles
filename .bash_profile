@@ -16,7 +16,8 @@ alias g="git"
 alias gs="git status"
 alias gl="git log --graph --oneline --all --decorate"
 alias gc="git commit"
-alias ga="git add ."
+alias ga="git add -A"
+alias gb="git branch"
 
 # show / hide hidden files
 alias show="defaults write com.apple.finder AppleShowAllFiles YES ; killall Finder"
