@@ -22,8 +22,3 @@ alias gb="git branch"
 # show / hide hidden files
 alias show="defaults write com.apple.finder AppleShowAllFiles YES ; killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO ; killall Finder"
-
-# use tree . or tree some/path to print tree view
-function tree {
-  find ${1:-.} -print | sed -e 's;[^/]*/;|__;g;s;__|; |;g'
-}
