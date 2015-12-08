@@ -49,7 +49,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 
 # Speed up Mission Control animations
-defaults write com.apple.dock expose-animation-duration -float 0.20
+defaults write com.apple.dock expose-animation-duration -float 0.13
 
 
 # Disable Dashboard
