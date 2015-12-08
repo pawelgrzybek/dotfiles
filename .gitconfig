@@ -1,0 +1,7 @@
+[user]
+	name = Pawel Grzybek
+	email = studiorgb@users.noreply.github.com
+[color]
+	ui = true
+[push]
+	default = simple
