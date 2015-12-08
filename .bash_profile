@@ -14,7 +14,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 # some git shortcuts
 alias g="git"
 alias gs="git status"
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias gl="git log --graph --oneline --all --decorate"
 alias gc="git commit"
 alias ga="git add -A"
 alias gb="git branch"
