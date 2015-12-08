@@ -7,14 +7,18 @@ dirold=~/.dotfiles_backup
 files=".bash_profile .hushlogin .eslintrc .scss-lint.yml .gitconfig .vimrc"
 
 # Lets make it look nicer
-echo "* * * * * * * * * * * *"
+echo ""
+echo "- - - - - - - - - -"
+echo ""
 
 # change to the dotfiles directory
 echo "Changing to the $dir directory"
 cd $dir
 
 # Lets make it look nicer
-echo "* * * * * * * * * * * *"
+echo ""
+echo "- - - - - - - - - -"
+echo ""
 
 # Create symlinks
 for file in $files; do
@@ -23,7 +27,9 @@ for file in $files; do
 done
 
 # Lets make it look nicer
-echo "* * * * * * * * * * * *"
+echo ""
+echo "- - - - - - - - - -"
+echo ""
 echo "All done :-)"
 echo " "
 
