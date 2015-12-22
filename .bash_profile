@@ -22,3 +22,6 @@ alias gb="git branch"
 # show / hide hidden files
 alias show="defaults write com.apple.finder AppleShowAllFiles YES ; killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO ; killall Finder"
+
+# why your mac is so slow?
+alias top="top -o vsize"
