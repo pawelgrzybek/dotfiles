@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+<svg class="${1:class}">
+  <use xlink:href="<?php bloginfo('template_directory'); ?>/img/icons.svg#${2:icon_id}"></use>
+</svg>
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>svg - use icon</description>
+</snippet>

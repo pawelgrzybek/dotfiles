@@ -1,0 +1,16 @@
+<snippet>
+	<content>
+<![CDATA[
+<?php wp_nav_menu( array(
+	'theme_location' => 'primary',
+	'container' => false,
+	'menu_class' => 'menu-primary'
+) );?>
+]]>
+  </content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.php</scope> -->
+	<description>wp - display custom menu</description>
+</snippet>

@@ -1,4 +1,7 @@
 .DS_Store
 
 # Sublime Text sync
-/Sublime Text
+/Sublime Text/User/*.last-run
+/Sublime Text/User/Package Control.cache
+/Sublime Text/User/Package Control.merged-ca-bundle
+/Sublime Text/User/Package Control.system-ca-bundle

@@ -1,0 +1,12 @@
+<snippet>
+  <content>
+<![CDATA[
+background: ${1:linear-gradient, radial-gradient}(${2:to right, to left, to bottom, to top, 45deg, }, ${3:red} 0%, ${4:blue} 50%, ${5:pink} 51%, ${6:gray} 100%);
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.css, source.scss, source.sass</scope>
+  <description>css - background gradinet</description>
+</snippet>

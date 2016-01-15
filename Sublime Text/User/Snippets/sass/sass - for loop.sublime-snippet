@@ -1,0 +1,16 @@
+<snippet>
+  <content>
+<![CDATA[
+@for \$i from ${1:1} through ${2:10} {
+  &:nth-child(#{\$i}) {
+    animation-delay: 100ms * \$i;
+  }
+}
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sass, source.scss</scope>
+  <description>for loop</description>
+</snippet>

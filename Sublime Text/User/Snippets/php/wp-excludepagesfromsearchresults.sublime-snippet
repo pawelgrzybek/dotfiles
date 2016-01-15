@@ -1,0 +1,18 @@
+<snippet>
+	<content>
+<![CDATA[
+function mySearchFilter(\$query) {
+	if (\$query->is_search) {
+		\$query->set('post_type', 'post');
+	}
+	return \$query;
+}
+add_filter('pre_get_posts','mySearchFilter');
+]]>
+  </content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.php</scope> -->
+	<description>wp - exclude pages from search results</description>
+</snippet>

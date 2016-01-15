@@ -1,0 +1,19 @@
+<snippet>
+    <content>
+<![CDATA[
+<?php
+if( have_rows('${1:repeater_field_name}') ):
+  while ( have_rows('${1:repeater_field_name}') ) : the_row();
+    the_sub_field('${2:sub_field_name}');
+  endwhile;
+else :
+endif;
+?>
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>repeater</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>php - wp - acf - repeater</description>
+</snippet>

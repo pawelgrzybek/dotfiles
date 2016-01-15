@@ -1,0 +1,16 @@
+<snippet>
+  <content>
+<![CDATA[
+@each \$${1:i}, \$${2:j} in \$${3:map} {
+  .button-#{\$${1:i}} {
+    color: \$${2:j};
+  }
+}
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sass, source.scss</scope>
+  <description>loop through map</description>
+</snippet>

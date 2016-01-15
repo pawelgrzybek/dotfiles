@@ -1,0 +1,48 @@
+{
+	"bold_folder_labels": true,
+	"caret_extra_width": 1,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
+	"detect_indentation": false,
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".sass-cache",
+		".git",
+		".svn",
+		".hg",
+		"CVS"
+	],
+	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 16,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 5,
+	"line_padding_top": 5,
+	"rulers":
+	[
+		80
+	],
+	"spacegray_tabs_xlarge": true,
+	"tab_size": 2,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}

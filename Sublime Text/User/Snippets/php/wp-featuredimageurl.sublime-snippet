@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+<![CDATA[
+if (has_post_thumbnail( \$post->ID )) {
+  \$${1:variable_name} = wp_get_attachment_image_src( get_post_thumbnail_id( \$post->ID ), '${2:image_size}' );
+  echo \$${1:variable_name}[0];
+}
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <description>php - wp - featured image URL</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
