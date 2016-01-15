@@ -1,7 +1,7 @@
 <snippet>
   <content>
 <![CDATA[
-https://unsplash.it/${1:600}/${2:400}
+http://lorempixel.com/${1:600}/${2:400}/nature/
 ]]>
   </content>
   <tabTrigger>lorempixel</tabTrigger>
