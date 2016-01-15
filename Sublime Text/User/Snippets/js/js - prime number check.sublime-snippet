@@ -1,0 +1,33 @@
+<snippet>
+  <content>
+<![CDATA[
+function isPrime(num) {
+  if (typeof num !== 'number') {
+    return('It is not a number :(');
+  }
+  else {
+    var deviders = [];
+
+    for (i = 1; i <= num; i++) {
+      if (num % i === 0 ) {
+        deviders.push(i);
+      }
+    }
+    if (deviders.length > 2) {
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
+}
+
+isPrime(${1:Pass number to check if its prime})
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>js - prime number check</description>
+</snippet>

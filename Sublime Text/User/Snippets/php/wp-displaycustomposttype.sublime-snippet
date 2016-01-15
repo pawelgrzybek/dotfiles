@@ -1,0 +1,27 @@
+<snippet>
+	<content>
+<![CDATA[
+<?php
+	\$args = array(
+		'post_type' => '${1:post_type_id}',
+		'posts_per_page' => '${2:how_many_posts}',
+		);
+	\$query = new WP_Query(\$args);
+	if (\$query->have_posts()) {
+		while (\$query->have_posts()) {
+			\$query->the_post();
+			echo "that works";
+		}
+	} else {
+		echo "no posts";
+	}
+	wp_reset_postdata();
+?>
+]]>
+  </content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>php - wp - wp query</description>
+</snippet>

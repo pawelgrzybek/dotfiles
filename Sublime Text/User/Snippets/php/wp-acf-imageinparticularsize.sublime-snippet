@@ -1,0 +1,46 @@
+<snippet>
+    <content>
+<![CDATA[
+<?php
+  \$image = get_field('${1:field_name}');
+  if (!empty(\$image)) {
+
+    // vars
+    \$url = \$image['url'];
+    \$title = \$image['title'];
+    \$alt = \$image['alt'];
+    \$caption = \$image['caption'];
+
+    // thumbnail
+    \$size = 'image-size';
+    \$thumb = \$image['sizes'][ \$size ];
+    \$width = \$image['sizes'][ \$size . '-width' ];
+    \$height = \$image['sizes'][ \$size . '-height' ];
+
+    // url to oryginal image
+    echo \$url;
+
+    // url to particular size
+    echo \$thumb;
+
+    // alt of image
+    echo \$alt;
+
+    // width of image
+    echo \$width;
+
+    // height of image
+    echo \$height;
+
+    // caption of image
+    echo \$caption;
+  }
+?>
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>wp - acf - image in particular size</description>
+</snippet>

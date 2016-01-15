@@ -1,0 +1,22 @@
+<snippet>
+  <content>
+<![CDATA[
+// Same height
+var sameHeight = function(element) {
+  var topHeight = 0;
+  \$(element).each(function() {
+    if (\$(this).height() > topHeight) {
+      topHeight = \$(this).height();
+    }
+  });
+  \$(element).height(topHeight);
+};
+sameHeight('${1:.element}');
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>js - jquery - same height</description>
+</snippet>

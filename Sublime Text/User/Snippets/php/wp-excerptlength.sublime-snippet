@@ -1,0 +1,15 @@
+<snippet>
+	<content>
+<![CDATA[
+function custom_excerpt_length( \$length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+]]>
+  </content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.php</scope> -->
+	<description>wp - excerpt lenght</description>
+</snippet>

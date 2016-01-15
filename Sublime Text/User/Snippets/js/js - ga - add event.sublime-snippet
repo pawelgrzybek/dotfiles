@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+<![CDATA[
+// add Google Analytics track event
+\$('${1:#selector-to-track}').on('click', function() {
+  ga('send', 'event', 'link', 'click', '${2:Name of event}');
+});
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <description>js - ga - add event</description>
+</snippet>

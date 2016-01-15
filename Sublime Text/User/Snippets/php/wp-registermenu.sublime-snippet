@@ -1,0 +1,17 @@
+<snippet>
+  <content>
+<![CDATA[
+register_nav_menus(
+  array(
+    '${1:this}' => __('${2:this}'),
+    '${3:this}' => __('${4:this}')
+  )
+);
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger></tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.php</scope> -->
+  <description>wp - register menus</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+@include mq(${1:medium, large or max}) {
+  ${2:your crazy shit}
+}
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mq</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sass, source.scss</scope>
+  <description>mediaqueries</description>
+</snippet>

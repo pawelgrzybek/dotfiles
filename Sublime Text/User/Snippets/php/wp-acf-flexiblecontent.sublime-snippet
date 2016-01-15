@@ -1,0 +1,23 @@
+<snippet>
+  <content>
+<![CDATA[
+<?php
+if (have_rows('${1:field_name}')):
+  while (have_rows('${1:field_name}')) : the_row();
+    if (get_row_layout() == '${2:layout_name}') {
+      the_sub_field('${3:element_name}');
+    }
+    elseif (get_row_layout() == '${2:layout_name}') {
+      the_sub_field('${3:element_name}');
+    }
+  endwhile;
+endif;
+?>
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+  <tabTrigger>flexible</tabTrigger>
+  <description>php - wp - acf - flexible content</description>
+</snippet>
