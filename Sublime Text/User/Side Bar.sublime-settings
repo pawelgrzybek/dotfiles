@@ -1,8 +1,0 @@
-{
-  "disabled_menuitem_edit": true,
-  "disabled_menuitem_edit_to_right": true,
-  "disabled_menuitem_open_run": true,
-  "disabled_menuitem_open_in_new_window": true,
-  "disabled_menuitem_find_in_project": true,
-  "default_browser": "chrome"
-}
