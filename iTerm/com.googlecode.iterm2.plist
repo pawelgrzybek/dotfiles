@@ -94,10 +94,8 @@
 	<false/>
 	<key>NSColorPanelMode</key>
 	<string>0</string>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dropbox/Sync</string>
+	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -130,16 +128,18 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>770 342 231 329 0 0 1920 1057 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>769 110 445 382 0 0 1280 777 </string>
+	<string>768 37 445 82 0 0 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>268 311 606 456 0 0 1280 777 </string>
+	<string>667 585 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 289 620 392 0 0 1280 777 </string>
+	<string>650 269 620 622 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 110 810 667 0 0 1280 777 </string>
+	<string>960 390 810 667 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>152 50 810 607 0 0 1280 777 </string>
+	<string>960 35 960 571 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -984,17 +984,17 @@
 		</dict>
 	</array>
 	<key>NoSyncLastTipTime</key>
-	<real>460403021.87156498</real>
+	<real>461159406.98483503</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>466165693.403925</real>
+	<real>465724331.68168497</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>453326972.17416102</real>
+	<real>453196763.77612001</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>459015175.20053399</real>
+	<real>459160699.79931998</real>
 	<key>NoSyncTipsDisabled</key>
 	<true/>
 	<key>NoSyncTipsToNotShow</key>
@@ -1002,6 +1002,8 @@
 		<string>000</string>
 		<string>0000</string>
 		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1051,13 +1053,13 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/pawelgrzybek/.dotfiles/iTerm</string>
+	<string>/Users/creare/.dotfiles/iTerm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
-	<true/>
+	<false/>
 	<key>RightCommand</key>
 	<integer>8</integer>
 	<key>RightOption</key>
@@ -1071,7 +1073,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-15T07:43:45Z</date>
+	<date>2016-01-18T08:45:09Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
