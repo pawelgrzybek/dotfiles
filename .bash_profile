@@ -25,3 +25,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO ; killall Finde
 
 # why your mac is so slow?
 alias top="top -o vsize"
+
+# go to projects folder
+alias projects="cd /Applications/MAMP/htdocs/"
