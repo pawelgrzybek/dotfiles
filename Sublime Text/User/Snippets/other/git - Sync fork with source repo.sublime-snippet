@@ -2,6 +2,7 @@
   <content>
 <![CDATA[
 git remote add upstream ${1:git@github.com:username/nameOfTheSourceRepo}
+git pull upstream master
 ]]>
 </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
