@@ -1,12 +1,15 @@
 {
-  "ecmaFeatures": {
-    "arrowFunctions": true,
-    "blockBindings": true,
-    "classes": true,
-    "destructuring": true,
-    "forOf": true,
-    "modules": true,
-    "jsx": true
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "arrowFunctions": true,
+        "blockBindings": true,
+        "classes": true,
+        "destructuring": true,
+        "forOf": true,
+        "jsx": true
+      },
   },
   "env": {
     "es6": true,
@@ -127,7 +130,7 @@
     ],
 
     // Require a space after certain keywords
-    "space-after-keywords": [
+    "keyword-spacing": [
       2
     ],
 
@@ -154,11 +157,6 @@
       {
         "int32Hint": false
       }
-    ],
-
-    // Require spaces following return, throw, and case
-    "space-return-throw-case": [
-      2
     ],
 
     // Require or disallow spaces before/after unary operators
