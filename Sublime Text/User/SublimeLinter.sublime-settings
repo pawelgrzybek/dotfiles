@@ -43,7 +43,7 @@
 			},
 			"scss":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],

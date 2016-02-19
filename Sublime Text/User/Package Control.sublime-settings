@@ -12,9 +12,11 @@
 		"Markdown Preview",
 		"Package Control",
 		"Sass",
+		"SCSS",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-sass-lint",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-php",
 		"Theme - Spacegray"
