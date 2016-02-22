@@ -21,63 +21,79 @@ options:
 rules:
   bem-depth:
     - 1
-    - max-depth: 1
+    -
+      max-depth: 1
   border-zero:
     - 1
-    - convention: '0'
+    -
+      convention: 0
   brace-style:
     - 1
-    - style: 'stroustrup'
-    - allow-single-line: false
+    -
+      style: stroustrup
+      allow-single-line: false
   class-name-format:
     - 1
-    - convention: strictbem
+    -
+      convention: strictbem
   clean-import-paths:
     - 1
-    - filename-extension: false
+    -
+      filename-extension: false
       leading-underscore: false
   empty-args:
     - 1
-    - include: false
+    -
+      include: false
   empty-line-between-blocks:
     - 1
-    - ignore-single-line-rulesets: false
+    -
+      ignore-single-line-rulesets: false
   extends-before-declarations: 1
   extends-before-mixins: 1
   final-newline:
     - 1
-    - include: true
+    -
+      include: true
   force-attribute-nesting: 0
   force-element-nesting: 0
   force-pseudo-nesting: 0
   function-name-format:
     - 1
-    - allow-leading-underscore: false
+    -
+      allow-leading-underscore: false
       convention: hyphenatedlowercase
   hex-length:
     - 1
-    - style: short
+    -
+      style: short
   hex-notation:
     - 1
-    - style: lowercase
+    -
+      style: lowercase
   id-name-format:
     - 1
-    - allow-leading-underscore: false
-    - convention: strictbem
+    -
+      allow-leading-underscore: false
+      convention: strictbem
   indentation:
     - 1
-    - size: 2
+    -
+      size: 2
   leading-zero:
     - 1
-    - include: false
+    -
+      include: false
   mixin-name-format:
     - 1
-    - allow-leading-underscore: false
+    -
+      allow-leading-underscore: false
       convention: hyphenatedlowercase
   mixins-before-declarations: 1
   nesting-depth:
     - 1
-    - max-depth: 2
+    -
+      max-depth: 2
   no-color-keyword: 1
   no-color-literals: 0
   no-css-comments: 1
@@ -91,10 +107,12 @@ rules:
   no-mergeable-selectors: 1
   no-misspelled-properties:
     - 1
-    - extra-properties: []
+    -
+      extra-properties: []
   no-qualifying-elements:
     - 1
-    - allow-element-with-attribute: false
+    -
+      allow-element-with-attribute: false
       allow-element-with-class: false
       allow-element-with-id: false
   no-trailing-zero: 1
@@ -102,18 +120,21 @@ rules:
   no-url-protocols: 1
   no-vendor-prefixes:
     - 1
-    - additional-identifiers: []
+    -
+      additional-identifiers: []
       excluded-identifiers: []
   no-warn: 1
   one-declaration-per-line: 1
   placeholder-in-extend: 1
   placeholder-name-format:
     - 1
-    - convention: strictbem
+    -
+      convention: strictbem
   property-sort-order:
-    - 1
-    - ignore-custom-properties: false
+    - 2
+    -
       order: smacss
+      ignore-custom-properties: false
   property-units:
     - 1
     - global:
@@ -144,46 +165,57 @@ rules:
         - dpcm
         - dppx
         - '%'
-      per-property: {}
+    - per-property: {}
   quotes:
     - 1
-    - style: single
+    -
+      style: single
   shorthand-values:
     - 1
-    - allowed-shorthands:
+    -
+      allowed-shorthands:
         - 1
         - 2
         - 3
   single-line-per-selector: 1
   space-after-bang:
     - 1
-    - include: false
+    -
+      include: false
   space-after-colon:
     - 1
-    - include: true
+    -
+      include: true
   space-after-comma: 1
   space-around-operator:
     - 1
-    - true
+    -
+      include: true
   space-before-bang:
     - 1
-    - include: true
+    -
+      include: true
   space-before-brace:
     - 1
-    - include: true
+    -
+      include: true
   space-before-colon:
     - 1
-    - include: false
+    -
+      include: false
   space-between-parens:
     - 1
-    - include: false
+    -
+      include: false
   trailing-semicolon: 1
   url-quotes: 1
   variable-for-property:
     - 0
-    - properties: []
+    -
+      properties: []
   variable-name-format:
     - 1
-    - allow-leading-underscore: false
+    -
+      allow-leading-underscore: false
       convention: hyphenatedlowercase
   zero-unit: 1
