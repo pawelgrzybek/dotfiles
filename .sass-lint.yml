@@ -26,7 +26,7 @@ rules:
   border-zero:
     - 1
     -
-      convention: 0
+      convention: '0'
   brace-style:
     - 1
     -
@@ -35,7 +35,7 @@ rules:
   class-name-format:
     - 1
     -
-      convention: strictbem
+      convention: hyphenatedbem
   clean-import-paths:
     - 1
     -
@@ -104,11 +104,13 @@ rules:
   no-ids: 1
   no-important: 1
   no-invalid-hex: 1
-  no-mergeable-selectors: 1
+  no-mergeable-selectors: 0
   no-misspelled-properties:
     - 1
     -
-      extra-properties: []
+      extra-properties:
+        - 'osx-font-smoothing'
+        - 'interpolation-mode'
   no-qualifying-elements:
     - 1
     -
@@ -119,7 +121,7 @@ rules:
   no-transition-all: 0
   no-url-protocols: 1
   no-vendor-prefixes:
-    - 1
+    - 0
     -
       additional-identifiers: []
       excluded-identifiers: []
