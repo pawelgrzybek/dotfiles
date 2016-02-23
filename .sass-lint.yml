@@ -118,7 +118,7 @@ rules:
     -
       convention: strictbem
   property-sort-order:
-    - 2
+    - 1
     -
       order: smacss
       ignore-custom-properties: false
