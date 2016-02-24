@@ -11,6 +11,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 
+#utility sohrtcurs improved
+alias ls="ls -F" # show trailing slash with folders
+
 # some git shortcuts
 alias g="git"
 alias gs="git status"
