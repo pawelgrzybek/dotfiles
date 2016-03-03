@@ -4,6 +4,21 @@
 <dict>
 	<key>customSites</key>
 	<dict>
+		<key>03D6DC75-CA43-48E6-96B0-0F0A1C24278A</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>stack</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Search Stack Overflow for '{query}'</string>
+			<key>url</key>
+			<string>http://stackoverflow.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>B61E7B0B-176E-4121-8074-050496E67FB9</key>
 		<dict>
 			<key>enabled</key>
