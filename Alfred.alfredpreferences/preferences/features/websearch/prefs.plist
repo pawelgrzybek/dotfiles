@@ -49,6 +49,21 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>F83DD596-6C85-4A1B-BEDA-F7A1C489234A</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>discogs</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Search Discogs for '{query}'</string>
+			<key>url</key>
+			<string>https://www.discogs.com/search/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>
 	<true/>
