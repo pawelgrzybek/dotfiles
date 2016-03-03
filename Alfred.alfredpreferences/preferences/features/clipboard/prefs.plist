@@ -4,8 +4,6 @@
 <dict>
 	<key>blacklist</key>
 	<array/>
-	<key>persistFor</key>
-	<integer>1</integer>
 	<key>snippetsAtTop</key>
 	<false/>
 </dict>
