@@ -31,19 +31,9 @@
 				[
 				]
 			},
-			"sass":
-			{
-				"@disable": false,
-				"args":
-				[
-				],
-				"excludes":
-				[
-				]
-			},
 			"scss":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -53,16 +43,6 @@
 					"*.css"
 				],
 				"include-linter": ""
-			},
-			"stylelint":
-			{
-				"@disable": false,
-				"args":
-				[
-				],
-				"excludes":
-				[
-				]
 			}
 		},
 		"mark_style": "outline",
