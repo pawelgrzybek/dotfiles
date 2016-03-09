@@ -2,7 +2,7 @@
   <content>
 <![CDATA[
 <svg class="${1:class}">
-  <use xlink:href="<?php bloginfo('template_directory'); ?>/img/icons.svg#${2:icon_id}"></use>
+  <use xlink:href="<?php bloginfo('template_directory'); ?>/dist/icons/icons.svg#${2:icon_id}"></use>
 </svg>
 ]]>
   </content>
