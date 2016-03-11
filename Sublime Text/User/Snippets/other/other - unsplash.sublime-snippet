@@ -1,13 +1,13 @@
 <snippet>
   <content>
 <![CDATA[
-http://lorempixel.com/${1:600}/${2:400}/nature/
+https://unsplash.it/${1:600}/${2:400}?random
 ]]>
   </content>
-  <tabTrigger>lorempixel</tabTrigger>
+  <tabTrigger>unsplash</tabTrigger>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <!-- <tabTrigger>hello</tabTrigger> -->
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
-  <description>other - lorem pixel</description>
+  <description>other - unsplash</description>
 </snippet>
