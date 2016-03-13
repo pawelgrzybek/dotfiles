@@ -2,7 +2,9 @@
 export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 
 # remove computer name from beginig on command line
-export PS1="\u$ "
+# More about it:
+# http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
+export PS1="$ "
 
 # easier folders navigation
 alias ..="cd .."
