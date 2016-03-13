@@ -93,9 +93,34 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>0</string>
+	<string>6</string>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
+	<key>NSFontPanelPreviewHeight</key>
+	<real>100</real>
+	<key>NSFontPanelSizeList</key>
+	<array>
+		<string>9</string>
+		<string>10</string>
+		<string>11</string>
+		<string>12</string>
+		<string>13</string>
+		<string>14</string>
+		<string>18</string>
+		<string>24</string>
+		<string>36</string>
+		<string>48</string>
+		<string>64</string>
+		<string>72</string>
+		<string>96</string>
+		<string>144</string>
+		<string>288</string>
+		<string>16</string>
+	</array>
+	<key>NSFontPanelSizeSliderParams</key>
+	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -129,17 +154,19 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>770 342 231 329 0 0 1920 1057 </string>
+	<string>1328 452 228 349 0 0 2560 1417 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>768 37 445 82 0 0 1920 1057 </string>
+	<string>447 250 445 94 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>667 585 606 456 0 0 1920 1057 </string>
+	<string>698 952 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 269 620 622 0 0 1920 1057 </string>
+	<string>970 769 620 392 0 0 2560 1417 </string>
+	<key>NSWindow Frame com.apple.typography_panel_SourceCodePro-Medium</key>
+	<string>776 867 260 136 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>960 390 810 667 0 0 1920 1057 </string>
+	<string>1280 769 810 647 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>960 35 960 571 0 0 1920 1057 </string>
+	<string>343 181 810 607 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -346,13 +373,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.17647059261798859</real>
+				<real>0.17647058823529413</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.14117647707462311</real>
+				<real>0.14117647058823529</real>
 				<key>Red Component</key>
-				<real>0.12549020349979401</real>
+				<real>0.12156862745098039</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -456,13 +483,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.76470589637756348</real>
+				<real>0.76470588235294112</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.72156864404678345</real>
+				<real>0.72156862745098038</real>
 				<key>Red Component</key>
-				<real>0.70196080207824707</real>
+				<real>0.69019607843137254</real>
 			</dict>
 			<key>Guid</key>
 			<string>1BD73194-CA1A-4AC9-A18A-378F5537997B</string>
@@ -974,7 +1001,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.5</real>
+			<real>1.4683734939759034</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -984,17 +1011,17 @@
 		</dict>
 	</array>
 	<key>NoSyncLastTipTime</key>
-	<real>461159406.98483503</real>
+	<real>459926268.78377402</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>465724331.68168497</real>
+	<real>465636993.66310501</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>453196763.77612001</real>
+	<real>453540580.45838499</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>459160699.79931998</real>
+	<real>459006093.46233201</real>
 	<key>NoSyncTipsDisabled</key>
 	<true/>
 	<key>NoSyncTipsToNotShow</key>
@@ -1003,7 +1030,6 @@
 		<string>0000</string>
 		<string>0001</string>
 		<string>0002</string>
-		<string>0003</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1053,7 +1079,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/creare/.dotfiles/iTerm</string>
+	<string>/Users/Grzybecki/.dotfiles/iTerm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1073,7 +1099,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-18T08:45:09Z</date>
+	<date>2016-03-12T12:37:15Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1121,7 +1147,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160113</string>
+	<string>2.9.20160206</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
