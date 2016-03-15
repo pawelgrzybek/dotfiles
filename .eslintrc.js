@@ -198,6 +198,9 @@ module.exports = {
       2,
       'prefer-single'
     ],
+    'react/jsx-uses-vars': [
+      2
+    ],
     'key-spacing': [
       2,
       {
