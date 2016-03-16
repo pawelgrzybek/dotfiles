@@ -198,9 +198,6 @@ module.exports = {
       2,
       'prefer-single'
     ],
-    'react/jsx-uses-vars': [
-      2
-    ],
     'key-spacing': [
       2,
       {
@@ -303,6 +300,9 @@ module.exports = {
     'template-curly-spacing': [
       2,
       'never'
+    ],
+    'react/jsx-uses-vars': [
+      2
     ]
   }
 };
