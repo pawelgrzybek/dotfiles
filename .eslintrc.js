@@ -135,7 +135,7 @@ module.exports = {
     ],
     'wrap-iife': [
       2,
-      'outside'
+      'inside'
     ],
     'init-declarations': [
       2,
