@@ -208,8 +208,8 @@ module.exports = {
     'keyword-spacing': [
       2,
       {
-        'before': false,
-        'after': false
+        'before': true,
+        'after': true
       }
     ],
     'linebreak-style': [
@@ -300,6 +300,9 @@ module.exports = {
     'template-curly-spacing': [
       2,
       'never'
+    ],
+    'react/jsx-uses-react': [
+      2
     ],
     'react/jsx-uses-vars': [
       2
