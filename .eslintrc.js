@@ -55,8 +55,7 @@ module.exports = {
       2
     ],
     'no-inner-declarations': [
-      1,
-      'both'
+      1
     ],
     'no-sparse-arrays': [
       2
