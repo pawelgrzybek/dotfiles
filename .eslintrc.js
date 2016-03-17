@@ -268,7 +268,7 @@ module.exports = {
       2,
       {
         'before': false,
-        'after': false
+        'after': true
       }
     ],
     'space-before-blocks': [
