@@ -19,6 +19,21 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>23B898A4-5662-481C-8AF2-D99370DD444F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>torrentz</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Search Torrents for: {query}</string>
+			<key>url</key>
+			<string>https://torrentz.eu/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>43642804-5C87-4922-90CB-B009135DEBAC</key>
 		<dict>
 			<key>enabled</key>
