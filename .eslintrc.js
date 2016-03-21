@@ -46,7 +46,7 @@ module.exports = {
     ],
     'no-extra-parens': [
       2,
-      'all'
+      'functions'
     ],
     'no-extra-semi': [
       2
