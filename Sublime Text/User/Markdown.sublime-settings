@@ -1,6 +1,10 @@
 {
+  "draw_centered": true,
+  "line_numbers": false,
   "word_wrap": true,
   "wrap_width": 80,
   "spell_check": true,
-  "dictionary": "Packages/Language - English/en_US.dic"
+  "dictionary": "Packages/Language - English/en_US.dic",
+  "rulers":
+  []
 }
