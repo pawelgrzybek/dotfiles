@@ -16,6 +16,7 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-contrib-stylelint",
 		"SublimeLinter-php",
 		"Theme - Spacegray"
 	]
