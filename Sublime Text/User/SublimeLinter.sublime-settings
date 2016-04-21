@@ -43,6 +43,16 @@
 					"*.css"
 				],
 				"include-linter": ""
+			},
+			"stylelint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			}
 		},
 		"mark_style": "outline",
