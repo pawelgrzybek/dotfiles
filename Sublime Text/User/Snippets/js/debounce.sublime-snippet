@@ -1,0 +1,32 @@
+<snippet>
+  <content>
+<![CDATA[
+function debounce(func, wait, immediate) {
+  var timeout = 0;
+  return function() {
+    var context = this;
+    var args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) {
+        func.apply(context, args);
+      }
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait || 200);
+    if (callNow) {
+      func.apply(context, args);
+    }
+  };
+}
+
+debounce(someFunction, 500);
+]]>
+</content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>debounce</tabTrigger>
+  <description>js debounce function</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>
