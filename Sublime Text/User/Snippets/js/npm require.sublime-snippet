@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+const ${1:importAs} = require('${2:whatToImport}');
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>require</tabTrigger>
+  <description>npm require</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

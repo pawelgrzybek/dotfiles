@@ -1,0 +1,12 @@
+<snippet>
+  <content>
+<![CDATA[
+import ${1:nameOfFunction} from '${2:./path/to/file.js}';
+]]>
+</content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>import</tabTrigger>
+  <description>ES2015 import</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
