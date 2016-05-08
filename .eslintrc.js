@@ -305,6 +305,12 @@ module.exports = {
     ],
     'react/jsx-uses-vars': [
       2
+    ],
+    'no-useless-computed-key': [
+      2
+    ],
+    'no-useless-constructor': [
+      2
     ]
   }
 };
