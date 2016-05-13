@@ -13,7 +13,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 
-#utility sohrtcurs improved
+# utility sohrtcurs improved
 alias ls="ls -F" # show trailing slash with folders
 
 # some git shortcuts
@@ -31,6 +31,9 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO ; killall Finde
 
 # why your mac is so slow?
 alias top="top -o vsize"
+
+# run a dead simple python server
+alias server="open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
 
 # go to projects folder
 alias projects="cd /Applications/MAMP/htdocs/"
