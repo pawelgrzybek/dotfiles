@@ -33,7 +33,7 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO ; killall Finde
 alias top="top -o vsize"
 
 # run a dead simple python server
-alias server="open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
+alias server="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
 
 # go to projects folder
 alias projects="cd /Applications/MAMP/htdocs/"
