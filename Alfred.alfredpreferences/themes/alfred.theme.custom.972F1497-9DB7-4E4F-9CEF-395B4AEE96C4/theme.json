@@ -25,10 +25,6 @@
       "paddingVertical" : 4,
       "iconSize" : 40
     },
-    "separator" : {
-      "color" : "#00000000",
-      "thickness" : 1
-    },
     "search" : {
       "paddingVertical" : 2,
       "background" : "#00000000",
@@ -41,11 +37,6 @@
       },
       "backgroundSelected" : "#B2D7FFFF"
     },
-    "scrollbar" : {
-      "color" : "#00000019",
-      "thickness" : 2
-    },
-    "name" : "Wide Yosemite (v2)",
     "window" : {
       "color" : "#FFFFFFF9",
       "paddingHorizontal" : 10,
@@ -55,6 +46,16 @@
       "blur" : 0,
       "roundness" : 3,
       "paddingVertical" : 10
-    }
+    },
+    "credit" : "",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#00000019",
+      "thickness" : 2
+    },
+    "name" : "Wide Yosemite (v2)"
   }
 }
