@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#C0C0C0FF",
+        "font" : "System",
+        "color" : "#C0C0C0FF"
+      },
+      "shortcut" : {
+        "size" : 14,
+        "colorSelected" : "#5E5E5EFF",
+        "font" : "System Light",
+        "color" : "#5E5E5EFF"
+      },
+      "backgroundSelected" : "#EEEEEEFF",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#424242FF",
+        "font" : "System Light",
+        "color" : "#424242FF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 4,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 4,
+      "background" : "#FEFFFFFF",
+      "spacing" : 4,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#000000FF",
+        "font" : "System Light",
+        "color" : "#000000FF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "window" : {
+      "color" : "#FFFFFFFF",
+      "paddingHorizontal" : 4,
+      "width" : 660,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 40,
+      "roundness" : 4,
+      "paddingVertical" : 4
+    },
+    "credit" : "Paweł Grzybek",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#C0C0C0FF",
+      "thickness" : 2
+    },
+    "name" : "pawelgrzybek.com"
+  }
+}
