@@ -244,6 +244,9 @@ module.exports = {
       2,
       'never'
     ],
+    'object-property-newline': [
+      2
+    ],
     'one-var-declaration-per-line': [
       2,
       'always'
