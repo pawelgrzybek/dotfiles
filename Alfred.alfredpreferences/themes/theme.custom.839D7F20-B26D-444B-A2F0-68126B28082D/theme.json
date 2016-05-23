@@ -9,10 +9,10 @@
         "color" : "#C0C0C0FF"
       },
       "shortcut" : {
-        "size" : 14,
-        "colorSelected" : "#5E5E5EFF",
+        "size" : 12,
+        "colorSelected" : "#C0C0C0FF",
         "font" : "System Light",
-        "color" : "#5E5E5EFF"
+        "color" : "#C0C0C0FF"
       },
       "backgroundSelected" : "#EEEEEEFF",
       "text" : {
