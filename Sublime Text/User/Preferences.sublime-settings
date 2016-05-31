@@ -16,7 +16,7 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "Source Code Pro",
+	"font_face": "Operator Mono",
 	"font_options":
 	[
 		"no_round"
@@ -33,8 +33,8 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 5,
-	"line_padding_top": 5,
+	"line_padding_bottom": 6,
+	"line_padding_top": 6,
 	"rulers":
 	[
 		80
