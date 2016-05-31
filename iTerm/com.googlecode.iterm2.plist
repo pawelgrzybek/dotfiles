@@ -156,7 +156,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1328 452 228 349 0 0 2560 1417 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1069 318 445 94 0 0 2560 1417 </string>
+	<string>1069 184 445 237 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>698 952 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -817,7 +817,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>OperatorMono-Book 16</string>
+			<string>SourceCodePro-Regular 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1003,7 +1003,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.5909638554216869</real>
+			<real>1.5683734939759035</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>

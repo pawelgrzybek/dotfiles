@@ -16,7 +16,7 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "Operator Mono",
+	"font_face": "Source Code Pro",
 	"font_options":
 	[
 		"no_round"
