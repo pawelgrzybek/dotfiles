@@ -9,7 +9,8 @@
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
-		"node_modules",
+    "node_modules",
+		"bower_components",
 		".sass-cache",
 		".git",
 		".svn",
