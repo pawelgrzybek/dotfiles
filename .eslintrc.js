@@ -81,6 +81,9 @@ module.exports = {
     'default-case': [
       2
     ],
+    'dot-notation': [
+      2,
+    ],
     'eqeqeq': [
       2,
       'smart'
