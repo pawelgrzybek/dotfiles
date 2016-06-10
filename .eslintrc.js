@@ -255,10 +255,6 @@ module.exports = {
       2,
       'always'
     ],
-    'padded-blocks': [
-      2,
-      'never'
-    ],
     'quotes': [
       2,
       'single'
