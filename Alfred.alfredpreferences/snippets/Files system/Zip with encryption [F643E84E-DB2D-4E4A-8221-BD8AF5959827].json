@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "zip -er FILENAME.zip .\/FOLDERPATH\/",
+    "dontautoexpand" : true,
+    "uid" : "F643E84E-DB2D-4E4A-8221-BD8AF5959827",
+    "name" : "Zip with encryption",
+    "keyword" : ""
+  }
+}
