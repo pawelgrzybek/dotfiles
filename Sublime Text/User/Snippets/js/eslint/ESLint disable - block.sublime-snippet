@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+/* eslint-disable ${1:rule-one}, ${2:rule-two} */
+${3:// your unlinted code goes here}
+/* eslint-enable ${1:rule-one}, ${2:rule-two} */
+]]>
+</content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>eslintdisableblock</tabTrigger>
+  <description>ESLint disable - block</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>
