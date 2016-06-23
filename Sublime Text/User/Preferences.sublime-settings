@@ -15,7 +15,9 @@
 		".git",
 		".svn",
 		".hg",
-		"CVS"
+		"CVS",
+		".idea",
+		".tmp"
 	],
 	"font_face": "Source Code Pro",
 	"font_options":
