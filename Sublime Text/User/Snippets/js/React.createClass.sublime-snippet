@@ -1,7 +1,7 @@
 <snippet>
   <content>
 <![CDATA[
-var ${1:componentName} = React.createClass({
+const ${1:componentName} = React.createClass({
   render: function() {
     return (
       ${2:componentContent}
@@ -11,8 +11,8 @@ var ${1:componentName} = React.createClass({
 ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>reactcreate</tabTrigger>
+  <tabTrigger>reactcreateclass</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <!-- <scope>source.python</scope> -->
-  <description>js - react - create component createClass</description>
+  <scope>source.js</scope>
+  <description>React.createClass</description>
 </snippet>

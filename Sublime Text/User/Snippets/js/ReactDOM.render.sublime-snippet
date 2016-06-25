@@ -5,8 +5,8 @@ ReactDOM.render(${1:<ComponentName/>}, ${2:document.querySelector}('${3:#id}'));
 ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>reactrender</tabTrigger>
+  <tabTrigger>reactrenderdom</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <!-- <scope>source.python</scope> -->
-  <description>js - react - renderDOM render component</description>
+  <scope>source.js</scope>
+  <description>ReactDOM.render</description>
 </snippet>
