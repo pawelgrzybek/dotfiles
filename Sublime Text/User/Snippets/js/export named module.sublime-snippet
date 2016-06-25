@@ -1,12 +1,12 @@
 <snippet>
   <content>
 <![CDATA[
-export default ${1:variable/function};
+export { ${1:module}, ${2:module} };
 ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <!-- <tabTrigger>hello</tabTrigger> -->
+  <tabTrigger>exportnamed</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <!-- <scope>source.python</scope> -->
-  <description>js - es6 es2015 export default item</description>
+  <scope>source.js</scope>
+  <description>export named module</description>
 </snippet>
