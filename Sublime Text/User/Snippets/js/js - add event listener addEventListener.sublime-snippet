@@ -7,7 +7,7 @@ addEventListener('${1:click, keydown, resize, scroll, whatever}', function() {
 ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <!-- <tabTrigger>hello</tabTrigger> -->
+  <tabTrigger>addEventListener</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
   <description>js - add event listener addEventListener</description>
