@@ -198,7 +198,7 @@ module.exports = {
     ],
     'jsx-quotes': [
       2,
-      'prefer-single'
+      'prefer-double'
     ],
     'key-spacing': [
       2,
