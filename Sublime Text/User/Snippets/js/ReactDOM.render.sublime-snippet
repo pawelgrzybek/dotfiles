@@ -1,7 +1,7 @@
 <snippet>
   <content>
 <![CDATA[
-ReactDOM.render(${1:<ComponentName/>}, ${2:document.querySelector}('${3:#id}'));
+ReactDOM.render(<${1:ComponentName}/>, ${2:document.querySelector}('${3:#id}'));
 ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
