@@ -34,6 +34,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>28EA6120-8F3F-4BFC-81DF-8C956C09CC1A</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wp</string>
+			<key>text</key>
+			<string>Search Wordpress.org for '{query}'</string>
+			<key>url</key>
+			<string>https://developer.wordpress.org/?s={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>43642804-5C87-4922-90CB-B009135DEBAC</key>
 		<dict>
 			<key>enabled</key>
