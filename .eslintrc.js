@@ -4,7 +4,8 @@ module.exports = {
     'commonjs': true,
     'es6': true,
     'node': true,
-    'jquery': true
+    'jquery': true,
+    'serviceworker': true
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
@@ -20,299 +21,191 @@ module.exports = {
   ],
   'rules': {
     'comma-dangle': [
-      2,
+      'error',
       'never'
     ],
-    'no-console': [
-      1
-    ],
-    'no-debugger': [
-      1
-    ],
-    'no-dupe-args': [
-      2
-    ],
-    'no-dupe-keys': [
-      2
-    ],
-    'no-duplicate-case': [
-      2
-    ],
-    'no-empty': [
-      2
-    ],
-    'no-extra-boolean-cast': [
-      2
-    ],
+    'no-console': 'warn',
+    'no-debugger': 'warn',
+    'no-dupe-args': 'error',
+    'no-dupe-keys': 'error',
+    'no-duplicate-case': 'error',
+    'no-empty': 'error',
+    'no-extra-boolean-cast': 'error',
     'no-extra-parens': [
-      2,
+      'error',
       'functions'
     ],
-    'no-extra-semi': [
-      2
-    ],
-    'no-func-assign': [
-      2
-    ],
-    'no-inner-declarations': [
-      1
-    ],
-    'no-sparse-arrays': [
-      2
-    ],
-    'no-unexpected-multiline': [
-      2
-    ],
-    'no-unreachable': [
-      2
-    ],
-    'use-isnan': [
-      2
-    ],
-    'valid-typeof': [
-      2
-    ],
-    'consistent-return': [
-      2
-    ],
-    'curly': [
-      2
-    ],
-    'default-case': [
-      2
-    ],
+    'no-extra-semi': 'error',
+    'no-func-assign': 'error',
+    'no-inner-declarations': 'warn',
+    'no-sparse-arrays': 'error',
+    'no-unexpected-multiline': 'error',
+    'no-unreachable': 'error',
+    'use-isnan': 'error',
+    'valid-typeof': 'error',
+    'consistent-return': 'error',
+    'curly': 'error',
+    'default-case': 'error',
     'dot-notation': [
-      2,
+      'error',
     ],
     'eqeqeq': [
-      2,
+      'error',
       'smart'
     ],
-    'no-caller': [
-      2
-    ],
-    'no-empty-function': [
-      2
-    ],
-    'no-empty-pattern': [
-      2
-    ],
-    'no-eq-null': [
-      2
-    ],
-    'no-eval': [
-      2
-    ],
-    'no-extra-label': [
-      2
-    ],
-    'no-floating-decimal': [
-      2
-    ],
-    'no-implied-eval': [
-      2
-    ],
-    'no-loop-func': [
-      2
-    ],
-    'no-multi-spaces': [
-      2
-    ],
-    'no-proto': [
-      2
-    ],
-    'no-redeclare': [
-      2
-    ],
-    'no-self-assign': [
-      2
-    ],
-    'no-self-compare': [
-      2
-    ],
-    'no-sequences': [
-      2
-    ],
-    'no-with': [
-      2
-    ],
+    'no-caller': 'error',
+    'no-empty-function': 'error',
+    'no-empty-pattern': 'error',
+    'no-eq-null': 'error',
+    'no-eval': 'error',
+    'no-extra-label': 'error',
+    'no-floating-decimal': 'error',
+    'no-implied-eval': 'error',
+    'no-loop-func': 'error',
+    'no-multi-spaces': 'error',
+    'no-proto': 'error',
+    'no-redeclare': 'error',
+    'no-self-assign': 'error',
+    'no-self-compare': 'error',
+    'no-sequences': 'error',
+    'no-with': 'error',
     'wrap-iife': [
-      2,
+      'error',
       'inside'
     ],
     'init-declarations': [
-      2,
+      'error',
       'always'
     ],
-    'no-undef': [
-      2
-    ],
-    'no-undef-init': [
-      2
-    ],
-    'no-unused-vars': [
-      2
-    ],
-    'no-use-before-define': [
-      2
-    ],
+    'no-undef': 'error',
+    'no-undef-init': 'error',
+    'no-unused-vars': 'error',
+    'no-use-before-define': 'error',
     'array-bracket-spacing': [
-      1,
+      'warn',
       'never'
     ],
     'block-spacing': [
-      2,
+      'error',
       'always'
     ],
     'brace-style': [
-      2,
+      'error',
       'stroustrup',
       {
         'allowSingleLine': false
       }
     ],
-    'camelcase': [
-      2
-    ],
+    'camelcase': 'error',
     'comma-spacing': [
-      2,
+      'error',
       {
         'before': false,
         'after': true
       }
     ],
     'comma-style': [
-      2,
+      'error',
       'last'
     ],
     'computed-property-spacing': [
-      2,
+      'error',
       'never'
     ],
-    'eol-last': [
-      2
-    ],
+    'eol-last': 'error',
     'indent': [
-      2,
+      'error',
       2
     ],
     'jsx-quotes': [
-      2,
+      'error',
       'prefer-double'
     ],
     'key-spacing': [
-      2,
+      'error',
       {
         'beforeColon': false,
         'afterColon': true
       }
     ],
     'keyword-spacing': [
-      2,
+      'error',
       {
         'before': true,
         'after': true
       }
     ],
     'linebreak-style': [
-      2,
+      'error',
       'unix'
     ],
-    'new-cap': [
-      2
-    ],
-    'new-parens': [
-      2
-    ],
-    'no-mixed-spaces-and-tabs': [
-      2
-    ],
-    'no-nested-ternary': [
-      2
-    ],
-    'no-spaced-func': [
-      2
-    ],
-    'no-trailing-spaces': [
-      2
-    ],
-    'no-whitespace-before-property': [
-      2
-    ],
+    'new-cap': 'error',
+    'new-parens': 'error',
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-nested-ternary': 'error',
+    'no-spaced-func': 'error',
+    'no-trailing-spaces': 'error',
+    'no-whitespace-before-property': 'error',
     'object-curly-spacing': [
-      2,
+      'error',
       'always'
     ],
     'one-var': [
-      2,
+      'error',
       'never'
     ],
-    'object-property-newline': [
-      2
-    ],
+    'object-property-newline': 'error',
     'one-var-declaration-per-line': [
-      2,
+      'error',
       'always'
     ],
     'operator-assignment': [
-      2,
+      'error',
       'always'
     ],
     'quotes': [
-      2,
+      'error',
       'single'
     ],
     'semi': [
-      2,
+      'error',
       'always'
     ],
     'semi-spacing': [
-      2,
+      'error',
       {
         'before': false,
         'after': true
       }
     ],
-    'space-before-blocks': [
-      2
-    ],
+    'space-before-blocks': 'error',
     'space-before-function-paren': [
-      2,
+      'error',
       'never'
     ],
     'space-in-parens': [
-      2,
+      'error',
       'never'
     ],
-    'space-infix-ops': [
-      2
-    ],
+    'space-infix-ops': 'error',
     'space-unary-ops': [
-      2,
+      'error',
       {
         'words': true,
         'nonwords': false
       }
     ],
     'spaced-comment': [
-      2,
+      'error',
       'always'
     ],
     'template-curly-spacing': [
-      2,
+      'error',
       'never'
     ],
-    'react/jsx-uses-react': [
-      2
-    ],
-    'react/jsx-uses-vars': [
-      2
-    ],
-    'no-useless-computed-key': [
-      2
-    ],
-    'no-useless-constructor': [
-      2
-    ]
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-constructor': 'error'
   }
 };
