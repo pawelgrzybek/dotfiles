@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>35793AD4-3D5E-4C97-978A-B83DCF650D6B</string>
+				<string>952D6232-111A-4DE4-9B4D-E52AE4595126</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -33,16 +33,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>cd ~/.dotfiles &amp;&amp; git {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>952D6232-111A-4DE4-9B4D-E52AE4595126</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>dotfiles</string>
 				<key>subtext</key>
-				<string>Pull dotfiles from Github.</string>
+				<string>Push / pull dotfiles to / from Github.</string>
 				<key>text</key>
-				<string>Pull dotfiles from Github.</string>
+				<string>Github dotfiles: {query}</string>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
@@ -51,30 +66,15 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>cd ~/.dotfiles &amp;&amp; git pull</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>35793AD4-3D5E-4C97-978A-B83DCF650D6B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>35793AD4-3D5E-4C97-978A-B83DCF650D6B</key>
+		<key>952D6232-111A-4DE4-9B4D-E52AE4595126</key>
 		<dict>
 			<key>xpos</key>
-			<integer>490</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>120</integer>
 		</dict>
