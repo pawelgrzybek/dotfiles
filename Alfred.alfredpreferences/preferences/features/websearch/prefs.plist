@@ -62,6 +62,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>9022D6EE-5844-4BAE-92F4-811A83B94CB7</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>urban</string>
+			<key>text</key>
+			<string>Search Urban Dictionary for '{query}'</string>
+			<key>url</key>
+			<string>http://www.urbandictionary.com/define.php?term={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>B61E7B0B-176E-4121-8074-050496E67FB9</key>
 		<dict>
 			<key>enabled</key>

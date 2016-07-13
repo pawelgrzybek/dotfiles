@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+<![CDATA[
+function emersonthis_custom_menu_page_removing() {
+  // remove_menu_page( 'index.php' );                  //Dashboard
+  // remove_menu_page( 'jetpack' );                    //Jetpack*
+  // remove_menu_page( 'edit.php' );                   //Posts
+  // remove_menu_page( 'upload.php' );                 //Media
+  // remove_menu_page( 'edit.php?post_type=page' );    //Pages
+  // remove_menu_page( 'edit-comments.php' );          //Comments
+  // remove_menu_page( 'themes.php' );                 //Appearance
+  // remove_menu_page( 'plugins.php' );                //Plugins
+  // remove_menu_page( 'users.php' );                  //Users
+  // remove_menu_page( 'tools.php' );                  //Tools
+  // remove_menu_page( 'options-general.php' );        //Settings
+}
+add_action( 'admin_menu', 'emersonthis_custom_menu_page_removing' );
+]]>
+</content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>php.python</scope>
+  <description>hide unused dashboard menu items</description>
+</snippet>
