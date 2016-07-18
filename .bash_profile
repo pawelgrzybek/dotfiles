@@ -23,6 +23,7 @@ alias gl="git log --graph --oneline --all --decorate"
 alias gc="git commit"
 alias ga="git add -A"
 alias gb="git branch"
+alias gco="git checkout"
 alias gacm="git add -A && git commit -m"
 
 # show / hide hidden files
