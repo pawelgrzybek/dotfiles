@@ -35,6 +35,7 @@ alias top="top -o vsize"
 
 # run a dead simple python server
 alias server="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
+alias serverphp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 192.168.1.115:8000 -t ."
 
 # go to projects folder
 alias projects="cd /Applications/MAMP/htdocs/"
