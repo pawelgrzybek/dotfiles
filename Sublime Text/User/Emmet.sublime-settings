@@ -7,7 +7,9 @@
   "preferences": {
     "bem.elementSeparator":"__",
     "bem.modifierSeparator":"--",
-    "bem.shortElementPrefix":"-"
+    "bem.shortElementPrefix":"-",
+    "sass.propertyEnd": ";",
+    "css.autoInsertVendorPrefixes": false
   }
 }
 
