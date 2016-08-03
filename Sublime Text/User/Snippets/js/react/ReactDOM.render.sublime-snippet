@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+ReactDOM.render(<${1:ComponentName}/>, ${2:document.querySelector}('${3:#id}'));
+]]></content>
+  <tabTrigger>react - ReactDOM.render</tabTrigger>
+  <scope>source.js</scope>
+  <description>ReactDOM.render</description>
+</snippet>
