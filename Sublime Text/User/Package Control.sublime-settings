@@ -7,10 +7,10 @@
 	[
 		"AutoFileName",
 		"Babel",
+		"Boxy Theme",
 		"BracketHighlighter",
 		"Emmet",
 		"Markdown Preview",
-		"Oceanic Next Color Scheme",
 		"Package Control",
 		"PostCSS Sorting",
 		"Sass",
@@ -19,8 +19,6 @@
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-stylelint",
 		"SublimeLinter-php",
-		"Text Pastry",
-		"Theme - Broceanic",
-		"Theme - Spacegray"
+		"Text Pastry"
 	]
 }
