@@ -131,9 +131,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 769 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1503 496 796 473 0 0 2560 1417 </string>
+	<string>1541 680 918 381 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 718 810 687 0 0 2560 1417 </string>
+	<string>1280 25 1280 1392 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -235,12 +235,16 @@
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.99703969999999997</real>
+				<real>0.76470588235294112</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.87631029999999999</real>
+				<real>0.51764705882352946</real>
 				<key>Red Component</key>
-				<real>0.87591359999999996</real>
+				<real>0.32156862745098042</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -308,13 +312,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.6470588235294118</real>
+				<real>0.76470588235294112</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.65490196078431373</real>
-				<key>Red Component</key>
 				<real>0.51764705882352946</real>
+				<key>Red Component</key>
+				<real>0.32156862745098042</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
