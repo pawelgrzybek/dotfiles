@@ -18,7 +18,6 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-stylelint",
-		"SublimeLinter-php",
-		"Text Pastry"
+		"SublimeLinter-php"
 	]
 }
