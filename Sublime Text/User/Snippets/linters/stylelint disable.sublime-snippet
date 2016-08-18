@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+/* ${1:explanation} */
+/* stylelint-disable */
+/* stylelint-enable */
+]]></content>
+  <tabTrigger>stylelintdisable</tabTrigger>
+  <description>stylelint - disable</description>
+  <!-- <scope>source.css, source.scss</scope> -->
+</snippet>
