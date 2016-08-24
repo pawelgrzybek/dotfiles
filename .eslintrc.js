@@ -143,6 +143,10 @@ module.exports = {
       2,
       'never'
     ],
+    'func-names': [
+      1,
+      'always'
+    ],
     'func-style': 2,
     'indent': [
       2,
