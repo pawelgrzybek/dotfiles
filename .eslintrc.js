@@ -144,7 +144,7 @@ module.exports = {
       'never'
     ],
     'func-names': [
-      2,
+      1,
       'always'
     ],
     'func-style': 2,
