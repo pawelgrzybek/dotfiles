@@ -34,6 +34,19 @@
 		</array>
 		<key>4A3C9A90-372E-404D-AF8F-53F3F4FA6F61</key>
 		<array/>
+		<key>51B425B5-E480-4D15-BC2F-9B4CED153DCF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A3C9A90-372E-404D-AF8F-53F3F4FA6F61</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5B360532-D9CC-4FE9-93FB-75AF82787F4E</key>
 		<array>
 			<dict>
@@ -60,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7419E877-26B9-47B3-B60A-8CFF0D054F3F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A3C9A90-372E-404D-AF8F-53F3F4FA6F61</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A4ED796E-D87A-4F4E-9CC0-07A67EAFC2C5</key>
 		<array>
 			<dict>
@@ -74,19 +100,6 @@
 			</dict>
 		</array>
 		<key>B35E46CC-D76A-4961-B412-23E2297299F1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4A3C9A90-372E-404D-AF8F-53F3F4FA6F61</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E916DFF6-3FE6-4FFD-BB58-4712FDA62E6F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -140,7 +153,34 @@
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E916DFF6-3FE6-4FFD-BB58-4712FDA62E6F</string>
+			<string>51B425B5-E480-4D15-BC2F-9B4CED153DCF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"imagefile":"5f07db2a5f5b57948ecc25565bfa8dbe1a1be863.png","title":"Big","arg":"big","subtitle":"Big"},{"imagefile":"b2d08ff2d76d3f241753f015724ec31bbaca8c86.png","title":"Medium","arg":"medium","subtitle":"Medium"},{"imagefile":"8d609b8047a16874be3280256a0dccbe0fa13d21.png","title":"Small","arg":"small","subtitle":"Small"},{"imagefile":"6686014d170fec96e10ee1e568d2e0f96209ff65.png","title":"Top","arg":"top","subtitle":"Top"},{"imagefile":"bd546114ee15dd6635fb6631bcdddba8ea408acc.png","title":"Right","arg":"right","subtitle":"Right"},{"imagefile":"195b6ba827c1ec35504bfab18a14d480b2c03d04.png","title":"Bottom","arg":"bottom","subtitle":"Bottom"},{"imagefile":"8669b7056d65087247f8dcfbba1e6ed10f7fe4d5.png","title":"Left","arg":"left","subtitle":"Left"}]</string>
+				<key>keyword</key>
+				<string>div</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Resize window</string>
+				<key>title</key>
+				<string>Div</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>7419E877-26B9-47B3-B60A-8CFF0D054F3F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -170,6 +210,29 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>A4ED796E-D87A-4F4E-9CC0-07A67EAFC2C5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>script</key>
+				<string>osascript div.scpt "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4A3C9A90-372E-404D-AF8F-53F3F4FA6F61</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -234,29 +297,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>62</integer>
-				<key>script</key>
-				<string>osascript layouts.scpt "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>4A3C9A90-372E-404D-AF8F-53F3F4FA6F61</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -291,7 +331,7 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>zoom</string>
+				<string>big</string>
 				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
@@ -320,7 +360,7 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>center</string>
+				<string>medium</string>
 				<key>hotkey</key>
 				<integer>19</integer>
 				<key>hotmod</key>
@@ -349,7 +389,7 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>centersmall</string>
+				<string>small</string>
 				<key>hotkey</key>
 				<integer>20</integer>
 				<key>hotmod</key>
@@ -380,14 +420,14 @@
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>280</real>
+			<integer>440</integer>
 		</dict>
 		<key>3761243B-89C7-4838-8FBA-F867461E846B</key>
 		<dict>
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>640</real>
+			<integer>800</integer>
 		</dict>
 		<key>4A3C9A90-372E-404D-AF8F-53F3F4FA6F61</key>
 		<dict>
@@ -396,47 +436,54 @@
 			<key>ypos</key>
 			<integer>420</integer>
 		</dict>
+		<key>51B425B5-E480-4D15-BC2F-9B4CED153DCF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>80</integer>
+		</dict>
 		<key>5B360532-D9CC-4FE9-93FB-75AF82787F4E</key>
 		<dict>
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>400</real>
+			<integer>560</integer>
 		</dict>
 		<key>6FB3D7CB-E570-4171-8B47-B187079B14FD</key>
 		<dict>
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>520</real>
+			<integer>680</integer>
+		</dict>
+		<key>7419E877-26B9-47B3-B60A-8CFF0D054F3F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>200</integer>
 		</dict>
 		<key>A4ED796E-D87A-4F4E-9CC0-07A67EAFC2C5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>160</real>
+			<integer>320</integer>
 		</dict>
 		<key>B35E46CC-D76A-4961-B412-23E2297299F1</key>
 		<dict>
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>880</real>
-		</dict>
-		<key>E916DFF6-3FE6-4FFD-BB58-4712FDA62E6F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<integer>40</integer>
+			<integer>1040</integer>
 		</dict>
 		<key>F4897C6D-A35C-467D-93C6-690D11710ED9</key>
 		<dict>
 			<key>xpos</key>
 			<integer>100</integer>
 			<key>ypos</key>
-			<real>760</real>
+			<integer>920</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
