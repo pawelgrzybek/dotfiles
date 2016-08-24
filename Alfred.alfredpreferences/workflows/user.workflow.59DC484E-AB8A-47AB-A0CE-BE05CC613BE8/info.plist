@@ -140,11 +140,11 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>keyword</key>
 				<string>div</string>
 				<key>subtext</key>
-				<string>Resize window</string>
+				<string>Custom size ie: .2 .2 .8 .8</string>
 				<key>text</key>
 				<string>Div</string>
 				<key>withspace</key>
@@ -165,7 +165,7 @@
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"5f07db2a5f5b57948ecc25565bfa8dbe1a1be863.png","title":"Big","arg":"big","subtitle":"Big"},{"imagefile":"b2d08ff2d76d3f241753f015724ec31bbaca8c86.png","title":"Medium","arg":"medium","subtitle":"Medium"},{"imagefile":"8d609b8047a16874be3280256a0dccbe0fa13d21.png","title":"Small","arg":"small","subtitle":"Small"},{"imagefile":"6686014d170fec96e10ee1e568d2e0f96209ff65.png","title":"Top","arg":"top","subtitle":"Top"},{"imagefile":"bd546114ee15dd6635fb6631bcdddba8ea408acc.png","title":"Right","arg":"right","subtitle":"Right"},{"imagefile":"195b6ba827c1ec35504bfab18a14d480b2c03d04.png","title":"Bottom","arg":"bottom","subtitle":"Bottom"},{"imagefile":"8669b7056d65087247f8dcfbba1e6ed10f7fe4d5.png","title":"Left","arg":"left","subtitle":"Left"}]</string>
+				<string>[{"imagefile":"5f07db2a5f5b57948ecc25565bfa8dbe1a1be863.png","title":"Big","arg":"big","subtitle":"Equivalent of 0 0 1 1"},{"imagefile":"b2d08ff2d76d3f241753f015724ec31bbaca8c86.png","title":"Medium","arg":"medium","subtitle":"Equivalent of .1 .1 .9 .9"},{"imagefile":"8d609b8047a16874be3280256a0dccbe0fa13d21.png","title":"Small","arg":"small","subtitle":"Equivalent of .25 .25 .75 .75"},{"imagefile":"6686014d170fec96e10ee1e568d2e0f96209ff65.png","title":"Top","arg":"top","subtitle":"Equivalent of 0 0 1 .5"},{"imagefile":"bd546114ee15dd6635fb6631bcdddba8ea408acc.png","title":"Right","arg":"right","subtitle":"Equivalent of .5 0 1 1"},{"imagefile":"195b6ba827c1ec35504bfab18a14d480b2c03d04.png","title":"Bottom","arg":"bottom","subtitle":"Equivalent of 0 .5 1 1"},{"imagefile":"8669b7056d65087247f8dcfbba1e6ed10f7fe4d5.png","title":"Left","arg":"left","subtitle":"Equivalent of 0 0 .5 1"}]</string>
 				<key>keyword</key>
 				<string>div</string>
 				<key>runningsubtext</key>
