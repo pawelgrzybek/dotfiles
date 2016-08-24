@@ -221,13 +221,140 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>script</key>
-				<string>osascript div.scpt "{query}"</string>
+				<string>on explode(delimiter, input)
+  local delimiter, input, ASTID
+  set ASTID to AppleScript's text item delimiters
+  try
+    set AppleScript's text item delimiters to delimiter
+    set input to text items of input
+    set AppleScript's text item delimiters to ASTID
+    return input --&gt; list
+  on error eMsg number eNum
+    set AppleScript's text item delimiters to ASTID
+    error "Can't explode: " &amp; eMsg number eNum
+  end try
+end explode
+
+on getDisplayBounds()
+  tell application "Finder"
+    set scrRes to bounds of window of desktop
+  end tell
+  tell application "System Events"
+    tell dock preferences
+      set dockProperties to get properties
+    end tell
+
+    if autohide of dockProperties is false then
+      tell process "Dock"
+        set dockDimensions to size in list 1
+        set dockWidth to item 1 of dockDimensions
+        set dockHeight to item 2 of dockDimensions
+      end tell
+      set screenEdge to screen edge of dockProperties
+      if screenEdge is bottom then
+        set item 4 of scrRes to (item 4 of scrRes) - dockHeight
+      else if screenEdge is left then
+        set item 1 of scrRes to dockWidth
+        set item 4 of scrRes to (item 4 of scrRes) - dockWidth
+      else if screenEdge is right then
+        set item 3 of scrRes to (item 3 of scrRes) - dockWidth
+      end if
+    end if
+  end tell
+
+  return scrRes
+end getDisplayBounds
+
+
+on makeLayout(_name, _key, x1, y1, x2, y2)
+  script layout
+    property theName : _name
+    property theKey : _key
+    property x1Percentage : x1
+    property y1Percentage : y1
+    property x2Percentage : x2
+    property y2Percentage : y2
+  end script
+  return layout
+end makeLayout
+
+on makeDefaultLayouts()
+  
+  set top to makeLayout("Top", "top", 0, 0, 1, 0.5)
+  set _right to makeLayout("Right", "right", 0.5, 0, 1, 1)
+  set bottom to makeLayout("Bottom", "bottom", 0, 0.5, 1, 1)
+  set _left to makeLayout("Left", "left", 0, 0, 0.5, 1)
+  set big to makeLayout("Big", "big", 0, 0, 1, 1)
+  set medium to makeLayout("Medium", "medium", 0.1, 0.1, 0.9, 0.9)
+  set small to makeLayout("Small", "small", 0.25, 0.25, 0.75, 0.75)
+  
+  set layouts to {top, _right, bottom, _left, big, medium, small}
+  
+  return layouts
+  
+end makeDefaultLayouts
+
+on findLayout(layouts, layoutKey)
+  
+  set foundLayout to false
+  repeat with layout in layouts
+    set _key to get theKey of layout
+    if layoutKey is _key then
+      set foundLayout to layout
+    end if
+  end repeat
+  return foundLayout
+  
+end findLayout
+
+on resize(theApp, theScreenBounds, theLayout)
+  
+  tell application theApp
+    set appBounds to bounds of window 1
+    set sx to item 1 of theScreenBounds
+    set sy to item 2 of theScreenBounds
+    set sw to (item 3 of theScreenBounds) - sx
+    set sh to (item 4 of theScreenBounds) - sy
+    set x1 to sx + (sw * (x1Percentage of theLayout))
+    set y1 to sy + (sh * (y1Percentage of theLayout))
+    set x2 to sx + (sw * (x2Percentage of theLayout))
+    set y2 to sy + (sh * (y2Percentage of theLayout))
+    activate
+    set bounds of window 1 to {x1, y1, x2, y2}
+  end tell
+end resize
+
+on testLayouts(theApp, screenBounds)
+  set layouts to makeDefaultLayouts()
+  repeat with layout in layouts
+    resize(theApp, screenBounds, layout)
+    delay 0.5
+  end repeat
+end testLayouts
+
+set theApp to (path to frontmost application as Unicode text)
+set screenBounds to getDisplayBounds()
+
+set theLayoutKey to "{query}"
+
+if theLayoutKey is "test" then
+  testLayouts(theApp, screenBounds)
+else
+  set layouts to makeDefaultLayouts()
+  set layout to findLayout(layouts, theLayoutKey)
+  
+  if layout is false then
+    set sizes to explode(" ", theLayoutKey)
+    set layout to makeLayout("Temp", "tmp", (item 1 of sizes), (item 2 of sizes), (item 3 of sizes), (item 4 of sizes))
+  end if
+  resize(theApp, screenBounds, layout)
+end if</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
