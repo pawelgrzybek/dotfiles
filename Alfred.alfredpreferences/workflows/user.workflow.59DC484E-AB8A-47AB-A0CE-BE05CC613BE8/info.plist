@@ -165,7 +165,7 @@
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"5f07db2a5f5b57948ecc25565bfa8dbe1a1be863.png","title":"Big","arg":"big","subtitle":"Equivalent of 0 0 1 1"},{"imagefile":"b2d08ff2d76d3f241753f015724ec31bbaca8c86.png","title":"Medium","arg":"medium","subtitle":"Equivalent of .1 .1 .9 .9"},{"imagefile":"8d609b8047a16874be3280256a0dccbe0fa13d21.png","title":"Small","arg":"small","subtitle":"Equivalent of .25 .25 .75 .75"},{"imagefile":"6686014d170fec96e10ee1e568d2e0f96209ff65.png","title":"Top","arg":"top","subtitle":"Equivalent of 0 0 1 .5"},{"imagefile":"bd546114ee15dd6635fb6631bcdddba8ea408acc.png","title":"Right","arg":"right","subtitle":"Equivalent of .5 0 1 1"},{"imagefile":"195b6ba827c1ec35504bfab18a14d480b2c03d04.png","title":"Bottom","arg":"bottom","subtitle":"Equivalent of 0 .5 1 1"},{"imagefile":"8669b7056d65087247f8dcfbba1e6ed10f7fe4d5.png","title":"Left","arg":"left","subtitle":"Equivalent of 0 0 .5 1"}]</string>
+				<string>[{"imagefile":"5f07db2a5f5b57948ecc25565bfa8dbe1a1be863.png","title":"Big","arg":"0 0 1 1","subtitle":"⌃ ⌥ 1"},{"imagefile":"b2d08ff2d76d3f241753f015724ec31bbaca8c86.png","title":"Medium","arg":".1 .1 .9 .9","subtitle":"⌃ ⌥ 2"},{"imagefile":"8d609b8047a16874be3280256a0dccbe0fa13d21.png","title":"Small","arg":".25 .25 .75 .75","subtitle":"⌃ ⌥ 3"},{"imagefile":"6686014d170fec96e10ee1e568d2e0f96209ff65.png","title":"Top","arg":"0 0 1 .5","subtitle":""},{"imagefile":"bd546114ee15dd6635fb6631bcdddba8ea408acc.png","title":"Right","arg":".5 0 1 1","subtitle":""},{"imagefile":"195b6ba827c1ec35504bfab18a14d480b2c03d04.png","title":"Bottom","arg":"0 .5 1 1","subtitle":""},{"imagefile":"8669b7056d65087247f8dcfbba1e6ed10f7fe4d5.png","title":"Left","arg":"0 0 .5 1","subtitle":""}]</string>
 				<key>keyword</key>
 				<string>div</string>
 				<key>runningsubtext</key>
@@ -192,7 +192,7 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>left</string>
+				<string>0 0 .5 1</string>
 				<key>hotkey</key>
 				<integer>123</integer>
 				<key>hotmod</key>
@@ -221,7 +221,16 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>script</key>
-				<string>on explode(delimiter, input)
+				<string>on screenSize()
+  tell application "Finder"
+      set _b to bounds of window of desktop
+      set _width to item 3 of _b
+      set _height to item 4 of _b
+  end tell
+  return {_width, _height}
+end screenSize
+
+on converttoList(delimiter, input)
   local delimiter, input, ASTID
   set ASTID to AppleScript's text item delimiters
   try
@@ -231,123 +240,37 @@
     return input --&gt; list
   on error eMsg number eNum
     set AppleScript's text item delimiters to ASTID
-    error "Can't explode: " &amp; eMsg number eNum
+    error "Can't convert: " &amp; eMsg number eNum
   end try
-end explode
+end converttoList
 
-on getDisplayBounds()
-  tell application "Finder"
-    set scrRes to bounds of window of desktop
-  end tell
+set userQuery to "{query}"
+set screenBounds to screenSize()
+set args to converttoList(" ", userQuery)
+set argsSize to count of args
+
+if argsSize is 4 then
   tell application "System Events"
-    tell dock preferences
-      set dockProperties to get properties
+    set activeApp to name of first application process whose frontmost is true
+    tell process activeApp
+      set position of window 1 to {item 1 of args * item 1 of screenBounds, item 2 of args * item 2 of screenBounds}
+      set size of window 1 to {(item 3 of args - item 1 of args) * item 1 of screenBounds, (item 4 of args - item 2 of args) * item 2 of screenBounds}
     end tell
-
-    if autohide of dockProperties is false then
-      tell process "Dock"
-        set dockDimensions to size in list 1
-        set dockWidth to item 1 of dockDimensions
-        set dockHeight to item 2 of dockDimensions
+  end tell
+else if argsSize is 2 then
+  if item 1 of args as number &gt; item 1 of screenBounds as number or item 2 of args as number &gt; item 2 of screenBounds as number then
+    display notification "Buy a bigger one dude." with title "Div" subtitle "Screen to small :-(" sound name "Basso"
+  else
+    tell application "System Events"
+      set activeApp to name of first application process whose frontmost is true
+      tell process activeApp
+        set position of window 1 to {(item 1 of screenBounds - item 1 of args) / 2, (item 2 of screenBounds - item 2 of args) / 2}
+        set size of window 1 to {item 1 of args, item 2 of args}
       end tell
-      set screenEdge to screen edge of dockProperties
-      if screenEdge is bottom then
-        set item 4 of scrRes to (item 4 of scrRes) - dockHeight
-      else if screenEdge is left then
-        set item 1 of scrRes to dockWidth
-        set item 4 of scrRes to (item 4 of scrRes) - dockWidth
-      else if screenEdge is right then
-        set item 3 of scrRes to (item 3 of scrRes) - dockWidth
-      end if
-    end if
-  end tell
-
-  return scrRes
-end getDisplayBounds
-
-
-on makeLayout(_name, _key, x1, y1, x2, y2)
-  script layout
-    property theName : _name
-    property theKey : _key
-    property x1Percentage : x1
-    property y1Percentage : y1
-    property x2Percentage : x2
-    property y2Percentage : y2
-  end script
-  return layout
-end makeLayout
-
-on makeDefaultLayouts()
-  
-  set top to makeLayout("Top", "top", 0, 0, 1, 0.5)
-  set _right to makeLayout("Right", "right", 0.5, 0, 1, 1)
-  set bottom to makeLayout("Bottom", "bottom", 0, 0.5, 1, 1)
-  set _left to makeLayout("Left", "left", 0, 0, 0.5, 1)
-  set big to makeLayout("Big", "big", 0, 0, 1, 1)
-  set medium to makeLayout("Medium", "medium", 0.08333333333, 0.08333333333, 0.9166666667, 0.9166666667)
-  set small to makeLayout("Small", "small", 0.1666666667, 0.1666666667, 0.8333333333, 0.8333333333)
-  
-  set layouts to {top, _right, bottom, _left, big, medium, small}
-  
-  return layouts
-  
-end makeDefaultLayouts
-
-on findLayout(layouts, layoutKey)
-  
-  set foundLayout to false
-  repeat with layout in layouts
-    set _key to get theKey of layout
-    if layoutKey is _key then
-      set foundLayout to layout
-    end if
-  end repeat
-  return foundLayout
-  
-end findLayout
-
-on resize(theApp, theScreenBounds, theLayout)
-  
-  tell application theApp
-    set appBounds to bounds of window 1
-    set sx to item 1 of theScreenBounds
-    set sy to item 2 of theScreenBounds
-    set sw to (item 3 of theScreenBounds) - sx
-    set sh to (item 4 of theScreenBounds) - sy
-    set x1 to sx + (sw * (x1Percentage of theLayout))
-    set y1 to sy + (sh * (y1Percentage of theLayout))
-    set x2 to sx + (sw * (x2Percentage of theLayout))
-    set y2 to sy + (sh * (y2Percentage of theLayout))
-    activate
-    set bounds of window 1 to {x1, y1, x2, y2}
-  end tell
-end resize
-
-on testLayouts(theApp, screenBounds)
-  set layouts to makeDefaultLayouts()
-  repeat with layout in layouts
-    resize(theApp, screenBounds, layout)
-    delay 0.5
-  end repeat
-end testLayouts
-
-set theApp to (path to frontmost application as Unicode text)
-set screenBounds to getDisplayBounds()
-
-set theLayoutKey to "{query}"
-
-if theLayoutKey is "test" then
-  testLayouts(theApp, screenBounds)
-else
-  set layouts to makeDefaultLayouts()
-  set layout to findLayout(layouts, theLayoutKey)
-  
-  if layout is false then
-    set sizes to explode(" ", theLayoutKey)
-    set layout to makeLayout("Temp", "tmp", (item 1 of sizes), (item 2 of sizes), (item 3 of sizes), (item 4 of sizes))
+    end tell
   end if
-  resize(theApp, screenBounds, layout)
+else
+  display notification "Two or four arguments (space separated) only!" with title "Div" subtitle "Sorry dude :-(" sound name "Basso"
 end if</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -371,7 +294,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>right</string>
+				<string>.5 0 1 1</string>
 				<key>hotkey</key>
 				<integer>124</integer>
 				<key>hotmod</key>
@@ -400,7 +323,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>top</string>
+				<string>0 0 1 .5</string>
 				<key>hotkey</key>
 				<integer>126</integer>
 				<key>hotmod</key>
@@ -429,7 +352,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>bottom</string>
+				<string>0 .5 1 1</string>
 				<key>hotkey</key>
 				<integer>125</integer>
 				<key>hotmod</key>
@@ -458,7 +381,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>big</string>
+				<string>0 0 1 1</string>
 				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
@@ -487,7 +410,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>medium</string>
+				<string>.1 .1 .9 .9</string>
 				<key>hotkey</key>
 				<integer>19</integer>
 				<key>hotmod</key>
@@ -516,7 +439,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>small</string>
+				<string>.25 .25 .75 .75</string>
 				<key>hotkey</key>
 				<integer>20</integer>
 				<key>hotmod</key>
