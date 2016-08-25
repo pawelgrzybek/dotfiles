@@ -285,8 +285,8 @@ on makeDefaultLayouts()
   set bottom to makeLayout("Bottom", "bottom", 0, 0.5, 1, 1)
   set _left to makeLayout("Left", "left", 0, 0, 0.5, 1)
   set big to makeLayout("Big", "big", 0, 0, 1, 1)
-  set medium to makeLayout("Medium", "medium", 0.1, 0.1, 0.9, 0.9)
-  set small to makeLayout("Small", "small", 0.25, 0.25, 0.75, 0.75)
+  set medium to makeLayout("Medium", "medium", 0.08333333333, 0.08333333333, 0.9166666667, 0.9166666667)
+  set small to makeLayout("Small", "small", 0.1666666667, 0.1666666667, 0.8333333333, 0.8333333333)
   
   set layouts to {top, _right, bottom, _left, big, medium, small}
   
