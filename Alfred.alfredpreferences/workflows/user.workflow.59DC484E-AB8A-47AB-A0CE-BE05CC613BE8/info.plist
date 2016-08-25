@@ -165,7 +165,7 @@
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"5f07db2a5f5b57948ecc25565bfa8dbe1a1be863.png","title":"Full","arg":"0 0 1 1","subtitle":"⌃ ⌥ 1"},{"imagefile":"b2d08ff2d76d3f241753f015724ec31bbaca8c86.png","title":"Medium","arg":".1 .1 .9 .9","subtitle":"⌃ ⌥ 2"},{"imagefile":"8d609b8047a16874be3280256a0dccbe0fa13d21.png","title":"Small","arg":".25 .25 .75 .75","subtitle":"⌃ ⌥ 3"},{"imagefile":"6686014d170fec96e10ee1e568d2e0f96209ff65.png","title":"Top","arg":"0 0 1 .5","subtitle":""},{"imagefile":"bd546114ee15dd6635fb6631bcdddba8ea408acc.png","title":"Right","arg":".5 0 1 1","subtitle":""},{"imagefile":"195b6ba827c1ec35504bfab18a14d480b2c03d04.png","title":"Bottom","arg":"0 .5 1 1","subtitle":""},{"imagefile":"8669b7056d65087247f8dcfbba1e6ed10f7fe4d5.png","title":"Left","arg":"0 0 .5 1","subtitle":""}]</string>
+				<string>[{"imagefile":"659a66834b8470ab5383048072edc5518c6d2c7f.png","title":"Full","arg":"0 0 1 1","subtitle":"⌃ ⌥ 1"},{"imagefile":"aa34ec7e84ae9bc2f7245767d154edaf4baa5339.png","title":"Medium","arg":".1 .1 .9 .9","subtitle":"⌃ ⌥ 2"},{"imagefile":"a3731238099f22f207fa12e45191d7fb71f8a5a7.png","title":"Small","arg":".25 .25 .75 .75","subtitle":"⌃ ⌥ 3"},{"imagefile":"4e7454ed7ea56895be9fe476ee82cb1b92d5ea2e.png","title":"Top","arg":"0 0 1 .5","subtitle":""},{"imagefile":"df665e9935a41ee8c92b6446db112c3c08376fbc.png","title":"Right","arg":".5 0 1 1","subtitle":""},{"imagefile":"74fe6ce684027d24b0c5adf684b209513701c5e1.png","title":"Bottom","arg":"0 .5 1 1","subtitle":""},{"imagefile":"1432ccbc0a271f7a7ab2ba58051609029ce20d25.png","title":"Left","arg":"0 0 .5 1","subtitle":""}]</string>
 				<key>keyword</key>
 				<string>div</string>
 				<key>runningsubtext</key>
