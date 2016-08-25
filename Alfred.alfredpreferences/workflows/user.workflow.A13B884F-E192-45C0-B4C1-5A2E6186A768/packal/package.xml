@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>npms</name>
+  <version>0.2.0</version>
+  <bundle>com.sindresorhus.npms</bundle>
+  <updated>1467897194</updated>
+  <file>npms.alfredworkflow</file>
+</workflow>

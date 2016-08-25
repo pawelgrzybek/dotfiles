@@ -19,49 +19,6 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
-		<key>23B898A4-5662-481C-8AF2-D99370DD444F</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>torrentz</string>
-			<key>plusSpaces</key>
-			<false/>
-			<key>text</key>
-			<string>Search Torrents for: {query}</string>
-			<key>url</key>
-			<string>https://torrentz.eu/search?q={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
-		<key>28EA6120-8F3F-4BFC-81DF-8C956C09CC1A</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>wp</string>
-			<key>text</key>
-			<string>Search Wordpress.org for '{query}'</string>
-			<key>url</key>
-			<string>https://developer.wordpress.org/?s={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
-		<key>43642804-5C87-4922-90CB-B009135DEBAC</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>npm</string>
-			<key>plusSpaces</key>
-			<false/>
-			<key>text</key>
-			<string>Search npm for '{query}'</string>
-			<key>url</key>
-			<string>https://www.npmjs.com/search?q={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
 		<key>9022D6EE-5844-4BAE-92F4-811A83B94CB7</key>
 		<dict>
 			<key>enabled</key>
@@ -121,7 +78,5 @@
 			<true/>
 		</dict>
 	</dict>
-	<key>onlyShowEnabledInPrefs</key>
-	<true/>
 </dict>
 </plist>
