@@ -21,7 +21,7 @@ Other windows managers requires similar procedure. It is not related with Div on
 
 ## Download
 
-- [Download from Packal](http://www.packal.org/) - brilliant user-created repository for workflows.
+- [Download Div from Packal](http://www.packal.org/workflow/div) - brilliant user-created repository for workflows.
 
 ## How to use
 
