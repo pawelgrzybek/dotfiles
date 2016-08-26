@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.pawelgrzybek.div</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>2D9B5608-8924-44BB-ACE3-06F124842A7D</key>
@@ -127,9 +129,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Pawel Grzybek</string>
 	<key>description</key>
-	<string>Window manager</string>
+	<string>Simple windows manager</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -537,6 +539,6 @@ end if</string>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://pawelgrzybek.com/</string>
 </dict>
 </plist>
