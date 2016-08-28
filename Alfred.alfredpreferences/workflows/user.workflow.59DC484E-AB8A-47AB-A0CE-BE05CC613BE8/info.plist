@@ -146,7 +146,7 @@
 				<key>keyword</key>
 				<string>div</string>
 				<key>subtext</key>
-				<string>Custom size ie: .2 .2 .8 .8</string>
+				<string>Custom size ie: 800 600 or custom bounds ie: 20 20 80 80</string>
 				<key>text</key>
 				<string>Div</string>
 				<key>withspace</key>
@@ -167,7 +167,7 @@
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"659a66834b8470ab5383048072edc5518c6d2c7f.png","title":"Full","arg":"0 0 1 1","subtitle":"⌃ ⌥ 1"},{"imagefile":"aa34ec7e84ae9bc2f7245767d154edaf4baa5339.png","title":"Medium","arg":".1 .1 .9 .9","subtitle":"⌃ ⌥ 2"},{"imagefile":"a3731238099f22f207fa12e45191d7fb71f8a5a7.png","title":"Small","arg":".25 .25 .75 .75","subtitle":"⌃ ⌥ 3"},{"imagefile":"1432ccbc0a271f7a7ab2ba58051609029ce20d25.png","title":"Left","arg":"0 0 .5 1","subtitle":"⌃ ⌥ ←"},{"imagefile":"df665e9935a41ee8c92b6446db112c3c08376fbc.png","title":"Right","arg":".5 0 1 1","subtitle":"⌃ ⌥ →"},{"imagefile":"4e7454ed7ea56895be9fe476ee82cb1b92d5ea2e.png","title":"Top","arg":"0 0 1 .5","subtitle":"⌃ ⌥ ↑"},{"imagefile":"74fe6ce684027d24b0c5adf684b209513701c5e1.png","title":"Bottom","arg":"0 .5 1 1","subtitle":"⌃ ⌥ ↓"},{"imagefile":"a99408c7e9b2db2c3914d7b431e6ff4e06f3370d.png","title":"Top Left","arg":"0 0 .5 .5"},{"imagefile":"b9bca2785e07826ab21f9442bee1b5b28320f68f.png","title":"Top Right","arg":".5 0 1 .5"},{"imagefile":"732ca1475338f569c0b8fc5edd27675d210cbc51.png","title":"Bottom Left","arg":"0 .5 .5 1"},{"imagefile":"364d30a672a8673579c2a77bcec360f006af88dd.png","title":"Bottom Right","arg":".5 .5 1 1"}]</string>
+				<string>[{"imagefile":"659a66834b8470ab5383048072edc5518c6d2c7f.png","title":"Full","arg":"0 0 100 100","subtitle":"⌃ ⌥ 1"},{"imagefile":"aa34ec7e84ae9bc2f7245767d154edaf4baa5339.png","title":"Medium","arg":"10 10 90 90","subtitle":"⌃ ⌥ 2"},{"imagefile":"a3731238099f22f207fa12e45191d7fb71f8a5a7.png","title":"Small","arg":"25 25 75 75","subtitle":"⌃ ⌥ 3"},{"imagefile":"1432ccbc0a271f7a7ab2ba58051609029ce20d25.png","title":"Left","arg":"0 0 50 100","subtitle":"⌃ ⌥ ←"},{"imagefile":"df665e9935a41ee8c92b6446db112c3c08376fbc.png","title":"Right","arg":"50 0 100 100","subtitle":"⌃ ⌥ →"},{"imagefile":"4e7454ed7ea56895be9fe476ee82cb1b92d5ea2e.png","title":"Top","arg":"0 0 100 50","subtitle":"⌃ ⌥ ↑"},{"imagefile":"74fe6ce684027d24b0c5adf684b209513701c5e1.png","title":"Bottom","arg":"0 50 100 100","subtitle":"⌃ ⌥ ↓"},{"imagefile":"a99408c7e9b2db2c3914d7b431e6ff4e06f3370d.png","title":"Top Left","arg":"0 0 50 50"},{"imagefile":"b9bca2785e07826ab21f9442bee1b5b28320f68f.png","title":"Top Right","arg":"50 0 100 50"},{"imagefile":"732ca1475338f569c0b8fc5edd27675d210cbc51.png","title":"Bottom Left","arg":"0 50 50 100"},{"imagefile":"364d30a672a8673579c2a77bcec360f006af88dd.png","title":"Bottom Right","arg":"50 50 100 100"}]</string>
 				<key>keyword</key>
 				<string>div</string>
 				<key>runningsubtext</key>
@@ -194,7 +194,7 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>0 0 .5 1</string>
+				<string>0 0 50 100</string>
 				<key>hotkey</key>
 				<integer>123</integer>
 				<key>hotmod</key>
@@ -255,13 +255,13 @@ if argsSize is 4 then
   tell application "System Events"
     set activeApp to name of first application process whose frontmost is true
     tell process activeApp
-      set position of window 1 to {item 1 of args * item 1 of screenBounds, item 2 of args * item 2 of screenBounds}
-      set size of window 1 to {(item 3 of args - item 1 of args) * item 1 of screenBounds, (item 4 of args - item 2 of args) * item 2 of screenBounds}
+      set position of window 1 to {(item 1 of args / 100) * item 1 of screenBounds, (item 2 of args / 100) * item 2 of screenBounds}
+      set size of window 1 to {((item 3 of args / 100) - (item 1 of args / 100)) * item 1 of screenBounds, ((item 4 of args / 100) - (item 2 of args / 100)) * item 2 of screenBounds}
     end tell
   end tell
 else if argsSize is 2 then
   if item 1 of args as number &gt; item 1 of screenBounds as number or item 2 of args as number &gt; item 2 of screenBounds as number then
-    display notification "Buy a bigger one dude." with title "Div" subtitle "Screen to small :-(" sound name "Basso"
+    display notification "Buy a bigger one dude" with title "Div" subtitle "Screen not big enough :-(" sound name "Basso"
   else
     tell application "System Events"
       set activeApp to name of first application process whose frontmost is true
@@ -296,7 +296,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>.5 0 1 1</string>
+				<string>50 0 100 100</string>
 				<key>hotkey</key>
 				<integer>124</integer>
 				<key>hotmod</key>
@@ -325,7 +325,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>0 0 1 .5</string>
+				<string>0 0 100 50</string>
 				<key>hotkey</key>
 				<integer>126</integer>
 				<key>hotmod</key>
@@ -354,7 +354,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>0 .5 1 1</string>
+				<string>0 50 100 100</string>
 				<key>hotkey</key>
 				<integer>125</integer>
 				<key>hotmod</key>
@@ -383,7 +383,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>0 0 1 1</string>
+				<string>0 0 100 100</string>
 				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
@@ -412,7 +412,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>.1 .1 .9 .9</string>
+				<string>10 10 90 90</string>
 				<key>hotkey</key>
 				<integer>19</integer>
 				<key>hotmod</key>
@@ -441,7 +441,7 @@ end if</string>
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>.25 .25 .75 .75</string>
+				<string>25 25 75 75</string>
 				<key>hotkey</key>
 				<integer>20</integer>
 				<key>hotmod</key>
