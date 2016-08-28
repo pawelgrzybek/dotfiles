@@ -33,7 +33,7 @@ Simply type `div` in Alfred window and choose layout from predefined list.
 
 ### Custom bounds
 
-Choose custom bounds by passing 4 space separated values. For example `div .2 .2 .8 .8` will place top left corner of an app 20% from top and 20% from left edge of a screen, and bottom right corner 80% from top and 80% from left edge of a screen.
+Choose custom bounds by passing 4 space separated values. For example `div 20 20 80 80` will place top left corner of an app 20% from top and 20% from left edge of a screen, and bottom right corner 80% from top and 80% from left edge of a screen.
 
 ### Custom size
 
