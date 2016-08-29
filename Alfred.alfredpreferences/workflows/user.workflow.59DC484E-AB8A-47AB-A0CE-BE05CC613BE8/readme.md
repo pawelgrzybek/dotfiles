@@ -25,7 +25,7 @@ Other windows managers requires similar procedure. It is not related with Div on
 
 ## How to use
 
-I published a [detailed instruction on my personal website](https://pawelgrzybek.com/). Have a look if you are keen to understand a full potential of Div.
+I published a [detailed instruction on my personal website](https://pawelgrzybek.com/div-simple-alfred-windows-manager/). Have a look if you are keen to understand a full potential of Div.
 
 ### Choose predefined layout
 
