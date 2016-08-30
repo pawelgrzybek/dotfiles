@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.pawelgrzybek.dot</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>7474BC7A-8320-4439-9B8E-550F578F694F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E63D3AA-C85A-4ECF-B31D-E710DAA61D48</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Pawel Grzybek</string>
+	<key>description</key>
+	<string>Toggle dotfiles (hidden files) on macOS</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Dot</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Show","arg":"YES","subtitle":"Show dotfiles (hidden files)"},{"title":"Hide","arg":"NO","subtitle":"Hide dotfiles (hidden files)"}]</string>
+				<key>keyword</key>
+				<string>dot</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Toggle dotfiles (hidden files) on macOS</string>
+				<key>title</key>
+				<string>dot</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>7474BC7A-8320-4439-9B8E-550F578F694F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+defaults write com.apple.finder AppleShowAllFiles $query; killall Finder;</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7E63D3AA-C85A-4ECF-B31D-E710DAA61D48</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>7474BC7A-8320-4439-9B8E-550F578F694F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>7E63D3AA-C85A-4ECF-B31D-E710DAA61D48</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://pawelgrzybek.com/</string>
+</dict>
+</plist>
