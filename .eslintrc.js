@@ -67,7 +67,6 @@ module.exports = {
     'no-invalid-this': 2,
     'no-lone-blocks': 2,
     'no-loop-func': 2,
-    'no-magic-numbers': 2,
     'no-multi-spaces': 2,
     'no-proto': 2,
     'no-return-assign': 2,
