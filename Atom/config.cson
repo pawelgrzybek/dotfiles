@@ -25,6 +25,9 @@
   "linter-eslint":
     useGlobalEslint: true
   "one-dark-ui": {}
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   "tree-view":
     hideIgnoredNames: true
   welcome:
