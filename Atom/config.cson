@@ -1,0 +1,34 @@
+"*":
+  core:
+    disabledPackages: [
+      "exception-reporting"
+      "metrics"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+    ]
+  editor:
+    fontFamily: "Operator Mono"
+    fontSize: 16
+    lineHeight: 1.75
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  emmet: {}
+  linter: {}
+  "linter-eslint":
+    useGlobalEslint: true
+  "one-dark-ui": {}
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+".gfm.source":
+  editor:
+    softWrapAtPreferredLineLength: true
