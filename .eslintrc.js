@@ -25,6 +25,7 @@ module.exports = {
   ],
   'rules': {
     // Possible Errors
+    'no-console': 1,
     'no-extra-parens': [
       2,
       'functions'
