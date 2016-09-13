@@ -28,6 +28,11 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  pigments:
+    ignoredScopes: [
+      "\\.comment"
+    ]
+    markerType: "native-square-dot"
   "tree-view":
     hideIgnoredNames: true
   welcome:
