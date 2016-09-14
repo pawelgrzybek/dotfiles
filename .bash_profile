@@ -1,6 +1,9 @@
 # add a subl command to command line
 export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 
+# taken from https://jekyllrb.com/docs/troubleshooting/
+export PATH=/usr/local/bin:$PATH
+
 # remove computer name from beginig on command line
 # More about it:
 # http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
