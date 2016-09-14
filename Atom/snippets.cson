@@ -20,11 +20,13 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
+# Global snippets
 '*':
   'Unsplash':
     'prefix': 'unsplash'
     'body': 'https://unsplash.it/${1:600}/${2:400}?random'
 
+# Sass snippets
 '.source.scss':
   'Media Query Mixin':
     'prefix': 'mq, mediaquery'
