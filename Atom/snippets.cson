@@ -20,6 +20,11 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
+'*':
+  'Unsplash':
+    'prefix': 'unsplash'
+    'body': 'https://unsplash.it/${1:600}/${2:400}?random'
+
 '.source.scss':
   'Media Query Mixin':
     'prefix': 'mq, mediaquery'
@@ -27,7 +32,3 @@
       @include mq(${1:medium}) {
       }
     '''
-
-'Unsplash':
-  'prefix': 'unsplash'
-  'body': 'https://unsplash.it/${1:600}/${2:400}?random'
