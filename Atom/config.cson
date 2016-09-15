@@ -12,6 +12,7 @@
       "._*"
       "Thumbs.db"
       "node_modules"
+      "bower_components"
     ]
   editor:
     fontFamily: "Operator Mono"
