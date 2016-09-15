@@ -24,7 +24,9 @@
   linter: {}
   "linter-eslint":
     useGlobalEslint: true
-  "one-dark-ui": {}
+  "one-dark-ui":
+    layoutMode: "Spacious"
+    tabSizing: "Even"
   "package-sync":
     createOnChange: true
     forceOverwrite: true
