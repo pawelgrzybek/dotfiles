@@ -180,6 +180,10 @@ module.exports = {
       2,
       'unix'
     ],
+    'lines-around-directive': [
+      2,
+      'always'
+    ],
     'max-depth': 2,
     'new-cap': 2,
     'new-parens': 2,
