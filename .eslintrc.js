@@ -170,6 +170,12 @@ module.exports = {
         'after': true
       }
     ],
+    'line-comment-position': [
+      2,
+      {
+        'position': 'above'
+      }
+    ],
     'linebreak-style': [
       2,
       'unix'
