@@ -27,10 +27,7 @@ module.exports = {
   'rules': {
     // Possible Errors
     'no-console': 1,
-    'no-extra-parens': [
-      2,
-      'functions'
-    ],
+    'no-extra-parens': 2,
     'no-template-curly-in-string': 2,
     'no-unsafe-negation': 2,
 
