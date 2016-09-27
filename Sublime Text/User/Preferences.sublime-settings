@@ -48,6 +48,7 @@
 	"theme": "Boxy Ocean.sublime-theme",
 	"theme_accent_cyan": true,
 	"theme_dirty_accent_cyan": true,
+	"theme_find_panel_close_hidden": true,
 	"theme_quick_panel_item_selected_colored": true,
 	"theme_quick_panel_size_xl": true,
 	"theme_scrollbar_colored": true,
