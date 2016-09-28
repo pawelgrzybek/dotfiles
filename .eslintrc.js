@@ -119,7 +119,7 @@ module.exports = {
     'camelcase': 2,
     'comma-dangle': [
       2,
-      'never'
+      'only-multiline'
     ],
     'comma-spacing': [
       2,
