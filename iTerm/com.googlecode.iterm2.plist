@@ -94,14 +94,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>6</string>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dropbox/Sync</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -121,7 +117,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>307</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -132,22 +128,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>384 294 224 289 0 0 1280 777 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>769 110 445 382 0 0 1280 777 </string>
-	<key>NSWindow Frame Preferences</key>
-	<string>268 311 606 456 0 0 1280 777 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>440 487 400 129 0 0 1280 777 </string>
+	<string>2049 110 445 103 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>290 293 700 387 0 0 1280 777 </string>
+	<string>970 769 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>301 233 918 495 0 0 1280 800 </string>
+	<string>1429 244 918 507 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>470 90 810 687 0 0 1280 777 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>470 4 810 647 0 0 1280 777 </string>
+	<string>1385 15 1279 1339 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -382,13 +370,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.20808741450309753</real>
+				<real>0.20521855354309082</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.17362186312675476</real>
+				<real>0.17198097705841064</real>
 				<key>Red Component</key>
-				<real>0.15656566619873047</real>
+				<real>0.15628275275230408</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -830,7 +818,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 16</string>
+			<string>OperatorMono-Book 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -1031,7 +1019,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.5683734939759035</real>
+			<real>1.4560699830572288</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1040,32 +1028,20 @@
 			<string>/Users/pawelgrzybek</string>
 		</dict>
 	</array>
-	<key>NoSyncConfirmBeta</key>
-	<true/>
-	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
-	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>D455A655-18AE-4989-86CF-CEA69805D782</string>
+	<string>994430D2-9C39-4C6E-AD80-A6F8390DB0A8</string>
 	<key>NoSyncLastTipTime</key>
-	<real>460403021.87156498</real>
+	<real>489918399.20014602</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>466165693.403925</real>
-	<key>NoSyncTimeOfLastPromo</key>
-	<real>453326972.17416102</real>
-	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>459015175.20053399</real>
+	<real>489666457.618613</real>
 	<key>NoSyncTipsDisabled</key>
 	<true/>
-	<key>NoSyncTipsToNotShow</key>
-	<array>
-		<string>000</string>
-		<string>0000</string>
-		<string>0001</string>
-	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1130,11 +1106,13 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=40</string>
+	<string>https://iterm2.com/appcasts/nightly.xml?shard=45</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-12T15:09:25Z</date>
+	<date>2016-09-29T08:29:20Z</date>
+	<key>SUSendProfileInfo</key>
+	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1184,7 +1162,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.9</string>
+	<string>3.0.20160918-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
