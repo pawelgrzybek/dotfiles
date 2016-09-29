@@ -145,7 +145,6 @@ module.exports = {
       1,
       'always'
     ],
-    'func-style': 2,
     'indent': [
       2,
       2
