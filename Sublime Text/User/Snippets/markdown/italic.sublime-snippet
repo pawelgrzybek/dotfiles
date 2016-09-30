@@ -2,7 +2,7 @@
   <content><![CDATA[
 *${1:text}*
 ]]></content>
-  <tabTrigger>italic</tabTrigger>
+  <tabTrigger>i</tabTrigger>
   <scope>text.html.markdown</scope>
-  <description>italic</description>
+  <description>italic text</description>
 </snippet>

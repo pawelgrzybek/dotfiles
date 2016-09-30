@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-**${1:text}**
+- [ ] ${1:todo}
 ]]></content>
-  <tabTrigger>b</tabTrigger>
+  <tabTrigger>t</tabTrigger>
   <scope>text.html.markdown</scope>
-  <description>bold text</description>
+  <description>todo</description>
 </snippet>
