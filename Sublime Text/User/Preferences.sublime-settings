@@ -8,6 +8,8 @@
 	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
+  "auto_complete_delay": 50,
+  "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc, text",
 	"folder_exclude_patterns":
 	[
 		"node_modules",
