@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+*${1:text}*
+]]></content>
+  <tabTrigger>italic</tabTrigger>
+  <scope>text.html.markdown</scope>
+  <description>italic</description>
+</snippet>

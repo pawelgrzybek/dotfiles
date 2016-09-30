@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+**${1:text}**
+]]></content>
+  <tabTrigger>bold</tabTrigger>
+  <scope>text.html.markdown</scope>
+  <description>bold</description>
+</snippet>

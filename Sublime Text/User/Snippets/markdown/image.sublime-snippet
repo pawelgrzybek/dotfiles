@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+![${1:alt}](${2:url})
+]]></content>
+  <tabTrigger>image</tabTrigger>
+  <scope>text.html.markdown</scope>
+  <description>image</description>
+</snippet>
