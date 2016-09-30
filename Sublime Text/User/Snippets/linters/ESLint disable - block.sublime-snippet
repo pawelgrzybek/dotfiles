@@ -6,9 +6,7 @@ ${3:// your unlinted code goes here}
 /* eslint-enable ${1:rule-one}, ${2:rule-two} */
 ]]>
 </content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>eslintdisableblock</tabTrigger>
-  <description>ESLint disable - block</description>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <tabTrigger>eslint-disableblock</tabTrigger>
   <scope>source.js</scope>
+  <description>ESLint disable - block</description>
 </snippet>

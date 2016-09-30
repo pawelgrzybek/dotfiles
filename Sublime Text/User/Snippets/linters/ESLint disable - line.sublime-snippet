@@ -4,9 +4,7 @@
 // eslint-disable-line ${1:rule-one}, ${2:rule-two}
 ]]>
 </content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>eslintdisableline</tabTrigger>
-  <description>ESLint disable - line</description>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <tabTrigger>eslint-disableline</tabTrigger>
   <scope>source.js</scope>
+  <description>ESLint disable - line</description>
 </snippet>

@@ -4,9 +4,7 @@
 /* eslint-disable */
 ]]>
 </content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>eslintdisablefile</tabTrigger>
-  <description>ESLint disable - file</description>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <tabTrigger>eslint-disablefile</tabTrigger>
   <scope>source.js</scope>
+  <description>ESLint disable - file</description>
 </snippet>
