@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+@for \$i from ${1:1} through ${2:10} {
+  &:nth-child(#{\$i}) {
+    animation-delay: 100ms * \$i;
+  }
+}
+]]>
+  </content>
+  <tabTrigger>loop-for</tabTrigger>
+  <scope>source.scss</scope>
+  <description>loop - for</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+@each \$${1:i}, \$${2:j} in \$${3:map} {
+  .button-#{\$${1:i}} {
+    color: \$${2:j};
+  }
+}
+]]>
+  </content>
+  <tabTrigger>loop-each</tabTrigger>
+  <scope>source.scss</scope>
+  <description>loop - each</description>
+</snippet>
