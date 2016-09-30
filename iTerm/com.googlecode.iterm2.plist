@@ -95,9 +95,13 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>5</string>
+	<string>7</string>
+	<key>NSColorPickerPageableNameListDefaults</key>
+	<string>1Apple</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>3</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
@@ -145,7 +149,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>290 293 700 387 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>474 211 918 381 0 0 1280 800 </string>
+	<string>285 241 796 473 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>550 110 730 667 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -358,26 +362,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.40000000600000002</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.40000000600000002</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.40000000600000002</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.38754743337631226</real>
+				<real>0.38902841415845996</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.34425392746925354</real>
+				<real>0.34556946566368663</real>
 				<key>Red Component</key>
-				<real>0.92645961046218872</real>
+				<real>0.93000000000000005</real>
 			</dict>
 			<key>Automatically Log</key>
 			<false/>
