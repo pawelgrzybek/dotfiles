@@ -15,6 +15,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 
 # utility sohrtcurs improved
 alias ls="ls -F" # show trailing slash with folders
+alias ll="ls -la" # show list of all files (including hidden)
 
 # some git shortcuts
 alias g="git"
