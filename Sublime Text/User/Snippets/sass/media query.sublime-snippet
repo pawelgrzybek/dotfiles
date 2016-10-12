@@ -7,6 +7,6 @@
 ]]>
   </content>
   <tabTrigger>mq</tabTrigger>
-  <scope>source.scss</scope>
+  <scope>source.scss, source.sass</scope>
   <description>mediaqueries</description>
 </snippet>
