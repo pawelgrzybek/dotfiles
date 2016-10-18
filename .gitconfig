@@ -7,3 +7,5 @@
 	default = simple
 [help]
 	autocorrect = 1
+[core]
+	fileMode = false
