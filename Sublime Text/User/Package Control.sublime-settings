@@ -18,6 +18,7 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-stylelint",
-		"SublimeLinter-php"
+		"SublimeLinter-php",
+		"Vue Syntax Highlight"
 	]
 }
