@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<template>
+  <div class="example">{{ msg }}</div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      msg: 'Hello world!'
+    };
+  }
+};
+</script>
+
+<style scoped>
+
+</style>
+]]></content>
+  <tabTrigger>vue</tabTrigger>
+  <scope>text.html.vue</scope>
+  <description>VUE component</description>
+</snippet>
