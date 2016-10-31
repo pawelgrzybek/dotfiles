@@ -1,5 +1,5 @@
 {
-	"auto_complete_delay": 50,
+	"auto_complete_delay": 0,
 	"auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc, text",
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
