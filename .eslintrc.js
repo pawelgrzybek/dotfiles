@@ -27,7 +27,6 @@ module.exports = {
   'rules': {
     // Possible Errors
     'no-console': 1,
-    'no-extra-parens': 2,
     'no-template-curly-in-string': 2,
     'no-unsafe-negation': 2,
 
@@ -63,7 +62,6 @@ module.exports = {
     'no-floating-decimal': 2,
     'no-global-assign': 2,
     'no-implied-eval': 2,
-    'no-invalid-this': 2,
     'no-lone-blocks': 2,
     'no-loop-func': 2,
     'no-multi-spaces': 2,
