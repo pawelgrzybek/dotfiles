@@ -113,7 +113,7 @@ module.exports = {
       2,
       'stroustrup',
       {
-        'allowSingleLine': false
+        'allowSingleLine': true
       }
     ],
     'camelcase': 2,
