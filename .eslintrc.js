@@ -66,7 +66,6 @@ module.exports = {
     'no-loop-func': 2,
     'no-multi-spaces': 2,
     'no-proto': 2,
-    'no-return-assign': 2,
     'no-self-compare': 2,
     'no-sequences': 2,
     'no-unused-expressions': 2,
