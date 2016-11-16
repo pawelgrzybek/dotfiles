@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+   <key>author</key>
+  <string>Paweł Grzybek - https://pawelgrzybek.com/</string>
+   <key>settings</key>
+   <array>
+    <dict>
+      <key>settings</key>
+      <dict>
+        <!-- global settings -->
+        <key>background</key>
+        <string>#193549</string>
+        <key>caret</key>
+        <string>#ffc600</string>
+        <key>foreground</key>
+        <string>#FFFFFF</string>
+        <key>invisibles</key>
+        <string>#ffc600</string>
+        <key>lineHighlight</key>
+        <string>#1f4662</string>
+
+        <!-- gutter -->
+        <key>gutter</key>
+        <string>#000</string>
+        <key>gutterForeground</key>
+        <string>#f00</string>
+
+        <!-- selection -->
+        <key>selection</key>
+        <string>#f00</string>
+        <key>selectionBackground</key>
+        <string>#888</string>
+        <key>selectionBorder</key>
+        <string>#f00</string>
+        <key>inactiveSelection</key>
+        <string>#aaa</string>
+
+        <!-- guides -->
+        <key>guide</key>
+        <string>#333</string>
+        <key>activeGuide</key>
+        <string>#fff</string>
+        <key>stackGuide</key>
+        <string>#333</string>
+
+      </dict>
+    </dict>
+  </array>
+  <key>uuid</key>
+  <string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>
+</dict>
+</plist>
