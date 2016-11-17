@@ -19,6 +19,7 @@
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-stylelint",
 		"SublimeLinter-php",
+		"Terminal",
 		"Vue Syntax Highlight"
 	]
 }
