@@ -83,6 +83,7 @@
     "selector-combinator-space-before": "always",
     "selector-max-compound-selectors": 3,
     "selector-max-specificity": "0,3,0",
+    "selector-no-empty": true,
     "selector-no-id": true,
     "selector-no-qualifying-type": true,
     "selector-no-vendor-prefix": true,
