@@ -1,9 +1,9 @@
 <snippet>
   <content>
 <![CDATA[
-addEventListener('${1:click, keydown, resize, scroll, whatever}', function() {
-  ${2:// more stuff here bro!}
-});
+addEventListener('${1:event}', ${2:(${3:arg}) => {
+  ${4:// your crazy sht here}
+}});
 ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
