@@ -10,7 +10,6 @@
 		"Boxy Theme",
 		"BracketHighlighter",
 		"Emmet",
-		"HyperClick",
 		"Markdown Preview",
 		"Package Control",
 		"PostCSS Sorting",
@@ -19,7 +18,6 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-stylelint",
-		"SublimeLinter-php",
 		"Terminal",
 		"Vue Syntax Highlight"
 	]
