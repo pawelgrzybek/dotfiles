@@ -4,7 +4,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Pantone Theme (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
 	"detect_indentation": false,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
