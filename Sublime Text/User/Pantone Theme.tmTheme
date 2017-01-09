@@ -8,25 +8,29 @@
 	<string>Pawel Grzybek (https:&#x2f;&#x2f;pawelgrzybek.com&#x2f;)</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
+	<key>uuid</key>
+	<string>21a3a5f5-e82f-48a8-bc8b-9aef307f6131</string>
+	<key>semanticClass</key>
+	<string>theme.dark.pantone_theme</string>
 
-	<key>settings</key>
-	<array>
+  <key>settings</key>
+  <array>
 
     <!-- generic settings -->
     <dict>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#282C33</string>
-				<key>caret</key>
-				<string>#DAE4F3</string>
-				<key>foreground</key>
-				<string>#DAE4F3</string>
-				<key>invisibles</key>
-				<string>#DAE4F3</string>
-				<key>lineHighlight</key>
-				<string>#3B424C</string>
-				<key>selection</key>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#282C33</string>
+        <key>caret</key>
+        <string>#DAE4F3</string>
+        <key>foreground</key>
+        <string>#DAE4F3</string>
+        <key>invisibles</key>
+        <string>#DAE4F3</string>
+        <key>lineHighlight</key>
+        <string>#3B424C</string>
+        <key>selection</key>
         <string>#3B424C</string>
         <key>guide</key>
         <string>#676C73</string>
@@ -34,214 +38,37 @@
         <string>#676C73</string>
         <key>activeGuide</key>
         <string>#DAE4F3</string>
-			</dict>
-		</dict>
+      </dict>
+    </dict>
 
+    <!-- Comment -->
+    <dict>
+      <key>name</key>
+      <string>Comment</string>
+      <key>scope</key>
+      <string>comment</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#73787F</string>
+        <key>fontStyle</key>
+        <string> italic </string>
+      </dict>
+    </dict>
 
-		<dict>
-			<key>name</key>
-			<string>Operator, Misc</string>
-			<key>scope</key>
-			<string>keyword.operator, constant.other.color, punctuation, meta.tag, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5FB3B3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Tag</string>
-			<key>scope</key>
-			<string>entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#EB606B</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Function, Special Method, Block Level</string>
-			<key>scope</key>
-			<string>entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#73ACE6</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Other Variable, String Link</string>
-			<key>scope</key>
-			<string>support.other.variable, string.other.link</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#F2777A</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
-			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#F99157</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>String, Symbols, Inherited Class, Markup Heading</string>
-			<key>scope</key>
-			<string>string, constant.other.symbol, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#99C794</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Class, Support</string>
-			<key>scope</key>
-			<string>entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FFDC50</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Sub-methods</string>
-			<key>scope</key>
-			<string>entity.name.module.js, variable.import.parameter.js, variable.other.class.js</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#EC5F67</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Language methods</string>
-			<key>scope</key>
-			<string>variable.language</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#EC5F67</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>entity.name.method.js</string>
-			<key>scope</key>
-			<string>entity.name.method.js</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#D8DEE9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>meta.method.js</string>
-			<key>scope</key>
-			<string>meta.method.js</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#fff</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Attributes</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#BB80B3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Inserted</string>
-			<key>scope</key>
-			<string>markup.inserted</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#99C794</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Deleted</string>
-			<key>scope</key>
-			<string>markup.deleted</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#EC5F67</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Changed</string>
-			<key>scope</key>
-			<string>markup.changed</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#BB80B3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Regular Expressions</string>
-			<key>scope</key>
-			<string>string.regexp</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5FB3B3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Escape Characters</string>
-			<key>scope</key>
-			<string>constant.character.escape</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5FB3B3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>URL</string>
-			<key>scope</key>
-			<string>*url*, *link*, *uri*</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
-			</dict>
-		</dict>
-	</array>
-	<key>uuid</key>
-	<string>21a3a5f5-e82f-48a8-bc8b-9aef307f6131</string>
-	<key>semanticClass</key>
-	<string>theme.dark.pantone_theme</string>
+    <!-- Tag name -->
+    <dict>
+      <key>name</key>
+      <string>Tag name</string>
+      <key>scope</key>
+      <string>entity.name.tag, meta.selector.css</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#e06c75</string>
+      </dict>
+    </dict>
+
+  </array>
 </dict>
 </plist>
