@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Pantone Theme</string>
+	<string>Siema Theme</string>
 	<key>author</key>
 	<string>Pawel Grzybek (https://pawelgrzybek.com/)</string>
 	<key>colorSpaceName</key>
@@ -11,7 +11,7 @@
 	<key>uuid</key>
 	<string>21a3a5f5-e82f-48a8-bc8b-9aef307f6131</string>
 	<key>semanticClass</key>
-	<string>theme.dark.pantone_theme</string>
+	<string>theme.dark.siema_theme</string>
 
   <key>settings</key>
   <array>
@@ -65,19 +65,74 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#e06c75</string>
+        <string>#EF626C</string>
       </dict>
     </dict>
 
+    
+    <dict>
+      <key>name</key>
+      <string>Attribute value</string>
+      <key>scope</key>
+      <string>string.quoted.double.html</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#FCD581</string>
+      </dict>
+    </dict>
+
+    
+    <dict>
+      <key>name</key>
+      <string>Variables</string>
+      <key>scope</key>
+      <string>storage.type.js</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#EF626C</string>
+      </dict>
+    </dict>
+
+    
+    <dict>
+      <key>name</key>
+      <string>Types</string>
+      <key>scope</key>
+      <string>support.type.object.dom.js</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#EF626C</string>
+      </dict>
+    </dict>
+
+    
+    <dict>
+      <key>name</key>
+      <string>Values</string>
+      <key>scope</key>
+      <string>meta.property-value.css</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#FCD581</string>
+      </dict>
+    </dict>
+
+
+
+
   <dict>
             <key>name</key>
-            <string>SublimeLinter Gutter Mark</string>
+            <string>SublimeLinter Error</string>
             <key>scope</key>
-            <string>sublimelinter.gutter-mark</string>
+            <string>sublimelinter.mark.error</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#FFFFFF</string>
+                <string>#BF616A</string>
             </dict>
         </dict><dict>
             <key>name</key>
@@ -91,13 +146,13 @@
             </dict>
         </dict><dict>
             <key>name</key>
-            <string>SublimeLinter Error</string>
+            <string>SublimeLinter Gutter Mark</string>
             <key>scope</key>
-            <string>sublimelinter.mark.error</string>
+            <string>sublimelinter.gutter-mark</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#BF616A</string>
+                <string>#FFFFFF</string>
             </dict>
         </dict></array>
 </dict>
