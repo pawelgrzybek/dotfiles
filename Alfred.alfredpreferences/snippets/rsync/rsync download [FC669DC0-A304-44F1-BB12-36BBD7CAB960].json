@@ -2,7 +2,7 @@
   "alfredsnippet" : {
     "snippet" : "rsync -arv root@server.com:\/var\/www\/domainname.co.uk\/staging\/wp-content\/plugins\/ ~\/pawelgrzybek\/sites\/domainname.dev\/wp-content\/plugins\/",
     "uid" : "FC669DC0-A304-44F1-BB12-36BBD7CAB960",
-    "name" : "rsync",
+    "name" : "rsync download",
     "keyword" : ""
   }
 }
