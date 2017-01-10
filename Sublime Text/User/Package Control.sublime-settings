@@ -7,6 +7,7 @@
 	[
 		"AutoFileName",
 		"Babel",
+		"Boxy Theme",
 		"BracketHighlighter",
 		"Emmet",
 		"GitGutter",
@@ -19,7 +20,6 @@
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-stylelint",
 		"Terminal",
-		"Theme - Spacegray",
 		"Vue Syntax Highlight"
 	]
 }
