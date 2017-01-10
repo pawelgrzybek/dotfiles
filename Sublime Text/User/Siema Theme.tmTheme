@@ -16,7 +16,7 @@
   <key>settings</key>
   <array>
 
-    <!-- generic settings -->
+    <!-- General settings -->
     <dict>
       <key>settings</key>
       <dict>
@@ -55,74 +55,6 @@
         <string> italic </string>
       </dict>
     </dict>
-
-    <!-- Tag name -->
-    <dict>
-      <key>name</key>
-      <string>Tag name</string>
-      <key>scope</key>
-      <string>entity.name.tag, meta.selector.css</string>
-      <key>settings</key>
-      <dict>
-        <key>foreground</key>
-        <string>#EF626C</string>
-      </dict>
-    </dict>
-
-    <!-- Attribute value -->
-    <dict>
-      <key>name</key>
-      <string>Attribute value</string>
-      <key>scope</key>
-      <string>string.quoted.double.html</string>
-      <key>settings</key>
-      <dict>
-        <key>foreground</key>
-        <string>#FCD581</string>
-      </dict>
-    </dict>
-
-    <!-- Variables -->
-    <dict>
-      <key>name</key>
-      <string>Variables</string>
-      <key>scope</key>
-      <string>storage.type.js</string>
-      <key>settings</key>
-      <dict>
-        <key>foreground</key>
-        <string>#EF626C</string>
-      </dict>
-    </dict>
-
-    <!-- Types -->
-    <dict>
-      <key>name</key>
-      <string>Types</string>
-      <key>scope</key>
-      <string>support.type.object.dom.js</string>
-      <key>settings</key>
-      <dict>
-        <key>foreground</key>
-        <string>#EF626C</string>
-      </dict>
-    </dict>
-
-    <!-- CSS Property name -->
-    <dict>
-      <key>name</key>
-      <string>Values</string>
-      <key>scope</key>
-      <string>meta.property-value.css</string>
-      <key>settings</key>
-      <dict>
-        <key>foreground</key>
-        <string>#FCD581</string>
-      </dict>
-    </dict>
-
-
-
 
   </array>
 </dict>
