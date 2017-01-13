@@ -1,0 +1,39 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 32,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.scrollBeyondLastLine": false,
+  "editor.wrappingColumn": -1,
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.renderIndentGuides": true,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "explorer.openEditors.visible": 0,
+
+  "extensions.autoUpdate": true,
+
+  "terminal.external.osxExec": "iTerm.app",
+
+  "terminal.integrated.fontLigatures": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 2,
+
+  "postcssSorting": {
+    "sort-order": "smacss"
+  }
+}
