@@ -241,7 +241,10 @@ module.exports = {
     ],
 
     // ECMAScript 6
-    'arrow-parens': 2,
+    'arrow-parens': [
+      2,
+      'as-needed'
+    ],
     'arrow-spacing': [
       2,
       {
