@@ -1,0 +1,7 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "ctrl+shift+s",
+    "command": "postcssSorting.sort"
+  }
+]
