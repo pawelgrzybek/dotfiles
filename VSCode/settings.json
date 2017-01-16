@@ -12,6 +12,8 @@
   "editor.renderControlCharacters": true,
   "editor.renderIndentGuides": true,
 
+  "window.fullScreenZenMode": false,
+
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
