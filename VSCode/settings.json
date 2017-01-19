@@ -27,6 +27,9 @@
 
   "explorer.openEditors.visible": 0,
 
+  "markdown.preview.fontSize": 16,
+  "markdown.preview.lineHeight": 2,
+
   "extensions.autoUpdate": true,
 
   "terminal.external.osxExec": "iTerm.app",
