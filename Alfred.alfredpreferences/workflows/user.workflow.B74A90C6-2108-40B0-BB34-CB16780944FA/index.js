@@ -28,7 +28,7 @@ fetch(`https://api.github.com/search/repositories?q=${process.argv[2]}&sort=star
       },
       text: {
         copy: item.ssh_url,
-        largetype: item.description
+        largetype: item.ssh_url
       },
     });
   });
