@@ -35,25 +35,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>9900D42F-E141-4452-B1EE-C24E9848EADE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -80,7 +61,14 @@ export PATH
 if command -v node &gt;/dev/null 2&gt;&amp;1; then
 	node index.js "$1"
 else
-	echo $'{"items":[{"title": "Couldn\'t find the `node` binary", "subtitle": "Symlink it to `/usr/local/bin`"}]}'
+	echo $'{
+    "items":[
+      {
+        "title": "Couldn\'t find the `node` binary",
+        "subtitle": "Symlink it to `/usr/local/bin`"
+      }
+    ]
+  }'
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -101,6 +89,25 @@ fi</string>
 			<string>CD8B0843-794E-46D1-8D03-A8012CC67657</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9900D42F-E141-4452-B1EE-C24E9848EADE</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
