@@ -16,14 +16,14 @@ fetch(`https://api.github.com/search/repositories?q=${process.argv[2]}&sort=star
       arg: item.html_url,
       mods: {
         alt: {
-          valid: false,
-          arg: 'alfredapp.com/powerpack',
-          subtitle: 'Copy SSH clone url',
+          valid: true,
+          arg: `https://github.com/${item.owner.login}/${item.name}/issues`,
+          subtitle: 'Open Issues',
         },
         cmd: {
-          valid: false,
-          arg: 'alfredapp.com/powerpack/buy/',
-          subtitle: 'Copy HTTPS clone url',
+          valid: true,
+          arg: `https://github.com/${item.owner.login}/${item.name}/pulls`,
+          subtitle: 'Open Pull requests',
         },
       },
       text: {
@@ -45,5 +45,4 @@ fetch(`https://api.github.com/search/repositories?q=${process.argv[2]}&sort=star
       }
     }]
   }));
-}
-);
+});
