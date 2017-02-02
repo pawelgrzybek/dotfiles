@@ -30,6 +30,9 @@
   "markdown.preview.fontSize": 16,
   "markdown.preview.lineHeight": 2,
 
+  "typescript.check.workspaceVersion": false,
+  "typescript.check.tscVersion": false,
+
   "extensions.autoUpdate": true,
 
   "terminal.external.osxExec": "iTerm.app",
