@@ -95,11 +95,21 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>5</string>
+	<string>7</string>
+	<key>NSColorPickerPageableNameListDefaults</key>
+	<string>1Apple</string>
+	<key>NSColorPickerPreferredRGBEntryMode</key>
+	<integer>2</integer>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>3</string>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 459}</string>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -136,20 +146,22 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>384 162 228 349 0 0 1280 777 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2049 37 445 77 0 0 2560 1417 </string>
+	<string>769 110 445 382 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 226 606 456 0 0 2560 1417 </string>
+	<string>268 311 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>440 487 400 129 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>738 366 700 622 0 0 2560 1417 </string>
+	<string>290 293 700 387 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>342 755 918 381 0 0 2560 1417 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>942 355 592 584 0 0 2560 1417 </string>
+	<string>325 341 918 381 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 750 730 667 0 0 2560 1417 </string>
+	<string>640 14 640 763 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>382 201 730 667 0 0 2560 1417 </string>
+	<string>339 5 730 667 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -388,13 +400,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.089496590197086334</real>
+				<real>0.11191917955875397</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.089516691863536835</real>
+				<real>0.10882119089365005</real>
 				<key>Red Component</key>
-				<real>0.089499503374099731</real>
+				<real>0.10894295573234558</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -1050,22 +1062,34 @@
 			<string>/Users/pawelgrzybek</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>994430D2-9C39-4C6E-AD80-A6F8390DB0A8</string>
+	<string>D455A655-18AE-4989-86CF-CEA69805D782</string>
 	<key>NoSyncLastTipTime</key>
-	<real>489918399.20014602</real>
+	<real>460403021.87156498</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
-	<key>NoSyncPermissionToShowTip</key>
-	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>489666457.618613</real>
+	<real>466165693.403925</real>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453326972.17416102</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>459015175.20053399</real>
 	<key>NoSyncTipsDisabled</key>
 	<true/>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1130,13 +1154,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=45</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=40</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-01T09:38:20Z</date>
-	<key>SUSendProfileInfo</key>
-	<false/>
+	<date>2017-02-06T19:00:00Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1163,8 +1185,6 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1480929152</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
