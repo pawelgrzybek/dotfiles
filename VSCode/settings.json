@@ -74,5 +74,7 @@
 
   "[markdown]": {
     "editor.wrappingColumn": 80
-  }
+  },
+
+  "workbench.welcome.enabled": false
 }
