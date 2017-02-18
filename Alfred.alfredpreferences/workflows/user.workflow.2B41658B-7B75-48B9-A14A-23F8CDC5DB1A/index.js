@@ -28,8 +28,8 @@ fetch(`https://api.npms.io/v2/search?q=${process.argv[2]}`)
         }
       },
       text: {
-        copy: `https://www.npmjs.com/package/${item.name}`,
-        largetype: `https://www.npmjs.com/package/${item.name}`
+        copy: `https://www.npmjs.com/package/${item.package.name}`,
+        largetype: `https://www.npmjs.com/package/${item.package.name}`
       },
     });
   });
