@@ -3,6 +3,16 @@
 // Explicitly add more rules categorized in categories taken from official docs
 
 module.exports = {
+  'extends': 'eslint:recommended',
+  'parserOptions': {
+    "ecmaVersion": 2017,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'experimentalObjectRestSpread': true,
+      'jsx': true,
+      'impliedStrict': true
+    }
+  },
   'env': {
     'browser': true,
     'commonjs': true,
@@ -11,16 +21,6 @@ module.exports = {
     'jquery': true,
     'serviceworker': true
   },
-  'extends': 'eslint:recommended',
-  'parserOptions': {
-    'ecmaFeatures': {
-      'experimentalObjectRestSpread': true,
-      'jsx': true,
-      'impliedStrict': true
-    },
-    "ecmaVersion": 2017,
-    'sourceType': 'module'
-  },
   'plugins': [
     'react'
   ],
@@ -28,16 +28,8 @@ module.exports = {
     // Possible Errors
     'no-console': 1,
     'no-template-curly-in-string': 2,
-    'no-unsafe-negation': 2,
 
     // Best Practices
-    'accessor-pairs': [
-      2,
-      {
-        'setWithoutGet': true,
-        'getWithoutSet': true,
-      }
-    ],
     'array-callback-return': 2,
     'block-scoped-var': 2,
     'consistent-return': 2,
@@ -48,7 +40,6 @@ module.exports = {
       2,
       'smart'
     ],
-    'guard-for-in': 2,
     'no-alert': 1,
     'no-caller': 2,
     'no-div-regex': 2,
