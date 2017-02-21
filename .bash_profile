@@ -40,3 +40,6 @@ alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && o
 
 # go to projects folder
 alias projects="cd /Applications/MAMP/htdocs/"
+
+# sudo autocomplete
+complete -cf sudo
