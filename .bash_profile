@@ -13,7 +13,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 
-# utility sohrtcurs improved
+# utility shortcuts improved
 alias ls="ls -F" # show trailing slash with folders
 alias ll="ls -la" # show list of all files (including hidden)
 
