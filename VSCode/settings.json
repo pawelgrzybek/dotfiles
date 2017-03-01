@@ -6,10 +6,11 @@
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
-  "editor.wrappingColumn": -1,
+  "editor.wordWrap": "off",
   "editor.formatOnPaste": true,
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
+  "editor.dragAndDrop": true,
   "editor.renderControlCharacters": true,
   "editor.renderIndentGuides": true,
 
@@ -74,7 +75,8 @@
   "window.zoomLevel": 0,
 
   "[markdown]": {
-    "editor.wrappingColumn": 80
+    "editor.lineNumbers": "off",
+    "editor.wordWrap": "bounded"
   },
 
   "workbench.welcome.enabled": false
