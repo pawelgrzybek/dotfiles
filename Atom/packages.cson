@@ -1,8 +1,0 @@
-packages: [
-  "emmet"
-  "linter"
-  "linter-eslint"
-  "linter-stylelint"
-  "package-sync"
-  "pigments"
-]
