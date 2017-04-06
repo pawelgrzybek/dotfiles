@@ -11,13 +11,8 @@
   {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+shift+[IntlBackslash]",
-    "command": "workbench.action.terminal.new"
-  },
-  {
-    "key": "ctrl+shift+`",
-    "command": "-workbench.action.terminal.new"
   }
 ]
+
+
+
