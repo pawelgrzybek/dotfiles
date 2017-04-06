@@ -5,5 +5,8 @@
 	ui = true
 [push]
 	default = simple
+	followTags = true
 [help]
 	autocorrect = 1
+[status]
+  showUntrackedFiles = all
