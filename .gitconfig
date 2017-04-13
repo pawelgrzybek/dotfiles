@@ -1,12 +1,12 @@
 [user]
-	name = Pawel Grzybek
-	email = pawelgrzybek@users.noreply.github.com
+  name = Pawel Grzybek
+  email = pawelgrzybek@users.noreply.github.com
 [color]
-	ui = true
+  ui = true
 [push]
-	default = simple
-	followTags = true
+  default = simple
+  followTags = true
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [status]
   showUntrackedFiles = all
