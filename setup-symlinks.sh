@@ -4,7 +4,7 @@
 # Variables
 dir=~/.dotfiles
 dirold=~/.dotfiles_backup
-files=".bash_profile .hushlogin .eslintrc.js .sass-lint.yml .scss-lint.yml .stylelintrc .gitconfig .vimrc .inputrc"
+files=".bash_profile .hushlogin .eslintrc.js .stylelintrc .gitconfig .vimrc .inputrc"
 
 # Lets make it look nicer
 echo ""
