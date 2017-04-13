@@ -50,7 +50,7 @@
   "zenMode.fullScreen": false,
   "zenMode.hideTabs": false,
 
-  "explorer.openEditors.visible": 4,
+  "explorer.openEditors.visible": 0,
 
   "markdown.preview.fontSize": 16,
   "markdown.preview.lineHeight": 2,
@@ -68,7 +68,8 @@
 
   "[markdown]": {
     "editor.lineNumbers": "off",
-    "editor.wordWrap": "bounded"
+    "editor.wordWrap": "bounded",
+    "files.trimTrailingWhitespace": false
   },
 
   "postcssSorting": {
