@@ -5,9 +5,3 @@
 /Sublime Text/User/oscrypto-ca-bundle.crt
 /Sublime Text/User/Package Control.cache
 /Sublime Text/User/Package Control.merged-ca-bundle
-
-# Atom sync
-/Atom/blob-store/
-/Atom/compile-cache/
-/Atom/packages/
-/Atom/storage/
