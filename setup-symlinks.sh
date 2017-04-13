@@ -30,8 +30,10 @@ done
 echo ""
 echo "- - - - - - - - - -"
 echo ""
-echo "All done :-)"
+echo "All done. Have a great day :-*"
 echo " "
+echo "- - - - - - - - - -"
+echo ""
 
 # initialize new settings
 source ~/.bash_profile
