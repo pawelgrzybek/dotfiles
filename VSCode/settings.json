@@ -32,6 +32,7 @@
 
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": null,
+  "workbench.welcome.enabled": false,
 
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
