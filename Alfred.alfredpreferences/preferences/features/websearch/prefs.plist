@@ -47,6 +47,32 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>BFCEEF19-FDF2-48FF-8738-8CD7FC99BAB8</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>syn</string>
+			<key>text</key>
+			<string>Synonyms dictionary</string>
+			<key>url</key>
+			<string>http://www.thesaurus.com/browse/{query}?s=t</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>D9B16437-D465-4A8E-A9D2-A10755CF7C3B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dic</string>
+			<key>text</key>
+			<string>Dictionary</string>
+			<key>url</key>
+			<string>http://www.dictionary.com/browse/{query}?s=t</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>F83DD596-6C85-4A1B-BEDA-F7A1C489234A</key>
 		<dict>
 			<key>enabled</key>
