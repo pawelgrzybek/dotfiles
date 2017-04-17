@@ -29,8 +29,6 @@
       "filters": "html, bem"
     }
   },
-
-  "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": null,
   "workbench.welcome.enabled": false,
 
