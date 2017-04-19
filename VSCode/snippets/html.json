@@ -17,7 +17,9 @@
 	"Print to console": {
 		"prefix": "php",
 		"body": [
-			"<?php $1 ?>"
+			"<?php",
+			"$1",
+			"?>"
 		],
 		"description": "PHP - opening and closing tag"
 	}
