@@ -18,13 +18,13 @@
 	"ACF - Flexible Content": {
 		"prefix": "acf-flexiblecontent",
 		"body": [
-			"if (have_rows('field_name')):",
-			"  while (have_rows('field_name')) : the_row();",
-			"    if (get_row_layout() == 'layout_name') {",
-			"      the_sub_field('element_name');",
+			"if (have_rows('${1:field_name}')):",
+			"  while (have_rows('${1:field_name}')) : the_row();",
+			"    if (get_row_layout() == '${2:layout_name}') {",
+			"      the_sub_field('${3:subfield_name}');",
 			"    }",
-			"    elseif (get_row_layout() == 'layout_name') {",
-			"      the_sub_field('element_name');",
+			"    elseif (get_row_layout() == '${2:layout_name}') {",
+			"      the_sub_field('${3:subfield_name}');",
 			"    }",
 			"  endwhile;",
 			"endif;"
@@ -35,9 +35,9 @@
 	"ACF - Repeater": {
 		"prefix": "acf-repeater",
 		"body": [
-			"if( have_rows('repeater_field_name') ):",
-			"  while ( have_rows('repeater_field_name') ) : the_row();",
-			"    the_sub_field('sub_field_name');",
+			"if( have_rows('${1:repeater_name}') ):",
+			"  while ( have_rows('${1:repeater_name}') ) : the_row();",
+			"    the_sub_field('${2:subfield_name}');",
 			"  endwhile;",
 			"endif;"
 		],
