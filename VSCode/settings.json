@@ -29,8 +29,13 @@
       "filters": "html, bem"
     }
   },
+
   "workbench.iconTheme": null,
   "workbench.welcome.enabled": false,
+  "workbench.experimental.colorCustomizations": {
+    "statusBarBackground": "#3c3c3c",
+    "editorLineHighlight": "#252527"
+  },
 
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
