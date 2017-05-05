@@ -34,7 +34,25 @@
   "workbench.welcome.enabled": false,
   "workbench.colorCustomizations": {
     "statusBar.background": "#3c3c3c",
-    "editor.lineHighlightBackground": "#252527"
+    "editor.lineHighlightBackground": "#252527",
+    "editorLineNumber.foreground": "#3C3C3C",
+
+    "terminal.ansiBlack": "#1E1E1E",
+    "terminal.ansiBrightBlack": "#AAA",
+    "terminal.ansiRed": "#CD9179",
+    "terminal.ansiGreen": "#CD9179",
+    "terminal.ansiBrightGreen": "#5F8B4E",
+    "terminal.ansiYellow": "#5F8B4E",
+    "terminal.ansiBrightYellow": "#DCDBAB",
+    "terminal.ansiBrightRed": "#DCDBAB",
+    "terminal.ansiBlue": "#5A9DD4",
+    "terminal.ansiBrightBlue": "#669ACC",
+    "terminal.ansiMagenta": "#C488BE",
+    "terminal.ansiBrightMagenta": "#C488BE",
+    "terminal.ansiCyan": "#9DDCFB",
+    "terminal.ansiBrightCyan": "#9DDCFB",
+    "terminal.ansiWhite": "#D4D4D4",
+    "terminal.ansiBrightWhite": "#D4D4D4"
   },
 
   "window.newWindowDimensions": "maximized",
