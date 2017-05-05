@@ -3,16 +3,5 @@
   {
     "key": "ctrl+shift+s",
     "command": "postcssSorting.sort"
-  },
-  {
-    "key": "ctrl+[IntlBackslash]",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
   }
 ]
-
-
-
