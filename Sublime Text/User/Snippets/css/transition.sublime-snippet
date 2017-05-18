@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-transition: ${1:property} ${2:duration} ${3:easeing} ${4:delay};
-]]></content>
-  <tabTrigger>transition</tabTrigger>
-  <scope>source.css, source.scss</scope>
-  <description>transition</description>
-</snippet>

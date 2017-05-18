@@ -43,6 +43,16 @@
 			"animation-play-state: running|paused|initial|inherit;"
 		],
 		"description": "Animation - use"
+	},
+
+	"Display an ellipsis to represent clipped text": {
+		"prefix": "ellipsis",
+		"body": [
+			"text-overflow: ellipsis;",
+			"overflow: hidden;",
+			"white-space: nowrap;"
+		],
+		"description": "Display an ellipsis to represent clipped text"
 	}
 }
 
