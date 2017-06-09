@@ -14,17 +14,36 @@
 		"description": "Log output to console"
 	}
 */
-	"Create component": {
+	"Create React Component": {
 		"prefix": "createcomponent",
 		"body": [
 			"import React, { Component } from 'react';",
 			"",
 			"class ${1:componentsName} extends Component {",
-			"  ${2:// component body}",
+			"  render() {",
+			"    return ${2:yourCrazyShitHere}",
+			"  }",
 			"}",
 			"",
 			"export default ${1:componentsName};"
 		],
-		"description": "Create component"
+		"description": "Create React Component"
+	},
+
+	"Create Stateless React Component": {
+		"prefix": "createstatelesscomponent",
+		"body": [
+			"import React from 'react';",
+			"",
+			"const ${1:ComponentsName} = (props) => {",
+			"  return (",
+			"    ${2:Yo yo yo :-)}",
+			"  );$0",
+			"};",
+			"",
+			"export default ${1:ComponentsName};"
+		],
+		"description": "Create Stateless React Component"
 	}
+
 }

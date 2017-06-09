@@ -21,5 +21,61 @@
 			"console.log(${1:Thingy to log bro!});"
 		],
 		"description": "Log output to console"
+	},
+
+	"Immediately-Invoked Function Expression": {
+		"prefix": "iife",
+		"body": [
+			"(function() {",
+			"  ${1:your crazy shit here!}",
+			"})();"
+		],
+		"description": "Immediately-Invoked Function Expression"
+	},
+
+	"iOS": {
+		"prefix": "iOS detection",
+		"body": [
+			"const iOS = /iPad|iPhone|iPod/.test(navigator.platform);",
+			"if( iOS ) {",
+			"  ${1:console.log('This is iOS - RIP Steve Jobs');}",
+			"  }",
+			"}"
+		],
+		"description": "ios"
+	},
+
+	"ESLint disable block": {
+		"prefix": "eslintdisableblock",
+		"body": [
+			"/* eslint-disable ${1:rule-one}, ${2:rule-two} */",
+			"${3:// your unlinted code goes here}",
+			"/* eslint-enable ${1:rule-one}, ${2:rule-two} */"
+		],
+		"description": "ESLint disable block"
+	},
+
+	"ESLint disable file": {
+		"prefix": "eslintdisablefile",
+		"body": [
+			"/* eslint-disable */"
+		],
+		"description": "ESLint disable file"
+	},
+
+	"ESLint disable line": {
+		"prefix": "eslintdisableline",
+		"body": [
+			"// eslint-disable-line ${1:rule-one}, ${2:rule-two}"
+		],
+		"description": "ESLint disable line"
+	},
+
+	"ESLint disable next line": {
+		"prefix": "eslintdisablenextline",
+		"body": [
+			"// eslint-disable-next-line ${1:rule-one}, ${2:rule-two}"
+		],
+		"description": "ESLint disable next line"
 	}
 }
