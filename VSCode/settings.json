@@ -6,6 +6,7 @@
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
+  "editor.minimap.enabled":false,
   "editor.wordWrap": "off",
   "editor.formatOnPaste": true,
   "editor.overviewRulerBorder": false,
@@ -29,9 +30,10 @@
       "filters": "html, bem"
     }
   },
+  "emmet.useNewEmmet": true,
 
-  "workbench.iconTheme": null,
   "workbench.welcome.enabled": false,
+  "workbench.iconTheme": null,
   "workbench.colorCustomizations": {
     "statusBar.background": "#3c3c3c",
     "editor.lineHighlightBackground": "#252527",
