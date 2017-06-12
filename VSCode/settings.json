@@ -55,7 +55,6 @@
     "terminal.ansiWhite": "#D4D4D4",
     "terminal.ansiBrightWhite": "#D4D4D4"
   },
-  "workbench.colorTheme": "Generated theme",
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
 
