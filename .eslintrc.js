@@ -275,7 +275,21 @@ module.exports = {
       'never'
     ],
 
-    // Plugins specific
+    // React plugin specific rules
+    'react/no-direct-mutation-state': 2,
+    'react/no-multi-comp': 2,
+    'react/no-string-refs': 2,
+    'react/no-unescaped-entities': 2,
+    'react/no-unknown-property': 2,
+    'react/prefer-es6-class': 2,
+    'react/prefer-stateless-function': 2,
+    'react/react-in-jsx-scope': 2,
+    'jsx-indent': 2,
+    'react/jsx-key': 2,
+    'react/jsx-no-duplicate-props': 2,
+    'react/jsx-no-target-blank': 2,
+    'react/jsx-no-undef': 2,
+    'react/jsx-wrap-multilines': 2,
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
   }
