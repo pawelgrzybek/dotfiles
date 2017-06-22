@@ -4,6 +4,7 @@
 
 module.exports = {
   'extends': 'eslint:recommended',
+
   'parserOptions': {
     "ecmaVersion": 2017,
     'sourceType': 'module',
@@ -13,17 +14,22 @@ module.exports = {
       'impliedStrict': true
     }
   },
+
   'env': {
     'browser': true,
+    'node': true,
     'commonjs': true,
     'es6': true,
-    'node': true,
     'jquery': true,
+    'mongo': true,
+    'applescript': true,
     'serviceworker': true
   },
+
   'plugins': [
     'react'
   ],
+
   'rules': {
     // Possible Errors
     'no-console': 1,
