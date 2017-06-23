@@ -162,6 +162,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>fixedorder</key>
@@ -195,6 +197,10 @@
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>0 0 50 100</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>123</integer>
 				<key>hotmod</key>
@@ -223,15 +229,28 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>script</key>
-				<string>on screenSize()
+				<string>-- check if active application is in full screen mode
+on isItFullScreen()
+  tell application "System Events"
+    set activeApp to item 1 of (get name of processes whose frontmost is true)
+    tell process activeApp
+      get value of attribute "AXFullScreen" of window 1
+    end tell
+  end tell
+  return result as boolean
+end isItFullScreen
+
+-- return screens size
+on screenSize()
   tell application "Finder"
-      set _b to bounds of window of desktop
-      set _width to item 3 of _b
-      set _height to item 4 of _b
+    set _b to bounds of window of desktop
+    set _width to item 3 of _b
+    set _height to item 4 of _b
   end tell
   return {_width, _height}
 end screenSize
 
+-- convert arguments to list
 on converttoList(delimiter, input)
   local delimiter, input, ASTID
   set ASTID to AppleScript's text item delimiters
@@ -246,11 +265,20 @@ on converttoList(delimiter, input)
   end try
 end converttoList
 
+-- set some variables
 set userQuery to "{query}"
 set screenBounds to screenSize()
 set args to converttoList(" ", userQuery)
 set argsSize to count of args
+set isCurrentAppInFullScreenMode to isItFullScreen()
 
+-- warn user that the Div doesn't work in full screen mode
+if isCurrentAppInFullScreenMode is true then
+  display notification "Div doesn't work in full screen mode!" with title "Div" subtitle "Sorry dude :-(" sound name "Basso"
+  return
+end if
+
+-- if user provided 4 arguments, resize to custom bounds
 if argsSize is 4 then
   tell application "System Events"
     set activeApp to name of first application process whose frontmost is true
@@ -259,6 +287,7 @@ if argsSize is 4 then
       set size of window 1 to {((item 3 of args / 100) - (item 1 of args / 100)) * item 1 of screenBounds, ((item 4 of args / 100) - (item 2 of args / 100)) * item 2 of screenBounds}
     end tell
   end tell
+-- if user provided 2 arguments, resize to absolute size on the center of a window
 else if argsSize is 2 then
   if item 1 of args as number &gt; item 1 of screenBounds as number or item 2 of args as number &gt; item 2 of screenBounds as number then
     display notification "Buy a bigger one dude" with title "Div" subtitle "Screen not big enough :-(" sound name "Basso"
@@ -271,6 +300,7 @@ else if argsSize is 2 then
       end tell
     end tell
   end if
+-- Remmind your user how many arguments is required
 else
   display notification "Two or four arguments (space separated) only!" with title "Div" subtitle "Sorry dude :-(" sound name "Basso"
 end if</string>
@@ -297,6 +327,10 @@ end if</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>50 0 100 100</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>124</integer>
 				<key>hotmod</key>
@@ -326,6 +360,10 @@ end if</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>0 0 100 50</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>126</integer>
 				<key>hotmod</key>
@@ -355,6 +393,10 @@ end if</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>0 50 100 100</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>125</integer>
 				<key>hotmod</key>
@@ -384,6 +426,10 @@ end if</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>0 0 100 100</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
@@ -413,6 +459,10 @@ end if</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>10 10 90 90</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>19</integer>
 				<key>hotmod</key>
@@ -442,6 +492,10 @@ end if</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>25 25 75 75</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>20</integer>
 				<key>hotmod</key>
