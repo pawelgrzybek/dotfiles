@@ -8,7 +8,6 @@
   "editor.scrollBeyondLastLine": false,
   "editor.minimap.enabled":false,
   "editor.wordWrap": "off",
-  "editor.formatOnPaste": true,
   "editor.overviewRulerBorder": false,
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
