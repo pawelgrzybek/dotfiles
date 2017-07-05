@@ -3,34 +3,34 @@
 // Explicitly add more rules categorized in categories taken from official docs
 
 module.exports = {
-  'extends': 'eslint:recommended',
+  extends: 'eslint:recommended',
 
-  'parserOptions': {
-    "ecmaVersion": 2017,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      'experimentalObjectRestSpread': true,
-      'jsx': true,
-      'impliedStrict': true
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: 'module',
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      jsx: true,
+      impliedStrict: true
     }
   },
 
-  'env': {
-    'browser': true,
-    'node': true,
-    'commonjs': true,
-    'es6': true,
-    'jquery': true,
-    'mongo': true,
-    'applescript': true,
-    'serviceworker': true
+  env: {
+    browser: true,
+    node: true,
+    commonjs: true,
+    es6: true,
+    jquery: true,
+    mongo: true,
+    applescript: true,
+    serviceworker: true
   },
 
-  'plugins': [
+  plugins: [
     'react'
   ],
 
-  'rules': {
+  rules: {
     // Possible Errors
     'no-console': 1,
     'no-template-curly-in-string': 2,
@@ -39,10 +39,10 @@ module.exports = {
     'array-callback-return': 2,
     'block-scoped-var': 2,
     'consistent-return': 2,
-    'curly': 2,
+    curly: 2,
     'default-case': 2,
     'dot-notation': 2,
-    'eqeqeq': [
+    eqeqeq: [
       2,
       'smart'
     ],
@@ -71,18 +71,18 @@ module.exports = {
     'no-useless-escape': 2,
     'no-void': 2,
     'no-with': 2,
-    'radix': 2,
+    radix: 2,
     'wrap-iife': [
       2,
       'inside'
     ],
-    'yoda': [
+    yoda: [
       2,
       'never'
     ],
 
     // Strict Mode
-    'strict': 2,
+    strict: 2,
 
     // Variables
     'init-declarations': [
@@ -107,10 +107,10 @@ module.exports = {
       2,
       'stroustrup',
       {
-        'allowSingleLine': true
+        allowSingleLine: true
       }
     ],
-    'camelcase': 2,
+    camelcase: 2,
     'comma-dangle': [
       2,
       'only-multiline'
@@ -118,8 +118,8 @@ module.exports = {
     'comma-spacing': [
       2,
       {
-        'before': false,
-        'after': true
+        before: false,
+        after: true
       }
     ],
     'comma-style': [
@@ -139,7 +139,7 @@ module.exports = {
       1,
       'always'
     ],
-    'indent': [
+    indent: [
       2,
       2
     ],
@@ -150,15 +150,15 @@ module.exports = {
     'key-spacing': [
       2,
       {
-        'beforeColon': false,
-        'afterColon': true
+        beforeColon: false,
+        afterColon: true
       }
     ],
     'keyword-spacing': 2,
     'line-comment-position': [
       2,
       {
-        'position': 'above'
+        position: 'above'
       }
     ],
     'linebreak-style': [
@@ -170,7 +170,6 @@ module.exports = {
       'always'
     ],
     'max-depth': 2,
-    'new-cap': 2,
     'new-parens': 2,
     'no-lonely-if': 2,
     'no-nested-ternary': 2,
@@ -200,18 +199,18 @@ module.exports = {
       2,
       'as-needed'
     ],
-    'quotes': [
+    quotes: [
       2,
       'single'
     ],
     'semi-spacing': [
       2,
       {
-        'before': false,
-        'after': true
+        before: false,
+        after: true
       }
     ],
-    'semi': [
+    semi: [
       2,
       'always'
     ],
@@ -228,8 +227,8 @@ module.exports = {
     'space-unary-ops': [
       2,
       {
-        'words': true,
-        'nonwords': false
+        words: true,
+        nonwords: false
       }
     ],
     'spaced-comment': [
@@ -245,15 +244,15 @@ module.exports = {
     'arrow-spacing': [
       2,
       {
-        'before': true,
-        'after': true
+        before: true,
+        after: true
       }
     ],
     'generator-star-spacing': [
       2,
       {
-        'before': false,
-        'after': true
+        before: false,
+        after: true
       }
     ],
     'no-confusing-arrow': 2,
@@ -267,7 +266,6 @@ module.exports = {
     'no-var': 2,
     'prefer-arrow-callback': 2,
     'prefer-const': 2,
-    'prefer-template': 2,
     'prefer-template': 2,
     'require-yield': 2,
     'template-curly-spacing': [
