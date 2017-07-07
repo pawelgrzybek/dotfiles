@@ -65,7 +65,6 @@ module.exports = {
     'no-proto': 2,
     'no-self-compare': 2,
     'no-sequences': 2,
-    'no-unused-expressions': 2,
     'no-useless-call': 2,
     'no-useless-concat': 2,
     'no-useless-escape': 2,
