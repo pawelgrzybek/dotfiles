@@ -281,7 +281,6 @@ module.exports = {
     'react/prefer-es6-class': 2,
     'react/prefer-stateless-function': 2,
     'react/react-in-jsx-scope': 2,
-    'react/jsx-indent': 2,
     'react/jsx-key': 2,
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-no-target-blank': 2,
