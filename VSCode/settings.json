@@ -34,27 +34,6 @@
 
   "workbench.startupEditor": "none",
   "workbench.iconTheme": null,
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#3c3c3c",
-    "editor.lineHighlightBackground": "#252527",
-    "editorLineNumber.foreground": "#3C3C3C",
-    "terminal.ansiBlack": "#1E1E1E",
-    "terminal.ansiBrightBlack": "#AAA",
-    "terminal.ansiRed": "#CD9179",
-    "terminal.ansiBrightRed": "#CE9177",
-    "terminal.ansiGreen": "#618A4F",
-    "terminal.ansiBrightGreen": "#61894C",
-    "terminal.ansiYellow": "#DCDCAD",
-    "terminal.ansiBrightYellow": "#DCDBAB",
-    "terminal.ansiBlue": "#5A9DD4",
-    "terminal.ansiBrightBlue": "#669ACC",
-    "terminal.ansiMagenta": "#C488BE",
-    "terminal.ansiBrightMagenta": "#C488BE",
-    "terminal.ansiCyan": "#9DDCFB",
-    "terminal.ansiBrightCyan": "#9DDCFB",
-    "terminal.ansiWhite": "#D4D4D4",
-    "terminal.ansiBrightWhite": "#D4D4D4"
-  },
 
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
@@ -108,5 +87,6 @@
 
   "typescript.check.tscVersion": false,
 
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "workbench.colorTheme": "HeyHo Theme"
 }
