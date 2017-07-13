@@ -9,7 +9,6 @@
   "editor.minimap.enabled":false,
   "editor.wordWrap": "off",
   "editor.overviewRulerBorder": false,
-  // "editor.formatOnType": true,
   "editor.formatOnPaste": true,
   "editor.autoIndent": true,
   "editor.fontLigatures": true,
@@ -30,16 +29,8 @@
   "emmet.syntaxProfiles": {
     "html": {
       "filters": "html, bem"
-    },
-    "jsx": {
-      "self_closing_tag": true,
-      "inline_break": true
     }
   },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.useNewEmmet": true,
 
   "workbench.startupEditor": "none",
   "workbench.iconTheme": null,
@@ -116,5 +107,6 @@
   },
 
   "typescript.check.tscVersion": false,
+
   "git.enableSmartCommit": true
 }
