@@ -9,6 +9,9 @@
   "editor.minimap.enabled":false,
   "editor.wordWrap": "off",
   "editor.overviewRulerBorder": false,
+  // "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.autoIndent": true,
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
@@ -27,11 +30,18 @@
   "emmet.syntaxProfiles": {
     "html": {
       "filters": "html, bem"
+    },
+    "jsx": {
+      "self_closing_tag": true,
+      "inline_break": true
     }
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
   },
   "emmet.useNewEmmet": true,
 
-  "workbench.welcome.enabled": false,
+  "workbench.startupEditor": "none",
   "workbench.iconTheme": null,
   "workbench.colorCustomizations": {
     "statusBar.background": "#3c3c3c",
@@ -54,6 +64,7 @@
     "terminal.ansiWhite": "#D4D4D4",
     "terminal.ansiBrightWhite": "#D4D4D4"
   },
+
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
 
