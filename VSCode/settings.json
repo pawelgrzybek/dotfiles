@@ -2,7 +2,7 @@
 {
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
-  "editor.lineHeight": 32,
+  "editor.lineHeight": 36,
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
