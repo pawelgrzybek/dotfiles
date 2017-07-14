@@ -34,7 +34,6 @@
 
   "workbench.startupEditor": "none",
   "workbench.iconTheme": null,
-  "workbench.colorTheme": "Bimbo Theme",
 
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
@@ -88,5 +87,6 @@
 
   "typescript.check.tscVersion": false,
 
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "workbench.colorTheme": "Bimbo Theme"
 }
