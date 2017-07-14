@@ -2,7 +2,7 @@
 {
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
-  "editor.lineHeight": 36,
+  "editor.lineHeight": 32,
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
@@ -34,6 +34,7 @@
 
   "workbench.startupEditor": "none",
   "workbench.iconTheme": null,
+  "workbench.colorTheme": "Bimbo Theme",
 
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
@@ -87,6 +88,5 @@
 
   "typescript.check.tscVersion": false,
 
-  "git.enableSmartCommit": true,
-  "workbench.colorTheme": "HeyHo Theme"
+  "git.enableSmartCommit": true
 }

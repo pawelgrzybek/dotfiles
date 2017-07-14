@@ -157,11 +157,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>290 293 700 387 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>484 287 796 473 0 0 1280 777 </string>
+	<string>157 411 918 381 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 110 730 667 0 0 1280 777 </string>
+	<string>142 30 730 667 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>339 5 730 667 0 0 1280 800 </string>
+	<string>482 90 730 667 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -331,13 +331,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.70142292976379395</real>
+				<real>0.75386601686477661</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.43512541055679321</real>
+				<real>0.52700966596603394</real>
 				<key>Red Component</key>
-				<real>0.71777075529098511</real>
+				<real>0.77306157350540161</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
@@ -1072,6 +1072,8 @@
 	<string>D455A655-18AE-4989-86CF-CEA69805D782</string>
 	<key>NoSyncLastTipTime</key>
 	<real>460403021.87156498</real>
+	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
+	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1158,7 +1160,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-15T14:02:32Z</date>
+	<date>2017-07-13T17:42:00Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1208,7 +1210,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.beta.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
