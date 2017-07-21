@@ -33,7 +33,7 @@
   },
 
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "vs-minimal",
 
   "window.newWindowDimensions": "maximized",
   "window.title": "${rootPath}${separator}${activeEditorShort}",
