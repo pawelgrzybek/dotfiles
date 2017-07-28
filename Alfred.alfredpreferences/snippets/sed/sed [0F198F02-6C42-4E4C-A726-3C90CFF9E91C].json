@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "sed -i '.bak' 's\/{ESCAPED_CURRENT_STRING}\/{ESCAPED_EXPECTED_STRING}\/g' {FILENAME}",
+    "uid" : "0F198F02-6C42-4E4C-A726-3C90CFF9E91C",
+    "name" : "sed",
+    "keyword" : ""
+  }
+}
