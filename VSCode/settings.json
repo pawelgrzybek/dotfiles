@@ -54,7 +54,6 @@
     "**/*.FBX": true,
     "**/*.tga": true,
     "**/*.cubemap": true,
-    "**/**.prefab": true,
     "**/Library": true,
     "**/ProjectSettings": true,
     "**/Temp": true
