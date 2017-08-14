@@ -3,5 +3,9 @@
   {
     "key": "ctrl+shift+s",
     "command": "postcssSorting.sort"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "editor.emmet.action.expandAbbreviation"
   }
 ]
