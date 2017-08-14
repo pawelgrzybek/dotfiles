@@ -10,7 +10,6 @@
   "editor.wordWrap": "off",
   "editor.overviewRulerBorder": false,
   "editor.formatOnPaste": true,
-  "editor.autoIndent": true,
   "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
