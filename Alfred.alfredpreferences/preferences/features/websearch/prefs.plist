@@ -79,8 +79,6 @@
 			<true/>
 			<key>keyword</key>
 			<string>discogs</string>
-			<key>plusSpaces</key>
-			<false/>
 			<key>text</key>
 			<string>Search Discogs for '{query}'</string>
 			<key>url</key>
