@@ -44,3 +44,8 @@ alias projects="cd /Applications/MAMP/htdocs/"
 
 # sudo autocomplete
 complete -cf sudo
+
+# android environment variable
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
