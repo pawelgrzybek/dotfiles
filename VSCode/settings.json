@@ -17,6 +17,7 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.dragAndDrop": true,
+  "editor.smoothScrolling": true,
 
   "emmet.syntaxProfiles": {
     "html": {
