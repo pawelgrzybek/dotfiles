@@ -7,6 +7,11 @@ export PATH=${PATH}:/usr/local/mysql/bin/
 # http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
 export PS1="$ "
 
+# android environment variable
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # easier folders navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -44,8 +49,3 @@ alias projects="cd /Applications/MAMP/htdocs/"
 
 # sudo autocomplete
 complete -cf sudo
-
-# android environment variable
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
