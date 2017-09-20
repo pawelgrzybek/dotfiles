@@ -26,6 +26,9 @@
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
 
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "vs-minimal",
