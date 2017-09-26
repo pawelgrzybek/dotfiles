@@ -118,6 +118,11 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 228.000000, 351.000000, NO, NO</string>
+		<string>0.000000, 352.000000, 228.000000, 43.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -147,7 +152,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>87 143 228 349 0 0 1280 777 </string>
+	<string>87 124 228 332 0 0 1280 777 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>769 110 445 382 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
@@ -157,15 +162,17 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>320 117 640 622 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>362 179 918 381 0 0 1280 800 </string>
+	<string>273 279 918 381 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 110 730 667 0 0 1280 777 </string>
+	<string>331 43 730 667 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 91 730 667 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>AWDS Pane Directory</key>
 			<string></string>
@@ -417,13 +424,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.34749722480773926</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.78857499361038208</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.98145240545272827</real>
 			</dict>
 			<key>Blend</key>
 			<real>0.30000001192092896</real>
@@ -1016,13 +1023,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.18110722303390503</real>
+				<real>0.15357992053031921</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16851481795310974</real>
+				<real>0.14103338122367859</real>
 				<key>Red Component</key>
-				<real>0.14030447602272034</real>
+				<real>0.12094178050756454</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -1177,7 +1184,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-22T09:41:39Z</date>
+	<date>2017-09-26T12:43:09Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1227,7 +1234,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.2.beta.1</string>
+	<string>3.1.2.beta.2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
