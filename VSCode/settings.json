@@ -21,11 +21,6 @@
   "editor.smoothScrolling": true,
 
     // Emmet
-  "emmet.syntaxProfiles": {
-    "html": {
-      "filters": "html, bem"
-    }
-  },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
