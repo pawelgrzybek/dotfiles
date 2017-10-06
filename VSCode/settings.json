@@ -26,6 +26,10 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+  "emmet.preferences": {
+    "bem.elementSeparator": "__",
+    "bem.modifierSeparator": "--"
+  },
 
   // Workbench
   "workbench.startupEditor": "none",
