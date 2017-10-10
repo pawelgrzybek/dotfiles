@@ -265,6 +265,16 @@ module.exports = {
     'no-var': 2,
     'prefer-arrow-callback': 2,
     'prefer-const': 2,
+    'prefer-destructuring': [
+      2,
+      {
+        array: false,
+        object: true,
+      },
+      {
+        enforceForRenamedProperties: false,
+      }
+    ],
     'prefer-template': 2,
     'require-yield': 2,
     'template-curly-spacing': [
@@ -281,12 +291,47 @@ module.exports = {
     'react/prefer-es6-class': 2,
     'react/prefer-stateless-function': 2,
     'react/react-in-jsx-scope': 2,
+    'react/prop-types': 2,
+    'react/require-default-props': 2,
+    'react/self-closing-comp': 2,
+    'react/jsx-boolean-value': 2,
+    'react/jsx-closing-bracket-location': 2,
+    'react/jsx-closing-tag-location': 2,
+    'react/jsx-curly-spacing': [
+      2,
+      {
+        when: 'never',
+      }
+    ],
+    'react/jsx-indent': [
+      2,
+      2
+    ],
+    'react/jsx-no-bind': [
+      2,
+      {
+        'ignoreRefs': true,
+        'allowArrowFunctions': true,
+        'allowBind': false,
+      }
+    ],
     'react/jsx-key': 2,
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-no-target-blank': 2,
     'react/jsx-no-undef': 2,
-    'react/jsx-wrap-multilines': 2,
+    'react/jsx-pascal-case': [
+      2,
+    ],
+    'react/jsx-tag-spacing': [
+      2,
+      {
+        closingSlash: 'never',
+        beforeSelfClosing: 'always',
+        afterOpening: 'never'
+      }
+    ],
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
+    'react/jsx-wrap-multilines': 2,
   }
 };
