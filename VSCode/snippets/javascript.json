@@ -77,5 +77,22 @@
 			"// eslint-disable-next-line ${1:rule-one}, ${2:rule-two}"
 		],
 		"description": "ESLint disable next line"
+	},
+
+	"Import": {
+		"prefix": "import",
+		"body": [
+			"import ${1:ComponentsName} from '${2:package-name}';"
+		],
+		"description": "Import"
+	},
+
+	"Export": {
+		"prefix": "export",
+		"body": [
+			"export default ${1:ComponentsName};"
+		],
+		"description": "Export"
 	}
+
 }
