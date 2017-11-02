@@ -19,6 +19,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>7AEE80B1-1D1A-407B-97A0-2326B2B9E593</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>unity</string>
+			<key>text</key>
+			<string>Unity</string>
+			<key>url</key>
+			<string>https://docs.unity3d.com/ScriptReference/30_search.html?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>9022D6EE-5844-4BAE-92F4-811A83B94CB7</key>
 		<dict>
 			<key>enabled</key>
@@ -87,5 +100,7 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
 </dict>
 </plist>
