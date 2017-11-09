@@ -76,13 +76,12 @@
   "terminal.external.osxExec": "iTerm.app",
 
   // Integrated terminal
-  "terminal.integrated.fontLigatures": true,
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
 
   // PocsCSS Sorting settings
-  "postcssSorting": {
+  "postcssSorting.config": {
     "order": [
       "custom-properties",
       "dollar-variables",
