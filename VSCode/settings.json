@@ -62,6 +62,9 @@
   // File explorer
   "explorer.openEditors.visible": 0,
 
+  // Search
+  "search.useIgnoreFilesByDefault": true,
+
   // Markdown
   "markdown.preview.fontSize": 16,
   "markdown.preview.lineHeight": 2,
