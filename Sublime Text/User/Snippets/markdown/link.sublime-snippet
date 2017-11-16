@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-[${1:description}](${2:url})
-]]></content>
-  <tabTrigger>link</tabTrigger>
-  <scope>text.html.markdown</scope>
-  <description>link</description>
-</snippet>

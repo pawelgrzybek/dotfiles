@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-- [ ] ${1:todo}
-]]></content>
-  <tabTrigger>t</tabTrigger>
-  <scope>text.html.markdown</scope>
-  <description>todo</description>
-</snippet>

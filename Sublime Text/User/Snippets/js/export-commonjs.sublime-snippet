@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-module.exports = ${1:this};
-]]></content>
-  <tabTrigger>export</tabTrigger>
-  <scope>source.js</scope>
-  <description>export - commonJS</description>
-</snippet>
