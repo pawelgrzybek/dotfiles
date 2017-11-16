@@ -42,12 +42,12 @@
 
   // Files
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/bower_components": true
+    // "**/.git": true,
+    // "**/.svn": true,
+    // "**/.hg": true,
+    // "**/.DS_Store": true,
+    // "**/node_modules": true,
+    // "**/bower_components": true
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
@@ -105,5 +105,6 @@
     "editor.lineNumbers": "off",
     "editor.wordWrap": "bounded",
     "files.trimTrailingWhitespace": false
-  }
+  },
+  "workbench.panel.location": "bottom"
 }
