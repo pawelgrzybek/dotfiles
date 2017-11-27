@@ -10,6 +10,7 @@
   "editor.minimap.enabled":false,
   "editor.wordWrap": "off",
   "editor.overviewRulerBorder": false,
+  "editor.formatOnPaste": true,
   "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
