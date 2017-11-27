@@ -46,7 +46,8 @@
     "**/.hg": true,
     "**/.DS_Store": true,
     "**/node_modules": true,
-    "**/bower_components": true
+    "**/bower_components": true,
+    "_site": true
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
