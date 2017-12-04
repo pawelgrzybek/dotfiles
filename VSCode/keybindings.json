@@ -2,7 +2,7 @@
 [
   {
     "key": "ctrl+shift+s",
-    "command": "postcssSorting.sort"
+    "command": "postcssSorting.execute"
   },
   {
     "key": "ctrl+e",
