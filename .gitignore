@@ -1,7 +1,1 @@
 .DS_Store
-
-# Sublime Text sync
-/Sublime Text/User/*.last-run
-/Sublime Text/User/oscrypto-ca-bundle.crt
-/Sublime Text/User/Package Control.cache
-/Sublime Text/User/Package Control.merged-ca-bundle
