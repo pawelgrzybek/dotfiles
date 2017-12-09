@@ -38,8 +38,5 @@ alias top="top -o vsize"
 alias serve="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
 alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 0.0.0.0:8000 -t ."
 
-# go to projects folder
-alias projects="cd /Applications/MAMP/htdocs/"
-
 # sudo autocomplete
 complete -cf sudo
