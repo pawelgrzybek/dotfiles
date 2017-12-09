@@ -3,7 +3,6 @@
 
 # Variables
 dir=~/.dotfiles
-dirold=~/.dotfiles_backup
 files=".bash_profile .hushlogin .eslintrc.js .stylelintrc .gitconfig .vimrc .inputrc .gemrc"
 
 # Lets make it look nicer
