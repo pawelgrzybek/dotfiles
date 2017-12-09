@@ -1,5 +1,4 @@
 # add stuff to command line
-export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 export PATH=${PATH}:/usr/local/mysql/bin
 
 # remove computer name from beginig on command line
