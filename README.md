@@ -39,6 +39,29 @@ Alfred: use GUI
 
 - install brew
 - ssh setup
+- download your fav apps
+- - 1Password
+- - Affinity
+- - Alfred
+- - Capture One Pro
+- - CleanMyMac
+- - ForkLift
+- - Google Chrome
+- - Google Chrome Canary
+- - ImageOptim
+- - Keynote
+- - Numbers
+- - Pages
+- - Reeder
+- - Safari Technoogy Preview
+- - ScreenFlow
+- - Sketch
+- - Things3
+- - Tower
+- - Tweetbot
+- - Visual Studio Code
+- - Xcode
+- - iTerm
 - download VSCode plugins
 - - SirTori.indenticator-0.4.2/
 - - christian-kohler.npm-intellisense-1.3.0/
