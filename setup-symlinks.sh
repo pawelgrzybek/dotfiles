@@ -20,6 +20,7 @@ echo ""
 for file in $files; do
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file ~/$file
+  echo "- - -"
 done
 
 # Lets make it look nicer
