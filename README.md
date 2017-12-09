@@ -10,7 +10,7 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 
 ```source ~/.dotfiles/setup-symlinks.sh```
 
-3. Same with setup-osx.sh file
+3. Same with setup-macos.sh file
 
 ```source ~/.dotfiles/setup-osx.sh```
 
