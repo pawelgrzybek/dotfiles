@@ -1,9 +1,6 @@
-# based on
-# http://www.placona.co.uk/1224/linux/managing-your-dotfiles-the-right-way/
-
 # Variables
 dir=~/.dotfiles
-files=".bash_profile .hushlogin .eslintrc.js .stylelintrc .gitconfig .vimrc .inputrc .gemrc"
+files=".bash_profile .eslintrc.js .gemrc .gitconfig .hushlogin .inputrc .stylelintrc .vimrc"
 
 # Lets make it look nicer
 echo ""
