@@ -1,3 +1,9 @@
+# System Preferences > General > Click in the scrollbar to:
+# Jump to the next page
+# defaults write -globalDomain "AppleScrollerPagingBehavior" -bool false
+# Jump to the spot that's clicked
+defaults write -globalDomain "AppleScrollerPagingBehavior" -bool true
+
 # Finder: show all filename extensions
 # http://www.defaults-write.com/display-the-file-extensions-in-finder/
 # Revert to the default
