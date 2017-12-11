@@ -39,29 +39,12 @@ Alfred: use GUI
 
 - install brew
 - ssh setup
-- download your fav apps
-- - 1Password
-- - Affinity
-- - Alfred
-- - Capture One Pro
-- - CleanMyMac
-- - ForkLift
-- - Google Chrome
-- - Google Chrome Canary
-- - ImageOptim
-- - Keynote
-- - Numbers
-- - Pages
-- - Reeder
-- - Safari Technoogy Preview
-- - ScreenFlow
-- - Sketch
-- - Things3
-- - Tower
-- - Tweetbot
-- - Visual Studio Code
-- - Xcode
-- - iTerm
+- download your fav apps from brew:
+
+```
+brew cask install 1password alfred capture-one cleanmymac forklift google-chrome caskroom/versions/google-chrome-canary imageoptim safari-technology-preview screenflow sketch tower visual-studio-code iterm2
+```
+
 - download VSCode plugins
 - - SirTori.indenticator-0.4.2/
 - - christian-kohler.npm-intellisense-1.3.0/
@@ -78,6 +61,17 @@ Alfred: use GUI
 - - shinnn.stylelint-0.31.0/
 - - swyphcosmo.spellchecker-1.2.13/
 - - wix.vscode-import-cost-2.5.1/
+
+- download your fav apps from independently:
+
+- - Affinity
+- - Keynote
+- - Numbers
+- - Pages
+- - Reeder
+- - Things3
+- - Tweetbot
+- - Xcode
 
 
 
