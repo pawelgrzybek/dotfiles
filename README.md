@@ -42,10 +42,11 @@ Alfred: use GUI
 - download your fav apps from brew:
 
 ```
-brew cask install 1password alfred capture-one cleanmymac forklift google-chrome caskroom/versions/google-chrome-canary imageoptim safari-technology-preview screenflow sketch tower visual-studio-code iterm2
+brew cask install alfred capture-one cleanmymac forklift google-chrome imageoptim screenflow sketch tower visual-studio-code iterm2
 ```
 
 - download VSCode plugins
+    - 1Password
     - SirTori.indenticator-0.4.2/
     - christian-kohler.npm-intellisense-1.3.0/
     - christian-kohler.path-intellisense-1.4.2/
