@@ -10,7 +10,8 @@
   "editor.minimap.enabled":false,
   "editor.wordWrap": "off",
   "editor.overviewRulerBorder": false,
-  "editor.formatOnPaste": true,
+  // "editor.formatOnType": true,
+  // "editor.formatOnPaste": true,
   "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
@@ -108,6 +109,5 @@
     "editor.lineNumbers": "off",
     "editor.wordWrap": "bounded",
     "files.trimTrailingWhitespace": false
-  },
-  "workbench.panel.location": "bottom"
+  }
 }
