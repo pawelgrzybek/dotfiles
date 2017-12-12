@@ -45,6 +45,14 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+# System Preferences > Keyboard >
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# System Preferences > Keyboard >
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
 # Finder > Preferences > Show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
