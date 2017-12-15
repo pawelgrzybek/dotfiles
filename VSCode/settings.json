@@ -36,6 +36,7 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "vs-minimal",
   "workbench.colorTheme": "Bimbo Theme",
+  "workbench.editor.tabSizing": "shrink",
 
   // Window
   "window.newWindowDimensions": "maximized",
@@ -64,9 +65,6 @@
 
   // File explorer
   "explorer.openEditors.visible": 0,
-
-  // Search
-  "search.useIgnoreFilesByDefault": true,
 
   // Markdown
   "markdown.preview.fontSize": 16,
