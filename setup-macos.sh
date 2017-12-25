@@ -15,7 +15,7 @@ defaults write com.apple.dock tilesize -int 36
 defaults write com.apple.dock magnification -bool true
 
 # System Preferences > Dock > Size (magnified):
-defaults write com.apple.dock largesize -int 72
+defaults write com.apple.dock largesize -int 54
 
 # System Preferences > Dock > Minimize windows using: Scale effect
 defaults write com.apple.dock mineffect -string "scale"
