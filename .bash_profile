@@ -11,6 +11,9 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# use vim as a default command line editor
+export EDITOR="vim"
+
 # easier folders navigation
 alias ..="cd .."
 alias ...="cd ../.."
