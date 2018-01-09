@@ -18,9 +18,9 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 
 VSCode:
 ```
-ln -s ~/.dotfiles/Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.dotfiles/Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s ~/.dotfiles/Code/snippets/ ~/Library/Application\ Support/Code/User/snippets
+ln -s /Users/pawelgrzybek/.dotfiles/VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s /Users/pawelgrzybek/.dotfiles/VSCode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s /Users/pawelgrzybek/.dotfiles/VSCode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
 
 iTerm: use GUI
