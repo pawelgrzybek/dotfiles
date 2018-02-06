@@ -102,6 +102,10 @@
   // Git
   "git.enableSmartCommit": true,
 
+  // ESLint
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+
   // Lang specific settings
   "[markdown]": {
     "editor.lineNumbers": "off",
