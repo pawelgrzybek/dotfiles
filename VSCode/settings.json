@@ -106,6 +106,7 @@
   // Git
   "git.enableSmartCommit": true,
 
+
   // Lang specific settings
   "[markdown]": {
     "editor.lineNumbers": "off",
