@@ -66,6 +66,9 @@
   // File explorer
   "explorer.openEditors.visible": 0,
 
+  // Search
+  "search.smartCase": true,
+
   // Markdown
   "markdown.preview.fontSize": 16,
   "markdown.preview.lineHeight": 2,
@@ -107,5 +110,6 @@
     "editor.lineNumbers": "off",
     "editor.wordWrap": "bounded",
     "files.trimTrailingWhitespace": false
-  }
+  },
+  "window.zoomLevel": 0
 }
