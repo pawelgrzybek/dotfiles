@@ -64,7 +64,8 @@
   "zenMode.hideTabs": false,
 
   // File explorer
-  "explorer.openEditors.visible": 0,
+  // Subject to depreciation in geb release
+  // "explorer.openEditors.visible": 0,
 
   // Search
   "search.smartCase": true,
