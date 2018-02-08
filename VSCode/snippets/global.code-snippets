@@ -24,6 +24,15 @@
 			" * -------------------------------------------------------------*/"
 		],
 		"description": "Copyright",
-		"scope": "javascript, javascriptreact, typescript",
+		"scope": "javascript, javascriptreact, typescript"
+	},
+
+	"Typescript type checking": {
+		"prefix": "ts-check",
+		"body": [
+			"// @ts-check"
+		],
+		"description": "Typescript type checking",
+		"scope": "javascript, javascriptreact"
 	}
 }
