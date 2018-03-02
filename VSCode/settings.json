@@ -10,8 +10,6 @@
   "editor.minimap.enabled":false,
   "editor.wordWrap": "off",
   "editor.overviewRulerBorder": false,
-  // "editor.formatOnType": true,
-  // "editor.formatOnPaste": true,
   "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
@@ -63,10 +61,6 @@
   "zenMode.fullScreen": false,
   "zenMode.hideTabs": false,
 
-  // File explorer
-  // Subject to depreciation in geb release
-  // "explorer.openEditors.visible": 0,
-
   // Search
   "search.smartCase": true,
 
@@ -112,6 +106,5 @@
     "editor.lineNumbers": "off",
     "editor.wordWrap": "bounded",
     "files.trimTrailingWhitespace": false
-  },
-  "window.zoomLevel": 0
+  }
 }
