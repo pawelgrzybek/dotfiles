@@ -8,5 +8,7 @@
 	<true/>
 	<key>hidemenu</key>
 	<true/>
+	<key>visibleresults</key>
+	<integer>5</integer>
 </dict>
 </plist>

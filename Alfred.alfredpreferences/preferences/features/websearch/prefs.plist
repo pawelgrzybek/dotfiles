@@ -10,25 +10,10 @@
 			<true/>
 			<key>keyword</key>
 			<string>stack</string>
-			<key>plusSpaces</key>
-			<false/>
 			<key>text</key>
 			<string>Search Stack Overflow for '{query}'</string>
 			<key>url</key>
-			<string>http://stackoverflow.com/search?q={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
-		<key>7AEE80B1-1D1A-407B-97A0-2326B2B9E593</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>unity</string>
-			<key>text</key>
-			<string>Unity</string>
-			<key>url</key>
-			<string>https://docs.unity3d.com/ScriptReference/30_search.html?q={query}</string>
+			<string>https://stackoverflow.com/search?q={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
@@ -51,12 +36,10 @@
 			<true/>
 			<key>keyword</key>
 			<string>cani</string>
-			<key>plusSpaces</key>
-			<false/>
 			<key>text</key>
 			<string>Search Can I use for '{query}'</string>
 			<key>url</key>
-			<string>http://caniuse.com/#search={query}</string>
+			<string>https://caniuse.com/#search={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

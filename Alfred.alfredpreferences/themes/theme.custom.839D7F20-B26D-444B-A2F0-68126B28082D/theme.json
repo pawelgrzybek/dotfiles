@@ -21,8 +21,8 @@
         "font" : "System Light",
         "color" : "#424242FF"
       },
-      "iconPaddingHorizontal" : 4,
-      "paddingVertical" : 4,
+      "iconPaddingHorizontal" : 8,
+      "paddingVertical" : 8,
       "iconSize" : 40
     },
     "search" : {
@@ -40,9 +40,9 @@
     "window" : {
       "color" : "#FFFFFFFF",
       "paddingHorizontal" : 4,
-      "width" : 660,
+      "width" : 700,
       "borderPadding" : 0,
-      "borderColor" : "#0000007F",
+      "borderColor" : "#00000000",
       "blur" : 0,
       "roundness" : 4,
       "paddingVertical" : 4
