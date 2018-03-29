@@ -18,7 +18,7 @@
 	"Print to console": {
 		"prefix": "log",
 		"body": [
-			"console.log(${1:Thingy to log bro!});"
+			"console.${1|log,warning,error|}('$2');"
 		],
 		"description": "Log output to console"
 	},

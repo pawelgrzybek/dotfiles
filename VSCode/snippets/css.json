@@ -53,6 +53,26 @@
 			"white-space: nowrap;"
 		],
 		"description": "Display an ellipsis to represent clipped text"
+	},
+
+
+
+
+
+
+
+
+
+	"Display": {
+		"prefix": "dis",
+		"body": [
+			"display: ${1|block,inline,flex,grid|};"
+		],
+		"description": "Display"
 	}
 }
+
+
+
+
 
