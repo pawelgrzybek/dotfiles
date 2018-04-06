@@ -15,10 +15,9 @@
 	"Hugo - update shortcode": {
 		"prefix": "hugo-update",
 		"body": [
-			"{{< update >}}",
-			"  ${1:Content}",
-			"{{< /update >}}"
+			"{{% update %}}${1:Content}{{% /update %}}"
 		],
 		"description": "Hugo - update shortcode"
 	}
+
 }
