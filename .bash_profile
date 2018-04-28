@@ -42,8 +42,8 @@ alias serve="echo 'Your cool server is runing on http://localhost:8000/' && open
 alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 0.0.0.0:8000 -t ."
 
 # start / stop apache & MySQL
-alias apachemysql-start="sudo apachectl start && mysql.server start"
-alias apachemysql-stop="sudo apachectl stop && mysql.server stop"
+alias am-start="sudo apachectl start && mysql.server start"
+alias am-stop="sudo apachectl stop && mysql.server stop"
 
 # sudo autocomplete
 complete -cf sudo
