@@ -3,24 +3,23 @@
 // Explicitly add more rules categorized in categories taken from official docs
 
 module.exports = {
-  extends: 'eslint:recommended',
-  parser: 'babel-eslint',
-
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       jsx: true,
-      impliedStrict: true
+      impliedStrict: true,
     }
   },
+
+  parser: 'babel-eslint',
 
   env: {
     browser: true,
     node: true,
     commonjs: true,
     es6: true,
+    worker: true,
     amd: true,
     mocha: true,
     jasmine: true,
@@ -29,12 +28,18 @@ module.exports = {
     jquery: true,
     mongo: true,
     applescript: true,
-    serviceworker: true
+    serviceworker: true,
+  },
+
+  globals: {
+    AR: true,
   },
 
   plugins: [
     'react'
   ],
+
+  extends: 'eslint:recommended',
 
   rules: {
     // Possible Errors
