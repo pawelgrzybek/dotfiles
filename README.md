@@ -14,7 +14,11 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 
 ```source ~/.dotfiles/setup-osx.sh```
 
-4. VSCode, iTerm and Alfred settings needs to be symlinked separately.
+4. Same with setup-brew.sh file (install manually brew first).
+
+```source ~/.dotfiles/setup-osx.sh```
+
+5. VSCode and Alfred settings needs to be symlinked separately.
 
 VSCode:
 ```
@@ -23,56 +27,46 @@ ln -s /Users/pawelgrzybek/.dotfiles/VSCode/keybindings.json ~/Library/Applicatio
 ln -s /Users/pawelgrzybek/.dotfiles/VSCode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
 
-iTerm: use GUI
-
-```
-/Users/pawelgrzybek/.dotfiles/iTerm
-```
-
 Alfred: use GUI
 
 ```
 ~/.dotfiles
 ```
 
-5. Don't forget about:
+6. Don't forget about:
 
-- install brew
 - ssh setup
-- download your fav apps from brew:
+- download your fav apps that are not available through brew cask:
 
-```
-brew cask install alfred capture-one cleanmymac forklift google-chrome imageoptim screenflow sketch tower visual-studio-code iterm2
-```
+  - Affinity Photo
+  - Affinity Design
+  - Keynote
+  - Numbers
+  - Pages
+  - Reeder
+  - Things
+  - Tweetbot
+  - Xcode
 
 - download VSCode plugins
-    - 1Password
-    - SirTori.indenticator-0.4.2/
-    - christian-kohler.npm-intellisense-1.3.0/
-    - christian-kohler.path-intellisense-1.4.2/
-    - dbaeumer.vscode-eslint-1.4.3/
-    - digitalstreamio.mjml-syntax-0.0.1/
-    - idleberg.applescript-0.9.2/
-    - jasonnutter.search-node-modules-1.2.0/
-    - mrmlnc.vscode-duplicate-1.2.0/
-    - mrmlnc.vscode-postcss-sorting-3.0.1/
-    - mrmlnc.vscode-scss-0.6.2/
-    - ms-vscode.csharp-1.13.1/
-    - pawelgrzybek.bimbo-theme-0.4.1/
-    - shinnn.stylelint-0.31.0/
-    - swyphcosmo.spellchecker-1.2.13/
-    - wix.vscode-import-cost-2.5.1/
 
-- download your fav apps from independently:
+  - ban.spellright-2.3.3/
+  - christian-kohler.npm-intellisense-1.3.0/
+  - christian-kohler.path-intellisense-1.4.2/
+  - dbaeumer.vscode-eslint-1.4.8/
+  - digitalstreamio.mjml-syntax-0.0.1/
+  - idleberg.applescript-0.10.0/
+  - jkjustjoshing.vscode-text-pastry-1.2.0/
+  - mrmlnc.vscode-apache-1.1.1/
+  - mrmlnc.vscode-duplicate-1.2.1/
+  - mrmlnc.vscode-postcss-sorting-3.0.1/
+  - mrmlnc.vscode-scss-0.6.2/
+  - ms-vscode.csharp-1.13.1/
+  - msjsdiag.debugger-for-chrome-4.3.0/
+  - pawelgrzybek.bimbo-theme-0.4.6/
+  - shinnn.stylelint-0.36.0/
 
-    - Affinity
-    - Keynote
-    - Numbers
-    - Pages
-    - Reeder
-    - Things3
-    - Tweetbot
-    - Xcode
+
 
 
 
