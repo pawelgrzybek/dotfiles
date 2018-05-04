@@ -55,9 +55,6 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "files.associations": {
-    "*.js": "javascriptreact"
-  },
 
   // Zen mode
   "zenMode.fullScreen": false,

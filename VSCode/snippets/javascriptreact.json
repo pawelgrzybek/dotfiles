@@ -52,15 +52,15 @@
 		"body": [
 			"import React from 'react';",
 			"",
-			"const ${1:ComponentsName} = props => {",
-			"  return (",
-			"    ${2:Yo yo yo :-)}",
-			"  );$0",
-			"};",
+			"const ${1:ComponentsName} = props => (",
+			"  ${2:<p>Yo yo yo :-)</p>}",
+			");",
 			"",
-			"export default ${1:ComponentsName};"
+			"export default ${1:ComponentsName};",
+			""
 		],
-		"description": "Create Stateless React Component"
+		"description": "React - create stateless component"
+	}
 	},
 
 	"React - propTypes type checking": {
