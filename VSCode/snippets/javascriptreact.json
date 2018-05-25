@@ -1,4 +1,78 @@
 {
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.${1|log,warning,error|}('$2');"
+		],
+		"description": "Log output to console"
+	},
+
+
+	"ESLint disable block": {
+		"prefix": "eslintdisableblock",
+		"body": [
+			"/* eslint-disable ${1:rule-one}, ${2:rule-two} */",
+			"${3:// your unlinted code goes here}",
+			"/* eslint-enable ${1:rule-one}, ${2:rule-two} */"
+		],
+		"description": "ESLint disable block"
+	},
+
+
+	"ESLint disable file": {
+		"prefix": "eslintdisablefile",
+		"body": [
+			"/* eslint-disable */"
+		],
+		"description": "ESLint disable file"
+	},
+
+
+	"ESLint disable line": {
+		"prefix": "eslintdisableline",
+		"body": [
+			"// eslint-disable-line ${1:rule-one}, ${2:rule-two}"
+		],
+		"description": "ESLint disable line"
+	},
+
+
+	"ESLint disable next line": {
+		"prefix": "eslintdisablenextline",
+		"body": [
+			"// eslint-disable-next-line ${1:rule-one}, ${2:rule-two}"
+		],
+		"description": "ESLint disable next line"
+	},
+
+
+	"ES2015 Module import": {
+		"prefix": "import",
+		"body": [
+			"import ${2:ComponentsName} from '${1:package-name}';"
+		],
+		"description": "ES2015 Module import"
+	},
+
+
+	"ES2015 Module export (default)": {
+		"prefix": "export",
+		"body": [
+			"export default ${1:ComponentsName};"
+		],
+		"description": "ES2015 Module export (default)"
+	},
+
+
+	"ES2015 Module export (named)": {
+		"prefix": "exportnamed",
+		"body": [
+			"export { ${1:ComponentsName as desiredName} };"
+		],
+		"description": "ES2015 Module export (named)"
+	},
+
+
 	"React - create component": {
 		"prefix": "react-component",
 		"body": [
@@ -15,6 +89,7 @@
 		"description": "Create React Component"
 	},
 
+
 	"React - Create Component (extended)": {
 		"prefix": "react-componentextended",
 		"body": [
@@ -22,18 +97,12 @@
 			"import PropTypes from 'prop-types';",
 			"",
 			"class ${1:componentsName} extends Component {",
-			"  constructor(props) {",
-			"    super(props);",
+			"  state = {",
 			"",
-			"    this.state = {",
-			"",
-			"    };",
-			"",
-			"    // this.methodName = this.methodName.bind(this);",
-			"  }",
+			"  };",
 			"",
 			"  render() {",
-			"    return ${2};",
+			"    return ;",
 			"  }",
 			"}",
 			"",
@@ -46,6 +115,7 @@
 		],
 		"description": "React - Create Component (extended)"
 	},
+
 
 	"React - create stateless component": {
 		"prefix": "react-statelesscomponent",
@@ -60,8 +130,8 @@
 			""
 		],
 		"description": "React - create stateless component"
-	}
 	},
+
 
 	"React - propTypes type checking": {
 		"prefix": "react-proptypes",
@@ -73,5 +143,6 @@
 		],
 		"description": "React - PropTypes type checking"
 	}
+
 
 }
