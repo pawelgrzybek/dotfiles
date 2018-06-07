@@ -7,5 +7,37 @@
   {
     "key": "ctrl+e",
     "command": "editor.emmet.action.expandAbbreviation"
-  }
+  },
+  {
+     "key": "cmd+numpad_add",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "cmd+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "cmd+numpad_subtract",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "cmd+numpad0",
+    "command": "editor.action.fontZoomReset"
+  },
+  {
+    "key": "cmd+0",
+    "command": "editor.action.fontZoomReset"
+  },
 ]
