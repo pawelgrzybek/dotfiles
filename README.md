@@ -35,8 +35,8 @@ Alfred: use GUI
 
 6. Don't forget about:
 
-- ssh setup
-- download your fav apps that are not available through brew cask:
+- SSH setup
+- download your fav apps from App Store:
 
   - Affinity Photo
   - Affinity Design
@@ -50,21 +50,9 @@ Alfred: use GUI
 
 - download VSCode plugins
 
-  - ban.spellright-2.3.3/
-  - christian-kohler.npm-intellisense-1.3.0/
-  - christian-kohler.path-intellisense-1.4.2/
-  - dbaeumer.vscode-eslint-1.4.8/
-  - digitalstreamio.mjml-syntax-0.0.1/
-  - idleberg.applescript-0.10.0/
-  - jkjustjoshing.vscode-text-pastry-1.2.0/
-  - mrmlnc.vscode-apache-1.1.1/
-  - mrmlnc.vscode-duplicate-1.2.1/
-  - mrmlnc.vscode-postcss-sorting-3.0.1/
-  - mrmlnc.vscode-scss-0.6.2/
-  - ms-vscode.csharp-1.13.1/
-  - msjsdiag.debugger-for-chrome-4.3.0/
-  - pawelgrzybek.bimbo-theme-0.4.6/
-  - shinnn.stylelint-0.36.0/
+```
+code --install-extension ban.spellright christian-kohler.npm-intellisense christian-kohler.path-intellisense dbaeumer.vscode-eslint digitalstreamio.mjml-syntax idleberg.applescript jkjustjoshing.vscode-text-pastry mrmlnc.vscode-apache mrmlnc.vscode-duplicate mrmlnc.vscode-postcss-sorting mrmlnc.vscode-scss msjsdiag.debugger-for-chrome pawelgrzybek.bimbo-theme shinnn.stylelint
+```
 
 
 
