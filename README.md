@@ -4,9 +4,7 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 
 0. Install [brew](https://brew.sh/). Follow up by git bro.
 
-```
-brew install git
-```
+```brew install git```
 
 1. Clone repository to hidden .dotfile directory in your home directory
 
