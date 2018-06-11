@@ -51,11 +51,18 @@ Alfred: use GUI
 - download VSCode plugins
 
 ```
-code --install-extension ban.spellright christian-kohler.npm-intellisense christian-kohler.path-intellisense dbaeumer.vscode-eslint digitalstreamio.mjml-syntax idleberg.applescript jkjustjoshing.vscode-text-pastry mrmlnc.vscode-apache mrmlnc.vscode-duplicate mrmlnc.vscode-postcss-sorting mrmlnc.vscode-scss msjsdiag.debugger-for-chrome pawelgrzybek.bimbo-theme shinnn.stylelint
+code --install-extension ban.spellright
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension christian-kohler.path-intellisense
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension digitalstreamio.mjml-syntax
+code --install-extension idleberg.applescript
+code --install-extension jkjustjoshing.vscode-text-pastry
+code --install-extension mrmlnc.vscode-apache
+code --install-extension mrmlnc.vscode-duplicate
+code --install-extension mrmlnc.vscode-postcss-sorting
+code --install-extension mrmlnc.vscode-scss
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension pawelgrzybek.bimbo-theme
+code --install-extension shinnn.stylelint
 ```
-
-
-
-
-
-
