@@ -108,4 +108,7 @@
     "editor.wordWrap": "bounded",
     "files.trimTrailingWhitespace": false,
   },
+
+  // js
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
