@@ -70,7 +70,18 @@
 			"export { ${1:ComponentsName as desiredName} };"
 		],
 		"description": "ES2015 Module export (named)"
-	}
+	},
+
+
+	"Jest - test": {
+  "prefix": "jest-test",
+  "body": [
+    "test('${1:Test description}', () => {",
+    "  expect(${2:Expresion}).toBe(${3:Result});",
+    "});"
+  ],
+  "description": "Jest - test"
+}
 
 
 }
