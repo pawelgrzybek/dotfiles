@@ -56,6 +56,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>D773DFB0-F894-4823-B0F0-61DB78FAF87D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>lodash</string>
+			<key>text</key>
+			<string>Lodash</string>
+			<key>url</key>
+			<string>https://lodash.com/docs#{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>D9B16437-D465-4A8E-A9D2-A10755CF7C3B</key>
 		<dict>
 			<key>enabled</key>
