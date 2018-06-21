@@ -9,6 +9,9 @@ export PS1="$ "
 # use vim as a default command line editor
 export EDITOR="vim"
 
+# enable bash autocompletion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 # easier folders navigation
 alias ..="cd .."
 alias ...="cd ../.."
