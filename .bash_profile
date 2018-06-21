@@ -6,11 +6,6 @@ export PATH=${PATH}:/usr/local/mysql/bin
 # http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
 export PS1="$ "
 
-# android environment variable
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
 # use vim as a default command line editor
 export EDITOR="vim"
 
