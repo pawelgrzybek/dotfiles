@@ -31,10 +31,6 @@ module.exports = {
     serviceworker: true,
   },
 
-  globals: {
-    AR: true,
-  },
-
   plugins: [
     'react'
   ],
