@@ -39,8 +39,6 @@ module.exports = {
     'react'
   ],
 
-  // extends: 'eslint:recommended',
-
   rules: {
     // Possible Errors
     // https://eslint.org/docs/rules/#possible-errors
