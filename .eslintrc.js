@@ -255,7 +255,7 @@ module.exports = {
     'no-nested-ternary': 2,
     'no-tabs': 2,
     'no-trailing-spaces': 2,
-    'no-underscore-dangle': 2,
+    // 'no-underscore-dangle': 0,
     'no-unneeded-ternary': 2,
     'no-whitespace-before-property': 2,
     'object-curly-spacing': [
