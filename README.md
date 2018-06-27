@@ -2,27 +2,29 @@
 
 Before doing anything, make sure you know what are you doing! Settings applied by this repository are very personal, and definitely not suite everyones needs. I suggest to create your own set of dotfiles based on this repo.
 
-0. Install [brew](https://brew.sh/). Follow up by git bro.
+1. Install [brew](https://brew.sh/).
+
+2. Install git.
 
 ```brew install git```
 
-1. Clone repository to hidden .dotfile directory in your home directory
+3. Clone repository to hidden .dotfile directory in your home directory
 
-```git clone git@github.com:pawelgrzybek/dotfiles.git```
+```git clone git@github.com:pawelgrzybek/dotfiles.git ~/.dotfile```
 
-2. Run setup-symlinks.sh.
+4. Run setup-symlinks.sh.
 
 ```source ~/.dotfiles/setup-symlinks.sh```
 
-3. Same with setup-macos.sh file.
+5. Same with setup-macos.sh file.
 
 ```source ~/.dotfiles/setup-osx.sh```
 
-4. Same with setup-brew.sh file (install manually brew first).
+6. Same with setup-brew.sh file.
 
 ```source ~/.dotfiles/setup-osx.sh```
 
-5. VSCode and Alfred settings needs to be symlinked separately.
+7. Symlink VSCode stuff.
 
 VSCode:
 ```
@@ -31,16 +33,21 @@ ln -s /Users/pawelgrzybek/.dotfiles/VSCode/keybindings.json ~/Library/Applicatio
 ln -s /Users/pawelgrzybek/.dotfiles/VSCode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
 
+8. Configure Alfred settings.
+
 Alfred: use GUI
 
 ```
 ~/.dotfiles
 ```
 
-6. Don't forget about:
+9. Enable Alfred clipboard (plain text for 7 days) and your personalized theme.
 
-- SSH setup
-- download your fav apps from App Store:
+10. Don't forget about:
+
+11. SSH setup
+
+12. Download your fav apps from App Store:
 
   - Affinity Photo
   - Affinity Design
@@ -52,7 +59,7 @@ Alfred: use GUI
   - Tweetbot
   - Xcode
 
-- download VSCode plugins
+13. download VSCode plugins
 
 ```
 code --install-extension ban.spellright
