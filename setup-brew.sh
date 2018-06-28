@@ -18,6 +18,5 @@ brew cask install hyper
 brew cask install imageoptim
 brew cask install screenflow
 brew cask install sketch
-brew cask install tower
 brew cask install tunnelblick
 brew cask install visual-studio-code
