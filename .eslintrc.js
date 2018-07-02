@@ -122,7 +122,7 @@ module.exports = {
     // 'no-new-wrappers': 0,
     'no-octal': 2,
     'no-octal-escape': 2,
-    'no-param-reassign': 2,
+    // 'no-param-reassign': 0,
     'no-proto': 2,
     'no-redeclare': 2,
     'no-restricted-properties': 2,
