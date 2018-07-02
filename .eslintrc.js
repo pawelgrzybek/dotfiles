@@ -79,12 +79,7 @@ module.exports = {
     'array-callback-return': 2,
     'block-scoped-var': 2,
     'class-methods-use-this': 2,
-    'complexity': [
-      2,
-      {
-        'max': 3,
-      }
-    ],
+    // 'complexity': 0,
     'consistent-return': 2,
     'curly': 2,
     'default-case': 2,
