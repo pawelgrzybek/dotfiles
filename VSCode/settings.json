@@ -33,7 +33,7 @@
   // Workbench
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "vs-minimal",
-  "workbench.colorTheme": "Bimbo Theme",
+  "workbench.colorTheme": "Gatito Theme",
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.feedback.visible": false,
 
