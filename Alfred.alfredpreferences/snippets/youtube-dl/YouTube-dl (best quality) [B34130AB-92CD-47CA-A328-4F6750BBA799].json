@@ -2,7 +2,7 @@
   "alfredsnippet" : {
     "snippet" : "youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]\/best[ext=mp4]\/best' {clipboard}",
     "uid" : "B34130AB-92CD-47CA-A328-4F6750BBA799",
-    "name" : "YouTube-dl (best audio\/video quality)",
+    "name" : "YouTube-dl (best quality)",
     "keyword" : "youtube-dl"
   }
 }

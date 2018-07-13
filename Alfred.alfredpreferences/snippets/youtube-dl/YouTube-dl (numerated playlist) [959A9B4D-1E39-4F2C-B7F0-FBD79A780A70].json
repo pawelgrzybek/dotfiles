@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]\/best[ext=mp4]\/best' -o  \"%(playlist_index)s-%(title)s.%(ext)s\" {clipboard}",
+    "uid" : "959A9B4D-1E39-4F2C-B7F0-FBD79A780A70",
+    "name" : "YouTube-dl (numerated playlist)",
+    "keyword" : "youtube-dl"
+  }
+}
