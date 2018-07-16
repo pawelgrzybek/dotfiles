@@ -101,7 +101,6 @@
   // Git
   "git.enableSmartCommit": true,
 
-
   // Lang specific settings
   "[markdown]": {
     "editor.lineNumbers": "off",
@@ -111,4 +110,7 @@
 
   // js
   "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // npm
+  "npm.enableScriptExplorer": true,
 }
