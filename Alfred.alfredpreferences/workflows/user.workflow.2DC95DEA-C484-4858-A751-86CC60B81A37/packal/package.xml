@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>MDN Search</name>
-  <version>1.0</version>
-  <bundle>com.gilbarbara.mdn-search</bundle>
-  <updated>1442605251</updated>
-  <file>mdnsearch.alfredworkflow</file>
-</workflow>
