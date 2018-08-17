@@ -80,6 +80,9 @@
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
 
+  // Breadcrumbs Navigation
+  "breadcrumbs.enabled": true,
+
   // PocsCSS Sorting settings
   "postcssSorting.config": {
     "order": [
