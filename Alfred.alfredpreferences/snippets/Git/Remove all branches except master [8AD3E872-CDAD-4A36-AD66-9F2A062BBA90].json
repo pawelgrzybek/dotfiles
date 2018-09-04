@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "git branch | grep -v \"master\" | xargs git branch -D",
+    "uid" : "8AD3E872-CDAD-4A36-AD66-9F2A062BBA90",
+    "name" : "Remove all branches except master",
+    "keyword" : ""
+  }
+}
