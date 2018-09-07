@@ -7,15 +7,13 @@
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
-  "editor.minimap.enabled":false,
+  "editor.minimap.enabled": false,
   "editor.wordWrap": "off",
-  "editor.overviewRulerBorder": false,
   "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
   "editor.renderIndentGuides": true,
-  "editor.renderLineHighlight": "all",
   "editor.dragAndDrop": true,
   "editor.smoothScrolling": true,
 
@@ -31,15 +29,15 @@
   },
 
   // Workbench
-  "workbench.startupEditor": "none",
-  "workbench.iconTheme": "vs-minimal",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": null,
   "workbench.colorTheme": "Gatito Theme",
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.feedback.visible": false,
 
   // Window
   "window.newWindowDimensions": "maximized",
-  "window.title": "${rootPath}${separator}${activeEditorShort}",
+  "window.title": "${activeEditorMedium} ${dirty}",
   "window.zoomLevel": 0,
 
   // Files
@@ -71,9 +69,6 @@
   // Extensions
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
-
-  // External terminal
-  "terminal.external.osxExec": "iTerm.app",
 
   // Integrated terminal
   "terminal.integrated.fontSize": 16,
@@ -120,4 +115,17 @@
   // eslint
   "eslint.packageManager": "yarn",
   "eslint.autoFixOnSave": true,
+  "editor.renderLineHighlight": "all",
+  "workbench.settings.editor": "json",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.editor.showIcons": false,
+  "search.exclude": {
+    "**/*/__snapshots__": true
+  },
+  "search.location": "panel",
+  "debug.inlineValues": true,
+  "terminal.external.osxExec": "Hyper.app",
+  "update.showReleaseNotes": false,
 }
