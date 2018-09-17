@@ -76,7 +76,7 @@
   "terminal.integrated.cursorStyle": "line",
 
   // Breadcrumbs Navigation
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
 
   // PocsCSS Sorting settings
   "postcssSorting.config": {
