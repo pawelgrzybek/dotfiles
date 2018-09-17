@@ -44,6 +44,11 @@ alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && o
 alias am-start="sudo apachectl start && mysql.server start"
 alias am-stop="sudo apachectl stop && mysql.server stop"
 
+# npm shit
+alias npmi="npx benny-hill npm i"
+alias npmu="npx benny-hill npm u"
+alias npmt="npx benny-hill npm t"
+
 # sudo autocomplete
 complete -cf sudo
 
