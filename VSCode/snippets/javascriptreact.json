@@ -144,6 +144,26 @@
 		"description": "React - PropTypes type checking"
 	},
 
+	"React - higher order component": {
+		"prefix": "react0higherordercomponent",
+		"body": [
+			"import React from 'react';",
+			"import Loading from '../components/Loading';",
+			"",
+			"const withLoading = WrappedComponent => {",
+			"  return (props = {}) => {",
+			"    if (props.isLoading) {",
+			"      return <Loading />;",
+			"    }",
+			"    return <WrappedComponent {...this.props} />;",
+			"  };",
+			"};",
+			"",
+			"export default withLoading;"
+		],
+		"description": "React - higher order component"
+	},
+
 	"Jest - describe": {
 		"prefix": "jest-describe",
 		"body": [
