@@ -31,7 +31,6 @@
   // Workbench
   "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": null,
-  "workbench.colorTheme": "Gatito Theme",
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.feedback.visible": false,
 
@@ -114,7 +113,6 @@
 
   // eslint
   "eslint.packageManager": "yarn",
-  "eslint.autoFixOnSave": true,
   "editor.renderLineHighlight": "all",
   "workbench.settings.editor": "json",
   "explorer.confirmDragAndDrop": false,
@@ -128,4 +126,5 @@
   "debug.inlineValues": true,
   "terminal.external.osxExec": "Hyper.app",
   "update.showReleaseNotes": false,
+  "workbench.colorTheme": "Gatito Theme",
 }
