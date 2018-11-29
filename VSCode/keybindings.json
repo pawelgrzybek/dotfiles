@@ -1,15 +1,17 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
-    "key": "ctrl+shift+s",
-    "command": "postcssSorting.execute"
+    "key": "ctrl+cmd+shift+right",
+    "command": "editor.emmet.action.balanceOut",
+    "when": "editorTextFocus && editorLangId == html"
   },
   {
-    "key": "ctrl+e",
-    "command": "editor.emmet.action.expandAbbreviation"
+    "key": "ctrl+cmd+shift+left",
+    "command": "editor.emmet.action.balanceIn",
+    "when": "editorTextFocus && editorLangId == html"
   },
   {
-     "key": "cmd+numpad_add",
+    "key": "cmd+numpad_add",
     "command": "editor.action.fontZoomIn"
   },
   {
@@ -39,5 +41,5 @@
   {
     "key": "cmd+0",
     "command": "editor.action.fontZoomReset"
-  },
+  }
 ]

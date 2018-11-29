@@ -34,6 +34,7 @@
   "workbench.iconTheme": null,
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.highlightModifiedTabs": true,
 
   // Window
   "window.newWindowDimensions": "maximized",
@@ -53,6 +54,9 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
+
+  // Search
+  "search.showLineNumbers": true,
 
   // Zen mode
   "zenMode.fullScreen": false,
