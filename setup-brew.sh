@@ -1,3 +1,7 @@
+# Upgrade brew
+brew upgrade
+
+# Install CLI tools
 brew install bash-completion
 brew install cowsay
 brew install git
@@ -6,8 +10,8 @@ brew install node
 brew install yarn
 brew install youtube-dl
 
-brew install caskroom/cask/brew-cask
-
+# Install CLI tools
+brew cask install 1password
 brew cask install alfred
 brew cask install capture-one
 brew cask install cleanmymac
@@ -15,8 +19,15 @@ brew cask install forklift
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install hyper
+brew cask install imagealpha
 brew cask install imageoptim
+brew cask install insomnia
 brew cask install screenflow
 brew cask install sketch
+brew cask install slack
+brew cask install transmission
 brew cask install tunnelblick
 brew cask install visual-studio-code
+
+# Remove outdated versions from the cellar.
+brew cleanup

@@ -6,34 +6,31 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 
 2. Install git.
 
-```brew install git```
+`brew install git`
 
-3. Clone repository to hidden .dotfile directory in your home directory
+3. Clone this repo to hidden .dotfile directory in your home directory
 
-```git clone git@github.com:pawelgrzybek/dotfiles.git ~/.dotfile```
+`git clone git@github.com:pawelgrzybek/dotfiles.git ~/.dotfile`
 
-4. Run setup-symlinks.sh.
+4. Run setup.
 
-```source ~/.dotfiles/setup-symlinks.sh```
+`source ~/.dotfiles/setup-symlinks.sh`
 
-5. Same with setup-macos.sh file.
+`source ~/.dotfiles/setup-osx.sh`
 
-```source ~/.dotfiles/setup-osx.sh```
+`source ~/.dotfiles/setup-brew.sh`
 
-6. Same with setup-brew.sh file.
-
-```source ~/.dotfiles/setup-osx.sh```
-
-7. Symlink VSCode stuff.
+5. Symlink VSCode stuff manually.
 
 VSCode:
+
 ```
 ln -s /Users/pawelgrzybek/.dotfiles/VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s /Users/pawelgrzybek/.dotfiles/VSCode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s /Users/pawelgrzybek/.dotfiles/VSCode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
 
-8. Configure Alfred settings.
+6. Configure Alfred settings.
 
 Alfred: use GUI
 
@@ -41,39 +38,32 @@ Alfred: use GUI
 ~/.dotfiles
 ```
 
-9. Enable Alfred clipboard (plain text for 7 days) and your personalized theme.
+7. Enable Alfred clipboard (plain text for 7 days) and your personalized theme.
 
-10. Don't forget about:
+8. SSH setup
 
-11. SSH setup
+9. Download your fav apps from App Store or independent websites:
 
-12. Download your fav apps from App Store:
+- Affinity Photo
+- Affinity Design
+- Affinity Publisher
+- Keynote
+- Numbers
+- Pages
+- Palette Master Element
+- Reeder
+- Things
 
-  - Affinity Photo
-  - Affinity Design
-  - Keynote
-  - Numbers
-  - Pages
-  - Reeder
-  - Things
-  - Tweetbot
-  - Xcode
-
-13. download VSCode plugins
+10. download VSCode plugins
 
 ```
 code --install-extension ban.spellright
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension digitalstreamio.mjml-syntax
+code --install-extension esbenp.prettier-vscode
 code --install-extension idleberg.applescript
-code --install-extension jkjustjoshing.vscode-text-pastry
-code --install-extension mrmlnc.vscode-apache
 code --install-extension mrmlnc.vscode-duplicate
-code --install-extension mrmlnc.vscode-postcss-sorting
-code --install-extension mrmlnc.vscode-scss
 code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension pawelgrzybek.bimbo-theme
-code --install-extension shinnn.stylelint
+code --install-extension pawelgrzybek.gatito-theme
 ```
