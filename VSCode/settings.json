@@ -9,14 +9,11 @@
   "editor.tabSize": 2,
   "editor.scrollBeyondLastLine": false,
   "editor.minimap.enabled": false,
-  "editor.wordWrap": "off",
-  "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
-  "editor.renderIndentGuides": true,
-  "editor.dragAndDrop": true,
   "editor.smoothScrolling": true,
+  "editor.renderLineHighlight": "all",
 
   // Emmet
   "emmet.showSuggestionsAsSnippets": true,
@@ -35,11 +32,13 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.feedback.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.settings.editor": "json",
+  "workbench.colorTheme": "Gatito Theme",
+  "workbench.editor.showIcons": false,
 
   // Window
   "window.newWindowDimensions": "maximized",
   "window.title": "${activeEditorMedium} ${dirty}",
-  "window.zoomLevel": 0,
 
   // Files
   "files.exclude": {
@@ -57,174 +56,29 @@
 
   // Search
   "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "search.exclude": {
+    "**/*/__snapshots__": true
+  },
+  "search.location": "panel",
 
   // Zen mode
-  "zenMode.fullScreen": false,
   "zenMode.hideTabs": false,
   "zenMode.centerLayout": false,
-
-  // Search
-  "search.smartCase": true,
+  "zenMode.fullScreen": false,
 
   // Markdown
   "markdown.preview.fontSize": 16,
   "markdown.preview.lineHeight": 2,
 
   // Extensions
-  "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
 
   // Integrated terminal
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
-
-  // Breadcrumbs Navigation
-  "breadcrumbs.enabled": false,
-
-  // PocsCSS Sorting settings
-  "postcssSorting.config": {
-    "order": [
-      "custom-properties",
-      "dollar-variables",
-      "declarations",
-      "at-rules",
-      "rules"
-    ],
-    "properties-order": [
-      "display",
-      "position",
-      "top",
-      "right",
-      "bottom",
-      "left",
-      "flex",
-      "flex-basis",
-      "flex-direction",
-      "flex-flow",
-      "flex-grow",
-      "flex-shrink",
-      "flex-wrap",
-      "align-content",
-      "align-items",
-      "align-self",
-      "justify-content",
-      "order",
-      "width",
-      "min-width",
-      "max-width",
-      "height",
-      "min-height",
-      "max-height",
-      "margin",
-      "margin-top",
-      "margin-right",
-      "margin-bottom",
-      "margin-left",
-      "padding",
-      "padding-top",
-      "padding-right",
-      "padding-bottom",
-      "padding-left",
-      "float",
-      "clear",
-      "columns",
-      "column-gap",
-      "column-fill",
-      "column-rule",
-      "column-span",
-      "column-count",
-      "column-width",
-      "transform",
-      "transform-box",
-      "transform-origin",
-      "transform-style",
-      "transition",
-      "transition-delay",
-      "transition-duration",
-      "transition-property",
-      "transition-timing-function",
-      "border",
-      "border-top",
-      "border-right",
-      "border-bottom",
-      "border-left",
-      "border-width",
-      "border-top-width",
-      "border-right-width",
-      "border-bottom-width",
-      "border-left-width",
-      "border-style",
-      "border-top-style",
-      "border-right-style",
-      "border-bottom-style",
-      "border-left-style",
-      "border-radius",
-      "border-top-left-radius",
-      "border-top-right-radius",
-      "border-bottom-left-radius",
-      "border-bottom-right-radius",
-      "border-color",
-      "border-top-color",
-      "border-right-color",
-      "border-bottom-color",
-      "border-left-color",
-      "outline",
-      "outline-color",
-      "outline-offset",
-      "outline-style",
-      "outline-width",
-      "background",
-      "background-attachment",
-      "background-color",
-      "background-image",
-      "background-repeat",
-      "background-position",
-      "background-size",
-      "color",
-      "font",
-      "font-family",
-      "font-size",
-      "font-smoothing",
-      "font-style",
-      "font-variant",
-      "font-weight",
-      "letter-spacing",
-      "line-height",
-      "list-style",
-      "text-align",
-      "text-decoration",
-      "text-indent",
-      "text-overflow",
-      "text-rendering",
-      "text-shadow",
-      "text-transform",
-      "text-wrap",
-      "white-space",
-      "word-spacing",
-      "border-collapse",
-      "border-spacing",
-      "box-shadow",
-      "caption-side",
-      "content",
-      "cursor",
-      "empty-cells",
-      "opacity",
-      "overflow",
-      "quotes",
-      "speak",
-      "table-layout",
-      "vertical-align",
-      "visibility",
-      "z-index"
-    ]
-  },
-
-  // Stylelint
-  // Control whether stylelint is enabled for CSS/SCSS/Less files or not.
-  "stylelint.enable": true,
-  "css.validate": false,
-  "scss.validate": false,
+  "terminal.external.osxExec": "Hyper.app",
 
   // Git
   "git.enableSmartCommit": true,
@@ -236,26 +90,20 @@
     "files.trimTrailingWhitespace": false
   },
 
-  // js
-  "javascript.updateImportsOnFileMove.enabled": "always",
-
   // npm
   "npm.enableScriptExplorer": true,
 
-  // eslint
+  // ESlint
   "eslint.packageManager": "yarn",
-  "editor.renderLineHighlight": "all",
-  "workbench.settings.editor": "json",
+
+  // Explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "explorer.openEditors.visible": 0,
-  "workbench.editor.showIcons": false,
-  "search.exclude": {
-    "**/*/__snapshots__": true
-  },
-  "search.location": "panel",
+
+  // Debug
   "debug.inlineValues": true,
-  "terminal.external.osxExec": "Hyper.app",
-  "update.showReleaseNotes": false,
-  "workbench.colorTheme": "Gatito Theme"
+
+  // update
+  "update.showReleaseNotes": false
 }
