@@ -28,6 +28,7 @@ brew cask install slack
 brew cask install transmission
 brew cask install tunnelblick
 brew cask install visual-studio-code
+brew cask install zoomus
 
 # Remove outdated versions from the cellar.
 brew cleanup
