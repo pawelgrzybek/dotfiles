@@ -21,7 +21,7 @@ module.exports = {
     serviceworker: true
   },
   plugins: ["prettier", "react"],
-  extends: ["plugin:prettier/recommended"],
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
   rules: {
     "no-console": 1
   }
