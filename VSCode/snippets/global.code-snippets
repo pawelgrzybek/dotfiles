@@ -1,38 +1,121 @@
 {
-	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
-	// Placeholders with the same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	"Copyright": {
-		"prefix": "copy",
-		"body": [
-			"/* --------------------------------------------------------------",
-			" * Copyright © ${CURRENT_YEAR} Pawel Grzybek. All rights reserved.",
-			" * Licensed under the MIT License.",
-			" * -------------------------------------------------------------*/"
-		],
-		"description": "Copyright",
-		"scope": "javascript, javascriptreact, typescript"
-	},
+  "Copyright Pawel Grzybek": {
+    "prefix": "copy",
+    "body": [
+      "/* -----------------------------------------------------------------------------",
+      " * Copyright © ${CURRENT_YEAR} Pawel Grzybek. All rights reserved.",
+      " * Licensed under the MIT License.",
+      " * ---------------------------------------------------------------------------*/",
+      ""
+    ],
+    "description": "Copyright",
+    "scope": "javascript, javascriptreact, typescript"
+  },
 
-	"Typescript type checking": {
-		"prefix": "ts-check",
-		"body": [
-			"// @ts-check"
-		],
-		"description": "Typescript type checking",
-		"scope": "javascript, javascriptreact"
-	}
+  "Typescript type checking": {
+    "prefix": "ts-check",
+    "body": ["// @ts-check"],
+    "description": "Typescript type checking",
+    "scope": "javascript, javascriptreact"
+  },
+
+  "Log / warning / error to console": {
+    "prefix": "con",
+    "body": ["console.${1|log,warning,error|}($2);"],
+    "description": "Log output to console",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ESLint disable block": {
+    "prefix": "eslintdisableblock",
+    "body": [
+      "/* eslint-disable ${1:rule-one, rule-two} */",
+      "${3:// your unlinted code goes here}",
+      "/* eslint-enable ${1:rule-one, rule-two} */"
+    ],
+    "description": "ESLint disable block",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ESLint disable selection": {
+    "prefix": "eslintdisableselection",
+    "body": [
+      "/* eslint-disable ${1:rule-one, rule-two} */",
+      "${TM_SELECTED_TEXT}",
+      "/* eslint-enable ${1:rule-one, rule-two} */"
+    ],
+    "description": "ESLint disable selection",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ESLint disable file": {
+    "prefix": "eslintdisablefile",
+    "body": ["/* eslint-disable */"],
+    "description": "ESLint disable file",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ESLint disable line": {
+    "prefix": "eslintdisableline",
+    "body": ["// eslint-disable-line ${1:rule-one, rule-two}"],
+    "description": "ESLint disable line",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ESLint disable next line": {
+    "prefix": "eslintdisablenextline",
+    "body": ["// eslint-disable-next-line ${1:rule-one, rule-two}"],
+    "description": "ESLint disable next line",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ES2015 Module import": {
+    "prefix": "import",
+    "body": ["import ${2:ComponentsName} from '${1:package-name}';"],
+    "description": "ES2015 Module import",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ES2015 Module export (default)": {
+    "prefix": "export",
+    "body": ["export default ${1:ComponentsName};"],
+    "description": "ES2015 Module export (default)",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "ES2015 Module export (named)": {
+    "prefix": "exportnamed",
+    "body": ["export { ${1:ComponentsName as desiredName} };"],
+    "description": "ES2015 Module export (named)",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "Jest - describe": {
+    "prefix": "jest-describe",
+    "body": ["describe('${1:descriptor}', () => {", "  ${2:content}", "});"],
+    "description": "Jest - describe",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "Jest - it": {
+    "prefix": "jest-it",
+    "body": [
+      "it('${1:Test description}', () => {",
+      "  expect(${2:Expresion}).toBe(${3:Result});",
+      "});"
+    ],
+    "description": "Jest - it",
+    "scope": "javascript, javascriptreact, typescript"
+  },
+
+  "Jest - test": {
+    "prefix": "jest-test",
+    "body": [
+      "test('${1:Test description}', () => {",
+      "  expect(${2:Expresion}).toBe(${3:Result});",
+      "});"
+    ],
+    "description": "Jest - test",
+    "scope": "javascript, javascriptreact, typescript"
+  }
 }
