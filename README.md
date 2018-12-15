@@ -63,7 +63,12 @@ code --install-extension christian-kohler.path-intellisense
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension idleberg.applescript
+code --install-extension karigari.chat
 code --install-extension mrmlnc.vscode-duplicate
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension ms-vsliveshare.vsliveshare-audio
+code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension Orta.vscode-jest
 code --install-extension pawelgrzybek.gatito-theme
 ```
