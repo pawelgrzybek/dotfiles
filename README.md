@@ -72,3 +72,9 @@ code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension Orta.vscode-jest
 code --install-extension pawelgrzybek.gatito-theme
 ```
+
+11. download node
+
+```
+nvm install node
+```

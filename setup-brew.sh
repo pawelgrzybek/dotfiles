@@ -6,7 +6,7 @@ brew install bash-completion
 brew install cowsay
 brew install git
 brew install hugo
-brew install node
+brew install nvm
 brew install yarn
 brew install youtube-dl
 
