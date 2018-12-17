@@ -73,8 +73,20 @@ code --install-extension Orta.vscode-jest
 code --install-extension pawelgrzybek.gatito-theme
 ```
 
-11. download node
+11. download node and some npm & yarn stuff
 
 ```
 nvm install node
+```
+
+```
+yarn global add babel-eslint
+yarn global add eslint
+yarn global add eslint-plugin-react
+yarn global add eslint-plugin-prettier
+yarn global add eslint-config-prettier
+yarn global add jest
+yarn global add prettier
+yarn global add typescript
+yarn global add vsce
 ```
