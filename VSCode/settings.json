@@ -106,5 +106,6 @@
   "debug.inlineValues": true,
 
   // update
-  "update.showReleaseNotes": false
+  "update.showReleaseNotes": false,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
