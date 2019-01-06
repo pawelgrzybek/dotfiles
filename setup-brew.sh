@@ -22,6 +22,7 @@ brew cask install hyper
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install insomnia
+brew cask install mongodb-compass
 brew cask install screenflow
 brew cask install sketch
 brew cask install slack
