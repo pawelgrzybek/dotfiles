@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   // Editor
-  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Dank Mono, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.lineHeight": 32,
@@ -100,12 +100,8 @@
   // Explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
-  // "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 0,
 
   // Debug
   "debug.inlineValues": true,
-
-  // update
-  "update.showReleaseNotes": false,
-  "javascript.updateImportsOnFileMove.enabled": "always"
 }
