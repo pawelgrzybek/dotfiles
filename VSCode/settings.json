@@ -96,6 +96,12 @@
 
   // ESlint
   "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
 
   // Explorer
   "explorer.confirmDragAndDrop": false,
@@ -103,5 +109,5 @@
   "explorer.openEditors.visible": 0,
 
   // Debug
-  "debug.inlineValues": true,
+  "debug.inlineValues": true
 }
