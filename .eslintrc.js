@@ -7,7 +7,7 @@ module.exports = {
       impliedStrict: true
     }
   },
-  parser: "babel-eslint",
+  parser: "@typescript-eslint/parser",
   env: {
     browser: true,
     node: true,
@@ -24,9 +24,9 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"
   ],
   rules: {
-    "no-console": 1
+    "no-console": 1,
+    "prettier/prettier": "error"
   }
 };
