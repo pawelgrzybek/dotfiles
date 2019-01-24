@@ -12,7 +12,8 @@ module.exports = {
     fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: 'Dank Mono, Operator Mono, Menlo, Monaco, "Courier New", monospace',
+    fontFamily:
+      'Dank Mono, Operator Mono, Menlo, Monaco, "Courier New", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",

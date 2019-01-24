@@ -3,7 +3,7 @@
   // Editor
   "editor.fontFamily": "Dank Mono, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
-  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
   "editor.lineHeight": 32,
   "editor.rulers": [80],
   "editor.tabSize": 2,

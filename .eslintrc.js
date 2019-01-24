@@ -20,13 +20,6 @@ module.exports = {
     applescript: true,
     serviceworker: true
   },
-  plugins: ["prettier", "react"],
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-  ],
-  rules: {
-    "no-console": 1,
-    "prettier/prettier": "error"
-  }
+  plugins: ["react", "prettier"],
+  extends: ["eslint:recommended", "plugin:prettier/recommended"]
 };
