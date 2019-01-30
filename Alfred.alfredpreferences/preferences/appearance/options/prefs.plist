@@ -8,6 +8,8 @@
 	<true/>
 	<key>hidemenu</key>
 	<true/>
+	<key>showOnScreen</key>
+	<integer>2</integer>
 	<key>visibleresults</key>
 	<integer>5</integer>
 </dict>
