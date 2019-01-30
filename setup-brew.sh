@@ -1,6 +1,10 @@
 # Upgrade brew
 brew upgrade
 
+# Add some casks
+brew tap homebrew/cask-versions
+brew tap aws/tap
+
 # Install CLI tools
 brew install bash-completion
 brew install cowsay
