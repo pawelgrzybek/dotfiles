@@ -15,7 +15,6 @@
   "editor.smoothScrolling": true,
   "editor.renderLineHighlight": "all",
   "editor.snippetSuggestions": "top",
-
   // Emmet
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
@@ -26,7 +25,6 @@
     "bem.elementSeparator": "__",
     "bem.modifierSeparator": "--"
   },
-
   // Workbench
   "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": null,
@@ -36,11 +34,11 @@
   "workbench.settings.editor": "json",
   "workbench.colorTheme": "Gatito Theme",
   "workbench.editor.showIcons": false,
-
+  "workbench.tree.indent": 20,
+  "workbench.tree.horizontalScrolling": true,
   // Window
   "window.newWindowDimensions": "maximized",
   "window.title": "${activeEditorMedium} ${dirty}",
-
   // Files
   "files.exclude": {
     "**/.git": true,
@@ -55,7 +53,6 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-
   // Search
   "search.showLineNumbers": true,
   "search.smartCase": true,
@@ -63,38 +60,30 @@
     "**/*/__snapshots__": true
   },
   "search.location": "panel",
-
   // Zen mode
   "zenMode.hideTabs": false,
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-
   // Markdown
   "markdown.preview.fontSize": 16,
   "markdown.preview.lineHeight": 2,
-
   // Extensions
   "extensions.ignoreRecommendations": true,
-
   // Integrated terminal
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
   "terminal.external.osxExec": "Hyper.app",
-
   // Git
   "git.enableSmartCommit": true,
-
   // Lang specific settings
   "[markdown]": {
     "editor.lineNumbers": "off",
     "editor.wordWrap": "bounded",
     "files.trimTrailingWhitespace": false
   },
-
   // npm
   "npm.enableScriptExplorer": true,
-
   // ESlint
   "eslint.packageManager": "yarn",
   "eslint.validate": [
@@ -103,12 +92,10 @@
     "typescript",
     "typescriptreact"
   ],
-
   // Explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "explorer.openEditors.visible": 0,
-
   // Debug
   "debug.inlineValues": true
 }
