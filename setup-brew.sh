@@ -25,11 +25,9 @@ brew cask install hyper
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install insomnia
-brew cask install mongodb-compass
 brew cask install screenflow
 brew cask install sketch
 brew cask install slack
-brew cask install transmission
 brew cask install tunnelblick
 brew cask install visual-studio-code
 brew cask install zoomus
