@@ -33,6 +33,7 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gacm="git add -A && git commit -m"
 alias gprm="git pull --rebase origin master"
+alias gpfwl="git push --force-with-lease"
 
 # why your mac is so slow?
 alias top="top -o vsize"
