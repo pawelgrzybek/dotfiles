@@ -70,3 +70,6 @@ nvm_auto_use() {
 }
 
 export PROMPT_COMMAND=nvm_auto_use
+
+# enable bash-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
