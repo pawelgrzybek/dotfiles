@@ -11,7 +11,6 @@ brew install git
 brew install hugo
 brew install nvm
 brew install yarn
-brew install youtube-dl
 
 # Install CLI tools
 brew cask install 1password
