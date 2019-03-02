@@ -3,8 +3,11 @@ brew upgrade
 
 # Add some casks
 brew tap homebrew/cask-versions
+# brew tap aws/tap
 
 # Install CLI tools
+# brew install aws-sam-cli
+# brew install awscli
 brew install bash-completion
 brew install cowsay
 brew install git
