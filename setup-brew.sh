@@ -27,7 +27,6 @@ brew cask install insomnia
 brew cask install screenflow
 brew cask install sketch
 brew cask install slack
-brew cask install tunnelblick
 brew cask install visual-studio-code
 brew cask install zoomus
 
