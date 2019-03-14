@@ -97,5 +97,7 @@
   "explorer.decorations.badges": false,
   "explorer.openEditors.visible": 0,
   // Debug
-  "debug.inlineValues": true
+  "debug.inlineValues": true,
+  // Prettier
+  "prettier.disableLanguages": ["markdown"]
 }
