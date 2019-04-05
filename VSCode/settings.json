@@ -99,5 +99,9 @@
   // Debug
   "debug.inlineValues": true,
   // Prettier
-  "prettier.disableLanguages": ["markdown"]
+  "prettier.disableLanguages": ["markdown"],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
