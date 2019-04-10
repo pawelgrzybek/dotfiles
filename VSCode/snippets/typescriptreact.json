@@ -1,5 +1,4 @@
 {
-  // React - Component statefull
   "React - Component statefull": {
     "prefix": "react-componentstateful",
     "body": [
@@ -23,7 +22,6 @@
     "description": "React - Component statefull"
   },
 
-  // React - Component functional
   "React - Component functional": {
     "prefix": "react-componentfunctional",
     "body": [

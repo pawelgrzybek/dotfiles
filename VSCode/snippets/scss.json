@@ -1,131 +1,104 @@
 {
-/*
-	 // Place your snippets for Sass here. Each snippet is defined under a snippet name and has a prefix, body and
-	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	 // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-	 // same ids are connected.
-	 // Example:
-	 "Print to console": {
-		"prefix": "log",
-		"body": [
-			"console.log('$1');",
-			"$2"
-		],
-		"description": "Log output to console"
-	}
-*/
+  "Loop - for through": {
+    "prefix": "loop-for-through",
+    "body": [
+      "@for \\$i from ${1:1} through ${2:10} {",
+      "  &:nth-child(#{\\$i}) {",
+      "    animation-delay: 100ms * \\$i;$0",
+      "  }",
+      "}"
+    ],
+    "description": "Loop - for through"
+  },
 
+  "Loop - for to": {
+    "prefix": "loop-for-to",
+    "body": [
+      "@for \\$i from ${1:1} to ${2:10} {",
+      "  &:nth-child(#{\\$i}) {",
+      "    animation-delay: 100ms * \\$i;$0",
+      "  }",
+      "}"
+    ],
+    "description": "Loop - for to"
+  },
 
-	"Loop - for through": {
-		"prefix": "loop-for-through",
-		"body": [
-			"@for \\$i from ${1:1} through ${2:10} {",
-			"  &:nth-child(#{\\$i}) {",
-			"    animation-delay: 100ms * \\$i;$0",
-			"  }",
-			"}"
-		],
-		"description": "Loop - for through"
-	},
+  "Loop - each (key, value)": {
+    "prefix": "loop-each-key-value",
+    "body": [
+      "\\$list: (",
+      "  facebook: #3b5998,",
+      "  twitter: #55acee,",
+      "  googleplus: #dd4b39",
+      ");",
+      "",
+      "@each ${1:\\$key}, ${2:\\$value} in \\$list {",
+      "  .photo-#{${1:\\$key}} {",
+      "    color: #{${2:\\$value}};$0",
+      "  }",
+      "}"
+    ],
+    "description": "Loop - each (key, value)"
+  },
 
+  "Loop - each (value)": {
+    "prefix": "loop-each-key-value",
+    "body": [
+      "\\$list: facebook, twitter, googleplus;",
+      "",
+      "@each ${1:\\$value} in \\$list {",
+      "  .photo-#{${1:\\$value}} {",
+      "    background: image-url('img-#{${1:\\$value}}.png') no-repeat;$0",
+      "  }",
+      "}"
+    ],
+    "description": "Loop - each (value)"
+  },
 
-	"Loop - for to": {
-		"prefix": "loop-for-to",
-		"body": [
-			"@for \\$i from ${1:1} to ${2:10} {",
-			"  &:nth-child(#{\\$i}) {",
-			"    animation-delay: 100ms * \\$i;$0",
-			"  }",
-			"}"
-		],
-		"description": "Loop - for to"
-	},
+  "Animation - declare": {
+    "prefix": "animation-declare",
+    "body": [
+      "@keyframes ${1:animationName} {",
+      "  0% {",
+      "    ${2:someCoolShitHere}",
+      "  }",
+      "",
+      "  100% {",
+      "    ${3:moreCoolShitHere}",
+      "  }",
+      "}"
+    ],
+    "description": "Animation - declare"
+  },
 
+  "Animation - use": {
+    "prefix": "animation-use",
+    "body": [
+      "animation-name: name;",
+      "animation-duration: 500ms;",
+      "animation-timing-function: linear|ease|ease-in|ease-out|cubic-bezier(n,n,n,n)|initial|inherit;",
+      "animation-delay: 500ms;",
+      "animation-iteration-count: number|infinite|initial|inherit;",
+      "animation-direction: normal|reverse|alternate|alternate-reverse|initial|inherit;",
+      "animation-fill-mode: both|none|forwards|backwards|initial|inherit;",
+      "animation-play-state: running|paused|initial|inherit;"
+    ],
+    "description": "Animation - use"
+  },
 
-	"Loop - each (key, value)": {
-		"prefix": "loop-each-key-value",
-		"body": [
-			"\\$list: (",
-			"  facebook: #3b5998,",
-			"  twitter: #55acee,",
-			"  googleplus: #dd4b39",
-			");",
-			"",
-			"@each ${1:\\$key}, ${2:\\$value} in \\$list {",
-			"  .photo-#{${1:\\$key}} {",
-			"    color: #{${2:\\$value}};$0",
-			"  }",
-			"}"
-		],
-		"description": "Loop - each (key, value)"
-	},
+  "Display an ellipsis to represent clipped text": {
+    "prefix": "ellipsis",
+    "body": [
+      "text-overflow: ellipsis;",
+      "overflow: hidden;",
+      "white-space: nowrap;"
+    ],
+    "description": "Display an ellipsis to represent clipped text"
+  },
 
-
-	"Loop - each (value)": {
-		"prefix": "loop-each-key-value",
-		"body": [
-			"\\$list: facebook, twitter, googleplus;",
-			"",
-			"@each ${1:\\$value} in \\$list {",
-			"  .photo-#{${1:\\$value}} {",
-			"    background: image-url('img-#{${1:\\$value}}.png') no-repeat;$0",
-			"  }",
-			"}"
-		],
-		"description": "Loop - each (value)"
-	},
-
-	"Animation - declare": {
-		"prefix": "animation-declare",
-		"body": [
-			"@keyframes ${1:animationName} {",
-			"  0% {",
-			"    ${2:someCoolShitHere}",
-			"  }",
-			"",
-			"  100% {",
-			"    ${3:moreCoolShitHere}",
-			"  }",
-			"}"
-		],
-		"description": "Animation - declare"
-	},
-
-
-	"Animation - use": {
-		"prefix": "animation-use",
-		"body": [
-			"animation-name: name;",
-			"animation-duration: 500ms;",
-			"animation-timing-function: linear|ease|ease-in|ease-out|cubic-bezier(n,n,n,n)|initial|inherit;",
-			"animation-delay: 500ms;",
-			"animation-iteration-count: number|infinite|initial|inherit;",
-			"animation-direction: normal|reverse|alternate|alternate-reverse|initial|inherit;",
-			"animation-fill-mode: both|none|forwards|backwards|initial|inherit;",
-			"animation-play-state: running|paused|initial|inherit;"
-		],
-		"description": "Animation - use"
-	},
-
-	"Display an ellipsis to represent clipped text": {
-		"prefix": "ellipsis",
-		"body": [
-			"text-overflow: ellipsis;",
-			"overflow: hidden;",
-			"white-space: nowrap;"
-		],
-		"description": "Display an ellipsis to represent clipped text"
-	},
-
-	"ESLint disable file": {
-		"prefix": "eslintdisablefile",
-		"body": [
-			"/* eslint-disable */"
-		],
-		"description": "ESLint disable file"
-	}
+  "ESLint disable file": {
+    "prefix": "eslintdisablefile",
+    "body": ["/* eslint-disable */"],
+    "description": "ESLint disable file"
+  }
 }
-
-
-
-
