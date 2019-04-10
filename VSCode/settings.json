@@ -99,5 +99,10 @@
   // Debug
   "debug.inlineValues": true,
   // Prettier
-  "prettier.disableLanguages": ["markdown"]
+  "prettier.disableLanguages": [
+    "markdown"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
