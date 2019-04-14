@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<OR>
+	<E K="boundingBoxScale" V="height:4;width:5;unit:1" />
+	<E K="createFileIcon" V="0" />
+	<E K="cropExportMethod" V="0" />
+	<E K="enabled" V="1" />
+	<E K="fixedScale" V="amount:1;unit:1" />
+	<E K="heightScale" V="height:5;unit:1" />
+	<E K="jpegBits" V="8" />
+	<E K="jpegQuality" V="100" />
+	<E K="longEdgeScale" V="length:5;unit:1" />
+	<E K="MetadataIncludeAllOther" V="1" />
+	<E K="MetadataIncludeCameraData" V="1" />
+	<E K="MetadataIncludeCopyright" V="1" />
+	<E K="MetadataIncludeGPS" V="1" />
+	<E K="MetadataIncludeKeywords" V="1" />
+	<E K="MetadataIncludeRating" V="0" />
+	<E K="MetadataSelectedLibrariesWhitelist" V="" />
+	<E K="name" V="theprintspace, A4" />
+	<E K="neverUpscale" V="0" />
+	<E K="OutputFileFormat" V="2" />
+	<E K="outputProfile" V="Adobe RGB (1998).icm" />
+	<E K="quality" V="0" />
+	<E K="recipeVersion" V="5" />
+	<E K="resolution" V="300" />
+	<E K="resolutionUnit" V="1" />
+	<E K="scaleMethod" V="4" />
+	<E K="SharpeningOutputAmount" V="80" />
+	<E K="SharpeningOutputControl" V="1" />
+	<E K="SharpeningOutputMethod" V="0" />
+	<E K="SharpeningOutputRadius" V="0.600000023841858" />
+	<E K="SharpeningOutputThreshold" V="0" />
+	<E K="SharpeningOutputViewingDistance" V="40" />
+	<E K="SharpeningOutputViewingDistanceUnit" V="2" />
+	<E K="shortEdgeScale" V="length:5;unit:1" />
+	<E K="showAll" V="0" />
+	<E K="skipThumbnail" V="0" />
+	<E K="sortIndex" V="3" />
+	<E K="tiffBits" V="8" />
+	<E K="tiffCompression" V="0" />
+	<E K="tileDimension" V="-1" />
+	<E K="WatermarkColor" V="red:0.99989902973175;green:1;blue:0.999841868877411;" />
+	<E K="WatermarkFontName" V=".AppleSystemUIFont" />
+	<E K="WatermarkFontSize" V="300" />
+	<E K="WatermarkHImagePlacement" V="0" />
+	<E K="WatermarkHTextPlacement" V="0" />
+	<E K="WatermarkImageFilePath" V="" />
+	<E K="WatermarkImageOpacity" V="0.5" />
+	<E K="WatermarkImageScale" V="1" />
+	<E K="WatermarkPixelFontSize" V="300" />
+	<E K="WatermarkPointFontSize" V="18" />
+	<E K="WatermarkStrikeThrough" V="0" />
+	<E K="WatermarkStrikeThroughColor" V="red:0.99989902973175;green:1;blue:0.999841868877411;" />
+	<E K="WatermarkText" V="" />
+	<E K="WatermarkTextOpacity" V="0.5" />
+	<E K="WatermarkTextRelativeSize" V="0" />
+	<E K="WatermarkTextScale" V="1" />
+	<E K="WatermarkType" V="0" />
+	<E K="WatermarkUnderline" V="0" />
+	<E K="WatermarkUnderlineColor" V="red:0.99989902973175;green:1;blue:0.999841868877411;" />
+	<E K="WatermarkVImagePlacement" V="0" />
+	<E K="WatermarkVTextPlacement" V="0" />
+	<E K="widthByHeightScale" V="height:4;width:5;unit:1" />
+	<E K="widthScale" V="width:5;unit:1" />
+</OR>
