@@ -322,13 +322,13 @@
 		<key>proofMargin-toggled-on</key>
 		<false/>
 		<key>selected-tool-palette-id</key>
-		<string>ColorToolTab</string>
+		<string>OrganizeToolTab</string>
 		<key>tools-display-state</key>
 		<string>Shown</string>
 		<key>tools-position</key>
 		<string>Left</string>
 		<key>tools-width</key>
-		<real>393</real>
+		<real>500</real>
 		<key>viewer-labels</key>
 		<integer>1</integer>
 		<key>viewer-mode</key>
@@ -843,7 +843,9 @@
 				<string>Library</string>
 				<string>MetadataFilters</string>
 			</array>
-			<array/>
+			<array>
+				<integer>1</integer>
+			</array>
 			<array>
 				<dict>
 					<key>sizeOption</key>
@@ -852,10 +854,10 @@
 				<dict>
 					<key>FILTER_TOOL_COLLAPSED_GROUP_KEYS</key>
 					<array>
-						<string>imagePlace</string>
-						<string>exp_date</string>
 						<string>color_tag_index</string>
+						<string>exp_date</string>
 						<string>content_keywords</string>
+						<string>imagePlace</string>
 					</array>
 					<key>FILTER_TOOL_COLLAPSED_ITEM_KEYS</key>
 					<array>
@@ -947,8 +949,8 @@
 			<string>DetailsToolTab</string>
 			<string>ColorToolTab</string>
 			<string>SettingsToolTab</string>
-			<string>MetaDataToolTab</string>
 			<string>OutputToolTab</string>
+			<string>MetaDataToolTab</string>
 		</array>
 		<key>tool-windows</key>
 		<array/>
