@@ -6,28 +6,36 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 
 2. Install git.
 
-`brew install git`
+```
+brew install git
+```
 
 3. Clone this repo to hidden .dotfile directory in your home directory
 
-`git clone git@github.com:pawelgrzybek/dotfiles.git ~/.dotfile`
+```
+git clone git@github.com:pawelgrzybek/dotfiles.git ~/.dotfile
+```
 
 4. Run setup.
 
-`source ~/.dotfiles/setup-symlinks.sh`
+```
+source ~/.dotfiles/setup-symlinks.sh
+```
 
-`source ~/.dotfiles/setup-osx.sh`
+```
+source ~/.dotfiles/setup-osx.sh
+```
 
-`source ~/.dotfiles/setup-brew.sh`
+```
+source ~/.dotfiles/setup-brew.sh
+```
 
 5. Symlink VSCode stuff manually.
 
 VSCode:
 
 ```
-ln -s /Users/pawelgrzybek/.dotfiles/VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s /Users/pawelgrzybek/.dotfiles/VSCode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s /Users/pawelgrzybek/.dotfiles/VSCode/snippets/ ~/Library/Application\ Support/Code/User/snippets
+ln -s ~/.dotfiles/VSCode/* ~/Library/Application\ Support/Code/User/
 ```
 
 6. Configure Alfred settings.
@@ -69,20 +77,18 @@ code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension pawelgrzybek.gatito-theme
 ```
 
-11. download node and some npm & yarn stuff
+11. download node and some global yarn stuff
 
 ```
 nvm install node
 ```
 
 ```
-yarn global add babel-eslint
-yarn global add eslint
-yarn global add eslint-plugin-react
-yarn global add eslint-plugin-prettier
-yarn global add eslint-config-prettier
-yarn global add jest
-yarn global add prettier
-yarn global add typescript
-yarn global add vsce
+yarn global add eslint @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier eslint-plugin-react jest prettier typescript vsce
+```
+
+12. Capture One Pro config symlinks
+
+```
+ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One/
 ```
