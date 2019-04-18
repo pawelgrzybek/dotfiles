@@ -107,6 +107,8 @@ module.exports = {
     // by default `['--login']` will be used
     shellArgs: ["--login"],
 
+    scrollback: 5000,
+
     // for environment variables
     env: {},
 
