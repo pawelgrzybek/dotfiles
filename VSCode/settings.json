@@ -47,7 +47,6 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
     "**/bower_components": true,
     "**/.sass-cache": true,
     ".nyc_output": true
