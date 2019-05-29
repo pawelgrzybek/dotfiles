@@ -57,7 +57,7 @@
   // Search
   "search.showLineNumbers": true,
   "search.smartCase": true,
-  "search.location": "panel",
+  // "search.location": "panel",
 
   // Zen mode
   "zenMode.centerLayout": false,
