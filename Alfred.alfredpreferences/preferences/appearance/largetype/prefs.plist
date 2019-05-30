@@ -3,7 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>font</key>
+<<<<<<< HEAD
 	<string>Dank Mono</string>
+=======
+	<string>System</string>
+	<key>showOnMouseScreen</key>
+	<true/>
+>>>>>>> a000dd2974e2709b6e876f33aa52f5776fda2b9e
 	<key>style</key>
 	<integer>0</integer>
 </dict>
