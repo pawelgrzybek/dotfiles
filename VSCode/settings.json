@@ -72,6 +72,8 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+
   "terminal.external.osxExec": "Hyper.app",
 
   // Git
