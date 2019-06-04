@@ -18,12 +18,6 @@ export EDITOR="vim"
 
 # Set personal aliases
 
-# easier folders navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-
 # utility shortcuts improved
 alias ls="ls -F" # show trailing slash with folders
 alias ll="ls -la" # show list of all files (including hidden)
