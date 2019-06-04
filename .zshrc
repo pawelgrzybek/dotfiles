@@ -2,7 +2,7 @@
 export PATH=${PATH}:/usr/local/mysql/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/pgrzybek/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set theme
 ZSH_THEME="robbyrussell"
