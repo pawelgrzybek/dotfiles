@@ -1,6 +1,6 @@
 # Variables
 dir=~/.dotfiles
-files=".bash_profile .eslintrc.js .gitconfig .hushlogin .inputrc .vimrc .hyper.js"
+files=".zshrc .eslintrc.js .gitconfig .vimrc .hyper.js"
 
 # Lets make it look nicer
 echo ""
@@ -17,7 +17,7 @@ echo "- - - - - - - - - -"
 echo ""
 
 # Create symlinks
-for file in $files; do
+for file in $(echo $files); do
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file ~/$file
   echo "- - -"
@@ -33,4 +33,4 @@ echo "- - - - - - - - - -"
 echo ""
 
 # initialize new settings
-source ~/.bash_profile
+source ~/.zshrc
