@@ -98,6 +98,7 @@
 
   // Debug
   "debug.inlineValues": true,
+  "debug.toolBarLocation": "docked",
 
   // Prettier
   "prettier.disableLanguages": ["markdown"],
@@ -118,5 +119,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "debug.toolBarLocation": "docked"
+  // Breadcrumbs
+  "breadcrumbs.enabled": false
 }
