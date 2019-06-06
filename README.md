@@ -30,7 +30,9 @@ source ~/.dotfiles/setup-osx.sh
 source ~/.dotfiles/setup-brew.sh
 ```
 
-5. Symlink VSCode stuff manually.
+5. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+
+6. Symlink VSCode stuff manually.
 
 VSCode:
 
@@ -38,7 +40,7 @@ VSCode:
 ln -s ~/.dotfiles/VSCode/* ~/Library/Application\ Support/Code/User/
 ```
 
-6. Configure Alfred settings.
+7. Configure Alfred settings.
 
 Alfred: use GUI
 
@@ -46,15 +48,14 @@ Alfred: use GUI
 ~/.dotfiles
 ```
 
-7. Enable Alfred clipboard (plain text for 7 days) and your personalized theme.
+8. Enable Alfred clipboard (plain text for 7 days) and your personalized theme.
 
-8. SSH setup
+9. SSH setup
 
-9. Download your fav apps from App Store or independent websites:
+10. Download your fav apps from App Store or independent websites:
 
 - Affinity Photo
 - Affinity Design
-- Affinity Publisher
 - Keynote
 - Numbers
 - Pages
@@ -62,7 +63,7 @@ Alfred: use GUI
 - Reeder
 - Things
 
-10. download VSCode plugins
+11. download VSCode plugins
 
 ```
 code --install-extension ban.spellright
@@ -77,7 +78,7 @@ code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension pawelgrzybek.gatito-theme
 ```
 
-11. download node and some global yarn stuff
+12. download node and some global yarn stuff
 
 ```
 nvm install node
@@ -87,7 +88,7 @@ nvm install node
 yarn global add eslint @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier eslint-plugin-react jest prettier typescript vsce
 ```
 
-12. Capture One Pro config symlinks
+13. Capture One Pro config symlinks
 
 ```
 ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One/
