@@ -8,11 +8,11 @@ brew tap homebrew/cask-versions
 # Install CLI tools
 # brew install aws-sam-cli
 # brew install awscli
-brew install bash-completion
 brew install cowsay
 brew install git
 brew install hugo
 brew install nvm
+brew install tree
 brew install yarn
 
 # Install CLI tools
