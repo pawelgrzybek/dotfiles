@@ -93,3 +93,9 @@ yarn global add eslint @typescript-eslint/parser eslint-config-prettier eslint-p
 ```
 ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One/
 ```
+
+14. ZSH theme copy
+
+```
+cp .dotfiles/pawelgrzybek.zsh-theme .oh-my-zsh/custom/themes
+```

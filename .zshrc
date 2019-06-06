@@ -5,7 +5,7 @@ export PATH=${PATH}:/usr/local/mysql/bin
 export ZSH=$HOME/.oh-my-zsh
 
 # Set theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="pawelgrzybek"
 
 # Plugins would you like to load?
 plugins=(git)
