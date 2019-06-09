@@ -1,4 +1,6 @@
 {
+  // Utilities
+
   "Copyright Pawel Grzybek": {
     "prefix": "copy",
     "body": [
@@ -25,6 +27,8 @@
     "description": "Log output to console",
     "scope": "javascript, javascriptreact, typescript"
   },
+
+  // ESLint specific snippets
 
   "ESLint disable block": {
     "prefix": "eslintdisableblock",
@@ -69,26 +73,7 @@
     "scope": "javascript, javascriptreact, typescript"
   },
 
-  "ES2015 Module import": {
-    "prefix": "import",
-    "body": ["import ${2:ComponentsName} from '${1:package-name}';"],
-    "description": "ES2015 Module import",
-    "scope": "javascript, javascriptreact, typescript"
-  },
-
-  "ES2015 Module export (default)": {
-    "prefix": "export",
-    "body": ["export default ${1:ComponentsName};"],
-    "description": "ES2015 Module export (default)",
-    "scope": "javascript, javascriptreact, typescript"
-  },
-
-  "ES2015 Module export (named)": {
-    "prefix": "exportnamed",
-    "body": ["export { ${1:ComponentsName as desiredName} };"],
-    "description": "ES2015 Module export (named)",
-    "scope": "javascript, javascriptreact, typescript"
-  },
+  // Jest specific snippets
 
   "Jest - describe": {
     "prefix": "jest-describe",
@@ -117,5 +102,17 @@
     ],
     "description": "Jest - test",
     "scope": "javascript, javascriptreact, typescript"
+  },
+
+  // Express specific snippets
+
+  "Express - method": {
+    "prefix": "express-method",
+    "body": [
+      "app.${1:method}(\"/\", (req, res, next) => {",
+      "  ${2:// make some cool stuff here}",
+      "});"
+    ],
+    "description": "Express method"
   }
 }
