@@ -56,6 +56,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>D6C3FC3E-D33A-4111-B981-BA510156BD8F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dockerhub</string>
+			<key>text</key>
+			<string>Docker Hub</string>
+			<key>url</key>
+			<string>https://hub.docker.com/search/?q={query}&amp;type=image</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>D773DFB0-F894-4823-B0F0-61DB78FAF87D</key>
 		<dict>
 			<key>enabled</key>
