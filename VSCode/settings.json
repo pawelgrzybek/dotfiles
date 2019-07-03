@@ -120,5 +120,8 @@
   },
 
   // Breadcrumbs
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
