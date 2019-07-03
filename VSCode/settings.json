@@ -30,7 +30,6 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": null,
   "workbench.editor.tabSizing": "shrink",
-  "workbench.statusBar.feedback.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.settings.editor": "json",
   "workbench.colorTheme": "Gatito Theme",
