@@ -34,6 +34,7 @@
   "workbench.settings.editor": "json",
   "workbench.colorTheme": "Gatito Theme",
   "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
   "workbench.list.horizontalScrolling": true,
 
   // Window
@@ -72,6 +73,7 @@
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.inheritEnv": false,
 
   "terminal.external.osxExec": "Hyper.app",
 
@@ -82,7 +84,6 @@
   "npm.enableScriptExplorer": true,
 
   // ESlint
-  "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
     "javascriptreact",

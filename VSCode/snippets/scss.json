@@ -94,11 +94,5 @@
       "white-space: nowrap;"
     ],
     "description": "Display an ellipsis to represent clipped text"
-  },
-
-  "ESLint disable file": {
-    "prefix": "eslintdisablefile",
-    "body": ["/* eslint-disable */"],
-    "description": "ESLint disable file"
   }
 }

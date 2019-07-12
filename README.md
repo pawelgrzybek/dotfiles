@@ -85,7 +85,7 @@ nvm install node
 ```
 
 ```
-yarn global add eslint @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier eslint-plugin-react jest prettier typescript vsce
+yarn global add vsce
 ```
 
 13. Capture One Pro config symlinks
