@@ -84,6 +84,7 @@
   "npm.enableScriptExplorer": true,
 
   // ESlint
+  "eslint.quiet": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
