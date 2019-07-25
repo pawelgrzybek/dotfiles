@@ -114,5 +114,16 @@
       "});"
     ],
     "description": "Express method"
+  },
+
+  // Print this shit
+  "Print this shit": {
+    "prefix": "printThisShit",
+    "body": [
+      "console.log('- - - - - - - - - - - - - - - - - - - - - ')",
+      "console.log({${1:printThisShit} })",
+      "console.log('- - - - - - - - - - - - - - - - - - - - - ')"
+    ],
+    "description": "Print this shit"
   }
 }
