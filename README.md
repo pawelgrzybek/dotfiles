@@ -69,7 +69,6 @@ Alfred: use GUI
 code --install-extension ban.spellright
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
-code --install-extension idleberg.applescript
 code --install-extension karigari.chat
 code --install-extension mrmlnc.vscode-duplicate
 code --install-extension ms-vsliveshare.vsliveshare
