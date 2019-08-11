@@ -80,9 +80,6 @@
   // Git
   "git.enableSmartCommit": true,
 
-  // npm
-  "npm.enableScriptExplorer": true,
-
   // ESlint
   "eslint.quiet": true,
   "eslint.validate": [
