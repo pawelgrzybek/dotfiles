@@ -42,10 +42,6 @@ alias top="top -o vsize"
 alias serve="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
 alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 0.0.0.0:8000 -t ."
 
-# start / stop apache & MySQL
-alias am-start="sudo apachectl start && mysql.server start"
-alias am-stop="sudo apachectl stop && mysql.server stop"
-
 # npm shit
 alias npmi="npx benny-hill npm i"
 alias npmu="npx benny-hill npm u"
