@@ -1,6 +1,3 @@
-# add stuff to the PATH
-export PATH=${PATH}:/usr/local/mysql/bin
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
