@@ -42,11 +42,6 @@ alias top="top -o vsize"
 alias serve="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
 alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 0.0.0.0:8000 -t ."
 
-# npm shit
-alias npmi="npx benny-hill npm i"
-alias npmu="npx benny-hill npm u"
-alias npmt="npx benny-hill npm t"
-
 # nvm setup
 # command provided post brew install nvm
 export NVM_DIR="$HOME/.nvm"
