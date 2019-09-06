@@ -1,45 +1,17 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  {
-    "key": "ctrl+cmd+shift+right",
-    "command": "editor.emmet.action.balanceOut",
-    "when": "editorTextFocus && editorLangId == html"
-  },
-  {
-    "key": "ctrl+cmd+shift+left",
-    "command": "editor.emmet.action.balanceIn",
-    "when": "editorTextFocus && editorLangId == html"
-  },
-  {
-    "key": "cmd+numpad_add",
-    "command": "editor.action.fontZoomIn"
-  },
-  {
-    "key": "shift+cmd+=",
-    "command": "editor.action.fontZoomIn"
-  },
+  // START: Use cmd + = / cmd + - to change a font size of en editor
   {
     "key": "cmd+=",
     "command": "editor.action.fontZoomIn"
-  },
-  {
-    "key": "cmd+numpad_subtract",
-    "command": "editor.action.fontZoomOut"
-  },
-  {
-    "key": "shift+cmd+-",
-    "command": "editor.action.fontZoomOut"
   },
   {
     "key": "cmd+-",
     "command": "editor.action.fontZoomOut"
   },
   {
-    "key": "cmd+numpad0",
-    "command": "editor.action.fontZoomReset"
-  },
-  {
     "key": "cmd+0",
     "command": "editor.action.fontZoomReset"
   }
+  // STOP: Use cmd + = / cmd + - to change a font size of en editor
 ]
