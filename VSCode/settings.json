@@ -73,7 +73,6 @@
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "terminal.integrated.inheritEnv": false,
 
   "terminal.external.osxExec": "Hyper.app",
 
