@@ -1,3 +1,6 @@
+# Install brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Upgrade brew
 brew upgrade
 
@@ -8,6 +11,7 @@ brew tap homebrew/cask-versions
 # Install CLI tools
 # brew install aws-sam-cli
 # brew install awscli
+# brew install cfn-lint
 brew install cowsay
 brew install git
 brew install hugo
@@ -24,7 +28,6 @@ brew cask install docker
 brew cask install figma
 brew cask install forklift
 brew cask install google-chrome
-brew cask install google-chrome-canary
 brew cask install hyper
 brew cask install imagealpha
 brew cask install imageoptim
