@@ -1,36 +1,13 @@
-# Variables
-dir=~/.dotfiles
-files=".zshrc .gitconfig .hyper.js"
+# Dotfiles
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.hyper.js ~/.hyper.js
 
-# Lets make it look nicer
-echo ""
-echo "- - - - - - - - - -"
-echo ""
+# Visual Studio Code
+ln -s ~/.dotfiles/VSCode/* ~/Library/Application\ Support/Code/User/
 
-# change to the dotfiles directory
-echo "Changing to the $dir directory"
-cd $dir
-
-# Lets make it look nicer
-echo ""
-echo "- - - - - - - - - -"
-echo ""
-
-# Create symlinks
-for file in $(echo $files); do
-  echo "Creating symlink to $file in home directory."
-  ln -s $dir/$file ~/$file
-  echo "- - -"
-done
-
-# Lets make it look nicer
-echo ""
-echo "- - - - - - - - - -"
-echo ""
-echo "All done. Have a great day :-*"
-echo " "
-echo "- - - - - - - - - -"
-echo ""
+# Capture One
+ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One/
 
 # initialize new settings
 source ~/.zshrc

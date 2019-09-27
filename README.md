@@ -8,45 +8,45 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 source ~/.dotfiles/setup-brew.sh
 ```
 
-2. Clone this repo to hidden .dotfile directory in your home directory
+2. SSH setup
+
+3. Clone this repo to hidden `.dotfile` directory in your home directory.
 
 ```
 git clone git@github.com:pawelgrzybek/dotfiles.git ~/.dotfile
 ```
 
-3. Run setup.
-
-```
-source ~/.dotfiles/setup-symlinks.sh
-```
+4. Setup macOS.
 
 ```
 source ~/.dotfiles/setup-osx.sh
 ```
 
-4. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
-
-5. Symlink VSCode stuff manually.
-
-VSCode:
+5. Setup symlinks.
 
 ```
-ln -s ~/.dotfiles/VSCode/* ~/Library/Application\ Support/Code/User/
+source ~/.dotfiles/setup-symlinks.sh
 ```
 
-6. Configure Alfred settings.
-
-Alfred: use GUI
+6. Download VSCode plugins
 
 ```
-~/.dotfiles
+source ~/.dotfiles/setup-vscode.sh
 ```
 
-7. Enable Alfred clipboard (plain text for 7 days) and your personalized theme.
+7. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 
-8. SSH setup
+8. ZSH theme copy
 
-9. Download your fav apps from App Store or independent websites:
+```
+cp .dotfiles/pawelgrzybek.zsh-theme .oh-my-zsh/custom/themes
+```
+
+9. Configure Alfred settings.
+
+Read / write settings to `~/.dotfiles`, enable clipboard (plain text for 7 days) and your personalized theme.
+
+10. Download your fav apps from App Store or independent websites:
 
 - Affinity Photo
 - Affinity Design
@@ -57,20 +57,6 @@ Alfred: use GUI
 - Reeder
 - Things
 
-10. download VSCode plugins
-
-```
-code --install-extension ban.spellright
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension esbenp.prettier-vscode
-code --install-extension karigari.chat
-code --install-extension mrmlnc.vscode-duplicate
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-audio
-code --install-extension ms-vsliveshare.vsliveshare-pack
-code --install-extension pawelgrzybek.gatito-theme
-```
-
 11. download node and some global yarn stuff
 
 ```
@@ -79,16 +65,4 @@ nvm install node
 
 ```
 yarn global add vsce
-```
-
-12. Capture One Pro config symlinks
-
-```
-ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One/
-```
-
-13. ZSH theme copy
-
-```
-cp .dotfiles/pawelgrzybek.zsh-theme .oh-my-zsh/custom/themes
 ```
