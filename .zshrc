@@ -1,17 +1,7 @@
 # Add sbin to path
 export PATH="/usr/local/sbin:$PATH"
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-# Set theme
-ZSH_THEME="pawelgrzybek"
-
-# Plugins would you like to load?
-plugins=(git)
-
-# Load a file
-source $ZSH/oh-my-zsh.sh
+PROMPT="> "
 
 # Preferred editor
 export EDITOR="vim"
