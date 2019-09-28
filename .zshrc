@@ -1,10 +1,30 @@
-# Add sbin to path
+# Extend path
 export PATH="/usr/local/sbin:$PATH"
-
-PROMPT="> "
 
 # Preferred editor
 export EDITOR="vim"
+
+# ZSH prompt
+PROMPT='%F{yellow}%3~%f '
+RPROMPT='%F{242}%n, %D, %*%f'
+
+# ZSH auto cd
+setopt AUTO_CD
+
+# ZSH history
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+SAVEHIST=1000
+HISTSIZE=1000
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+
+# ZSH case insensitive path-completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 # Set personal aliases
 
