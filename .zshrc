@@ -5,8 +5,41 @@ export PATH="/usr/local/sbin:$PATH"
 export EDITOR="vim"
 
 # ZSH prompt
-PROMPT='%F{yellow}%3~%f '
+# PROMPT='%F{yellow}%3~%f '
+# RPROMPT='%F{242}%n, %D, %*%f'
+
+
+
+
+
+# Load vcs_info function
+# http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Gathering-information-from-version-control-systems
+autoload -Uz vcs_info
+
+# Add vsc_info to executed before each prompt
+# http://zsh.sourceforge.net/Doc/Release/Functions.html#Hook-Functions
+precmd () { vcs_info }
+
+# Enable parameter expansion, command substitution and arithmetic expansion in prompts
+# http://zsh.sourceforge.net/Doc/Release/Options.html#Prompting
+setopt PROMPT_SUBST
+
+# Enable git only (i don't use anything else)
+# Enable info about uncommited changes in working directory
+# http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Quickstart
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' check-for-changes true
+
+# Format vsc info message
+# zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f vcs: %F{yellow}%s%f | branch: %b | repo: %r | stagedstr: %c | unstagedstr: %u"
+zstyle ':vcs_info:git:*' formats "%F{242}· %r > %b%f "
+
+PROMPT='%F{yellow}%3~%f ${vcs_info_msg_0_}'
 RPROMPT='%F{242}%n, %D, %*%f'
+
+
+
+
 
 # ZSH auto cd
 setopt AUTO_CD
