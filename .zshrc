@@ -5,12 +5,6 @@ export PATH="/usr/local/sbin:$PATH"
 export EDITOR="vim"
 
 # ZSH prompt
-# PROMPT='%F{yellow}%3~%f '
-# RPROMPT='%F{242}%n, %D, %*%f'
-
-
-
-
 
 # Load vcs_info function
 # http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Gathering-information-from-version-control-systems
@@ -32,14 +26,19 @@ zstyle ':vcs_info:*' check-for-changes true
 
 # Format vsc info message
 # zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f vcs: %F{yellow}%s%f | branch: %b | repo: %r | stagedstr: %c | unstagedstr: %u"
-zstyle ':vcs_info:git:*' formats "%F{242}· %r > %b%f "
-
-PROMPT='%F{yellow}%3~%f ${vcs_info_msg_0_}'
-RPROMPT='%F{242}%n, %D, %*%f'
+zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f "
 
 
+prompt() {
+  if [ -d .git ]; then
+    echo ${vcs_info_msg_0_}
+  else
+    echo '%F{yellow}%3~%f '
+  fi;
+}
 
-
+PROMPT='$(prompt)'
+RPROMPT='%F{242}%n, %*%f'
 
 # ZSH auto cd
 setopt AUTO_CD
