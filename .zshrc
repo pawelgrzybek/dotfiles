@@ -10,9 +10,26 @@ export EDITOR="vim"
 # http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Gathering-information-from-version-control-systems
 autoload -Uz vcs_info
 
-# Add vsc_info to executed before each prompt
+# Hook Functions
 # http://zsh.sourceforge.net/Doc/Release/Functions.html#Hook-Functions
-precmd () { vcs_info }
+# Executed before each prompt
+precmd () {
+  # Add vsc_info to executed before each prompt
+  # http://zsh.sourceforge.net/Doc/Release/Functions.html#Hook-Functions
+  vcs_info
+}
+
+# Executed whenever the current working directory is changed
+chpwd () {
+  # Install node using nvm when .nvmrc config file exists in a directory
+  if [ -f .nvmrc ]; then
+    echo "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·"
+    echo ""
+    nvm use
+    echo ""
+    echo "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·"
+  fi;
+}
 
 # Enable parameter expansion, command substitution and arithmetic expansion in prompts
 # http://zsh.sourceforge.net/Doc/Release/Options.html#Prompting
