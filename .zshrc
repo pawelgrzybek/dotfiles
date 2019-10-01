@@ -23,10 +23,12 @@ setopt PROMPT_SUBST
 # http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Quickstart
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr "%F{242} (staged changes)%f"
+zstyle ':vcs_info:*' unstagedstr "%F{242} (dirty)%f"
 
 # Format vsc info message
-# zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f vcs: %F{yellow}%s%f | branch: %b | repo: %r | stagedstr: %c | unstagedstr: %u"
-zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f "
+# zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f vcs: %F{yellow}%s%f "
+zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%u%c%f "
 
 
 prompt() {
