@@ -45,7 +45,7 @@ zstyle ':vcs_info:*' unstagedstr "%F{242} (dirty)%f"
 
 # Format vsc info message
 # zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f vcs: %F{yellow}%s%f "
-zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%u%c%f "
+zstyle ':vcs_info:git:*' formats "%F{yellow}%r → %b%u%c%f "
 
 
 prompt() {
