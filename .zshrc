@@ -2,7 +2,7 @@
 export PATH="/usr/local/sbin:$PATH"
 
 # Preferred editor
-export EDITOR="code"
+export EDITOR="vim"
 
 # ZSH prompt
 
