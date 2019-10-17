@@ -1,5 +1,11 @@
+# System Preferences > General > Appearance
+defaults write -globalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
+
 # System Preferences > General > Click in the scrollbar to: Jump to the spot that's clicked
-defaults write -globalDomain "AppleScrollerPagingBehavior" -bool true
+defaults write -globalDomain AppleScrollerPagingBehavior -bool true
+
+# System Preferences > General > Sidebar icon size: Medium
+defaults write -globalDomain NSTableViewDefaultSizeMode -int 2
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
