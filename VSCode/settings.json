@@ -120,5 +120,8 @@
   "breadcrumbs.enabled": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+
+  // SCM
+  "scm.defaultViewMode": "tree"
 }
