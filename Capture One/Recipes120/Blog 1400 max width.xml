@@ -4,12 +4,12 @@
 	<E K="createFileIcon" V="0" />
 	<E K="cropExportMethod" V="0" />
 	<E K="destinationSubFolder" V="&lt;TokenName version=&quot;2&quot;&gt;&lt;/TokenName&gt;" />
-	<E K="destinationSubName" V="&lt;TokenName version=&quot;2&quot;&gt;&lt;Token Type=&quot;1&quot;&gt;&lt;/Token&gt;&lt;Token Type=&quot;12&quot; xml:space=&quot;preserve&quot;&gt;&lt;Value&gt; (web)&lt;/Value&gt;&lt;/Token&gt;&lt;/TokenName&gt;" />
+	<E K="destinationSubName" V="&lt;TokenName version=&quot;2&quot;&gt;&lt;Token Type=&quot;1&quot;&gt;&lt;/Token&gt;&lt;Token Type=&quot;12&quot; xml:space=&quot;preserve&quot;&gt;&lt;Value&gt; 1400w&lt;/Value&gt;&lt;/Token&gt;&lt;/TokenName&gt;" />
 	<E K="enabled" V="1" />
 	<E K="fixedScale" V="amount:1;unit:1" />
 	<E K="heightScale" V="height:5;unit:1" />
 	<E K="jpegBits" V="8" />
-	<E K="jpegQuality" V="90" />
+	<E K="jpegQuality" V="100" />
 	<E K="longEdgeScale" V="length:5;unit:1" />
 	<E K="MetadataIncludeAllOther" V="1" />
 	<E K="MetadataIncludeCameraData" V="1" />
@@ -18,7 +18,7 @@
 	<E K="MetadataIncludeKeywords" V="1" />
 	<E K="MetadataIncludeRating" V="0" />
 	<E K="MetadataSelectedLibrariesWhitelist" V="" />
-	<E K="name" V="Instagram" />
+	<E K="name" V="Blog 1400 max width" />
 	<E K="neverUpscale" V="0" />
 	<E K="OutputFileFormat" V="1" />
 	<E K="outputProfile" V="sRGB Color Space Profile.icm" />
@@ -37,7 +37,7 @@
 	<E K="shortEdgeScale" V="length:5;unit:1" />
 	<E K="showAll" V="0" />
 	<E K="skipThumbnail" V="0" />
-	<E K="sortIndex" V="3" />
+	<E K="sortIndex" V="4" />
 	<E K="tiffBits" V="8" />
 	<E K="tiffCompression" V="0" />
 	<E K="tileDimension" V="-1" />
@@ -63,5 +63,5 @@
 	<E K="WatermarkVImagePlacement" V="0" />
 	<E K="WatermarkVTextPlacement" V="0" />
 	<E K="widthByHeightScale" V="height:4;width:5;unit:1" />
-	<E K="widthScale" V="width:1700;unit:0" />
+	<E K="widthScale" V="width:1400;unit:0" />
 </OR>
