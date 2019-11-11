@@ -1,4 +1,17 @@
 {
+  "Blog - new post": {
+    "prefix": "blog-newpost",
+    "body": [
+      "---",
+      "title: \"${1:Title}\"",
+      "description: \"${2:Description}\"",
+      "photo: ${3:$CURRENT_YEAR}-${4:$CURRENT_MONTH}-${5:$CURRENT_DATE}.jpg",
+      "draft: true",
+      "---"
+    ],
+    "description": "Blog - new post"
+  },
+
   "Hugo - update shortcode": {
     "prefix": "hugo-update",
     "body": ["{{% update %}}${1:Content}{{% /update %}}"],
