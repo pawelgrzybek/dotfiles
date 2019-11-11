@@ -36,6 +36,7 @@
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.list.horizontalScrolling": true,
+  "workbench.editor.splitSizing": "split",
 
   // Window
   "window.newWindowDimensions": "maximized",
