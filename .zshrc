@@ -92,7 +92,7 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # utility shortcuts improved
 alias ls="ls -F" # show trailing slash with folders
 alias ll="ls -la" # show list of all files (including hidden)
-alias yolo="brew upgrade && brew cask upgrade && yarn global upgrade --latest" # upgrade everything
+alias yolo="brew upgrade && brew cask upgrade --greedy && yarn global upgrade --latest" # upgrade every-fuckin-thing
 
 # some git shortcuts
 alias g="git"
