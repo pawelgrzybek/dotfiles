@@ -117,13 +117,13 @@
   },
 
   // Print this shit
-  "Print this shit": {
-    "prefix": "printThisShit",
+  "logger": {
+    "prefix": "logger",
     "body": [
-      "console.log('- - - - - - - - - - - - - - - - - - - - - ')",
-      "console.log({${1:printThisShit} })",
-      "console.log('- - - - - - - - - - - - - - - - - - - - - ')"
+      "console.dir('---------------------------------------------------------------')",
+      "console.dir(${1:someShit})",
+      "console.dir('---------------------------------------------------------------')"
     ],
-    "description": "Print this shit"
+    "description": "logger"
   }
 }
