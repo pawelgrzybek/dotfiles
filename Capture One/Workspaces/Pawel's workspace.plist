@@ -320,9 +320,9 @@
 		<key>maximize-viewer</key>
 		<false/>
 		<key>proofMargin-toggled-on</key>
-		<false/>
+		<true/>
 		<key>selected-tool-palette-id</key>
-		<string>OrganizeToolTab</string>
+		<string>ExposureToolTab</string>
 		<key>tools-display-state</key>
 		<string>Shown</string>
 		<key>tools-position</key>
@@ -412,6 +412,9 @@
 				<string>UndoRedoItem</string>
 				<string>AutoAdjustItem</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
+				<string>NSToolbarSpaceItem</string>
+				<string>NSToolbarSpaceItem</string>
+				<string>NSToolbarSpaceItem</string>
 				<string>CursorToolItem</string>
 				<string>ActivitiesProgressItem</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
@@ -436,6 +439,8 @@
 				<string>ResetAdjustmentsItem</string>
 				<string>UndoRedoItem</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
+				<string>NSToolbarSpaceItem</string>
+				<string>NSToolbarSpaceItem</string>
 				<string>CursorToolItem</string>
 				<string>ActivitiesProgressItem</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
@@ -443,6 +448,7 @@
 				<string>AlignmentItem</string>
 				<string>FocusMaskItem</string>
 				<string>RecipeProofingItem</string>
+				<string>NSToolbarSpaceItem</string>
 				<string>EditPrimaryOnlyItem</string>
 				<string>RotateItem</string>
 				<string>AdjustmentsItem</string>
@@ -508,20 +514,14 @@
 				<string>LocalAdjustments</string>
 				<string>BaseCharacteristics</string>
 				<string>Normalize</string>
-				<string>WhiteBalance</string>
 				<string>ColorBalance</string>
+				<string>WhiteBalance</string>
 				<string>SelectiveColorControl</string>
 				<string>BlackAndWhite</string>
 				<string>Film Grain</string>
 			</array>
 			<array>
 				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
-				<integer>3</integer>
-				<integer>4</integer>
-				<integer>5</integer>
-				<integer>6</integer>
 				<integer>7</integer>
 				<integer>8</integer>
 			</array>
@@ -540,12 +540,12 @@
 				</dict>
 				<dict/>
 				<dict>
+					<key>ColorBalanceInspectorToolSelectedTab</key>
+					<integer>1</integer>
 					<key>sizeOption</key>
 					<integer>0</integer>
 				</dict>
 				<dict>
-					<key>ColorBalanceInspectorToolSelectedTab</key>
-					<integer>1</integer>
 					<key>sizeOption</key>
 					<integer>0</integer>
 				</dict>
@@ -591,7 +591,6 @@
 			</array>
 			<array>
 				<integer>0</integer>
-				<integer>1</integer>
 			</array>
 			<array>
 				<dict/>
@@ -627,6 +626,7 @@
 				<string>Histogram</string>
 				<string>LocalAdjustments</string>
 				<string>Crop</string>
+				<string>Grid</string>
 				<string>Rotation</string>
 				<string>Exposure</string>
 				<string>ShadowHighlight</string>
@@ -636,10 +636,8 @@
 				<string>Vignetting</string>
 			</array>
 			<array>
-				<integer>2</integer>
 				<integer>3</integer>
-				<integer>7</integer>
-				<integer>9</integer>
+				<integer>4</integer>
 			</array>
 			<array>
 				<dict>
@@ -650,6 +648,7 @@
 					<key>sizeOption</key>
 					<integer>1</integer>
 				</dict>
+				<dict/>
 				<dict/>
 				<dict/>
 				<dict>
@@ -843,9 +842,7 @@
 				<string>Library</string>
 				<string>MetadataFilters</string>
 			</array>
-			<array>
-				<integer>1</integer>
-			</array>
+			<array/>
 			<array>
 				<dict>
 					<key>sizeOption</key>
@@ -854,9 +851,9 @@
 				<dict>
 					<key>FILTER_TOOL_COLLAPSED_GROUP_KEYS</key>
 					<array>
-						<string>color_tag_index</string>
-						<string>exp_date</string>
 						<string>content_keywords</string>
+						<string>exp_date</string>
+						<string>color_tag_index</string>
 						<string>imagePlace</string>
 					</array>
 					<key>FILTER_TOOL_COLLAPSED_ITEM_KEYS</key>
@@ -921,8 +918,6 @@
 				<string>Settings</string>
 			</array>
 			<array>
-				<integer>0</integer>
-				<integer>1</integer>
 				<integer>2</integer>
 			</array>
 			<array>
