@@ -14,6 +14,7 @@
   "editor.smoothScrolling": true,
   "editor.renderLineHighlight": "all",
   "editor.snippetSuggestions": "top",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Emmet
   "emmet.showSuggestionsAsSnippets": true,
@@ -32,11 +33,10 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.settings.editor": "json",
-  "workbench.colorTheme": "Gatito Theme",
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.list.horizontalScrolling": true,
-  "workbench.editor.splitSizing": "split",
+  // "workbench.editor.splitSizing": "split",
 
   // Window
   "window.newWindowDimensions": "maximized",
@@ -107,22 +107,11 @@
     "editor.wordWrap": "bounded",
     "files.trimTrailingWhitespace": false
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
 
   // Breadcrumbs
   "breadcrumbs.enabled": false,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
 
   // SCM
-  "scm.defaultViewMode": "tree"
+  "scm.defaultViewMode": "tree",
+  "workbench.colorTheme": "Gatito Theme"
 }
