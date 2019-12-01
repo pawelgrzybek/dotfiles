@@ -125,5 +125,13 @@
       "console.dir('---------------------------------------------------------------')"
     ],
     "description": "logger"
+  },
+
+  "Dunelm - put parameter": {
+    "prefix": "dunelm-put-parameter",
+    "body": [
+      "/put-parameter ${1:<paremeter name>} ${2:<value>} ${3:<type>} ${4:<env name>}"
+    ],
+    "description": "Dunelm - put parameter"
   }
 }
