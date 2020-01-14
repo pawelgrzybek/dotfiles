@@ -36,7 +36,6 @@
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.list.horizontalScrolling": true,
-  // "workbench.editor.splitSizing": "split",
 
   // Window
   "window.newWindowDimensions": "maximized",
@@ -58,7 +57,6 @@
   // Search
   "search.showLineNumbers": true,
   "search.smartCase": true,
-  // "search.location": "panel",
 
   // Zen mode
   "zenMode.centerLayout": false,
@@ -74,14 +72,13 @@
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.shell.osx": "/bin/zsh",
-
+  "terminal.integrated.rendererType": "experimentalWebgl",
   "terminal.external.osxExec": "Hyper.app",
 
   // Git
   "git.enableSmartCommit": true,
 
   // ESlint
-  "eslint.quiet": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",

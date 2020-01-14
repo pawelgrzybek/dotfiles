@@ -22,12 +22,10 @@ brew install yarn
 # Install CLI tools
 brew cask install 1password
 brew cask install alfred
-brew cask install capture-one
 brew cask install cleanmymac
 brew cask install docker
 brew cask install figma
 brew cask install forklift
-brew cask install google-chrome
 brew cask install hyper
 brew cask install imagealpha
 brew cask install imageoptim
