@@ -40,6 +40,9 @@
   // Window
   "window.newWindowDimensions": "maximized",
   "window.title": "${activeEditorMedium} ${dirty}",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Gatito Theme",
+"workbench.preferredLightColorTheme": "Default Light+",
 
   // Files
   "files.exclude": {
@@ -110,5 +113,6 @@
 
   // SCM
   "scm.defaultViewMode": "tree",
-  "workbench.colorTheme": "Gatito Theme"
+  "workbench.colorTheme": "Gatito Theme",
+  // "workbench.colorTheme": "Gatito Theme"
 }
