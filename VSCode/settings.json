@@ -36,6 +36,7 @@
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.list.horizontalScrolling": true,
+  "workbench.colorTheme": "Default Light+",
 
   // Window
   "window.newWindowDimensions": "maximized",
@@ -113,6 +114,7 @@
 
   // SCM
   "scm.defaultViewMode": "tree",
-  "workbench.colorTheme": "Default Light+",
+
+  // Gitlens
   "gitlens.views.compare.files.layout": "tree"
 }
