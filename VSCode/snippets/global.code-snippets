@@ -158,5 +158,14 @@
     "body": ["console.${1|log,warning,dir,table,error|}($2);"],
     "description": "Log output to console",
     "scope": "javascript, javascriptreact, typescript, typescriptreact"
+  },
+
+  "JavaScript pointer logger": {
+    "prefix": "pointer",
+    "body": [
+      "console.log(`👉 ${1:something} 👈`);"
+    ],
+    "description": "JavaScript pointer logger",
+    "scope": "javascript, javascriptreact, typescript, typescriptreact"
   }
 }
