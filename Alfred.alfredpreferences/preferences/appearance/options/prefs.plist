@@ -8,9 +8,11 @@
 	<true/>
 	<key>hidemenu</key>
 	<true/>
+	<key>nativedarkmode</key>
+	<true/>
 	<key>showOnScreen</key>
 	<integer>2</integer>
 	<key>visibleresults</key>
-	<integer>5</integer>
+	<integer>7</integer>
 </dict>
 </plist>
