@@ -117,5 +117,5 @@
 
   // Gitlens
   "gitlens.views.compare.files.layout": "tree",
-  "window.zoomLevel": 0
+  "gitlens.codeLens.enabled": false
 }
