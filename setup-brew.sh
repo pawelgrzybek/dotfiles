@@ -25,10 +25,8 @@ brew cask install docker
 brew cask install figma
 brew cask install forklift
 brew cask install hyper
-brew cask install imagealpha
 brew cask install imageoptim
 brew cask install insomnia
-brew cask install mongodb-compass
 brew cask install screenflow
 brew cask install skype
 brew cask install slack

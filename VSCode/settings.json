@@ -36,14 +36,14 @@
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.list.horizontalScrolling": true,
-  "workbench.colorTheme": "Gatito Theme",
+  "workbench.colorTheme": "GitHub Light",
 
   // Window
   "window.newWindowDimensions": "maximized",
-  "window.title": "${activeEditorMedium} ${dirty}",
+  "window.title": "${folderName}",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Gatito Theme",
-  "workbench.preferredLightColorTheme": "Default Light+",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.preferredLightColorTheme": "GitHub Light",
 
   // Files
   "files.exclude": {
@@ -117,5 +117,5 @@
 
   // Gitlens
   "gitlens.views.compare.files.layout": "tree",
-  "window.zoomLevel": 0
+  "gitlens.codeLens.enabled": false
 }
