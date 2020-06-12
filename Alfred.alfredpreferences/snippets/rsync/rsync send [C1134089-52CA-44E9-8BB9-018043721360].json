@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "rsync -arv ~\/pawelgrzybek\/sites\/domainname.dev\/wp-content\/plugins\/ root@server.com:\/var\/www\/domainname.co.uk\/staging\/wp-content\/plugins\/",
-    "uid" : "C1134089-52CA-44E9-8BB9-018043721360",
-    "name" : "rsync send",
-    "keyword" : ""
-  }
-}

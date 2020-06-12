@@ -1,6 +1,4 @@
-// Place your key bindings in this file to overwrite the defaults
 [
-  // START: Use cmd + = / cmd + - to change a font size of en editor
   {
     "key": "cmd+=",
     "command": "editor.action.fontZoomIn"
@@ -13,5 +11,4 @@
     "key": "cmd+0",
     "command": "editor.action.fontZoomReset"
   }
-  // STOP: Use cmd + = / cmd + - to change a font size of en editor
 ]

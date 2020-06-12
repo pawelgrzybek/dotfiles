@@ -117,5 +117,7 @@
 
   // Gitlens
   "gitlens.views.compare.files.layout": "tree",
-  "gitlens.codeLens.enabled": false
+  "gitlens.codeLens.enabled": false,
+  "diffEditor.renderSideBySide": true,
+  "window.zoomLevel": 0
 }
