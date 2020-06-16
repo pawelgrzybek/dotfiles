@@ -1,17 +1,16 @@
 # Install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Upgrade brew
 brew upgrade
 
 # Add some casks
-brew tap homebrew/cask-versions
-# brew tap aws/tap
+brew tap aws/tap
 
 # Install CLI tools
-# brew install aws-sam-cli
-# brew install awscli
-# brew install cfn-lint
+brew install awscli
+brew install aws-sam-cli
+brew install cfn-lint
 brew install git
 brew install hugo
 brew install nvm
