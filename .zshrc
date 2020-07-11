@@ -107,6 +107,7 @@ alias gcom="git checkout master"
 alias gacm="git add -A && git commit -m"
 alias gprm="git pull --rebase origin master"
 alias gpfwl="git push --force-with-lease"
+alias gitupdatemaster="git switch master && git pull && git switch -"
 alias gitcleanup="git branch | grep -v "master" | xargs git branch -D"
 
 # why your mac is so slow?
