@@ -27,17 +27,11 @@ source ~/.dotfiles/setup-osx.sh
 source ~/.dotfiles/setup-symlinks.sh
 ```
 
-6. Setup VSCode
-
-```
-source ~/.dotfiles/setup-vscode.sh
-```
-
-7. Configure Alfred settings.
+6. Configure Alfred settings.
 
 Read / write settings to `~/.dotfiles`, enable clipboard (plain text for 7 days) and your personalized theme.
 
-8. Download your fav apps from App Store or independent websites:
+7. Download your fav apps from App Store or independent websites:
 
 - Affinity Photo
 - Affinity Design
@@ -48,7 +42,7 @@ Read / write settings to `~/.dotfiles`, enable clipboard (plain text for 7 days)
 - Palette Master Element
 - Reeder
 
-9. download node
+8. download node
 
 ```
 nvm install node
