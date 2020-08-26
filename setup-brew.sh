@@ -6,6 +6,7 @@ brew upgrade
 
 # Add some casks
 brew tap aws/tap
+brew tap mongodb/brew
 
 # Install CLI tools
 brew install awscli
@@ -13,6 +14,7 @@ brew install aws-sam-cli
 brew install cfn-lint
 brew install git
 brew install hugo
+brew install mongodb-community-shell
 brew install nvm
 brew install yarn
 
