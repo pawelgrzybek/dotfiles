@@ -12,3 +12,4 @@
   showUntrackedFiles = all
 [core]
 	fileMode = false
+	editor = code --wait
