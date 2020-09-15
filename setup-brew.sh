@@ -28,7 +28,6 @@ brew cask install forklift
 brew cask install hyper
 brew cask install imageoptim
 brew cask install insomnia
-brew cask install psequel
 brew cask install screenflow
 brew cask install skype
 brew cask install slack
