@@ -13,3 +13,5 @@
 [core]
 	fileMode = false
 	editor = code --wait
+[pull]
+	rebase = false
