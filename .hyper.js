@@ -14,7 +14,7 @@ module.exports = {
     foregroundColor: "#E1E4E8",
     backgroundColor: "#24292E",
     selectionColor: "#FFFFFF3D",
-    borderColor: "#E1E4E8",
+    borderColor: "#7F7F7F",
     padding: "16px 16px",
     colors: {
       black: "#7F7F7F",
