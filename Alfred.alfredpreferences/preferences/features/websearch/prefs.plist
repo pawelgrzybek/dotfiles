@@ -17,6 +17,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>41DCAEFE-C012-4736-8256-D14FBC7FCA61</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>sjp</string>
+			<key>text</key>
+			<string>Słownik Języka Polskiego</string>
+			<key>url</key>
+			<string>https://sjp.pl/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>9022D6EE-5844-4BAE-92F4-811A83B94CB7</key>
 		<dict>
 			<key>enabled</key>
