@@ -90,6 +90,9 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # Set personal aliases
 
 # utility shortcuts improved
+alias mv="mv -iv" # safer and verbose move
+alias cp="cp -riv" # safer, resursive and verbose copy
+alias mkdir='mkdir -vp' # verbose mkdir that allows to pass a path
 alias ls="ls -F" # show trailing slash with folders
 alias ll="ls -la" # show list of all files (including hidden)
 alias yolo="brew upgrade && brew cask upgrade --greedy && yarn global upgrade --latest" # upgrade every-fuckin-thing
