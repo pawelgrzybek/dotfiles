@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AspectRatios</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Social</string>
+			<key>Ratio</key>
+			<real>1.9047619104385376</real>
+			<key>Uid</key>
+			<string>DD35649C-2D33-435B-8C37-B891040DF2EF</string>
+		</dict>
+	</array>
+	<key>SelectedAspectRatioUID</key>
+	<string>DD35649C-2D33-435B-8C37-B891040DF2EF</string>
+</dict>
+</plist>
