@@ -6,7 +6,7 @@
         "size" : 12,
         "colorSelected" : "#C0C0C0FF",
         "font" : "System",
-        "color" : "#C0C0C0FF"
+        "color" : "#919191FF"
       },
       "shortcut" : {
         "size" : 12,
@@ -14,12 +14,12 @@
         "font" : "System Light",
         "color" : "#C0C0C0FF"
       },
-      "backgroundSelected" : "#EEEEEEFF",
+      "backgroundSelected" : "#414141FF",
       "text" : {
         "size" : 16,
-        "colorSelected" : "#424242FF",
+        "colorSelected" : "#EBEBEBFF",
         "font" : "System Light",
-        "color" : "#424242FF"
+        "color" : "#D5D5D5FF"
       },
       "iconPaddingHorizontal" : 8,
       "roundness" : 0,
@@ -27,21 +27,21 @@
       "iconSize" : 40
     },
     "search" : {
-      "backgroundSelected" : "#B2D7FFFF",
+      "backgroundSelected" : "#98B2FFFF",
       "paddingHorizontal" : 8,
       "spacing" : 4,
       "text" : {
         "size" : 34,
-        "colorSelected" : "#000000FF",
+        "colorSelected" : "#EAEAEAFF",
         "font" : "System Light",
-        "color" : "#000000FF"
+        "color" : "#EBEBEBFF"
       },
-      "background" : "#FEFFFFFF",
+      "background" : "#323232FF",
       "roundness" : 0,
       "paddingVertical" : 4
     },
     "window" : {
-      "color" : "#FFFFFFFF",
+      "color" : "#222222FF",
       "paddingHorizontal" : 4,
       "width" : 700,
       "borderPadding" : 0,
@@ -50,7 +50,7 @@
       "roundness" : 4,
       "paddingVertical" : 4
     },
-    "credit" : "Paweł Grzybek",
+    "credit" : "Pawel Grzybek",
     "separator" : {
       "color" : "#CBCBCBF3",
       "thickness" : 0
@@ -59,6 +59,6 @@
       "color" : "#C0C0C0FF",
       "thickness" : 2
     },
-    "name" : "pawelgrzybek.com - light"
+    "name" : "pawelgrzybek.com - dark"
   }
 }
