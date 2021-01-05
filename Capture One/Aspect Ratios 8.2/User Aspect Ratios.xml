@@ -12,8 +12,16 @@
 			<key>Uid</key>
 			<string>DD35649C-2D33-435B-8C37-B891040DF2EF</string>
 		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Story</string>
+			<key>Ratio</key>
+			<real>0.5625</real>
+			<key>Uid</key>
+			<string>AAE4F97F-396A-46EF-9D9E-25D1DBA512C3</string>
+		</dict>
 	</array>
 	<key>SelectedAspectRatioUID</key>
-	<string>OutputID</string>
+	<string>OriginalID</string>
 </dict>
 </plist>
