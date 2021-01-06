@@ -4,7 +4,7 @@
 [color]
   ui = true
 [push]
-  default = simple
+	default = current
   followTags = true
 [help]
   autocorrect = 1
