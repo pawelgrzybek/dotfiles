@@ -1,6 +1,3 @@
-# Extend path
-export PATH="/usr/local/sbin:$PATH"
-
 # Preferred editor
 export EDITOR="vim"
 
@@ -117,8 +114,8 @@ alias gitcleanup="git branch | grep -v "master" | xargs git branch -D"
 alias top="top -o vsize"
 
 # run a dead simple python server
-alias serve="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
-alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 0.0.0.0:8000 -t ."
+alias serve="echo 'Your cool server is runing on http://localhost:8000/' && python -m SimpleHTTPServer 8000"
+alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && php -S 0.0.0.0:8000 -t ."
 
 # nvm setup
 # command provided post brew install nvm
