@@ -92,7 +92,7 @@ alias cp="cp -riv" # safer, resursive and verbose copy
 alias mkdir='mkdir -vp' # verbose mkdir that allows to pass a path
 alias ls="ls -F" # show trailing slash with folders
 alias ll="ls -la" # show list of all files (including hidden)
-alias yolo="brew upgrade && brew cask upgrade --greedy && yarn global upgrade --latest" # upgrade every-fuckin-thing
+alias yolo="brew upgrade && yarn global upgrade --latest" # upgrade every-fuckin-thing
 
 # some git shortcuts
 alias g="git"
