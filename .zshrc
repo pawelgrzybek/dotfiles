@@ -37,19 +37,21 @@ setopt PROMPT_SUBST
 # http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Quickstart
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' stagedstr "%F{242} (staged files)%f"
-zstyle ':vcs_info:*' unstagedstr "%F{242} (dirty)%f"
+zstyle ':vcs_info:*' unstagedstr "%F{black} (dirty)%f" # styling for %u
+zstyle ':vcs_info:*' stagedstr "%F{black} (staged files)%f" # styling for %c
+zstyle ':vcs_info:*' patch-format "%F{black} (rebase)%f" # styling for %m
+
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
 
 # Format vsc info message
-# zstyle ':vcs_info:git:*' formats "%F{yellow}%r > %b%f vcs: %F{yellow}%s%f "
-zstyle ':vcs_info:git:*' formats "%F{yellow}%r → %b%F{242}%u%c%m%f%f "
+zstyle ':vcs_info:git:*' formats "%F{yellow}%r → %b%F{black}%u%c%m%f%f "
+zstyle ':vcs_info:git:*' actionformats "%F{yellow}%r → %b%F{black}%u%c%m%f%f "
 
 
 +vi-git-untracked() {
   if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && git status --porcelain | grep -m 1 '^??' &>/dev/null
   then
-    hook_com[misc]='%F{242} (untracked files)%f'
+    hook_com[misc]='%F{black} (untracked files)%f'
   fi
 
 }
@@ -63,8 +65,12 @@ prompt() {
   fi;
 }
 
+rprompt() {
+  echo '%F{black}%n, %*%f'
+}
+
 PROMPT='$(prompt)'
-RPROMPT='%F{242}%n, %*%f'
+RPROMPT='$(rprompt)'
 
 # ZSH auto cd
 setopt AUTO_CD
