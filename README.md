@@ -5,7 +5,7 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 1. Install brew and stuff.
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/pawelgrzybek/dotfiles/master/setup-brew.sh)" 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/pawelgrzybek/dotfiles/master/setup-brew.sh)"
 ```
 
 2. SSH setup
@@ -29,7 +29,9 @@ source ~/.dotfiles/setup-symlinks.sh
 
 6. Configure Alfred settings.
 
-Read / write settings to `~/.dotfiles`, enable clipboard (plain text for 7 days) and your personalized theme.
+- read / write settings to `~/.dotfiles`
+- enable clipboard (plain text for 7 days)
+- personalized theme
 
 7. Download your fav apps from App Store or independent websites:
 
