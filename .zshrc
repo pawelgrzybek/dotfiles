@@ -132,3 +132,14 @@ export NVM_DIR="$HOME/.nvm"
 
 # Go
 export GOPATH=$HOME/Developer/go
+
+# custom functions
+function webpavif() {
+  # cwebp name.sourceExtension -o name.webp && avifenc --min 10 --max 30 name.sourceExtension name.avif
+  dirPath=$(pwd)
+  filePath=$dirPath/$1
+  fileName=$filePath:t:r
+  fileExtension=$filePath:t:e
+
+  cwebp $fileName.$fileExtension -o $fileName.webp && avifenc --min 10 --max 30 $fileName.$fileExtension $fileName.avif
+}
