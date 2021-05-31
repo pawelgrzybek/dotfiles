@@ -23,13 +23,13 @@ brew install yarn
 
 # Install CLI tools
 brew install 1password
+brew install alacritty
 brew install alfred
 brew install cleanmymac
 brew install docker
 brew install figma
 brew install forklift
 brew install google-chrome
-brew install hyper
 brew install imageoptim
 brew install insomnia
 brew install keybase
