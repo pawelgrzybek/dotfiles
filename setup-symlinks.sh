@@ -8,6 +8,7 @@ ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.alacritty.yml ~/.alacritty.yml
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 
 # Initialize new settings
 source ~/.zshrc
