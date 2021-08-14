@@ -8,6 +8,8 @@
 	<string>Pawel Grzybek</string>
 	<key>defaultWebsite</key>
 	<string>https://pawelgrzybek.com/</string>
+	<key>showAlignmentGuides</key>
+	<true/>
 	<key>showconfig</key>
 	<false/>
 </dict>
