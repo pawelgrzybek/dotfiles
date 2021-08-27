@@ -37,7 +37,6 @@ brew install microsoft-teams
 brew install openvpn-connect
 brew install screenflow
 brew install signal
-brew install skype
 brew install slack
 brew install visual-studio-code
 brew install zoom
