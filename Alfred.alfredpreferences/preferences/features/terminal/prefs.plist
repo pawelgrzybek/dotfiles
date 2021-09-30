@@ -5,38 +5,28 @@
 	<key>application</key>
 	<integer>1</integer>
 	<key>custom</key>
-	<string>on alacritty_win()
-    set _running to (application "Alacritty" is running)
-    tell application "Alacritty" to activate
-    tell application "System Events"
-        repeat while (name of first application process whose frontmost is true) is not "alacritty"
-            delay 0.05
-        end repeat
-
-        set _alacritty to first application process whose frontmost is true
-        -- If Alacritty was running, create a new window to run command
-        if _running then
-            tell _alacritty to set _target to (count windows) + 1
-            keystroke "n" using {command down}
-        else
-            set _target to 1
-        end if
-
-        -- Wait for wanted window count
-        tell _alacritty
-            repeat while (count windows) &lt; _target
-                delay 0.05
-            end repeat
-        end tell
-    end tell
-end alacritty_win
-
-on alfred_script(q)
-    my alacritty_win()
-    tell application "System Events"
-        keystroke q
-        key code 36
-    end tell
-end alfred_script</string>
+	<string>on alfred_script(q)
+ 	if (text 1 thru 2 of q) is equal to "cd" then
+ 		do shell script "open -a Hyper " &amp;amp; text 4 thru -1 of q
+ 	else
+ 		do shell script "open -a Hyper ~"
+ 		set appOpen to false
+ 		set nbrOfTry to 0
+ 		delay 0.5
+ 		repeat
+ 			try
+ 				tell application "System Events"
+ 					if exists (window 1 of process "Hyper") then
+ 						set appOpen to true
+ 						exit repeat
+ 					end if
+ 				end tell
+ 			end try
+ 			set nbrOfTry to nbrOfTry + 1
+ 			if nbrOfTry = 20 then exit repeat
+ 			delay 0.5
+ 		end repeat
+ 		if appOpen then tell application "System Events" to keystroke q &amp;amp; return
+ 	end if</string>
 </dict>
 </plist>
