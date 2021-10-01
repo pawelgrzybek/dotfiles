@@ -10,8 +10,23 @@
 		do shell script "open -a Hyper " &amp; text 4 thru -1 of q
 	else
 		do shell script "open -a Hyper ~"
-		delay 1
-		tell application "System Events" to keystroke q &amp; return
+		set appOpen to false
+		set nbrOfTry to 0
+		delay 0.5
+		repeat
+			try
+				tell application "System Events"
+					if exists (window 1 of process "Hyper") then
+						set appOpen to true
+						exit repeat
+					end if
+				end tell
+			end try
+			set nbrOfTry to nbrOfTry + 1
+			if nbrOfTry = 20 then exit repeat
+			delay 0.5
+		end repeat
+		if appOpen then tell application "System Events" to keystroke q &amp; return
 	end if
 end alfred_script</string>
 </dict>
