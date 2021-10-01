@@ -21,7 +21,7 @@ module.exports = {
     // letter spacing as a relative unit
     letterSpacing: 0,
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "D4D4D4",
+    cursorColor: "#D4D4D4",
     // terminal text color under BLOCK cursor
     cursorAccentColor: "#000",
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
@@ -36,9 +36,22 @@ module.exports = {
     // terminal selection color
     selectionColor: "#FFFFFF3D",
     // border color (window, tabs)
-    borderColor: "#24292E",
+    borderColor: "#404040",
     // custom CSS to embed in the main window
-    css: "",
+    css: `
+    .hyper_main {
+      border-color: #24292E !important;
+    }
+    .splitpane_pane > .term_fit:not(.term_active) > div {
+      opacity: 0.25;
+    }
+    .tab_text {
+      color: #7F7F7F;
+    }
+    .tab_text.tab_textActive {
+      color: #E1E4E8;
+    }
+    `,
     // custom CSS to embed in the terminal window
     termCSS: "",
     // set custom startup directory (must be an absolute path)
