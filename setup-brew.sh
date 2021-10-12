@@ -6,14 +6,11 @@ brew upgrade
 
 # Add some casks
 brew tap homebrew/cask-versions
-brew tap aws/tap
 brew tap joedrago/repo
 
 # Install CLI tools
 brew install joedrago/repo/avifenc
 brew install awscli
-brew install aws-sam-cli
-brew install cfn-lint
 brew install git
 brew install go
 brew install hugo
@@ -28,7 +25,7 @@ brew install cleanmymac
 brew install docker
 brew install figma
 brew install forklift
-brew install google-chrome
+brew install google-chrome-canary
 brew install hyper
 brew install imageoptim
 brew install insomnia
