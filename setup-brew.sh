@@ -7,6 +7,7 @@ brew upgrade
 # Add some casks
 brew tap homebrew/cask-versions
 brew tap joedrago/repo
+brew tap mongodb/brew
 
 # Install CLI tools
 brew install joedrago/repo/avifenc
@@ -14,7 +15,9 @@ brew install awscli
 brew install git
 brew install go
 brew install hugo
+brew install mongodb-community@5.0
 brew install nvm
+brew install tunnelblick
 brew install webp
 brew install yarn
 
@@ -29,8 +32,10 @@ brew install google-chrome-canary
 brew install hyper
 brew install imageoptim
 brew install insomnia
+brew install keybase
 brew install screenflow
 brew install signal
+brew install slack
 brew install visual-studio-code
 
 # Remove outdated versions from the cellar.
