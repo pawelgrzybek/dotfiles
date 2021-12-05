@@ -124,7 +124,8 @@ alias top="top -o vsize"
 alias serve="echo 'Your cool server is runing on http://localhost:8000/' && python -m SimpleHTTPServer 8000"
 alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && php -S 0.0.0.0:8000 -t ."
 
-alias docker-mongodb="docker run --name mongodb -d -p 27017:27017 -v ~/Developer/data mongo "
+alias docker-mongodb="docker run --name mongodb -d -p 27017:27017 -v ~/Developer/data mongo"
+alias docker-mongodb-exec="docker exec -it mongodb bash -c \"mongo\""
 
 # nvm setup
 # command provided post brew install nvm
