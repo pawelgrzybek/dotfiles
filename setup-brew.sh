@@ -17,7 +17,7 @@ brew install go
 brew install hugo
 brew install mongodb-community@5.0
 brew install nvm
-brew install tunnelblick
+brew install openvpn-connect
 brew install webp
 brew install yarn
 
