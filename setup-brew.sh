@@ -7,7 +7,6 @@ brew upgrade
 # Add some casks
 brew tap homebrew/cask-versions
 brew tap joedrago/repo
-brew tap mongodb/brew
 
 # Install CLI tools
 brew install joedrago/repo/avifenc
@@ -15,7 +14,6 @@ brew install awscli
 brew install git
 brew install go
 brew install hugo
-brew install mongodb-community@5.0
 brew install nvm
 brew install openvpn-connect
 brew install webp
