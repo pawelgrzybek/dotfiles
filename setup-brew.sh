@@ -5,7 +5,6 @@
 brew upgrade
 
 # Add some casks
-brew tap homebrew/cask-versions
 brew tap joedrago/repo
 
 # Install CLI tools
@@ -26,7 +25,7 @@ brew install cleanmymac
 brew install docker
 brew install figma
 brew install forklift
-brew install google-chrome-canary
+brew install google-chrome
 brew install hyper
 brew install imageoptim
 brew install insomnia
