@@ -17,6 +17,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>2213D10E-CA8C-41D7-BF9A-53DF8064A072</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>mongoose</string>
+			<key>text</key>
+			<string>Mongoose</string>
+			<key>url</key>
+			<string>https://mongoosejs.com/docs/search.html?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>41DCAEFE-C012-4736-8256-D14FBC7FCA61</key>
 		<dict>
 			<key>enabled</key>
