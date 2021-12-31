@@ -1,5 +1,5 @@
 # Install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Upgrade brew
 brew upgrade
@@ -11,16 +11,13 @@ brew tap joedrago/repo
 brew install joedrago/repo/avifenc
 brew install awscli
 brew install git
-brew install go
 brew install hugo
 brew install nvm
-brew install openvpn-connect
 brew install webp
 brew install yarn
 
 # Install CLI tools
 brew install 1password
-brew install alfred
 brew install cleanmymac
 brew install docker
 brew install figma
@@ -33,7 +30,7 @@ brew install keybase
 brew install screenflow
 brew install signal
 brew install slack
-brew install mongodb-compass
+brew install openvpn-connect
 brew install visual-studio-code
 
 # Remove outdated versions from the cellar.

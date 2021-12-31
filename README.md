@@ -38,11 +38,7 @@ source ~/.dotfiles/setup-os.sh
 source ~/.dotfiles/setup-symlinks.sh
 ```
 
-7. Configure Alfred settings.
-
-- read / write settings to `~/.dotfiles`
-- enable clipboard (plain text for 7 days)
-- personalized theme
+7. Configure Raycast from `.rayconfig` file.
 
 8. download node
 

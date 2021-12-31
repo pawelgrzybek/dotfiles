@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "git push origin --delete BRANCHNAME",
-    "dontautoexpand" : true,
-    "uid" : "8904CF2E-5552-4045-BEBA-70300EEB699A",
-    "name" : "git - delete remote branch",
-    "keyword" : ""
-  }
-}

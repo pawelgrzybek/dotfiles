@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "lsof -i :3100{cursor}",
-    "uid" : "BE13F6F5-F3DC-4969-9FB3-0438290C1835",
-    "name" : "Inspect port",
-    "keyword" : "lsof"
-  }
-}

@@ -9,7 +9,7 @@
 	<E K="fixedScale" V="amount:1;unit:1" />
 	<E K="heightScale" V="height:5;unit:1" />
 	<E K="jpegBits" V="8" />
-	<E K="jpegQuality" V="100" />
+	<E K="jpegQuality" V="80" />
 	<E K="longEdgeScale" V="length:5;unit:1" />
 	<E K="MetadataIncludeAllOther" V="1" />
 	<E K="MetadataIncludeCameraData" V="1" />
@@ -44,7 +44,7 @@
 	<E K="tiffBits" V="8" />
 	<E K="tiffCompression" V="0" />
 	<E K="tileDimension" V="-1" />
-	<E K="WatermarkColor" V="red:0.999899327754974;green:1;blue:0.999841749668121;" />
+	<E K="WatermarkColor" V="red:0.999899446964264;green:1;blue:0.999841749668121;" />
 	<E K="WatermarkFontName" V=".AppleSystemUIFont" />
 	<E K="WatermarkFontSize" V="300" />
 	<E K="WatermarkHImagePlacement" V="0" />
@@ -55,14 +55,14 @@
 	<E K="WatermarkPixelFontSize" V="300" />
 	<E K="WatermarkPointFontSize" V="18" />
 	<E K="WatermarkStrikeThrough" V="0" />
-	<E K="WatermarkStrikeThroughColor" V="red:0.999899327754974;green:1;blue:0.999841749668121;" />
+	<E K="WatermarkStrikeThroughColor" V="red:0.999899446964264;green:1;blue:0.999841749668121;" />
 	<E K="WatermarkText" V="" />
 	<E K="WatermarkTextOpacity" V="0.5" />
 	<E K="WatermarkTextRelativeSize" V="0" />
 	<E K="WatermarkTextScale" V="1" />
 	<E K="WatermarkType" V="0" />
 	<E K="WatermarkUnderline" V="0" />
-	<E K="WatermarkUnderlineColor" V="red:0.999899327754974;green:1;blue:0.999841749668121;" />
+	<E K="WatermarkUnderlineColor" V="red:0.999899446964264;green:1;blue:0.999841749668121;" />
 	<E K="WatermarkVImagePlacement" V="0" />
 	<E K="WatermarkVTextPlacement" V="0" />
 	<E K="widthByHeightScale" V="height:4;width:5;unit:1" />

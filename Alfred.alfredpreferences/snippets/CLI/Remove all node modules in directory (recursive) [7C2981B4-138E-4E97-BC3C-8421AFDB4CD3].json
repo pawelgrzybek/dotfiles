@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "find . -name \"node_modules\" -type d -prune | xargs du -chs",
-    "uid" : "7C2981B4-138E-4E97-BC3C-8421AFDB4CD3",
-    "name" : "Remove all node modules in directory (recursive)",
-    "keyword" : ""
-  }
-}
