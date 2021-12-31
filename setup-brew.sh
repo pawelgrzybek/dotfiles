@@ -10,6 +10,7 @@ brew tap joedrago/repo
 # Install CLI tools
 brew install joedrago/repo/avifenc
 brew install awscli
+brew install deno
 brew install git
 brew install hugo
 brew install nvm
@@ -26,8 +27,8 @@ brew install google-chrome
 brew install hyper
 brew install imageoptim
 brew install insomnia
+brew install kap
 brew install keybase
-brew install screenflow
 brew install signal
 brew install slack
 brew install openvpn-connect
