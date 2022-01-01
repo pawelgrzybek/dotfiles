@@ -4,8 +4,12 @@ Before doing anything, make sure you know what are you doing! Settings applied b
 
 1. Install brew and stuff.
 
+[https://brew.sh](https://brew.sh)
+
+1. Install brew stuff.
+
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/pawelgrzybek/dotfiles/master/setup-brew.sh)"
+source ~/.dotfiles/setup-brew.sh
 ```
 
 2. Download your fav apps from App Store or independent websites:
@@ -29,7 +33,7 @@ git clone git@github.com:pawelgrzybek/dotfiles.git ~/.dotfile
 5. Setup macOS.
 
 ```
-source ~/.dotfiles/setup-os.sh
+source ~/.dotfiles/setup-macos.sh
 ```
 
 6. Setup symlinks.
