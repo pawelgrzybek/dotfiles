@@ -25,6 +25,7 @@ brew install kap
 brew install keybase
 brew install openvpn-connect
 brew install raycast
+brew install mongodb-compass
 brew install signal
 brew install slack
 brew install visual-studio-code
