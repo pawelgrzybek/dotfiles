@@ -4,7 +4,6 @@ brew upgrade
 # Install CLI tools
 brew install awscli
 brew install deno
-brew install docker
 brew install git
 brew install hugo
 brew install nvm
@@ -15,6 +14,7 @@ brew install yarn
 # Install casks
 brew install 1password
 brew install cleanmymac
+brew install --cask docker
 brew install figma
 brew install forklift
 brew install google-chrome
