@@ -101,6 +101,7 @@ alias ll="ls -la" # show list of all files (including hidden)
 alias yolo="brew upgrade && yarn global upgrade --latest" # upgrade every-fuckin-thing
 
 # some git shortcuts
+alias gti="git"
 alias g="git"
 alias gs="git status"
 alias gl="git log"
