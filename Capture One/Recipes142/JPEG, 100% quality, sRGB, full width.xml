@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <OR>
 	<E K="boundingBoxScale" V="height:1;width:1;unit:1" />
-	<E K="createFileIcon" V="0" />
 	<E K="cropExportMethod" V="0" />
 	<E K="destinationSubFolder" V="&lt;TokenName Version=&quot;2&quot; /&gt;" />
-	<E K="destinationSubName" V="&lt;TokenName version=&quot;2&quot;&gt;&lt;Token Type=&quot;1&quot;&gt;&lt;/Token&gt;&lt;/TokenName&gt;" />
+	<E K="destinationSubName" V="" />
 	<E K="enabled" V="1" />
+	<E K="fileName" V="&lt;TokenName version=&quot;2&quot;&gt;&lt;Token Type=&quot;1&quot; /&gt;&lt;/TokenName&gt;" />
 	<E K="fixedScale" V="amount:1;unit:1" />
 	<E K="heightScale" V="height:1;unit:1" />
 	<E K="jpegBits" V="8" />
@@ -24,8 +24,9 @@
 	<E K="OutputFileFormat" V="1" />
 	<E K="outputProfile" V="sRGB Color Space Profile.icm" />
 	<E K="outputRootFolder" V="0" />
+	<E K="ProcessedFileOverwriteAction" V="0" />
 	<E K="quality" V="0" />
-	<E K="recipeVersion" V="9" />
+	<E K="recipeVersion" V="11" />
 	<E K="resolution" V="300" />
 	<E K="resolutionUnit" V="1" />
 	<E K="scaleMethod" V="0" />
@@ -44,7 +45,7 @@
 	<E K="tiffCompression" V="0" />
 	<E K="tileDimension" V="-1" />
 	<E K="uniqueIdentifier" V="JPEG sRGB" />
-	<E K="WatermarkColor" V="red:0.99991637468338;green:1;blue:0.999843716621399;" />
+	<E K="WatermarkColor" V="red:0.99991637468338;green:1;blue:0.999843776226044;" />
 	<E K="WatermarkFontName" V="Microsoft Sans Serif" />
 	<E K="WatermarkFontSize" V="300" />
 	<E K="WatermarkFontType" V="0" />
@@ -56,14 +57,14 @@
 	<E K="WatermarkPixelFontSize" V="300" />
 	<E K="WatermarkPointFontSize" V="18" />
 	<E K="WatermarkStrikeThrough" V="0" />
-	<E K="WatermarkStrikeThroughColor" V="red:0.99991637468338;green:1;blue:0.999843716621399;" />
+	<E K="WatermarkStrikeThroughColor" V="red:0.99991637468338;green:1;blue:0.999843776226044;" />
 	<E K="WatermarkText" V="" />
 	<E K="WatermarkTextOpacity" V="0.5" />
 	<E K="WatermarkTextRelativeSize" V="0" />
 	<E K="WatermarkTextScale" V="1" />
 	<E K="WatermarkType" V="0" />
 	<E K="WatermarkUnderline" V="0" />
-	<E K="WatermarkUnderlineColor" V="red:0.99991637468338;green:1;blue:0.999843716621399;" />
+	<E K="WatermarkUnderlineColor" V="red:0.99991637468338;green:1;blue:0.999843776226044;" />
 	<E K="WatermarkVImagePlacement" V="0.5" />
 	<E K="WatermarkVTextPlacement" V="0.5" />
 	<E K="widthByHeightScale" V="height:1;width:1;unit:1" />

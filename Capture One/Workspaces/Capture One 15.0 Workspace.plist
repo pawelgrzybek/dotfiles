@@ -8,6 +8,8 @@
 		<string>Hidden</string>
 		<key>browser-height</key>
 		<integer>160</integer>
+		<key>browser-toolbar-shown</key>
+		<false/>
 		<key>browser-width</key>
 		<integer>160</integer>
 		<key>full-screen</key>
@@ -21,6 +23,8 @@
 		<key>tools-width</key>
 		<integer>305</integer>
 		<key>viewer-shown</key>
+		<false/>
+		<key>viewer-toolbar-shown</key>
 		<false/>
 	</dict>
 	<key>com.phaseone.captureone.exporterwindow.tools</key>
@@ -334,19 +338,19 @@
 		<key>proofMargin-toggled-on</key>
 		<true/>
 		<key>selected-tool-palette-id</key>
-		<string>OutputToolTab</string>
+		<string>OrganizeToolTab</string>
 		<key>tools-display-state</key>
 		<string>Shown</string>
 		<key>tools-position</key>
 		<string>Left</string>
 		<key>tools-width</key>
-		<real>500</real>
+		<real>441</real>
 		<key>viewer-labels</key>
 		<integer>1</integer>
 		<key>viewer-mode</key>
 		<integer>0</integer>
 		<key>viewer-shown</key>
-		<true/>
+		<false/>
 		<key>viewer-toolbar-shown</key>
 		<true/>
 		<key>viewer-zoom</key>
@@ -447,6 +451,7 @@
 			<key>TB Item Identifiers</key>
 			<array>
 				<string>ImportItem</string>
+				<string>ExportVariantsItem</string>
 				<string>ResetAdjustmentsItem</string>
 				<string>MoveToSelectsItem</string>
 				<string>TrashItem</string>
@@ -531,11 +536,12 @@
 				<string>Film Grain</string>
 			</array>
 			<array>
+				<integer>0</integer>
 				<integer>1</integer>
+				<integer>2</integer>
 				<integer>3</integer>
 				<integer>4</integer>
 				<integer>5</integer>
-				<integer>6</integer>
 			</array>
 			<array>
 				<dict>
@@ -654,13 +660,11 @@
 				<string>Vignetting</string>
 			</array>
 			<array>
+				<integer>0</integer>
 				<integer>2</integer>
 				<integer>3</integer>
 				<integer>4</integer>
-				<integer>7</integer>
 				<integer>8</integer>
-				<integer>9</integer>
-				<integer>10</integer>
 			</array>
 			<array>
 				<dict>
@@ -723,7 +727,6 @@
 				<string>Perspective</string>
 			</array>
 			<array>
-				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
 				<integer>4</integer>
@@ -959,6 +962,7 @@
 				<string>Settings</string>
 			</array>
 			<array>
+				<integer>1</integer>
 				<integer>3</integer>
 			</array>
 			<array>
@@ -992,26 +996,11 @@
 			<string>DetailsToolTab</string>
 			<string>ColorToolTab</string>
 			<string>SettingsToolTab</string>
-			<string>OutputToolTab</string>
 			<string>MetaDataToolTab</string>
+			<string>OutputToolTab</string>
 		</array>
 		<key>tool-windows</key>
-		<array>
-			<dict>
-				<key>window-collapsed-states</key>
-				<array/>
-				<key>window-height</key>
-				<string>0.000000</string>
-				<key>window-origin</key>
-				<string>{0, 960}</string>
-				<key>window-tool-settings</key>
-				<array/>
-				<key>window-tools</key>
-				<array/>
-				<key>window-width</key>
-				<string>305.000000</string>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>com.phaseone.captureone.sessionwindow.tools.scrolled</key>
 	<dict>
@@ -1132,18 +1121,10 @@
 		<false/>
 		<key>toolbarConfiguration</key>
 		<dict>
-			<key>TB Display Mode</key>
-			<integer>2</integer>
-			<key>TB Icon Size Mode</key>
-			<integer>1</integer>
-			<key>TB Is Shown</key>
-			<integer>0</integer>
-			<key>TB Item Identifiers</key>
+			<key>TB Default Item Identifiers</key>
 			<array>
 				<string>SelectItem</string>
-				<string>NSToolbarSeparatorItem</string>
 				<string>RotateItem</string>
-				<string>NSToolbarSeparatorItem</string>
 				<string>ResetAdjustmentsItem</string>
 				<string>UndoRedoItem</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
@@ -1152,16 +1133,33 @@
 				<string>FocusMaskItem</string>
 				<string>ExposureWarningItem</string>
 				<string>AlignmentItem</string>
-				<string>NSToolbarSeparatorItem</string>
 				<string>AdjustmentsItem</string>
-				<string>NSToolbarSeparatorItem</string>
 				<string>ProcessItem</string>
+				<string>TipsItem</string>
+			</array>
+			<key>TB Display Mode</key>
+			<integer>2</integer>
+			<key>TB Icon Size Mode</key>
+			<integer>1</integer>
+			<key>TB Is Shown</key>
+			<integer>1</integer>
+			<key>TB Item Identifiers</key>
+			<array>
+				<string>SelectItem</string>
+				<string>RotateItem</string>
+				<string>ResetAdjustmentsItem</string>
+				<string>UndoRedoItem</string>
+				<string>NSToolbarFlexibleSpaceItem</string>
+				<string>CursorToolItem</string>
+				<string>NSToolbarFlexibleSpaceItem</string>
+				<string>FocusMaskItem</string>
+				<string>ExposureWarningItem</string>
+				<string>AlignmentItem</string>
+				<string>AdjustmentsItem</string>
 				<string>TipsItem</string>
 			</array>
 			<key>TB Size Mode</key>
 			<integer>1</integer>
-			<key>TB Visibility Priority Values</key>
-			<dict/>
 		</dict>
 	</dict>
 	<key>com.phaseone.captureone.viewerwindow.tools</key>
@@ -1182,7 +1180,13 @@
 				<string>ColorBalance</string>
 				<string>SelectiveColorControl</string>
 			</array>
-			<array/>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+			</array>
 			<array>
 				<dict>
 					<key>sizeOption</key>
@@ -1243,7 +1247,10 @@
 				<string>Clarity</string>
 				<string>Focus</string>
 			</array>
-			<array/>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+			</array>
 			<array>
 				<dict>
 					<key>sizeOption</key>
@@ -1374,14 +1381,9 @@
 				<string>WhiteBalance</string>
 				<string>Exposure</string>
 				<string>ShadowHighlight</string>
-				<string>Process</string>
 			</array>
 			<array/>
 			<array>
-				<dict>
-					<key>sizeOption</key>
-					<integer>-1</integer>
-				</dict>
 				<dict>
 					<key>sizeOption</key>
 					<integer>-1</integer>
