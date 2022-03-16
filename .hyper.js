@@ -114,6 +114,7 @@ module.exports = {
     shellArgs: ["--login"],
     // for environment variables
     env: {},
+    scrollback: 5000,
     // Supported Options:
     //  1. 'SOUND' -> Enables the bell as a sound
     //  2. false: turns off the bell
