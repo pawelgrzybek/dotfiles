@@ -4,8 +4,8 @@
 [color]
   ui = true
 [push]
-	default = current
   followTags = true
+	autoSetupRemote = true
 [help]
   autocorrect = 1
 [status]
@@ -15,3 +15,5 @@
 	editor = code --wait
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main
