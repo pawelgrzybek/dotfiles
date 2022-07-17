@@ -23,7 +23,8 @@
 	<E K="outputCustomRootFolder" V="" />
 	<E K="OutputFileFormat" V="1" />
 	<E K="outputProfile" V="sRGB Color Space Profile.icm" />
-	<E K="outputRootFolder" V="0" />
+	<E K="outputRootFolder" V="3" />
+	<E K="outputRootFolderPath" V="/Users/pawelgrzybek/Desktop" />
 	<E K="ProcessedFileOverwriteAction" V="0" />
 	<E K="quality" V="0" />
 	<E K="recipeVersion" V="11" />
