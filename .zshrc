@@ -122,10 +122,6 @@ alias gitcleanup="git branch | grep -v "master" | xargs git branch -D"
 # why your mac is so slow?
 alias top="top -o vsize"
 
-# run a dead simple python server
-alias serve="echo 'Your cool server is runing on http://localhost:8000/' && python -m SimpleHTTPServer 8000"
-alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && php -S 0.0.0.0:8000 -t ."
-
 alias docker-mongodb="docker run --name mongodb -d -p 27017:27017 -v ~/Developer/data mongo"
 alias docker-mongodb-exec="docker exec -it mongodb bash -c \"mongo\""
 
@@ -140,11 +136,12 @@ export GOPATH=$HOME/Developer/go
 
 # custom functions
 function webpavif() {
-  # cwebp name.sourceExtension -o name.webp && avifenc --min 10 --max 30 name.sourceExtension name.avif
   dirPath=$(pwd)
   filePath=$dirPath/$1
   fileName=$filePath:t:r
   fileExtension=$filePath:t:e
 
-  cwebp $fileName.$fileExtension -o $fileName.webp && avifenc --min 10 --max 30 $fileName.$fileExtension $fileName.avif
+  cwebp $fileName.$fileExtension -o $fileName.webp && npx avif --input="$filePath" --output="$dirPath" --verbose
 }
+
+alias python=python3
