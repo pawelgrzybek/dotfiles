@@ -66,7 +66,7 @@ prompt() {
 }
 
 rprompt() {
-  echo '%F{black}%n, %*%f'
+  echo '%F{white}%n, %*%f'
 }
 
 PROMPT='$(prompt)'
