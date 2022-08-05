@@ -18,13 +18,14 @@ brew install --cask docker
 brew install figma
 brew install forklift
 brew install google-chrome
-brew install hyper
 brew install imageoptim
 brew install insomnia
+brew install iterm2
 brew install keybase
+brew install mongodb-compass
 brew install openvpn-connect
 brew install raycast
-brew install mongodb-compass
+brew install safari-technology-preview
 brew install screenflow
 brew install signal
 brew install slack
