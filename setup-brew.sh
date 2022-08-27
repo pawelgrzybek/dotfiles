@@ -1,6 +1,10 @@
 # Upgrade brew
 brew upgrade
 
+# Add some taps
+brew tap joedrago/repo
+brew tap homebrew/cask-versions
+
 # Install CLI tools
 brew install awscli
 brew install deno
@@ -27,9 +31,6 @@ brew install safari-technology-preview
 brew install screenflow
 brew install signal
 brew install visual-studio-code
-
-# Add some taps
-brew tap joedrago/repo
 
 # Install tap formulas
 brew install joedrago/repo/avifenc
