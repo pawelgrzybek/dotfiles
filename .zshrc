@@ -124,6 +124,7 @@ alias top="top -o vsize"
 
 alias docker-mongodb="docker run --name mongodb -d -p 27017:27017 -v ~/Developer/data mongo"
 alias docker-mongodb-exec="docker exec -it mongodb bash -c \"mongo\""
+alias docker-prune-every-fucking-thing="docker system prune --all --volumes"
 
 # nvm setup
 # command provided post brew install nvm
