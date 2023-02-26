@@ -135,14 +135,29 @@ export NVM_DIR="$HOME/.nvm"
 # Go
 export GOPATH=$HOME/Developer/go
 
-# custom functions
-function webpavif() {
+function optim() {
+  # For this one to run you need to install a few CLIs
+  # brew install webp
+  # yarn global add avif
+  # yarn global add imageoptim-cli
+
   dirPath=$(pwd)
   filePath=$dirPath/$1
   fileName=$filePath:t:r
   fileExtension=$filePath:t:e
+  filePathWebp="${filePath/.${fileExtension}/".webp"}"
 
-  cwebp $fileName.$fileExtension -o $fileName.webp && npx avif --input="$filePath" --output="$dirPath" --verbose
+  echo -e "\033[0;34mi Running cwebp...\033[0m"
+  cwebp -quiet $filePath -o $filePathWebp
+
+  echo -e "\033[0;34mi Running avif...\033[0m"
+  npx avif --input="$filePath"
+
+  imageoptim --no-stats $filePath
+
+  echo "✅ ${fileName}.webp generated"
+  echo "✅ ${fileName}.avif generated"
+  echo "✅ ${fileName}.${fileExtension} optimized"
 }
 
 alias python=python3
