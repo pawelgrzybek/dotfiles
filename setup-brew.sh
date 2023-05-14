@@ -13,15 +13,21 @@ brew install hugo
 brew install jq
 brew install mongosh
 brew install nvm
+brew install oven-sh/bun/bun
 brew install rustup-init
 brew install webp
 brew install yarn
 
 # Install casks
 brew install 1password
+brew install affinity-designer
+brew install affinity-photo
+brew install affinity-publisher
 brew install cleanmymac
 brew install --cask docker
 brew install figma
+brew install firefox
+brew install firefox-developer-edition
 brew install forklift
 brew install google-chrome
 brew install google-chrome-canary
@@ -29,12 +35,13 @@ brew install --cask httpie
 brew install imageoptim
 brew install iterm2
 brew install mongodb-compass
-brew install openvpn-connect
 brew install raycast
 brew install safari-technology-preview
 brew install screenflow
 brew install shapr3d
 brew install signal
+brew install slack
+brew install telegram
 brew install visual-studio-code
 
 # Install tap formulas
