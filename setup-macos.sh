@@ -1,87 +1,104 @@
-# System Preferences > General > Appearance
+################################################################################
+# System Preferences > Appearance
+################################################################################
+
+# Appearance: Auto
 defaults write -globalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
 
-# System Preferences > General > Click in the scrollbar to: Jump to the spot that's clicked
-defaults write -globalDomain AppleScrollerPagingBehavior -bool true
-
-# System Preferences > General > Sidebar icon size: Medium
+# Sidebar icon size: Medium
 defaults write -globalDomain NSTableViewDefaultSizeMode -int 2
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Click in the scrollbar to: Jump to the spot that's clicked
+defaults write -globalDomain AppleScrollerPagingBehavior -bool true
 
-# System Preferences > Desktop & Screen Saver > Start after: Never
+
+################################################################################
+# System Preferences > Accessibility
+################################################################################
+
+# Pointer Control >  Trackpad Options > Dragging Style: Three Finger Drag
+defaults write com.apple.AppleMultitouchTrackpad Dragging -bool false
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+
+
+################################################################################
+# System Preferences > Lock Screen
+################################################################################
+
+Start Screen Saver when inactive: Never
 defaults -currentHost write com.apple.screensaver idleTime -int 0
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# System Preferences > Dock > Size:
+################################################################################
+# System Preferences > Desktop & Dock
+################################################################################
+
+# Dock > Size:
 defaults write com.apple.dock tilesize -int 36
 
-# System Preferences > Dock > Magnification:
-defaults write com.apple.dock magnification -bool true
-
-# System Preferences > Dock > Size (magnified):
+# Dock > Magnification
 defaults write com.apple.dock largesize -int 54
 
-# System Preferences > Dock > Minimize windows using: Scale effect
+# Dock > Magnification
+defaults write com.apple.dock magnification -bool true
+
+# Dock > Minimize windows using: Scale effect
 defaults write com.apple.dock mineffect -string "scale"
 
-# System Preferences > Dock > Minimize windows into application icon
+# Dock > Minimize windows into application icon
 defaults write com.apple.dock minimize-to-application -bool true
 
-# System Preferences > Dock > Automatically hide and show the Dock:
+# Dock > Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-# System Preferences > Dock > Automatically hide and show the Dock (duration)
+# Dock > Automatically hide and show the Dock (duration)
 defaults write com.apple.dock autohide-time-modifier -float 0.4
 
-# System Preferences > Dock > Automatically hide and show the Dock (delay)
+# Dock > Automatically hide and show the Dock (delay)
 defaults write com.apple.dock autohide-delay -float 0
 
-# System Preferences > Dock > Show indicators for open applications
+# Dock > Show indicators for open applications
 defaults write com.apple.dock show-process-indicators -bool true
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-# System Preferences > Mission Controll > Automatically rearrange Spaces based on most recent use
+# Mission Controll > Automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
-# System Preferences > Mission Controll > Dashboard
+# Mission Controll > Dashboard
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# System Preferences > Keyboard >
+################################################################################
+# System Preferences > Keyboard
+################################################################################
+
+# Key repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
 
-# System Preferences > Keyboard >
+# Delay until repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Press fn key to
+defaults write com.apple.HIToolbox AppleFnUsageType -int 2
 
-# System Preferences > Trackpad > Tap to click
+################################################################################
+# System Preferences > Trackpad
+################################################################################
+
+# Tap to click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# System Preferences > Accessibility > Mouse & Trackpad > Trackpad Potions
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+################################################################################
+# Finder > Preferences
+################################################################################
 
-defaults write com.apple.AppleMultitouchTrackpad Dragging -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool false
-
-# System Preferences > Accessibility > Mouse & Trackpad > Trackpad Potions
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-# Finder > Preferences > Show all filename extensions
+# Show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Finder > Preferences > Show wraning before changing an extension
+# Show wraning before changing an extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Finder > Preferences > Show wraning before removing from iCloud Drive
+# Show wraning before removing from iCloud Drive
 defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 
 # Finder > View > As List
@@ -90,7 +107,6 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Finder > View > Show Path Bar
 defaults write com.apple.finder ShowPathbar -bool true
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # Kill affected apps
 for app in "Dock" "Finder"; do

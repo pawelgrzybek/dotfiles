@@ -31,9 +31,10 @@ brew install firefox-developer-edition
 brew install forklift
 brew install google-chrome
 brew install google-chrome-canary
-brew install --cask httpie
 brew install imageoptim
+brew install insomnia
 brew install iterm2
+brew install microsoft-teams
 brew install mongodb-compass
 brew install raycast
 brew install safari-technology-preview
@@ -41,7 +42,6 @@ brew install screenflow
 brew install shapr3d
 brew install signal
 brew install slack
-brew install telegram
 brew install visual-studio-code
 
 # Install tap formulas
