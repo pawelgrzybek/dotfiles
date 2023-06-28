@@ -1,12 +1,25 @@
 ################################################################################
+# System Preferences > Sound
+################################################################################
+
+# Play feedback when volume is changed
+defaults write -globalDomain "com.apple.sound.beep.feedback" -int 1
+
+
+################################################################################
+# System Preferences > General > Language & Region
+################################################################################
+
+defaults write ".GlobalPreferences_m" AppleLanguages -array en-GB pl-GB
+defaults write -globalDomain AppleLanguages -array en-GB pl-GB
+
+
+################################################################################
 # System Preferences > Appearance
 ################################################################################
 
 # Appearance: Auto
 defaults write -globalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
-
-# Sidebar icon size: Medium
-defaults write -globalDomain NSTableViewDefaultSizeMode -int 2
 
 # Click in the scrollbar to: Jump to the spot that's clicked
 defaults write -globalDomain AppleScrollerPagingBehavior -bool true
@@ -22,11 +35,38 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 
 
 ################################################################################
-# System Preferences > Lock Screen
+# System Preferences > Control Centre
 ################################################################################
 
-Start Screen Saver when inactive: Never
-defaults -currentHost write com.apple.screensaver idleTime -int 0
+# Control Centre Modules > Bluetooth > Show in Menu Bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Bluetooth" -bool true
+
+# Control Centre Modules > Screen Mirroring > Don't Show in Menu Bar
+defaults write "com.apple.airplay" showInMenuBarIfPresent -bool false
+
+# Control Centre Modules > Sound > Always Show in Menu Bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Sound" -bool true
+
+# Control Centre Modules > Now Playing > Don't Show in Menu Bar
+defaults write "com.apple.airplay" "NSStatusItem Visible NowPlaying" -bool false
+
+# Menu Bar Only > Clock Options > Show Date: Never
+defaults write "com.apple.menuextra.clock" ShowDate -int 2
+
+# Menu Bar Only > Clock Options > Show tyhe day of a week
+defaults write "com.apple.menuextra.clock" ShowDayOfWeek -bool false
+
+# Menu Bar Only > Spotlight > Don't Show in Menu Bar
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 1
+
+
+################################################################################
+# System Preferences > Siri & Spotlight
+################################################################################
+
+#Ask Siri
+defaults write com.apple.Siri SiriPrefStashedStatusMenuVisible -bool false
+defaults write com.apple.Siri VoiceTriggerUserEnabled -bool false
 
 
 ################################################################################
@@ -57,14 +97,22 @@ defaults write com.apple.dock autohide-time-modifier -float 0.4
 # Dock > Automatically hide and show the Dock (delay)
 defaults write com.apple.dock autohide-delay -float 0
 
-# Dock > Show indicators for open applications
-defaults write com.apple.dock show-process-indicators -bool true
+# Show recent applications in Dock
+defaults write com.apple.dock "show-recents"  -bool false
+
+# Windows & Apps > Prefer tabs when opening documents
+defaults write -globalDomain AppleWindowTabbingMode -string "always"
 
 # Mission Controll > Automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
-# Mission Controll > Dashboard
-defaults write com.apple.dock dashboard-in-overlay -bool true
+
+################################################################################
+# System Preferences > Lock Screen
+################################################################################
+
+# Start Screen Saver when inactive: Never
+defaults -currentHost write com.apple.screensaver idleTime -int 0
 
 
 ################################################################################
@@ -77,8 +125,21 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 # Delay until repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
-# Press fn key to
-defaults write com.apple.HIToolbox AppleFnUsageType -int 2
+# Keyboard navigation
+defaults write -globalDomain AppleKeyboardUIMode -int 2
+
+# Txt Input > Show Input menu in menu bar
+defaults write com.apple.TextInputMenu visible -bool false
+
+# Txt Input > Correct spelling automatically
+defaults write -globalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Txt Input > Capitalise words automatically
+defaults write -globalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# Txt Input > Add full stop with double-space
+defaults write -globalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
 
 ################################################################################
 # System Preferences > Trackpad
