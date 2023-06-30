@@ -8,7 +8,6 @@ ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.hushlogin ~/.hushlogin
-ln -s ~/.dotfiles/.zprofile ~/.zprofile
 
 # Initialize new settings
 source ~/.zshrc
