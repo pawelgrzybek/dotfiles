@@ -70,7 +70,7 @@ rprompt() {
 }
 
 PROMPT='$(prompt)'
-RPROMPT='$(rprompt)'
+# RPROMPT='$(rprompt)'
 
 # ZSH auto cd
 setopt AUTO_CD
