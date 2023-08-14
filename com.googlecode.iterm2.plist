@@ -1740,7 +1740,7 @@
 		<string>Captured Output</string>
 	</array>
 	<key>UseBorder</key>
-	<true/>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
