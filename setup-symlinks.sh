@@ -5,6 +5,8 @@
 ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One
 
 # Dotfiles
+ln -s ~/.dotfiles/.zshenv ~/.zshenv
+ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.hushlogin ~/.hushlogin
