@@ -23,21 +23,21 @@ autoload -Uz vcs_info
 
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' stagedstr '%B%F{2} (+)%f%b' # styling for %c
-zstyle ':vcs_info:*' unstagedstr '%B%F{1} (-)%f%b' # styling for %u
-zstyle ':vcs_info:*' patch-format '%B%F{1} (%p)%f%b' # styling for %m
+zstyle ':vcs_info:*' stagedstr ' %B%F{2}[+]%f%b' # styling for %c
+zstyle ':vcs_info:*' unstagedstr ' %B%F{1}[-]%f%b' # styling for %u
+zstyle ':vcs_info:*' patch-format ' %B%F{1}[%])%f%b' # styling for %m
 #                                             👆
 # I am not sure about thi %p but it is hard to test, so
 # i am waiting until i come across situation to test it in real life
 # zstyle ':vcs_info:*' patch-format '%B%F{1} (rebase)%f%b' # styling for %m
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
-zstyle ':vcs_info:git:*' formats '%F{11}%r:%b%f%c%u%m '
-zstyle ':vcs_info:git:*' actionformats '%F{11}%r:%b%f%c%u%m '
+zstyle ':vcs_info:git:*' formats "%F{3}%r:%b%f%c%u%m"
+# zstyle ':vcs_info:git:*' actionformats "%F{3}%r:%b#$(git rev-parse --short HEAD)%f%c%u%m "
 
 +vi-git-untracked() {
   if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && git status --porcelain | grep -m 1 '^??' &>/dev/null
   then
-    hook_com[misc]='%B%F{6} (?)%f%b'
+    hook_com[misc]=' %B%F{6}[•]%f%b'
   fi
 }
 
@@ -81,7 +81,7 @@ setopt APPEND_HISTORY
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
-PROMPT='%U%F{cyan}%~%f%u '
+PROMPT='%U%F{4}%~%f%u '
 RPROMPT='${vcs_info_msg_0_}'
 
 # Additional aliases/utils
