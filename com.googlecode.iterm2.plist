@@ -621,7 +621,7 @@
 			<key>Custom Tab Title</key>
 			<string></string>
 			<key>Custom Window Title</key>
-			<string></string>
+			<string>🐘💨</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1038,7 +1038,7 @@
 			<key>Use Custom Tab Title</key>
 			<true/>
 			<key>Use Custom Window Title</key>
-			<false/>
+			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
