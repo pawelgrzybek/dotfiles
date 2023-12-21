@@ -371,9 +371,9 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.88542868127643226</real>
+				<real>0.88235294117647056</real>
 				<key>Red Component</key>
-				<real>0.90152638107939265</real>
+				<real>0.89803921568627454</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -384,9 +384,9 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.26823529411764707</real>
+				<real>0.26666666666666666</real>
 				<key>Red Component</key>
-				<real>0.26823529411764707</real>
+				<real>0.26666666666666666</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -412,9 +412,9 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12156862335316121</real>
+				<real>0.12156861590258088</real>
 				<key>Red Component</key>
-				<real>0.12156862335316121</real>
+				<real>0.12156861590258088</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>

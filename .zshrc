@@ -52,7 +52,7 @@ chpwd () {
   if [ -f .nvmrc ]; then
     echo "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·"
     echo ""
-    nvm use
+    pnpm env use --global $(cat .nvmrc)
     echo ""
     echo "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·"
   fi;
@@ -87,3 +87,17 @@ RPROMPT='${vcs_info_msg_0_}'
 # Additional aliases/utils
 source ~/.dotfiles/.zshrc-aliases.sh
 source ~/.dotfiles/.zshrc-utils.sh
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# pnpm
+export PNPM_HOME="/Users/pawelgrzybek/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+source /Users/pawelgrzybek/.config/broot/launcher/bash/br

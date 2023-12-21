@@ -14,7 +14,7 @@ function optim() {
   cwebp -quiet $filePath -o $filePathWebp
 
   echo -e "\033[0;34mi Running avif...\033[0m"
-  npx avif --input="$filePath"
+  avif --input="$filePath"
 
   imageoptim --no-stats $filePath
 

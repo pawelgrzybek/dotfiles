@@ -4,7 +4,7 @@ alias cp="cp -riv" # safer, resursive and verbose copy
 alias mkdir='mkdir -vp' # verbose mkdir that allows to pass a path
 alias ls="ls -F" # show trailing slash with folders
 alias ll="ls -la" # show list of all files (including hidden)
-alias yolo="brew upgrade && yarn global upgrade --latest" # upgrade every-fuckin-thing
+alias yolo="brew upgrade && pnpm update --global --latest" # upgrade every-fuckin-thing
 alias byebye_node_modules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +" # remove node_modules recursivamente
 
 # some git shortcuts
