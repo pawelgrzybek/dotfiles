@@ -12,7 +12,7 @@
   showUntrackedFiles = all
 [core]
 	fileMode = false
-	editor = code --wait
+	editor = hx
 [pull]
 	rebase = false
 [init]
