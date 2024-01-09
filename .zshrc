@@ -45,6 +45,7 @@ zstyle ':vcs_info:git:*' formats "%F{3}%r:%b%f%c%u%m"
 # Hook Functions
 # http://zsh.sourceforge.net/Doc/Release/Functions.html#Hook-Functions
 precmd () {
+  print -Pn -- '\e]2;%~\a'
   vcs_info
 }
 
