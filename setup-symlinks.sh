@@ -1,15 +1,11 @@
-# Create directories if do not exist yet
-[ -d ~/Library/Application\ Support/Capture\ One/ ] || mkdir ~/Library/Application\ Support/Capture\ One
+# Create directory if it doesn't exist
+[ -d ~/.config ] || mkdir ~/.config
 
-# Capture One
-ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One
+ln -s ~/.dotfiles/alacritty ~/.config/
+ln -s ~/.dotfiles/fish ~/.config/
+ln -s ~/.dotfiles/helix ~/.config/
+ln -s ~/.dotfiles/zellij ~/.config/
 
-# Dotfiles
-ln -s ~/.dotfiles/.zshenv ~/.zshenv
-ln -s ~/.dotfiles/.zprofile ~/.zprofile
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.hushlogin ~/.hushlogin
 
-# Initialize new settings
-source ~/.zshrc
+

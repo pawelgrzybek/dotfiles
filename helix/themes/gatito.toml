@@ -1,0 +1,5 @@
+inherits = "base16_transparent"
+
+"ui.popup" = { bg = "#272734" }
+"ui.menu" = { bg = "#272734" }
+"ui.linenr" = { fg = "black" }

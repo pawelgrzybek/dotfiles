@@ -1,0 +1,65 @@
+[shell]
+program = "/opt/homebrew/bin/fish"
+args = ["-i"]
+
+# Window
+[window]
+padding = { x = 16, y = 16 }
+startup_mode = "Maximized"
+decorations_theme_variant = "Dark"
+option_as_alt = "Both"
+
+# Font
+[font]
+normal = { family = "Monaspace Neon", style = "Regular" }
+bold = { family = "Monaspace Neon", style = "Bold" }
+italic = { family = "Monaspace Neon", style = "Italic" }
+bold_italic = { family = "Monaspace Neon", style = "Bold Italic" }
+size = 15.0
+offset = { x = 0, y = 28 }
+glyph_offset = { x = 0, y = 14 }
+
+# Colors
+[colors]
+line_indicator = { foreground = "#ebebf5", background = "#1e1e28" }
+footer_bar = { foreground = "#ebebf5", background = "#44445a" }
+selection = { foreground = "#1e1e28", background = "#b8ccff" }
+
+[colors.primary]
+foreground = "#ebebf5"
+background = "#1e1e28"
+
+[colors.search]
+matches = { foreground = "#1e1e28", background = "#e5e1f5" }
+focused_match = { foreground = "#1e1e28", background = "#ffc97d" }
+
+[colors.hints]
+start = { foreground = "#ff0000", background = "#ff0066" }
+end = { foreground = "#ff0000", background = "#ff0066" }
+
+[colors.normal]
+black = "#44445a"
+red = "#ff8795"
+green = "#a8f5ba"
+yellow = "#ffc97d"
+blue = "#9bcaff"
+magenta = "#ff9be3"
+cyan = "#69fff6"
+white = "#e5e1f5"
+
+[colors.bright]
+black = "#44445a"
+red = "#ff8795"
+green = "#a8f5ba"
+yellow = "#ffc97d"
+blue = "#9bcaff"
+magenta = "#ff9be3"
+cyan = "#69fff6"
+white = "#e5e1f5"
+
+[keyboard]
+bindings = [
+{ key = "[", mods = "Command", action = "SelectPreviousTab" },
+{ key = "]", mods = "Command", action = "SelectNextTab" },
+{ key = "n", mods = "Super", action = "SpawnNewInstance" },
+]

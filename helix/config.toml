@@ -1,0 +1,44 @@
+theme = "gatito"
+
+[editor]
+line-number = "relative"
+rulers = [80]
+bufferline = "multiple"
+scroll-lines = 1
+idle-timeout = 50
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = false
+wrap-indicator = ""
+wrap-at-text-width = true
+
+[keys.normal]
+# move/copy line below/above
+"A-j" = [ "extend_to_line_bounds", "delete_selection", "paste_after" ]
+"A-k" = [ "extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before" ]
+"A-J" = [ "extend_to_line_bounds", "yank", "paste_after" ]
+"A-K" = [ "extend_to_line_bounds", "yank", "paste_before" ]
+# previous/next buffer
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+C-p = "signature_help"
+
+[keys.insert]
+C-p = "signature_help"
+
+[keys.normal.g]
+E = "goto_file_end"
+
+[keys.select.g]
+E = "goto_file_end"

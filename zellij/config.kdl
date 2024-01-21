@@ -1,0 +1,23 @@
+theme "default"
+
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
+
+themes { 
+    default {
+        fg "#ebebf5"
+        bg "#000000"
+        black "#1e1e28"
+        red "#ff8795"
+        green "#a8f5ba"
+        yellow "#ffc97d"
+        blue "#9bcaff"
+        magenta "#ff9be3"
+        cyan "#69fff6"
+        white "#e5e1f5"
+        orange "#ffc97d"
+    }
+}
