@@ -39,7 +39,7 @@ end = { foreground = "#ff0000", background = "#ff0066" }
 
 [colors.normal]
 black = "#44445a"
-red = "#ff8795"
+red = "#FF758C"
 green = "#a8f5ba"
 yellow = "#ffc97d"
 blue = "#9bcaff"
@@ -49,7 +49,7 @@ white = "#e5e1f5"
 
 [colors.bright]
 black = "#44445a"
-red = "#ff8795"
+red = "#FF758C"
 green = "#a8f5ba"
 yellow = "#ffc97d"
 blue = "#9bcaff"
