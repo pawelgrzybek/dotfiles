@@ -78,3 +78,4 @@ abbr --add docker-mongodb-exec "docker exec -it mongodb bash -c \"mongo\""
 abbr --add docker-prune-every-fucking-thing "docker system prune --all --volumes"
 
 set -Ux PNPM_HOME "/Users/pawelgrzybek/Library/pnpm"
+set PATH $PATH ~/.cargo/bin
