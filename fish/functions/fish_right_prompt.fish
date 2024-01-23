@@ -14,6 +14,8 @@ function fish_right_prompt
 
 
         # echo (set_color yellow)(git rev-parse --abbrev-ref HEAD)':'(command git show-ref --head -s --abbrev | head -n1)"$git_repo_dirty""$git_repo_updates"(set_color normal)
-        echo (set_color yellow)(git rev-parse --abbrev-ref HEAD)':'(command git show-ref --head -s --abbrev | head -n1)"$git_repo_dirty"(set_color normal)
+        if test $(git rev-list -n 1 --all | count) -gt 0
+            echo (set_color yellow)(git rev-parse --abbrev-ref HEAD)':'(command git show-ref --head -s --abbrev | head -n1)"$git_repo_dirty"(set_color normal)
+        end
     end
 end
