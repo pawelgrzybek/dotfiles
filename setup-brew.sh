@@ -7,6 +7,7 @@ brew tap homebrew/cask-versions
 
 # Install CLI tools
 brew install awscli
+brew install broot
 brew install deno
 brew install fish
 brew install git
@@ -39,10 +40,12 @@ brew install logi-options-plus
 brew install mongodb-compass
 brew install raycast
 brew install safari-technology-preview
+brew install screen-studio
 brew install screenflow
 brew install shapr3d
 brew install signal
 brew install visual-studio-code
+brew install zoom
 
 # Install tap formulas
 brew install joedrago/repo/avifenc
