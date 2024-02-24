@@ -11,6 +11,7 @@ brew install broot
 brew install deno
 brew install fish
 brew install git
+brew install git-delta
 brew install helix
 brew install hugo
 brew install mongosh
