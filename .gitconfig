@@ -27,13 +27,19 @@
 	line-numbers = true
 	side-by-side = true
 	true-color = always
-	features = collared-trogon
+	syntax-theme = base16
 	line-numbers-left-style = black
 	line-numbers-right-style = black
 	line-numbers-zero-style = black
-	syntax-theme = base16-256
+	file-style = white
+	file-decoration-style = white box
+	hunk-header-style = omit
+	minus-style = red "#272734"
 	line-numbers-minus-style = red
-    line-numbers-plus-style = green
+	minus-emph-style = black red
+	plus-style = green "#272734"
+	line-numbers-plus-style = green
+	plus-emph-style = black green
 [merge]
     conflictstyle = diff3
 [diff]
