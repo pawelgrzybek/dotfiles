@@ -28,16 +28,17 @@
 	side-by-side = true
 	true-color = always
 	syntax-theme = base16
+	file-modified-label = 🥑
 	line-numbers-left-style = black
 	line-numbers-right-style = black
 	line-numbers-zero-style = black
 	file-style = white
 	file-decoration-style = white box
 	hunk-header-style = omit
-	minus-style = red "#272734"
+	minus-style = syntax "#272734"
 	line-numbers-minus-style = red
 	minus-emph-style = black red
-	plus-style = green "#272734"
+	plus-style = syntax "#272734"
 	line-numbers-plus-style = green
 	plus-emph-style = black green
 [merge]
