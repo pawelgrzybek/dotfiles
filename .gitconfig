@@ -1,29 +1,27 @@
 [user]
-  name = Pawel Grzybek
-  email = pawelgrzybek@users.noreply.github.com
+	name = Pawel Grzybek
+	email = pawelgrzybek@users.noreply.github.com
 [color]
-  ui = true
+	ui = true
 [push]
-  followTags = true
+	followTags = true
 	autoSetupRemote = true
 [help]
-  autocorrect = 1
+	autocorrect = 1
 [status]
   showUntrackedFiles = all
 [core]
 	fileMode = false
 	editor = hx
-    pager = delta
-[pull]
-	rebase = false
+	pager = delta
 [init]
 	defaultBranch = main
 [rerere]
 	enabled = true
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 [delta]
-    navigate = true
+	navigate = true
 	line-numbers = true
 	side-by-side = true
 	true-color = always
@@ -42,6 +40,6 @@
 	line-numbers-plus-style = green
 	plus-emph-style = black green
 [merge]
-    conflictstyle = diff3
+	conflictStyle = zdiff3
 [diff]
-    colorMoved = default
+	colorMoved = default
