@@ -32,6 +32,7 @@ wrap-at-text-width = true
 # previous/next buffer
 H = "goto_previous_buffer"
 L = "goto_next_buffer"
+X = "extend_line_above"
 C-p = "signature_help"
 
 [keys.insert]
