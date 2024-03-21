@@ -8,11 +8,12 @@ command="emmet-ls"
 [[language]]
 name = "html"
 formatter = { command = 'prettier', args = ["--parser", "html"] }
-language-servers = ["vscode-html-language-server", "emmet-ls"]
+language-servers = ["vscode-html-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "css"
 formatter = { command = 'prettier', args = ["--parser", "css"] }
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls"]
 
 [[language]]
 name = "javascript"
@@ -28,13 +29,13 @@ auto-format = true
 name = "jsx"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = ["typescript-language-server", "emmet-ls"]
+language-servers = ["typescript-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "tsx"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = ["typescript-language-server", "emmet-ls"]
+language-servers = ["typescript-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "json"
