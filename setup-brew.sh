@@ -45,8 +45,8 @@ brew install screen-studio
 brew install screenflow
 brew install shapr3d
 brew install signal
+brew install slack
 brew install visual-studio-code
-brew install zoom
 
 # Install tap formulas
 brew install joedrago/repo/avifenc
