@@ -46,3 +46,14 @@ name = "markdown"
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
 soft-wrap.enable = true
 soft-wrap.wrap-at-text-width = true
+
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = {typescript = {tsdk = "./node_modules/typescript/lib"}, environment = "node"}
+
+[[language]]
+name = "astro"
+formatter = { command = 'prettier', args = ["--plugin", "prettier-plugin-astro", "--parser", "astro"] }
+auto-format = true
+language-servers = [ "astro-ls" ]
