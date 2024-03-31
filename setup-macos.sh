@@ -98,10 +98,13 @@ defaults write com.apple.dock autohide-time-modifier -float 0.4
 defaults write com.apple.dock autohide-delay -float 0
 
 # Show recent applications in Dock
-defaults write com.apple.dock "show-recents"  -bool false
+defaults write com.apple.dock "show-recents" -bool false
 
 # Windows & Apps > Prefer tabs when opening documents
 defaults write -globalDomain AppleWindowTabbingMode -string "always"
+
+# Desktop & Stage Manager > Click Wallpaper to reveal desktop > Only in Stage Manager
+defaults write "com.apple.WindowManager" EnableStandardClickToShowDesktop -bool false
 
 # Mission Controll > Automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
@@ -147,6 +150,7 @@ defaults write -globalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
 # Tap to click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 
 ################################################################################
