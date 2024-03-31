@@ -2,3 +2,4 @@ inherits = "base16_transparent"
 
 "ui.linenr" = { modifiers=[ "dim" ] }
 "ui.cursor" = { modifiers = ["reversed", "dim"] }
+"ui.virtual.jump-label" = { modifiers = ["underlined"] }
