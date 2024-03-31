@@ -6,6 +6,7 @@ rulers = [80]
 bufferline = "multiple"
 scroll-lines = 1
 idle-timeout = 50
+popup-border = "all"
 
 [editor.lsp]
 display-messages = true
