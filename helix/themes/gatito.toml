@@ -2,4 +2,6 @@ inherits = "base16_transparent"
 
 "ui.linenr" = { modifiers=[ "dim" ] }
 "ui.cursor" = { modifiers = ["reversed", "dim"] }
-"ui.virtual.jump-label" = { modifiers = ["underlined"] }
+# to be deleted with a new version of helix, that will be the default
+# https://github.com/helix-editor/helix/pull/10076
+"ui.virtual.jump-label" = { fg = "blue", modifiers = ["bold", "underlined"] }
