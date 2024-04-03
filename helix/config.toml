@@ -30,6 +30,9 @@ wrap-at-text-width = true
 "A-k" = [ "extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before" ]
 "A-J" = [ "extend_to_line_bounds", "yank", "paste_after" ]
 "A-K" = [ "extend_to_line_bounds", "yank", "paste_before" ]
+"C-j" = "page_cursor_half_down"
+"C-k" = "page_cursor_half_up"
+
 # previous/next buffer
 H = "goto_previous_buffer"
 L = "goto_next_buffer"
