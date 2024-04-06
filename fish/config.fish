@@ -77,5 +77,11 @@ abbr --add docker-mongodb "docker run --name mongodb -d -p 27017:27017 -v ~/Deve
 abbr --add docker-mongodb-exec "docker exec -it mongodb bash -c \"mongo\""
 abbr --add docker-prune-every-fucking-thing "docker system prune --all --volumes"
 
-set -Ux PNPM_HOME "/Users/pawelgrzybek/Library/pnpm"
 set PATH $PATH ~/.cargo/bin
+
+# pnpm
+set -gx PNPM_HOME "/Users/pawelgrzybek/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
