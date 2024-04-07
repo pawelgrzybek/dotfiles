@@ -56,4 +56,4 @@ config = {typescript = {tsdk = "./node_modules/typescript/lib"}, environment = "
 name = "astro"
 formatter = { command = 'prettier', args = ["--plugin", "prettier-plugin-astro", "--parser", "astro"] }
 auto-format = true
-language-servers = [ "astro-ls" ]
+language-servers = [ "astro-ls", "emmet-ls" ]
