@@ -43,3 +43,5 @@
 	conflictStyle = zdiff3
 [diff]
 	colorMoved = default
+[pull]
+	rebase = true
