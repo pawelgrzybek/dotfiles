@@ -40,10 +40,10 @@
 # "ui.virtual.inlay-hint.parameter" = {}
 # "ui.virtual.inlay-hint.type" = {}
 "ui.virtual.wrap" = "gray"
-"ui.virtual.jump-label" = { fg = "blue", modifiers = ["bold", "underlined"] }
+"ui.virtual.jump-label" = { fg = "light-blue", modifiers = ["bold", "underlined"] }
 "ui.menu" = {}
 "ui.menu.selected" = { modifiers = ["reversed"] }
-"ui.menu.scroll" = { fg = "white", bg = "magenta" }
+"ui.menu.scroll" = { fg = "white", bg = "#ff0000" }
 "ui.selection" = { bg = "#37364A" } # this is only exception, for the color between the black and gray
 "ui.selection.primary" = { bg = "gray" }
 "ui.highlight" = { bg = "gray" }
@@ -72,7 +72,7 @@
 "keyword" = "light-magenta"
 "function" = "light-blue"
 "namespace" = "light-magenta"
-"special" = "yellow"
+"special" = "light-yellow"
 "markup.heading" = "light-blue"
 "markup.list" = "light-red"
 "markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }

@@ -45,12 +45,12 @@ white = "#E3E3E8" #white
 # test
 [colors.normal]
 black = "#21202C"
-red = "#C95368"
-green = "#7CC08F"
-yellow = "#F1BF74"
-blue = "#80A1CA"
-magenta = "#CA83B7"
-cyan = "#64D1D7"
+red = "#F67C8E"
+green = "#B1F5BE"
+yellow = "#F4CA8B"
+blue = "#9FC1EB"
+magenta = "#ECA2D8"
+cyan = "#87F1FE"
 white = "#ABAABB" # light-gray
 
 [colors.dim]
