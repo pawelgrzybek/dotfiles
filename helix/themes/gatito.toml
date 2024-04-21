@@ -52,8 +52,8 @@
 "warning" = { fg = "light-yellow" }
 "error" = { fg = "light-red" }
 "info" = { fg = "light-blue" }
-"hint" = { fg = "light-gray" }
-"diagnostic.hint" = { underline = { color = "light-gray", style = "curl" } }
+"hint" = { fg = "#ABAABB" }
+"diagnostic.hint" = { underline = { color = "#ABAABB", style = "curl" } }
 "diagnostic.info" = { underline = { color = "light-blue", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "light-yellow", style = "curl" } }
 "diagnostic.error" = { underline = { color ="light-red", style = "curl" } }
@@ -65,7 +65,7 @@
 "constructor" = "light-blue"
 "constant" = "light-yellow"
 "string"  = "light-green"
-"comment" = { fg = "light-gray"}
+"comment" = { fg = "#ABAABB"}
 "variable" = "light-red"
 "variable.other.member" = "light-green"
 "label" = "light-magenta"

@@ -33,7 +33,7 @@ matches = { foreground = "#F1F0FF", background = "#57535F" }
 focused_match = { foreground = "#222232", background = "#9FC1EB" }
 
 [colors.bright]
-black = "#4D4B68" # gray
+black = "#585577" # gray
 red = "#F67C8E"
 green = "#B1F5BE"
 yellow = "#F4CA8B"
@@ -51,7 +51,7 @@ yellow = "#F4CA8B"
 blue = "#9FC1EB"
 magenta = "#ECA2D8"
 cyan = "#87F1FE"
-white = "#ABAABB" # light-gray
+white = "#E3E3E8" # light-gray
 
 [colors.dim]
 black = "#21202C"
