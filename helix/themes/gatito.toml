@@ -44,16 +44,16 @@
 "ui.menu" = {}
 "ui.menu.selected" = { modifiers = ["reversed"] }
 "ui.menu.scroll" = { fg = "white", bg = "#ff0000" }
-"ui.selection" = { bg = "#37364A" } # this is only exception, for the color between the black and gray
-"ui.selection.primary" = { bg = "gray" }
+"ui.selection" = { bg = "#41485C" } # this is only exception, for the color between the black and gray
+"ui.selection.primary" = { bg = "#60718B" }
 "ui.highlight" = { bg = "gray" }
 "ui.cursorline" = { bg = "#2C2B3B" }
 "ui.cursorcolumn" = { bg = "#2C2B3B" }
 "warning" = { fg = "light-yellow" }
 "error" = { fg = "light-red" }
 "info" = { fg = "light-blue" }
-"hint" = { fg = "#ABAABB" }
-"diagnostic.hint" = { underline = { color = "#ABAABB", style = "curl" } }
+"hint" = { fg = "light-red" }
+"diagnostic.hint" = { underline = { color = "light-red", style = "curl" } }
 "diagnostic.info" = { underline = { color = "light-blue", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "light-yellow", style = "curl" } }
 "diagnostic.error" = { underline = { color ="light-red", style = "curl" } }
@@ -65,7 +65,7 @@
 "constructor" = "light-blue"
 "constant" = "light-yellow"
 "string"  = "light-green"
-"comment" = { fg = "#ABAABB"}
+"comment" = { fg = "gray"}
 "variable" = "light-red"
 "variable.other.member" = "light-green"
 "label" = "light-magenta"
@@ -78,7 +78,7 @@
 "markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }
 "markup.italic" = { fg = "light-magenta", modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link.url" = { fg = "light-yellow", underline = { color = "light-yellow", style = "line"} }
+"markup.link.url" = { fg = "light-blue", underline = { color = "light-blue", style = "line"} }
 "markup.link.text" = "light-red"
 "markup.quote" = "light-cyan"
 "markup.raw" = "light-green"
