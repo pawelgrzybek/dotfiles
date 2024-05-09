@@ -10,11 +10,11 @@ set fish_color_error red
 set fish_color_param white
 set fish_color_valid_path white
 set fish_color_option white
-set fish_color_comment black
+set fish_color_comment brblack
 set fish_color_selection green
 set fish_color_operator white
 set fish_color_escape white
-set fish_color_autosuggestion black
+set fish_color_autosuggestion brblack
 # set fish_color_cwd white
 # set fish_color_cwd_root white
 # set fish_color_user white
@@ -28,17 +28,17 @@ set fish_color_history_current green
 # Pager color variables
 # https://fishshell.com/docs/current/interactive.html#pager-color-variables
 set fish_pager_color_progress green
-# set fish_pager_color_background --background=black
+# set fish_pager_color_background --background=brblack
 set fish_pager_color_prefix white --bold
-set fish_pager_color_completion black
+set fish_pager_color_completion brblack
 set fish_pager_color_description white
 set fish_pager_color_selected_background --background=blue
-set fish_pager_color_selected_prefix black --bold
-set fish_pager_color_selected_completion black
-set fish_pager_color_selected_description black
-# set fish_pager_color_secondary_background --background=black
+set fish_pager_color_selected_prefix brblack --bold
+set fish_pager_color_selected_completion brblack
+set fish_pager_color_selected_description brblack
+# set fish_pager_color_secondary_background --background=brblack
 set fish_pager_color_secondary_prefix white --bold
-set fish_pager_color_secondary_completion black
+set fish_pager_color_secondary_completion brblack
 set fish_pager_color_secondary_description white
 
 # utility shortcuts improved
@@ -48,7 +48,7 @@ abbr --add mkdir mkdir -vp
 abbr --add ls ls -F
 abbr --add ll ls -la
 abbr --add yolo "brew upgrade && pnpm update --global --latest"
-abbr --add byebye_node_modules find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +
+abbr --add byebye_node_modules find . -name node_modules -type d -prune -exec rm -rf '{}' +
 
 # some git shortcuts
 abbr --add gti git
@@ -68,7 +68,7 @@ abbr --add gprmaster git pull --rebase origin master
 abbr --add gprmain git pull --rebase origin main
 abbr --add gpfwl git push --force-with-lease
 abbr --add gitupdatemaster "git switch master && git pull && git switch -"
-abbr --add gitcleanup git branch | grep -v "master" | xargs git branch -D
+abbr --add gitcleanup git branch | grep -v master | xargs git branch -D
 
 # why your mac is so slow?
 abbr --add top top -o vsize
@@ -80,8 +80,8 @@ abbr --add docker-prune-every-fucking-thing "docker system prune --all --volumes
 set PATH $PATH ~/.cargo/bin
 
 # pnpm
-set -gx PNPM_HOME "/Users/pawelgrzybek/Library/pnpm"
+set -gx PNPM_HOME /Users/pawelgrzybek/Library/pnpm
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
