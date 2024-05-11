@@ -3,10 +3,10 @@
 SETUVAR EDITOR:hx
 SETUVAR --export PNPM_HOME:/Users/pawelgrzybek/Library/pnpm
 SETUVAR __fish_initialized:3400
-SETUVAR fish_color_autosuggestion:black
+SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:red\x1e\x2d\x2dbold
 SETUVAR fish_color_command:white
-SETUVAR fish_color_comment:black
+SETUVAR fish_color_comment:brblack
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
 SETUVAR fish_color_end:white
@@ -27,7 +27,7 @@ SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:white
 SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_pager_color_completion:black
+SETUVAR fish_pager_color_completion:brblack
 SETUVAR fish_pager_color_description:white
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold
 SETUVAR fish_pager_color_progress:green
