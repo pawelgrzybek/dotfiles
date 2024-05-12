@@ -11,9 +11,9 @@ brew install broot
 brew install deno
 brew install fish
 brew install git
-brew install git-delta
 brew install helix
 brew install hugo
+brew install lazygit
 brew install mongosh
 brew install oven-sh/bun/bun
 brew install pnpm

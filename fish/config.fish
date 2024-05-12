@@ -70,6 +70,8 @@ abbr --add gpfwl git push --force-with-lease
 abbr --add gitupdatemaster "git switch master && git pull && git switch -"
 abbr --add gitcleanup git branch | grep -v master | xargs git branch -D
 
+abbr --add lg lazygit
+
 # why your mac is so slow?
 abbr --add top top -o vsize
 
