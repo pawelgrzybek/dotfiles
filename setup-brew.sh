@@ -37,12 +37,10 @@ brew install google-chrome
 brew install google-chrome-canary
 brew install imageoptim
 brew install insomnia
-brew install logi-options-plus
 brew install mongodb-compass
 brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
-brew install screenflow
 brew install shapr3d
 brew install signal
 brew install slack
