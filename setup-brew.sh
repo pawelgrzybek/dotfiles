@@ -44,6 +44,7 @@ brew install screen-studio
 brew install shapr3d
 brew install signal
 brew install slack
+brew install tuple
 brew install visual-studio-code
 
 # Install tap formulas
