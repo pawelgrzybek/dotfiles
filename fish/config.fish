@@ -78,6 +78,8 @@ abbr --add top top -o vsize
 abbr --add docker-mongodb "docker run --name mongodb -d -p 27017:27017 -v ~/Developer/data mongo"
 abbr --add docker-mongodb-exec "docker exec -it mongodb bash -c \"mongo\""
 abbr --add docker-prune-every-fucking-thing "docker system prune --all --volumes"
+abbr --add fzfc "fzf | tr -d '\n' | pbcopy"
+abbr --add fzfhx "hx \$(fzf)"
 
 set PATH $PATH ~/.cargo/bin
 
