@@ -16,6 +16,10 @@ formatter = { command = 'prettier', args = ["--parser", "css"] }
 language-servers = [ "vscode-css-language-server", "tailwindcss-ls"]
 
 [[language]]
+name = "scss"
+formatter = { command = 'prettier', args = ["--parser", "scss"] }
+
+[[language]]
 name = "javascript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
