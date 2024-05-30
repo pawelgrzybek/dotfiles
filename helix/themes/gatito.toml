@@ -21,7 +21,7 @@
 # "ui.statusline.normal" = {}
 # "ui.statusline.insert" = {}
 # "ui.statusline.select" = {}
-"ui.statusline.separator" = { fg = "white", bg = "#ff0000" }
+"ui.statusline.separator" = { fg = "gray" }
 "ui.bufferline" = { fg = "gray" }
 "ui.bufferline.active" = { fg = "white" }
 # "ui.bufferline.background" = {}
