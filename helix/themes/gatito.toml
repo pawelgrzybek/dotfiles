@@ -40,48 +40,48 @@
 # "ui.virtual.inlay-hint.parameter" = {}
 # "ui.virtual.inlay-hint.type" = {}
 "ui.virtual.wrap" = "gray"
-"ui.virtual.jump-label" = { fg = "light-blue", modifiers = ["bold", "underlined"] }
+"ui.virtual.jump-label" = { fg = "blue", modifiers = ["bold", "underlined"] }
 "ui.menu" = {}
 "ui.menu.selected" = { modifiers = ["reversed"] }
 "ui.menu.scroll" = { fg = "white", bg = "#ff0000" }
-"ui.selection" = { bg = "#41485C" } # this is only exception, for the color between the black and gray
-"ui.selection.primary" = { bg = "#60718B" }
+"ui.selection" = { bg = "black" }
+"ui.selection.primary" = { bg = "gray" }
 "ui.highlight" = { bg = "gray" }
 "ui.cursorline" = { bg = "black" }
 "ui.cursorcolumn" = { bg = "black" }
-"warning" = { fg = "light-yellow" }
-"error" = { fg = "light-red" }
-"info" = { fg = "light-blue" }
-"hint" = { fg = "light-red" }
-"diagnostic.hint" = { underline = { color = "light-red", style = "curl" } }
-"diagnostic.info" = { underline = { color = "light-blue", style = "curl" } }
-"diagnostic.warning" = { underline = { color = "light-yellow", style = "curl" } }
-"diagnostic.error" = { underline = { color ="light-red", style = "curl" } }
+"warning" = { fg = "yellow" }
+"error" = { fg = "red" }
+"info" = { fg = "blue" }
+"hint" = { fg = "red" }
+"diagnostic.hint" = { underline = { color = "red", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color ="red", style = "curl" } }
 "diagnostic.unnecessary" = { underline = { color ="#ff0000", style = "curl" } }
 "diagnostic.deprecated" = { underline = { color ="#ff0000", style = "curl" } }
 
-"attribute" = "light-yellow"
-"type" = "light-yellow"
-"constructor" = "light-blue"
-"constant" = "light-yellow"
-"string"  = "light-green"
+"attribute" = "yellow"
+"type" = "yellow"
+"constructor" = "blue"
+"constant" = "yellow"
+"string"  = "green"
 "comment" = { fg = "gray"}
-"variable" = "light-red"
-"variable.other.member" = "light-green"
-"label" = "light-magenta"
-"keyword" = "light-magenta"
-"function" = "light-blue"
-"namespace" = "light-magenta"
-"special" = "light-yellow"
-"markup.heading" = "light-blue"
-"markup.list" = "light-red"
-"markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }
-"markup.italic" = { fg = "light-magenta", modifiers = ["italic"] }
+"variable" = "red"
+"variable.other.member" = "green"
+"label" = "magenta"
+"keyword" = "magenta"
+"function" = "blue"
+"namespace" = "magenta"
+"special" = "yellow"
+"markup.heading" = "blue"
+"markup.list" = "red"
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "magenta", modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link.url" = { fg = "light-blue", underline = { color = "light-blue", style = "line"} }
-"markup.link.text" = "light-red"
-"markup.quote" = "light-cyan"
-"markup.raw" = "light-green"
-"diff.plus" = "light-green"
-"diff.minus" = "light-red"
-"diff.delta" = "light-blue"
+"markup.link.url" = { fg = "blue", underline = { color = "blue", style = "line"} }
+"markup.link.text" = "red"
+"markup.quote" = "cyan"
+"markup.raw" = "green"
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "blue"

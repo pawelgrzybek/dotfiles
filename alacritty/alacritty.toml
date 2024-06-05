@@ -21,47 +21,46 @@ glyph_offset = { x = 0, y = 14 }
 
 # Colors
 [colors]
-footer_bar = { foreground = "#F1F0FF", background = "#222232" }
-selection = { foreground = "#F1F0FF", background = "#6981A4" }
+footer_bar = { foreground = "#F0F0F5", background = "#24232E" }
+selection = { foreground = "#F0F0F5", background = "#5D5D75" }
 
 [colors.primary]
-foreground = "#F1F0FF"
-background = "#21202C"
+foreground = "#F0F0F5"
+background = "#24232E"
 
 [colors.search]
-matches = { foreground = "#F1F0FF", background = "#57535F" }
-focused_match = { foreground = "#222232", background = "#9FC1EB" }
+matches = { foreground = "#24232E", background = "#5D5D75" }
+focused_match = { foreground = "#24232E", background = "#B7C1EB" }
 
 [colors.bright]
-black = "#636085" # gray
-red = "#F67C8E"
-green = "#B1F5BE"
-yellow = "#F4CA8B"
-blue = "#9FC1EB"
-magenta = "#ECA2D8"
-cyan = "#87F1FE"
-white = "#E3E3E8" #white
+black = "#5D5D75" # gray
+red = "#F593A2"
+green = "#C9F5D1"
+yellow = "#F5D4A4"
+blue = "#B7C1EB"
+magenta = "#EDBBED"
+cyan = "#A1FFEF"
+white = "#F0F0F5" #white
 
-# test
 [colors.normal]
-black = "#2C2B3B"
+black = "#343242"
 red = "#F67C8E"
 green = "#B1F5BE"
 yellow = "#F4CA8B"
-blue = "#9FC1EB"
+blue = "#9FB5EB"
 magenta = "#ECA2D8"
-cyan = "#87F1FE"
-white = "#E3E3E8" # light-gray
+cyan = "#87FEEB"
+white = "#E7E6F0" # light-gray
 
 [colors.dim]
-black = "#21202C"
-red = "#753A4A"
-green = "#4F705E"
-yellow = "#897050"
-blue = "#51617B"
-magenta = "#765272"
-cyan = "#437981"
-white = "#666574"
+black = "#5D5D75"
+red = "#F593A2"
+green = "#C9F5D1"
+yellow = "#F5D4A4"
+blue = "#B7C1EB"
+magenta = "#EDBBED"
+cyan = "#A1FFEF"
+white = "#F0F0F5"
 
 [keyboard]
 bindings = [
