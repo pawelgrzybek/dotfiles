@@ -44,7 +44,7 @@ white = "#E3E3E8" #white
 
 # test
 [colors.normal]
-black = "#21202C"
+black = "#2C2B3B"
 red = "#F67C8E"
 green = "#B1F5BE"
 yellow = "#F4CA8B"
