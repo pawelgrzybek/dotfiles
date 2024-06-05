@@ -33,7 +33,7 @@
 "ui.text.focus" = { bg = "gray" }
 "ui.text.inactive" = { fg = "gray" }
 # "ui.text.info" = {}
-"ui.virtual.ruler" = { bg = "gray" }
+"ui.virtual.ruler" = { bg = "black" }
 "ui.virtual.whitespace" = "gray"
 "ui.virtual.indent-guide" = "gray"
 "ui.virtual.inlay-hint" = { fg = "gray" , modifiers = ["italic", "underlined"], underline = { style = "line"} }
@@ -47,8 +47,8 @@
 "ui.selection" = { bg = "#41485C" } # this is only exception, for the color between the black and gray
 "ui.selection.primary" = { bg = "#60718B" }
 "ui.highlight" = { bg = "gray" }
-"ui.cursorline" = { bg = "#2C2B3B" }
-"ui.cursorcolumn" = { bg = "#2C2B3B" }
+"ui.cursorline" = { bg = "black" }
+"ui.cursorcolumn" = { bg = "black" }
 "warning" = { fg = "light-yellow" }
 "error" = { fg = "light-red" }
 "info" = { fg = "light-blue" }
