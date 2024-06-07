@@ -65,7 +65,10 @@
 "constructor" = "blue"
 "constant" = "yellow"
 "string"  = "green"
-"comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
+# "comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
+# "comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
+# "comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
+"comment" = { fg = "gray", modifiers = [ "italic" ]}
 "variable" = "red"
 "variable.other.member" = "green"
 "label" = "magenta"
