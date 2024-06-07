@@ -44,8 +44,8 @@
 "ui.menu" = {}
 "ui.menu.selected" = { modifiers = ["reversed"] }
 "ui.menu.scroll" = { fg = "white", bg = "#ff0000" }
-"ui.selection" = { bg = "black" }
-"ui.selection.primary" = { bg = "gray" }
+"ui.selection" = { bg = "gray"}
+# "ui.selection.primary" = { bg = "gray" }
 "ui.highlight" = { bg = "gray" }
 "ui.cursorline" = { bg = "black" }
 "ui.cursorcolumn" = { bg = "black" }
@@ -65,7 +65,7 @@
 "constructor" = "blue"
 "constant" = "yellow"
 "string"  = "green"
-"comment" = { fg = "gray"}
+"comment" = { fg = "gray", modifiers = [ "italic" ]}
 "variable" = "red"
 "variable.other.member" = "green"
 "label" = "magenta"

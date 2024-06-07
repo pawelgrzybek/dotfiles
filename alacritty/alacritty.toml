@@ -29,38 +29,38 @@ foreground = "#F0F0F5"
 background = "#24232E"
 
 [colors.search]
-matches = { foreground = "#24232E", background = "#5D5D75" }
-focused_match = { foreground = "#24232E", background = "#B7C1EB" }
-
-[colors.bright]
-black = "#5D5D75" # gray
-red = "#F593A2"
-green = "#C9F5D1"
-yellow = "#F5D4A4"
-blue = "#B7C1EB"
-magenta = "#EDBBED"
-cyan = "#A1FFEF"
-white = "#F0F0F5" #white
+matches = { foreground = "#24232E", background = "#686f92" }
+focused_match = { foreground = "#24232E", background = "#9eb4eb" }
 
 [colors.normal]
-black = "#343242"
-red = "#F67C8E"
-green = "#B1F5BE"
-yellow = "#F4CA8B"
+black = "#353243"
+red = "#f67e90"
+green = "#b2f5bf"
+yellow = "#f4c58a"
 blue = "#9FB5EB"
 magenta = "#ECA2D8"
 cyan = "#87FEEB"
 white = "#E7E6F0" # light-gray
 
+[colors.bright]
+black = "#504c67" # gray
+red = "#fab7c1"
+green = "#e8fcec"
+yellow = "#f9e1c2"
+blue = "#d0dbf5"
+magenta = "#f6d5ed"
+cyan = "#c2fef4"
+white = "#ffffff" #white
+
 [colors.dim]
-black = "#5D5D75"
-red = "#F593A2"
-green = "#C9F5D1"
-yellow = "#F5D4A4"
-blue = "#B7C1EB"
-magenta = "#EDBBED"
-cyan = "#A1FFEF"
-white = "#F0F0F5"
+black = "#353243"
+red = "#935869"
+green = "#718e7f"
+yellow = "#8f7666"
+blue = "#686f92"
+magenta = "#8d688b"
+cyan = "#5f9191"
+white = "#8a8896"
 
 [keyboard]
 bindings = [
