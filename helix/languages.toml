@@ -12,52 +12,52 @@ config = {typescript = {tsdk = "./node_modules/typescript/lib"}, environment = "
 
 [[language]]
 name = "html"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "html"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
 language-servers = ["vscode-html-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "css"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "css"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "css"] }
 language-servers = [ "vscode-css-language-server", "tailwindcss-ls"]
 
 [[language]]
 name = "scss"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "scss"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "scss"] }
 
 [[language]]
 name = "javascript"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 language-servers = ["typescript-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "tsx"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 language-servers = ["typescript-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "json"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "json"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 
 [[language]]
 name = "markdown"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--parser", "markdown"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "markdown"] }
 soft-wrap.enable = true
 soft-wrap.wrap-at-text-width = true
 
 [[language]]
 name = "astro"
-formatter = { command = 'pnpm', args = ["exec", "prettier", "--plugin", "prettier-plugin-astro", "--parser", "astro"] }
+formatter = { command = 'npx', args = ["prettier", "--plugin", "prettier-plugin-astro", "--parser", "astro"] }
 auto-format = true
 language-servers = [ "astro-ls", "emmet-ls" ]
