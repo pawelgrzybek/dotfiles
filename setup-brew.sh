@@ -9,7 +9,6 @@ brew tap homebrew/cask-versions
 brew install awscli
 brew install deno
 brew install fish
-brew install fzf
 brew install git
 brew install helix
 brew install hugo
