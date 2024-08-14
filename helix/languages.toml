@@ -26,28 +26,31 @@ formatter = { command = 'npx', args = ["prettier", "--parser", "scss"] }
 
 [[language]]
 name = "javascript"
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "vscode-eslint-language-server"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "vscode-eslint-language-server"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "vscode-eslint-language-server"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
-language-servers = ["typescript-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "tsx"
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "vscode-eslint-language-server"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
-language-servers = ["typescript-language-server", "emmet-ls", "tailwindcss-ls"]
 
 [[language]]
 name = "json"
+language-servers = [{except-features = ["format"], name = "vscode-json-language-server"}, "vscode-eslint-language-server"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 
 [[language]]
