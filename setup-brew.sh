@@ -13,7 +13,6 @@ brew install git
 brew install helix
 brew install hugo
 brew install lazygit
-brew install mongosh
 brew install oven-sh/bun/bun
 brew install pnpm
 brew install rustup-init
@@ -24,23 +23,20 @@ brew install zellij
 brew install 1password
 brew install affinity-designer
 brew install affinity-photo
-brew install affinity-publisher
 brew install alacritty
 brew install cleanmymac
 brew install --cask docker
 brew install figma
 brew install firefox
-brew install firefox-developer-edition
+brew install firefox@developer-edition
 brew install forklift
 brew install google-chrome
-brew install google-chrome-canary
+brew install google@chrome-canary
 brew install imageoptim
 brew install insomnia
-brew install mongodb-compass
 brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
-brew install shapr3d
 brew install signal
 brew install slack
 brew install tuple
