@@ -17,6 +17,7 @@ brew install oven-sh/bun/bun
 brew install pnpm
 brew install rustup-init
 brew install webp
+brew install yazi
 brew install zellij
 
 # Install casks
