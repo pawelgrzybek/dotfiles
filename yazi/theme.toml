@@ -1,0 +1,15 @@
+[icon]
+globs = []
+dirs  = []
+files = []
+exts  = []
+conds = [
+	{ if = "dir", text = "📂" },
+	{ if = "!dir", text = "  " }
+]
+
+[filetype]
+rules = [
+	{ name = "*/", fg = "blue" },
+	{ name = "*", fg = "white" }
+]
