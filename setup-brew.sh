@@ -35,6 +35,7 @@ brew install google-chrome
 brew install google@chrome-canary
 brew install imageoptim
 brew install insomnia
+brew install logi-options+
 brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
