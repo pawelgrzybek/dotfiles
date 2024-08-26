@@ -7,7 +7,7 @@ args = ["-i"]
 padding = { x = 14, y = 14 }
 startup_mode = "Maximized"
 decorations_theme_variant = "Dark"
-option_as_alt = "Both"
+option_as_alt = "OnlyLeft"
 
 # Font
 [font]
