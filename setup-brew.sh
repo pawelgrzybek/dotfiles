@@ -8,6 +8,7 @@ brew tap homebrew/cask-versions
 # Install CLI tools
 brew install awscli
 brew install deno
+brew install fd
 brew install fish
 brew install git
 brew install helix
