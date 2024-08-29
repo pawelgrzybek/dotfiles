@@ -10,6 +10,9 @@ command = "astro-ls"
 args = ["--stdio"]
 config = {typescript = {tsdk = "./node_modules/typescript/lib"}, environment = "node"}
 
+[language-server]
+biome = { command = "biome", args = ["lsp-proxy"] }
+
 [[language]]
 name = "html"
 formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
@@ -26,32 +29,32 @@ formatter = { command = 'npx', args = ["prettier", "--parser", "scss"] }
 
 [[language]]
 name = "javascript"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "vscode-eslint-language-server"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "vscode-eslint-language-server"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "vscode-eslint-language-server"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "vscode-eslint-language-server"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "json"
-language-servers = [{except-features = ["format"], name = "vscode-json-language-server"}, "vscode-eslint-language-server"]
-formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+# formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 
 [[language]]
 name = "markdown"

@@ -1,4 +1,5 @@
 pnpm add -g @astrojs/language-server
+pnpm add -g @biomejs/biome
 pnpm add -g @tailwindcss/language-server 
 pnpm add -g avif
 pnpm add -g aws-cdk
