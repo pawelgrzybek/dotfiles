@@ -14,7 +14,6 @@ brew install git
 brew install helix
 brew install hugo
 brew install lazygit
-brew install oven-sh/bun/bun
 brew install pnpm
 brew install rustup-init
 brew install webp
