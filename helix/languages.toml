@@ -67,3 +67,8 @@ name = "astro"
 formatter = { command = 'npx', args = ["prettier", "--plugin", "prettier-plugin-astro", "--parser", "astro"] }
 auto-format = true
 language-servers = [ "astro-ls", "emmet-ls" ]
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
