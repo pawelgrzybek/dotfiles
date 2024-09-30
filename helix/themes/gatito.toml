@@ -36,9 +36,9 @@
 "ui.virtual.ruler" = { bg = "black" }
 "ui.virtual.whitespace" = "gray"
 "ui.virtual.indent-guide" = "gray"
-"ui.virtual.inlay-hint" = { fg = "gray" , modifiers = ["italic", "underlined"], underline = { style = "line"} }
-# "ui.virtual.inlay-hint.parameter" = {}
-# "ui.virtual.inlay-hint.type" = {}
+"ui.virtual.inlay-hint" = { fg = "blue" , modifiers = ["italic", "underlined", "dim"], underline = { style = "line"} }
+# "ui.virtual.inlay-hint.parameter" = { fg = "blue" , modifiers = ["italic", "underlined", "dim"], underline = { style = "line"} }
+# "ui.virtual.inlay-hint.type" = { fg = "blue" , modifiers = ["italic", "underlined", "dim"], underline = { style = "line"} }
 "ui.virtual.wrap" = "gray"
 "ui.virtual.jump-label" = { fg = "blue", modifiers = ["bold", "underlined"] }
 "ui.menu" = {}
@@ -65,10 +65,7 @@
 "constructor" = "blue"
 "constant" = "yellow"
 "string"  = "green"
-# "comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
-# "comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
-# "comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
-"comment" = { fg = "gray", modifiers = [ "italic" ]}
+"comment" = { fg = "blue", modifiers = [ "dim", "italic" ]}
 "variable" = "red"
 "variable.other.member" = "green"
 "label" = "magenta"
