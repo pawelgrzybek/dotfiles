@@ -8,6 +8,7 @@ scroll-lines = 1
 idle-timeout = 50
 popup-border = "all"
 cursorline = true
+cursorcolumn = true
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name", "read-only-indicator", "file-modification-indicator"]
