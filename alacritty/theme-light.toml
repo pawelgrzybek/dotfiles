@@ -1,0 +1,49 @@
+# Colors
+[colors]
+# white, background
+footer_bar = { foreground = "#ebeaf2", background = "#242232" }
+# white, blue
+selection = { foreground = "#ebeaf2", background = "#a7bdf2" }
+
+[colors.primary]
+# white
+foreground = "#18181b"
+# oklch(26% 0.03 290)
+background = "#f4f4f5"
+
+[colors.search]
+# background, blue dim
+matches = { foreground = "#242232", background = "#626a8c" }
+# background, blue
+focused_match = { foreground = "#242232", background = "#a7bdf2" }
+
+[colors.normal]
+black = "#2d2b3c"
+red = "#fd8293"
+green = "#84e6b1"
+yellow = "#e9ca89"
+blue = "#a7bdf2"
+magenta = "#eba2d8"
+cyan = "#60d5c2"
+white = "#ebeaf2" # light-gray
+
+[colors.bright]
+black = "#4e4b69" # gray
+red = "#feb4be"
+green = "#aeefcc"
+yellow = "#f1ddb4"
+blue = "#d3def9"
+magenta = "#f4ccea"
+cyan = "#88e0d1"
+white = "#ffffff" #white
+
+[colors.dim]
+black = "#282637"
+red = "#8b5060"
+green = "#547d6f"
+yellow = "#81705d"
+blue = "#626a8c"
+magenta = "#815e80"
+cyan = "#467676"
+white = "#807e8c"
+
