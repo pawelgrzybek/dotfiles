@@ -82,6 +82,7 @@ abbr --add fzfc "fzf | tr -d '\n' | pbcopy"
 abbr --add fzfhx "hx \$(fzf)"
 
 set PATH $PATH ~/.cargo/bin
+set PATH $PATH ~/go/bin
 
 # pnpm
 set -gx PNPM_HOME /Users/pawelgrzybek/Library/pnpm
