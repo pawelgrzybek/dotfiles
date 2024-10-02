@@ -5,5 +5,4 @@ gui:
     '*': 'default'
   theme:
     selectedLineBgColor:
-    - reverse
-
+    - black
