@@ -1,16 +1,90 @@
-# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIDiBLALgCQK4CMAEAFAAoBOKsJAlHgMYD2ADgJ4gA0IAFljAM4IDaoSLAQgAQgBsINANZsQ9CXRJ94-EAGIATDq0BmLfI16cJgCwATI1oActvQE5rAdi3O9zkAF0AvqyHQcIgASjBW7IrKquoaAGaxECYADEaxNDR6NBCpCclGAGwwZhBmsd5%2BASKISCQwMGDykSoCms42FjaJRjY0MDQ4%2BUZtHV3sxhYArEU45f7ggaIAmjASSgDujXRKzWqaFjgHDnpGMGkwEINj%2B4fHY-k4pVrZvnPCQeIS3Jvb0ZoQ0klYpdNDQtBZSuE-gCgUYzA4JhNXLNKu8ALIQADm9TQ2QiWyiLQ0NH2gMhGgsFhoDlicDGxJwpKMExKQKsLxRogAwkwIA08T9Cfk9B0aBMhjY%2Bh0CsKemKxno9BNYojkfMqiAAOocdC0hT4nYxGA4c6xQxjWI2WLOeInY0QU1MhFmCYzXxedhoOhgXgtHAY%2BQ4MgYjhoeRgZRQCASeQWcjlIA
+# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIDiBLALgCQK4CMAEAFAAoBOKsJAlHgMYD2ADgJ4gA0IAFljAM4IDaoSLAQgAQgBsINANZsQ9CXRJ94-EAGIAzDh0AWACbyNAJgAc5rQE5jABhq2cARgggAugF9WQ6HEQAlGCN2RWVVdQ0AMxoaLRpXdiiYCCccOESANhg9CD1I9y8fEUQkEhgYMHlQlQFNMxoYGhwM4wB2MwMzCC1jLQMAVmycAu9wX1EATRgJJQB3KrolGrVNGGjklsSDHB2rHsycPJNXT1HhP3EJbgWl8M0aEwM84M0IaVtIzc09K37%2B1pMIyKFwAshAAOYVNAJBSLMK1DQGAw0KyRdL3bYfF4afq5T5GU7A0QAYSYEEqIThywi7UanWMGT69X6vS0-Ui-yBY2KIAA6hx0OjqncomZIq1IvlEjBWjLysY-v09P1hp43Ow0HQwLxajgyOCOGh5GBlFAIBJ5AZyAUgA
+# https://huetone.ardov.me
+# {
+#   "name": "Gatito Theme (dark)",
+#   "hues": [
+#     {
+#       "name": "Black",
+#       "colors": [
+#         "#3b3b4d",
+#         "#282839",
+#         "#0c0b1a"
+#       ]
+#     },
+#     {
+#       "name": "Red",
+#       "colors": [
+#         "#fcc3ca",
+#         "#fea1be",
+#         "#6e4a4f"
+#       ]
+#     },
+#     {
+#       "name": "Green",
+#       "colors": [
+#         "#8cecb6",
+#         "#78d8a3",
+#         "#3d5e4b"
+#       ]
+#     },
+#     {
+#       "name": "Yellow",
+#       "colors": [
+#         "#efcea6",
+#         "#dbbb93",
+#         "#6b4f2a"
+#       ]
+#     },
+#     {
+#       "name": "Blue",
+#       "colors": [
+#         "#c2d4fd",
+#         "#aac0f6",
+#         "#495572"
+#       ]
+#     },
+#     {
+#       "name": "Magenta",
+#       "colors": [
+#         "#ddc9fe",
+#         "#cdb0fd",
+#         "#5a4f6d"
+#       ]
+#     },
+#     {
+#       "name": "Cyan",
+#       "colors": [
+#         "#78ecd8",
+#         "#63d8c5",
+#         "#335f57"
+#       ]
+#     },
+#     {
+#       "name": "White",
+#       "colors": [
+#         "#f8f7ff",
+#         "#e7e7ee",
+#         "#55545b"
+#       ]
+#     }
+#   ],
+#   "tones": [
+#     "bright",
+#     "normal",
+#     "dim"
+#   ]
+# }
 
 # Colors
 [colors]
 # white, background
-footer_bar = { foreground = "#f6f6fd", background = "#222232" }
+footer_bar = { foreground = "#e7e7ee", background = "#222232" }
 # white, blue
-selection = { foreground = "#f6f6fd", background = "#f6f6fd" }
+selection = { foreground = "#e7e7ee", background = "#e7e7ee" }
 
 [colors.primary]
 # white
-foreground = "#f6f6fd"
-# oklch(26% 0.03 290)
+foreground = "#e7e7ee"
 background = "#222232"
 
 [colors.search]
@@ -37,11 +111,11 @@ yellow = "#dbbb93"
 blue = "#aac0f6"
 magenta = "#cdb0fd"
 cyan = "#63d8c5"
-white = "#ebeaf2" # light-gray
+white = "#e7e7ee" # light-gray
 
 
 [colors.dim]
-black = "#2c2c3c"
+black = "#0c0b1a"
 red = "#6e4a4f"
 green = "#3d5e4b"
 yellow = "#6b4f2a"
