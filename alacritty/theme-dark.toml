@@ -1,126 +1,49 @@
-# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIDiBLALgCQK4CMAEAFAAoBOKsJAlHgMYD2ADgJ4gA0IAFljAM4IDaoSLAQgAQgBsINANZsQ9CXRJ94-EAGIAzDh0AWACbyNAJgAc5rQE5jABhq2cARgggAugF9WQ6HEQAlGCN2RWVVdQ0AMxoaLRpXdiiYCCccOESANhg9CD1I9y8fEUQkEhgYMHlQlQFNMxoYGhwM4wB2MwMzCC1jLQMAVmycAu9wX1EATRgJJQB3KrolGrVNGGjklsSDHB2rHsycPJNXT1HhP3EJbgWl8M0aEwM84M0IaVtIzc09K37%2B1pMIyKFwAshAAOYVNAJBSLMK1DQGAw0KyRdL3bYfF4afq5T5GU7A0QAYSYEEqIThywi7UanWMGT69X6vS0-Ui-yBY2KIAA6hx0OjqncomZIq1IvlEjBWjLysY-v09P1hp43Ow0HQwLxajgyOCOGh5GBlFAIBJ5AZyAUgA
-# https://huetone.ardov.me
-# {
-#   "name": "Gatito Theme (dark)",
-#   "hues": [
-#     {
-#       "name": "Black",
-#       "colors": [
-#         "#3b3b4d",
-#         "#282839",
-#         "#0c0b1a"
-#       ]
-#     },
-#     {
-#       "name": "Red",
-#       "colors": [
-#         "#fcc3ca",
-#         "#fea1be",
-#         "#6e4a4f"
-#       ]
-#     },
-#     {
-#       "name": "Green",
-#       "colors": [
-#         "#8cecb6",
-#         "#78d8a3",
-#         "#3d5e4b"
-#       ]
-#     },
-#     {
-#       "name": "Yellow",
-#       "colors": [
-#         "#efcea6",
-#         "#dbbb93",
-#         "#6b4f2a"
-#       ]
-#     },
-#     {
-#       "name": "Blue",
-#       "colors": [
-#         "#c2d4fd",
-#         "#aac0f6",
-#         "#495572"
-#       ]
-#     },
-#     {
-#       "name": "Magenta",
-#       "colors": [
-#         "#ddc9fe",
-#         "#cdb0fd",
-#         "#5a4f6d"
-#       ]
-#     },
-#     {
-#       "name": "Cyan",
-#       "colors": [
-#         "#78ecd8",
-#         "#63d8c5",
-#         "#335f57"
-#       ]
-#     },
-#     {
-#       "name": "White",
-#       "colors": [
-#         "#f8f7ff",
-#         "#e7e7ee",
-#         "#55545b"
-#       ]
-#     }
-#   ],
-#   "tones": [
-#     "bright",
-#     "normal",
-#     "dim"
-#   ]
-# }
+# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIDiEAuBLVB7ABAFQAsZYcAKAEwgCcBrAShABoQCBXGAZwQG1RJYEIAEIAbCAGMaTEOKwisVLvG4gAxAGYARloAs5aaoBMAdhPrjIALoBfRn2hxEAJRj7ms%2BYp5qAZj-EAjOIAnAY%2BMBABmnA2duAOgkhUMDBg0h4KSiqqABziMOKaAGwGxjnkORDqVrb2AogAmjAi8gDu6XKZ3qow-hElzKrkmiPB1bF1jsIi7B2eWWrihuQ6Pm5qEBIADD4lE-H1IACyEADmqagQc13KauTkIeEG4sM7%2Bvv8UwDCAJ4Qae5Ol5bqoygUKgYiuoKuIAKw1OKfQQAdQImDggPm3R8OR8xj8z3U4iJVxslmY2DAnG8mio6FOBFQ0jACigEBENSAA# Colors
 
-# Colors
 [colors]
 # white, background
-footer_bar = { foreground = "#e7e7ee", background = "#222232" }
+footer_bar = { foreground = "#bfc0c7", background = "#1f2030" }
 # white, blue
-selection = { foreground = "#e7e7ee", background = "#e7e7ee" }
+selection = { foreground = "#bfc0c7", background = "#aac0f6" }
 
 [colors.primary]
 # white
-foreground = "#e7e7ee"
-background = "#222232"
+foreground = "#bfc0c7"
+background = "#1f2030"
 
 [colors.search]
 # background, blue dim
-matches = { foreground = "#222232", background = "#798ec1" }
+matches = { foreground = "#1f2030", background = "#3d415a" }
 # background, blue
-focused_match = { foreground = "#222232", background = "#aac0f6" }
-
-[colors.bright]
-black = "#3b3b4d" # gray
-red = "#fcc3ca"
-green = "#8cecb6"
-yellow = "#efcea6"
-blue = "#c2d4fd"
-magenta = "#ddc9fe"
-cyan = "#78ecd8"
-white = "#f8f7ff" #white
+focused_match = { foreground = "#1f2030", background = "#aac0f6" }
 
 [colors.normal]
-black = "#282839"
+black = "#262738"
 red = "#fea1be"
-green = "#78d8a3"
-yellow = "#dbbb93"
+green = "#7cd8a4"
+yellow = "#dcbb93"
 blue = "#aac0f6"
 magenta = "#cdb0fd"
 cyan = "#63d8c5"
-white = "#e7e7ee" # light-gray
+white = "#bfc0c7" # light-gray
 
+[colors.bright]
+black = "#3a3c4d" # gray
+red = "#ffb4d1"
+green = "#90ebb7"
+yellow = "#efcea6"
+blue = "#bdd3ff"
+magenta = "#e0c4ff"
+cyan = "#78ecd8"
+white = "#d3d4db" #white
 
 [colors.dim]
-black = "#0c0b1a"
-red = "#6e4a4f"
-green = "#3d5e4b"
-yellow = "#6b4f2a"
-blue = "#495572"
-magenta = "#5a4f6d"
-cyan = "#335f57"
-white = "#55545b"
+black = "#202131"
+red = "#664556"
+green = "#38594e"
+yellow = "#5a4e48"
+blue = "#485069"
+magenta = "#544a6c"
+cyan = "#305958"
+white = "#4f5059"
 
