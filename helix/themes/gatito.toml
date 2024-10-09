@@ -72,7 +72,7 @@
 "keyword" = "magenta"
 "function" = "blue"
 "namespace" = "magenta"
-"special" = { fg = "yellow" }
+"special" = { fg = "yellow", underline = { style = "line"} }
 "markup.heading" = "blue"
 "markup.list" = "red"
 "markup.bold" = { fg = "yellow", modifiers = ["bold"] }
