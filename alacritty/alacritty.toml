@@ -10,7 +10,7 @@ args = ["-i"]
 
 # Window
 [window]
-padding = { x = 14, y = 14 }
+padding = { x = 12, y = 12 }
 startup_mode = "Maximized"
 decorations_theme_variant = "Dark"
 option_as_alt = "OnlyLeft"
@@ -22,8 +22,8 @@ bold = { family = "Monaspace Neon", style = "Bold" }
 italic = { family = "Monaspace Neon", style = "Italic" }
 bold_italic = { family = "Monaspace Neon", style = "Bold Italic" }
 size = 15.0
-offset = { x = 0, y = 28 }
-glyph_offset = { x = 0, y = 14 }
+offset = { x = 0, y = 24 }
+glyph_offset = { x = 0, y = 12 }
 
 
 [keyboard]
