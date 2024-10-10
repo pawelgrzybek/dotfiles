@@ -20,7 +20,7 @@ focused_match = { foreground = "#1f2030", background = "#9bbbdd" }
 [colors.normal]
 black = "#262738"
 red = "#f09da5"
-green = "#8bc7a4"
+green = "#85c9a2"
 yellow = "#c9b58c"
 blue = "#9bbbdd"
 magenta = "#c2a9ee"
@@ -30,7 +30,7 @@ white = "#cccdd4" # light-gray
 [colors.bright]
 black = "#3a3c4d" # gray
 red = "#fdd1d5"
-green = "#c9e7d4"
+green = "#c6e8d3"
 yellow = "#e7ddc8"
 blue = "#d0e0f2"
 magenta = "#e3d7fb"
@@ -40,7 +40,7 @@ white = "#edeef5" #white
 [colors.dim]
 black = "#202131"
 red = "#61434e"
-green = "#3d534d"
+green = "#3b534d"
 yellow = "#534c46"
 blue = "#424e60"
 magenta = "#504866"
