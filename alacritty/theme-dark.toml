@@ -2,48 +2,47 @@
 
 [colors]
 # white, background
-footer_bar = { foreground = "#dbdce3", background = "#1f2030" }
+footer_bar = { foreground = "#cccdd4", background = "#1f2030" }
 # black, blue
-selection = { foreground = "#262738", background = "#a5b7e2" }
+selection = { foreground = "#262738", background = "#9bbbdd" }
 
 [colors.primary]
 # white
-foreground = "#dbdce3"
+foreground = "#cccdd4"
 background = "#1f2030"
 
 [colors.search]
 # background, blue dim
-matches = { foreground = "#1f2030", background = "#464d62" }
+matches = { foreground = "#1f2030", background = "#424e60" }
 # background, blue
-focused_match = { foreground = "#1f2030", background = "#a5b7e2" }
+focused_match = { foreground = "#1f2030", background = "#9bbbdd" }
 
 [colors.normal]
 black = "#262738"
-red = "#e3a4aa"
-green = "#72ce9b"
-yellow = "#d2b18a"
-blue = "#a5b7e2"
-magenta = "#bfade0"
-cyan = "#58cebb"
-white = "#dbdce3" # light-gray
+red = "#f09da5"
+green = "#8bc7a4"
+yellow = "#c9b58c"
+blue = "#9bbbdd"
+magenta = "#c2a9ee"
+cyan = "#77c8c4"
+white = "#cccdd4" # light-gray
 
 [colors.bright]
 black = "#3a3c4d" # gray
-red = "#febdc3"
-green = "#8ce8b4"
-yellow = "#eccba2"
-blue = "#bed1fd"
-magenta = "#d9c6fb"
-cyan = "#75e9d5"
-white = "#f5f6fe" #white
+red = "#fdd1d5"
+green = "#c9e7d4"
+yellow = "#e7ddc8"
+blue = "#d0e0f2"
+magenta = "#e3d7fb"
+cyan = "#c1e7e5"
+white = "#edeef5" #white
 
 [colors.dim]
 black = "#202131"
-red = "#5c464f"
-green = "#35554b"
-yellow = "#564b45"
-blue = "#464d62"
-magenta = "#4f4962"
-cyan = "#2c5555"
-white = "#595a62"
-
+red = "#61434e"
+green = "#3d534d"
+yellow = "#534c46"
+blue = "#424e60"
+magenta = "#504866"
+cyan = "#365358"
+white = "#54555d"
