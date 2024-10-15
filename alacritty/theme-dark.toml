@@ -1,48 +1,48 @@
-# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIDiEAuBLVB7ABAFQAsZYcAKAEwgCcBrAShABoQCBXGAZwQG1RJYEIAEIAbCAGMaTEOKwisVLvG4gAxAGYARloAs5aaoBMAdhPrjIALoBfRn2hxEAJRj7ms%2BYp5qAZj-EAjOIAnAY%2BMBABmnA2duAOgkhUMDBg0h4KSiqqABziMOKaAGwGxjnkORDqVrb2AogAmjAi8gDu6XKZ3qow-hElzKrkmiPB1bF1jsIi7B2eWWrihuQ6Pm5qEBIADD4lE-H1IACyEADmqagQc13KauTkIeEG4sM7%2Bvv8UwDCAJ4Qae5Ol5bqoygUKgYiuoKuIAKw1OKfQQAdQImDggPm3R8OR8xj8z3U4iJVxslmY2DAnG8mio6FOBFQ0jACigEBENSAA# Colors
+# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcID2BrALgCxrABACgBMIAnFAShABoQMBXGAZwQG1RJYEQAhAGwgGMUVEPyQ8kxJvGYgAxAGZ%2B8gEYAWAsNkAmABxaAbPIDsIALoBfSm2hxEAJRgbqo8ZJZyAZo4CMBb5o9vAE4CII8zS2sORABxYhgYMGEXCSkZWX4jGB0CeU0dVX4giH8LK3AbTgBNGB5xAHdksVT3WWyCAn5VTX5%2BNQKI8vZbbh56Jtc0uQIABhgZjy1NIOVVjsGokYBZCABzRLQICZbpORh5AiMPZR6tCCCEjYrokABhAE8IJOdmt1OM7wwLIAVk0RiM-B0XSew04AHUMABLNBwH6TVoJBIefQ9TodUEWUzUNBIMCMdzKYiI3YYNDCMASKAQHgRIA
 
 [colors]
 # white, background
-footer_bar = { foreground = "#cccdd4", background = "#1f2030" }
+footer_bar = { foreground = "#cdcdd4", background = "#211f2f" }
 # black, blue
 selection = { foreground = "#262738", background = "#9bbbdd" }
 
 [colors.primary]
 # white
-foreground = "#cccdd4"
-background = "#1f2030"
+foreground = "#cdcdd4"
+background = "#211f2f"
 
 [colors.search]
 # background, blue dim
-matches = { foreground = "#1f2030", background = "#424e60" }
+matches = { foreground = "#211f2f", background = "#424e60" }
 # background, blue
-focused_match = { foreground = "#1f2030", background = "#9bbbdd" }
+focused_match = { foreground = "#211f2f", background = "#9bbbdd" }
 
 [colors.normal]
-black = "#262738"
-red = "#f09da5"
+black = "#282737"
+red = "#f19d9f"
 green = "#85c9a2"
-yellow = "#c9b58c"
+yellow = "#ccb484"
 blue = "#9bbbdd"
 magenta = "#c2a9ee"
 cyan = "#77c8c4"
-white = "#cccdd4" # light-gray
+white = "#cdcdd4" # light-gray
 
 [colors.bright]
-black = "#3a3c4d" # gray
-red = "#fdd1d5"
+black = "#3c3b4c" # gray
+red = "#fed1d2"
 green = "#c6e8d3"
-yellow = "#e7ddc8"
+yellow = "#e9ddc4"
 blue = "#d0e0f2"
 magenta = "#e3d7fb"
 cyan = "#c1e7e5"
-white = "#edeef5" #white
+white = "#eeeef5" #white
 
 [colors.dim]
-black = "#202131"
-red = "#61434e"
-green = "#3b534d"
-yellow = "#534c46"
-blue = "#424e60"
-magenta = "#504866"
-cyan = "#365358"
-white = "#54555d"
+black = "#222131"
+red = "#62434c"
+green = "#3c534c"
+yellow = "#554c43"
+blue = "#434e60"
+magenta = "#514766"
+cyan = "#375358"
+white = "#55545d"

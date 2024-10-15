@@ -29,32 +29,37 @@ formatter = { command = 'npx', args = ["prettier", "--parser", "scss"] }
 
 [[language]]
 name = "javascript"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "biome"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}]
+# language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "biome"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}]
+# language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "biome"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls"]
+# language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
-language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "biome"]
+language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls"]
+# language-servers = [{except-features = ["format"], name = "typescript-language-server"}, "emmet-ls", "tailwindcss-ls", "biome"]
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "json"
-language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
-# formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] } ]
+# language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 
 [[language]]
 name = "markdown"
