@@ -14,7 +14,7 @@ cursorcolumn = true
 left = ["mode", "spinner", "version-control", "file-name", "read-only-indicator", "file-modification-indicator"]
 mode.normal = "🚀 NORMAL"
 mode.insert = "📝 INSERT"
-mode.select = "🔍 SELECT"
+mode.select = "🌟 SELECT"
 
 [editor.lsp]
 display-messages = true
