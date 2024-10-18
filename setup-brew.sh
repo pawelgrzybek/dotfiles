@@ -13,7 +13,8 @@ brew install fish
 brew install git
 brew install helix
 brew install hugo
-brew install lazygit
+brew install jesseduffield/lazygit/lazygit
+brew install jq
 brew install pnpm
 brew install rustup-init
 brew install webp
@@ -23,9 +24,7 @@ brew install zellij
 # Install casks
 brew install 1password
 brew install affinity-designer
-brew install affinity-photo
 brew install alacritty
-brew install cleanmymac
 brew install --cask docker
 brew install figma
 brew install firefox
