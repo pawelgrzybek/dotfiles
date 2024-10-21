@@ -2,7 +2,7 @@ theme = "oktheme"
 
 [editor]
 line-number = "relative"
-rulers = [80]
+rulers = [80, 120]
 bufferline = "multiple"
 scroll-lines = 1
 idle-timeout = 50
