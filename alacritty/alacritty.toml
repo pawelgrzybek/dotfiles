@@ -1,10 +1,10 @@
-import = ["~/.dotfiles/alacritty/theme-dark.toml"]
-
 # use this to swap between themes
 # sed -i -e 's/theme-dark/theme-light/g' ~/.dotfiles/alacritty/alacritty.yml
 # sed -i -e 's/theme-light/theme-dark/g' ~/.dotfiles/alacritty/alacritty.yml
+[general]
+import = ["~/.dotfiles/alacritty/theme-dark.toml"]
 
-[shell]
+[terminal.shell]
 program = "/opt/homebrew/bin/fish"
 args = ["-i"]
 
@@ -32,3 +32,6 @@ bindings = [
 { key = "]", mods = "Command", action = "SelectNextTab" },
 { key = "n", mods = "Super", action = "SpawnNewInstance" },
 ]
+
+
+[terminal]
