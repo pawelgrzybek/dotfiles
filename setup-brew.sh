@@ -15,6 +15,7 @@ brew install helix
 brew install hugo
 brew install jesseduffield/lazygit/lazygit
 brew install jq
+brew install nvim
 brew install pnpm
 brew install rustup-init
 brew install webp
