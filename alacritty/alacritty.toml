@@ -17,10 +17,10 @@ option_as_alt = "OnlyLeft"
 
 # Font
 [font]
-normal = { family = "Monaspace Neon", style = "Regular" }
-bold = { family = "Monaspace Neon", style = "Bold" }
-italic = { family = "Monaspace Neon", style = "Italic" }
-bold_italic = { family = "Monaspace Neon", style = "Bold Italic" }
+normal = { family = "MonaspiceNe NFM", style = "Regular" }
+bold = { family = "MonaspiceNe NFM", style = "Bold" }
+italic = { family = "MonaspiceNe NFM", style = "Italic" }
+bold_italic = { family = "MonaspiceNe NFM", style = "Bold Italic" }
 size = 15.0
 offset = { x = 0, y = 24 }
 glyph_offset = { x = 0, y = 12 }
