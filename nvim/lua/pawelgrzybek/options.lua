@@ -43,7 +43,7 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 6
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "80,120"
 
 -- before the kickstart adoption
 vim.opt.autoindent = true
@@ -74,3 +74,5 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.breakindent = true -- preserve indentation when wrapping
 	end,
 })
+
+vim.g.netrw_liststyle = 3
