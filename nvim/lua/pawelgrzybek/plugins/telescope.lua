@@ -53,6 +53,9 @@ return { -- Fuzzy Finder (files, lsp, etc)
 			--     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
 			--   },
 			-- },
+			defaults = {
+				borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+			},
 			-- pickers = {}
 			extensions = {
 				["ui-select"] = {
@@ -70,6 +73,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Fuzzy [f]ind [f]iles" })
 		vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Fuzzy [f]ind [b]uffers" })
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Fuzzy [f]ind [h]elp" })
+		vim.keymap.set("n", "<leader>fg", builtin.git_status, { desc = "Fuzzy [f]ind [g]it changes" })
 		vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Fuzzy [f]ind [k]eymaps" })
 		vim.keymap.set("n", "<leader>fp", builtin.live_grep, { desc = "Fuzzy [f]ind [p]attern" })
 		vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "Fuzzy [f]ind [c]urrent [w]ord" })
