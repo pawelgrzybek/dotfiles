@@ -11,12 +11,13 @@ brew install deno
 brew install fd
 brew install fish
 brew install git
-brew install helix
 brew install hugo
 brew install jesseduffield/lazygit/lazygit
 brew install jq
-brew install nvim
+brew install neovim
+brew install oven-sh/bun/bun
 brew install pnpm
+brew install ripgrep
 brew install rustup-init
 brew install webp
 brew install yazi
