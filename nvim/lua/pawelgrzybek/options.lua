@@ -1,30 +1,16 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
-
 vim.opt.number = true
 vim.opt.relativenumber = true
--- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
--- Don't show the mode, since it's already in the status line
-vim.opt.showmode = false
-
+vim.opt.showmode = false -- Don't show the mode, since it's already in the status line
 vim.opt.breakindent = true
-vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
--- Keep signcolumn on by default
 vim.opt.signcolumn = "yes"
-
--- Decrease update time
 vim.opt.updatetime = 250
-
--- Decrease mapped sequence wait time
--- Displays which-key popup sooner
 vim.opt.timeoutlen = 300
-
--- Configure how new splits should be opened
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
@@ -64,14 +50,13 @@ vim.opt.expandtab = true
 --
 --
 
--- enable line wrap fro markdown files
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "markdown",
+	pattern = { "*.md" },
 	callback = function()
-		vim.opt_local.textwidth = 80
-		vim.opt_local.wrap = true
-		vim.opt_local.linebreak = true -- wrap at word boundaries
-		vim.opt_local.breakindent = true -- preserve indentation when wrapping
+		vim.wo.wrap = true
+		vim.wo.linebreak = true
+		vim.wo.breakindent = true
+		vim.bo.textwidth = 80
 	end,
 })
 
