@@ -6,17 +6,12 @@ return {
 		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 		"MunifTanjim/nui.nvim",
 	},
-	-- cmd = "Neotree",
+	cmd = "Neotree",
 	keys = {
-		{ "\\", ":Neotree reveal<CR>", desc = "NeoTree reveal", silent = true },
-	},
-	opts = {
-		filesystem = {
-			window = {
-				mappings = {
-					["\\"] = "close_window",
-				},
-			},
-		},
+		{ "\\", ":Neotree toggle last<CR>", desc = "[E]xplorer toggle", silent = true },
+		{ "|", ":Neotree focus last<CR>", desc = "[E]xplorer focus", silent = true },
+		{ "<leader>ef", ":Neotree filesystem focus reveal<CR>", desc = "[E]xplorer [f]iles", silent = true },
+		{ "<leader>eb", ":Neotree buffers focus<CR>", desc = "[E]xplorer [b]uffers", silent = true },
+    { "<leader>eg", ":Neotree git_status focus<CR>", desc = "[E]xplorer [g]it status", silent = true },
 	},
 }
