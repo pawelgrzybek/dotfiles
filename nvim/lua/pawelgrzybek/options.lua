@@ -61,3 +61,11 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.g.netrw_liststyle = 3
+
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+vim.g.markdown_fenced_languages = {
+	"ts=typescript",
+}

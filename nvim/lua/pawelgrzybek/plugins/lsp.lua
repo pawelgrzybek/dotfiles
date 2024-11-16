@@ -1,4 +1,5 @@
 return {
+  enabled=false,
 	-- Main LSP Configuration
 	"neovim/nvim-lspconfig",
 	dependencies = {
@@ -47,12 +48,6 @@ return {
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
 			callback = function(event)
-				-- NOTE: Remember that Lua is a real programming language, and as such it is possible
-				-- to define small helper and utility functions so you don't have to repeat yourself.
-				--
-				-- In this case, we create a function that lets us more easily define mappings specific
-				-- for LSP related items. It sets the mode, buffer and description for us each time.
-
 				-- Go to
 				vim.keymap.set(
 					"n",
@@ -120,7 +115,7 @@ return {
 						group = highlight_augroup,
 						callback = vim.lsp.buf.document_highlight,
 					})
-
+					--
 					vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
 						buffer = event.buf,
 						group = highlight_augroup,
@@ -175,12 +170,35 @@ return {
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
 			rust_analyzer = {},
-			ts_ls = {},
+			ts_ls = {
+				settings = {
+					root_dir = require("lspconfig").util.root_pattern("package.json"),
+					single_file_support = false,
+				},
+			},
 			lua_ls = {
 				settings = {
 					Lua = {
 						completion = {
 							callSnippet = "Replace",
+						},
+					},
+				},
+			},
+			denols = {
+				settings = {
+					root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
+					init_options = {
+						lint = true,
+						unstable = true,
+						suggest = {
+							imports = {
+								hosts = {
+									["https://deno.land"] = true,
+									["https://cdn.nest.land"] = true,
+									["https://crux.land"] = true,
+								},
+							},
 						},
 					},
 				},
@@ -193,6 +211,7 @@ return {
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
 			"stylua", -- Used to format Lua code
+			"denols",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
