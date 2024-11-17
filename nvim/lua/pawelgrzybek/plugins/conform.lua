@@ -1,4 +1,5 @@
-return {	"stevearc/conform.nvim",
+return {
+	"stevearc/conform.nvim",
 	opts = {
 		format_on_save = {
 			timeout_ms = 500,
@@ -6,7 +7,7 @@ return {	"stevearc/conform.nvim",
 		},
 		formatters_by_ft = {
 			javascript = { "prettier" },
-      javascriptreact = { "prettier" },
+			javascriptreact = { "prettier" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
 			css = { "prettier" },

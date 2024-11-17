@@ -1,8 +1,8 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		{ "williamboman/mason.nvim", config = true },		
-    "williamboman/mason-lspconfig.nvim",
+		{ "williamboman/mason.nvim", config = true },
+		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 
 		-- Useful status updates for LSP.
@@ -141,13 +141,13 @@ return {
 		})
 
 		-- Change diagnostic symbols in the sign column (gutter)
-		if vim.g.have_nerd_font then
-			local signs = { Error = "", Warn = "", Hint = "", Info = "" }
-			for type, icon in pairs(signs) do
-				local hl = "DiagnosticSign" .. type
-				vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-			end
-		end
+		-- if vim.g.have_nerd_font then
+		-- 	local signs = { Error = "", Warn = "", Hint = "", Info = "" }
+		-- 	for type, icon in pairs(signs) do
+		-- 		local hl = "DiagnosticSign" .. type
+		-- 		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+		-- 	end
+		-- end
 
 		-- LSP servers and clients are able to communicate to each other what features they support.
 		--  By default, Neovim doesn't support everything that is in the LSP specification.
@@ -167,12 +167,12 @@ return {
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
 			rust_analyzer = {},
-			ts_ls = {
-				settings = {
-					root_dir = require("lspconfig").util.root_pattern("package.json"),
-					single_file_support = false,
-				},
-			},
+			-- ts_ls = {
+			-- 	settings = {
+			-- 		root_dir = require("lspconfig").util.root_pattern("package.json"),
+			-- 		single_file_support = false,
+			-- 	},
+			-- },
 			lua_ls = {
 				settings = {
 					Lua = {
@@ -182,24 +182,24 @@ return {
 					},
 				},
 			},
-			denols = {
-				settings = {
-					root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
-					init_options = {
-						lint = true,
-						unstable = true,
-						suggest = {
-							imports = {
-								hosts = {
-									["https://deno.land"] = true,
-									["https://cdn.nest.land"] = true,
-									["https://crux.land"] = true,
-								},
-							},
-						},
-					},
-				},
-			},
+			-- denols = {
+			-- 	settings = {
+			-- 		root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
+			-- 		init_options = {
+			-- 			lint = true,
+			-- 			unstable = true,
+			-- 			suggest = {
+			-- 				imports = {
+			-- 					hosts = {
+			-- 						["https://deno.land"] = true,
+			-- 						["https://cdn.nest.land"] = true,
+			-- 						["https://crux.land"] = true,
+			-- 					},
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	},
+			-- },
 		}
 		require("mason").setup()
 

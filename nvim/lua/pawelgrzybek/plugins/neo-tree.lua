@@ -9,7 +9,13 @@ return {
 	cmd = "Neotree",
 	keys = {
 		{ "\\", ":Neotree toggle last<CR>", desc = "[E]xplorer toggle", silent = true },
-		{ "|", ":Neotree focus last<CR>", desc = "[E]xplorer focus", silent = true },
+		{ "|", function()
+        if vim.bo.filetype == "neo-tree" then
+            vim.cmd.wincmd("p")
+          else
+            vim.cmd("Neotree focus last")
+        end
+    end, desc = "[E]xplorer focus", silent = true },
 		{ "<leader>ef", ":Neotree filesystem focus reveal<CR>", desc = "[E]xplorer [f]iles", silent = true },
 		{ "<leader>eb", ":Neotree buffers focus<CR>", desc = "[E]xplorer [b]uffers", silent = true },
     { "<leader>eg", ":Neotree git_status focus<CR>", desc = "[E]xplorer [g]it status", silent = true },
