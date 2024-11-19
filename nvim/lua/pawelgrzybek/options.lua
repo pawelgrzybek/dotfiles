@@ -69,3 +69,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }
+
+-- Diagnostic keymaps
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open [q]uickfix list (local)" })
+vim.keymap.set("n", "<leader>Q", vim.diagnostic.setqflist, { desc = "Open [Q]uickfix list (global)" })
