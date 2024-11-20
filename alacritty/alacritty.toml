@@ -10,7 +10,7 @@ args = ["-i"]
 
 # Window
 [window]
-padding = { x = 12, y = 12 }
+# padding = { x = 12, y = 12 }
 startup_mode = "Maximized"
 decorations_theme_variant = "Dark"
 option_as_alt = "OnlyLeft"

@@ -18,7 +18,7 @@ return {
 				)
 				vim.keymap.set(
 					"n",
-					"gD",
+					"<leader>gD",
 					vim.lsp.buf.declaration,
 					{ buffer = event.buf, desc = "[G]o to [d]eclatation" }
 				)
@@ -54,7 +54,7 @@ return {
 					{ buffer = event.buf, desc = "Fuzzy [f]ind [s]ymbols" }
 				)
 
-				vim.keymap.set("n", "<leader>ar", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]e[n]ame" })
+				vim.keymap.set("n", "<leader>ar", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename" })
 
 				vim.keymap.set(
 					{ "n", "x" },
