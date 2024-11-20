@@ -103,33 +103,101 @@ return {
 			end,
 		})
 
-		local capabilities = vim.lsp.protocol.make_client_capabilities()
-		capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
+		local capabilities_extended = vim.lsp.protocol.make_client_capabilities()
+		capabilities_extended =
+			vim.tbl_deep_extend("force", capabilities_extended, require("cmp_nvim_lsp").default_capabilities())
 
-		local servers = {
-			rust_analyzer = {},
-			ts_ls = {},
-			lua_ls = {
-				settings = {
-					Lua = {
-						completion = {
-							callSnippet = "Replace",
-						},
+		-- local servers = {
+		-- 	rust_analyzer = {},
+		-- 	ts_ls = {},
+		-- 	lua_ls = {
+		-- settings = {
+		-- 	Lua = {
+		-- 		completion = {
+		-- 			callSnippet = "Replace",
+		-- 		},
+		-- 	},
+		-- },
+		-- 	},
+		-- }
+		require("mason").setup()
+		require("mason-lspconfig").setup({
+			ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "stylue", "prettier", "denols" },
+		})
+		-- require("mason-lspconfig").setup({
+		-- 	handlers = {
+		-- 		function(server_name)
+		-- 			local server = servers[server_name] or {}
+		-- 			-- This handles overriding only values explicitly passed
+		-- 			-- by the server configuration above. Useful when disabling
+		-- 			-- certain features of an LSP (for example, turning off formatting for ts_ls)
+		-- 			server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+		-- 			require("lspconfig")[server_name].setup(server)
+		-- 		end,
+		-- 	},
+		-- })
+
+		-- lua
+		require("lspconfig").lua_ls.setup({
+			settings = {
+				Lua = {
+					completion = {
+						callSnippet = "Replace",
 					},
 				},
 			},
-		}
-		require("mason").setup()
-		require("mason-lspconfig").setup({
-			handlers = {
-				function(server_name)
-					local server = servers[server_name] or {}
-					-- This handles overriding only values explicitly passed
-					-- by the server configuration above. Useful when disabling
-					-- certain features of an LSP (for example, turning off formatting for ts_ls)
-					server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-					require("lspconfig")[server_name].setup(server)
-				end,
+			capabilities = vim.tbl_deep_extend(
+				"force",
+				{},
+				capabilities_extended,
+				require("lspconfig").lua_ls.capabilities or {}
+			),
+		})
+
+		-- ts
+		require("lspconfig").ts_ls.setup({
+			on_attach = function(client, bufnr)
+				local util = require("lspconfig.util")
+				local root_dir = client.config.root_dir
+				if root_dir and (util.path.exists(util.path.join(root_dir, "deno.json"))) then
+					client.stop() -- Disable denols in TS projects
+				end
+			end,
+			capabilities = vim.tbl_deep_extend(
+				"force",
+				{},
+				capabilities_extended,
+				require("lspconfig").ts_ls.capabilities or {}
+			),
+		})
+
+		-- deno
+		require("lspconfig").denols.setup({
+			on_attach = function(client, bufnr)
+				local util = require("lspconfig.util")
+				local root_dir = client.config.root_dir
+				if root_dir and (util.path.exists(util.path.join(root_dir, "package.json"))) then
+					client.stop() -- Disable tsserver in Deno projects
+				end
+			end,
+			capabilities = vim.tbl_deep_extend(
+				"force",
+				{},
+				capabilities_extended,
+				require("lspconfig").denols.capabilities or {}
+			),
+			init_options = {
+				lint = true,
+				unstable = true,
+				suggest = {
+					imports = {
+						hosts = {
+							["https://deno.land"] = true,
+							["https://cdn.nest.land"] = true,
+							["https://crux.land"] = true,
+						},
+					},
+				},
 			},
 		})
 	end,
