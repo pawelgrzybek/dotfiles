@@ -10,10 +10,18 @@ return {
 			-- javascriptreact = { "deno_fmt" },
 			-- typescript = { "deno_fmt" },
 			-- typescriptreact = { "deno_fmt" },
-			javascript = { "prettier" },
-			javascriptreact = { "prettier" },
-			typescript = { "prettier" },
-			typescriptreact = { "prettier" },
+			javascript = vim.fn.filereadable("deno.json") == 1 and {
+				"deno_fmt",
+			} or { "prettier" },
+			javascriptreact = vim.fn.filereadable("deno.json") == 1 and {
+				"deno_fmt",
+			} or { "prettier" },
+			typescript = vim.fn.filereadable("deno.json") == 1 and {
+				"deno_fmt",
+			} or { "prettier" },
+			typescriptreact = vim.fn.filereadable("deno.json") == 1 and {
+				"deno_fmt",
+			} or { "prettier" },
 			css = { "prettier" },
 			scss = { "prettier" },
 			html = { "prettier" },

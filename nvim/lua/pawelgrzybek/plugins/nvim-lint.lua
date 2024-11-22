@@ -5,15 +5,20 @@ return {
 		event = { "BufReadPre", "BufNewFile" },
 		config = function()
 			local lint = require("lint")
+
 			lint.linters_by_ft = {
-				javascript = { "eslint_d" },
-				typescript = { "eslint_d" },
-				javascriptreact = { "eslint_d" },
-				typescriptreact = { "eslint_d" },
-				-- javascript = { "deno" },
-				-- typescript = { "deno" },
-				-- javascriptreact = { "deno" },
-				-- typescriptreact = { "deno" },
+				javascript = vim.fn.filereadable("deno.json") == 1 and {
+					"deno",
+				} or { "eslint_d" },
+				javascriptreact = vim.fn.filereadable("deno.json") == 1 and {
+					"deno",
+				} or { "eslint_d" },
+				typescript = vim.fn.filereadable("deno.json") == 1 and {
+					"deno",
+				} or { "eslint_d" },
+				typescriptreact = vim.fn.filereadable("deno.json") == 1 and {
+					"deno",
+				} or { "eslint_d" },
 			}
 			--
 			-- Create autocommand which carries out the actual linting
