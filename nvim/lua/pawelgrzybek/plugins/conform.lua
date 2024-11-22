@@ -27,7 +27,7 @@ return {
 			html = { "prettier" },
 			json = { "prettier" },
 			yaml = { "prettier" },
-			markdown = { "prettier" },
+			markdown = { "deno_fmt" },
 			graphql = { "prettier" },
 			lua = { "stylua" },
 		},
