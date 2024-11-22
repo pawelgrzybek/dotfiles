@@ -72,9 +72,18 @@ vim.keymap.set("i", "<A-K>", "<C-o>:t-1<CR>", { noremap = true, silent = true })
 -- Move/duplicate lines up and down in visual mode
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
-vim.keymap.set("v", "<A-J>", ":t'><CR>gv", { noremap = true, silent = true })
-vim.keymap.set("v", "<A-K>", ":t-1<CR>gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<A-J>", ":t-1<CR>gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<A-K>", ":t'><CR>gv", { noremap = true, silent = true })
 --
 -- -- copy to system clipboard
--- vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("v", "<leader>y", '"+y')
+
+-- select all
+vim.keymap.set("n", "<leader>a", "ggVG")
+
+-- Diagnostic keymaps
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open [q]uickfix list (local)" })
+vim.keymap.set("n", "<leader>Q", vim.diagnostic.setqflist, { desc = "Open [Q]uickfix list (global)" })
