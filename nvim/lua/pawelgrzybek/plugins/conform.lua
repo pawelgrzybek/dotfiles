@@ -6,6 +6,10 @@ return {
 			lsp_format = "fallback",
 		},
 		formatters_by_ft = {
+			-- javascript = { "deno_fmt" },
+			-- javascriptreact = { "deno_fmt" },
+			-- typescript = { "deno_fmt" },
+			-- typescriptreact = { "deno_fmt" },
 			javascript = { "prettier" },
 			javascriptreact = { "prettier" },
 			typescript = { "prettier" },

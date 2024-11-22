@@ -49,13 +49,19 @@ return { -- Fuzzy Finder (files, lsp, etc)
 			--  All the info you're looking for is in `:help telescope.setup()`
 			--
 			defaults = {
+				path_display = { "truncate" },
+				color_devicons = false,
 				mappings = {
 					i = { ["<C-y>"] = "select_default" },
 					n = { ["<C-y>"] = "select_default" },
 				},
 				borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
 			},
-			-- pickers = {}
+			pickers = {
+				lsp_references = {
+					show_line = false,
+				},
+			},
 			extensions = {
 				["ui-select"] = {
 					require("telescope.themes").get_dropdown(),
