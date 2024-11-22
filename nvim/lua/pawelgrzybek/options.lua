@@ -47,18 +47,6 @@ vim.opt.termguicolors = true
 -- vim.opt.background = "dark"
 -- vim.opt.signcolumn = "yes"
 -- vim.opt.backspace = "indent,eol,start"
---
---
-
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "*.md" },
-	callback = function()
-		vim.wo.wrap = true
-		vim.wo.linebreak = true
-		vim.wo.breakindent = true
-		vim.bo.textwidth = 80
-	end,
-})
 
 vim.g.netrw_liststyle = 3
 
