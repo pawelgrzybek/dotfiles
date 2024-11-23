@@ -75,15 +75,15 @@ return { -- Fuzzy Finder (files, lsp, etc)
 
 		-- See `:help telescope.builtin`
 		local builtin = require("telescope.builtin")
-		vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Fuzzy [f]ind [f]iles" })
-		vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Fuzzy [f]ind [b]uffers" })
-		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Fuzzy [f]ind [h]elp" })
-		vim.keymap.set("n", "<leader>fg", builtin.git_status, { desc = "Fuzzy [f]ind [g]it changes" })
-		vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Fuzzy [f]ind [k]eymaps" })
-		vim.keymap.set("n", "<leader>fp", builtin.live_grep, { desc = "Fuzzy [f]ind [p]attern" })
-		vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "Fuzzy [f]ind [c]urrent [w]ord" })
-		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Fuzzy [f]ind [d]iagnostics" })
-		vim.keymap.set("n", "<leader><leader>", builtin.resume, { desc = "Fuzzy find (recent)" })
+		vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "[F]ind [f]iles" })
+		vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "[F]ind [b]uffers" })
+		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[F]ind [h]elp tags" })
+		vim.keymap.set("n", "<leader>fg", builtin.git_status, { desc = "[F]ind [g]it changes" })
+		vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "[F]ind [k]eymaps" })
+		vim.keymap.set("n", "<leader>fp", builtin.live_grep, { desc = "[F]ind [p]attern" })
+		vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "[F]ind [c]urrent [w]ord" })
+		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "[F]ind [d]iagnostics" })
+		vim.keymap.set("n", "<leader><leader>", builtin.resume, { desc = "Find  (recent)" })
 
 		-- vim.keymap.set("n", "<leader>ss", builtin.builtin, { desc = "[S]earch [S]elect Telescope" })
 		-- vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
@@ -110,6 +110,6 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		-- Shortcut for searching your Neovim configuration files
 		vim.keymap.set("n", "<leader>fc", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
-		end, { desc = "Fuzzy [f]ind [c]onfig files" })
+		end, { desc = "[F]ind [c]onfig files" })
 	end,
 }

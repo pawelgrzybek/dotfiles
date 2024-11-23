@@ -45,13 +45,13 @@ return {
 					"n",
 					"<leader>fs",
 					require("telescope.builtin").lsp_document_symbols,
-					{ buffer = event.buf, desc = "Fuzzy [f]ind symbols" }
+					{ buffer = event.buf, desc = "[F]ind symbols" }
 				)
 				vim.keymap.set(
 					"n",
 					"<leader>fS",
 					require("telescope.builtin").lsp_dynamic_workspace_symbols,
-					{ buffer = event.buf, desc = "Fuzzy [f]ind [s]ymbols" }
+					{ buffer = event.buf, desc = "[F]ind [s]ymbols (global)" }
 				)
 
 				vim.keymap.set("n", "<leader>ar", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename" })
