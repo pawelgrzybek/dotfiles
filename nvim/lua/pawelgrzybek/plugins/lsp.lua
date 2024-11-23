@@ -141,6 +141,16 @@ return {
 			),
 		})
 
+		-- astro
+		require("lspconfig").astro.setup({
+			capabilities = vim.tbl_deep_extend(
+				"force",
+				{},
+				capabilities_extended,
+				require("lspconfig").astro.capabilities or {}
+			),
+		})
+
 		-- deno
 		require("lspconfig").denols.setup({
 			root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
