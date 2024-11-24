@@ -1,4 +1,3 @@
-return  {
-	enabled = false,
-'tpope/vim-sleuth'
+return {
+	"tpope/vim-sleuth",
 }
