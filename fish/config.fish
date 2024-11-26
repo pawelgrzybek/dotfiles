@@ -79,8 +79,12 @@ abbr --add docker-mongodb "docker run --name mongodb -d -p 27017:27017 -v ~/Deve
 abbr --add docker-mongodb-exec "docker exec -it mongodb bash -c \"mongo\""
 abbr --add docker-prune-every-fucking-thing "docker system prune --all --volumes"
 
-alias h="hx"
+alias n="nvim"
+alias v="nvim"
+alias vim="nvim"
 alias y="yazi"
+
+set -gx EDITOR nvim
 
 set PATH $PATH ~/.cargo/bin
 # set PATH $PATH ~/go/Developer/bin
@@ -92,3 +96,4 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
