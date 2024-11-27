@@ -1,6 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR EDITOR:hx
 SETUVAR --export --path GOPATH:/Users/pawelgrzybek/Developer/go
 SETUVAR --export PNPM_HOME:/Users/pawelgrzybek/Library/pnpm
 SETUVAR __fish_initialized:3400

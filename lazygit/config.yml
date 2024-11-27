@@ -1,5 +1,7 @@
 gui:
   border: single
   authorColors:
-    'Pawel Grzybek': 'yellow'
-    '*': 'default'
+    "Pawel Grzybek": "yellow"
+    "*": "default"
+os:
+  editPreset: "nvim"

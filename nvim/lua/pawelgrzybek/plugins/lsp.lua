@@ -54,7 +54,7 @@ return {
 					{ buffer = event.buf, desc = "[F]ind [s]ymbols (global)" }
 				)
 
-				vim.keymap.set("n", "<leader>ar", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename" })
+				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename" })
 
 				vim.keymap.set(
 					{ "n", "x" },

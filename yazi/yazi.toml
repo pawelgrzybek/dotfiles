@@ -3,5 +3,5 @@ ratio = [1,1,2]
 
 [opener]
 edit = [
-	{ run = 'hx "$@"', block = true },
+	{ run = 'nvim "$@"', block = true },
 ]
