@@ -1,7 +1,7 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		{ "williamboman/mason.nvim", config = true },
+		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		{ "j-hui/fidget.nvim", opts = {} },
 		"hrsh7th/cmp-nvim-lsp",
@@ -15,12 +15,6 @@ return {
 					"<leader>gd",
 					require("telescope.builtin").lsp_definitions,
 					{ buffer = event.buf, desc = "[G]o to [d]efinition" }
-				)
-				vim.keymap.set(
-					"n",
-					"<leader>gD",
-					vim.lsp.buf.declaration,
-					{ buffer = event.buf, desc = "[G]o to [d]eclatation" }
 				)
 				vim.keymap.set(
 					"n",
@@ -43,24 +37,28 @@ return {
 
 				vim.keymap.set(
 					"n",
-					"<leader>fs",
+					"<leader>gs",
 					require("telescope.builtin").lsp_document_symbols,
-					{ buffer = event.buf, desc = "[F]ind symbols" }
+					{ buffer = event.buf, desc = "[F]ind symbols (local)" }
 				)
 				vim.keymap.set(
 					"n",
-					"<leader>fS",
+					"<leader>gS",
 					require("telescope.builtin").lsp_dynamic_workspace_symbols,
 					{ buffer = event.buf, desc = "[F]ind [s]ymbols (global)" }
 				)
-
-				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename" })
-
 				vim.keymap.set(
 					{ "n", "x" },
-					"<leader>ca",
+					"<leader>ga",
 					vim.lsp.buf.code_action,
-					{ buffer = event.buf, desc = "[C]ode [A]ction" }
+					{ buffer = event.buf, desc = "[G]o to [A]ctions" }
+				)
+				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename member" })
+				vim.keymap.set(
+					"n",
+					"<leader>ss",
+					vim.lsp.buf.signature_help,
+					{ buffer = event.buf, desc = "[S]how [s]ignature" }
 				)
 
 				-- The following two autocommands are used to highlight references of the
@@ -95,10 +93,12 @@ return {
 				-- The following code creates a keymap to toggle inlay hints in your
 				-- code, if the language server you are using supports them
 				-- This may be unwanted, since they displace some of your code
-				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
-					vim.keymap.set("n", "<leader>ah", function()
+				if client and (client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint)) then
+					vim.lsp.inlay_hint.enable(true)
+
+					vim.keymap.set("n", "<leader>sh", function()
 						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
-					end, { buffer = event.buf, desc = "Inlay [h]ints" })
+					end, { buffer = event.buf, desc = "[S]how inlay [h]ints" })
 				end
 			end,
 		})
@@ -109,6 +109,7 @@ return {
 
 		require("mason").setup()
 		require("mason-lspconfig").setup({
+			automatic_installation = false,
 			ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "denols" },
 		})
 
@@ -133,6 +134,18 @@ return {
 		require("lspconfig").ts_ls.setup({
 			root_dir = require("lspconfig").util.root_pattern("package.json"),
 			single_file_support = false,
+			init_options = {
+				preferences = {
+					includeInlayParameterNameHints = "all",
+					includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+					includeInlayVariableTypeHints = true,
+					includeInlayFunctionParameterTypeHints = true,
+					includeInlayPropertyDeclarationTypeHints = true,
+					includeInlayFunctionLikeReturnTypeHints = true,
+					includeInlayEnumMemberValueHints = true,
+					importModuleSpecifierPreference = "non-relative",
+				},
+			},
 			capabilities = vim.tbl_deep_extend(
 				"force",
 				{},
@@ -171,6 +184,16 @@ return {
 					},
 				},
 			},
+		})
+
+		-- rust
+		require("lspconfig").rust_analyzer.setup({
+			capabilities = vim.tbl_deep_extend(
+				"force",
+				{},
+				capabilities_extended,
+				require("lspconfig").rust_analyzer.capabilities or {}
+			),
 		})
 	end,
 }
