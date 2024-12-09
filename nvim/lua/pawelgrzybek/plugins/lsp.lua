@@ -93,7 +93,7 @@ return {
 				-- The following code creates a keymap to toggle inlay hints in your
 				-- code, if the language server you are using supports them
 				-- This may be unwanted, since they displace some of your code
-				if client and (client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint)) then
+				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
 					vim.lsp.inlay_hint.enable(true)
 
 					vim.keymap.set("n", "<leader>sh", function()
@@ -110,7 +110,7 @@ return {
 		require("mason").setup()
 		require("mason-lspconfig").setup({
 			automatic_installation = false,
-			ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "denols" },
+			ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "denols", "emmet_language_server", "tailwindcss" },
 		})
 
 		-- lua
@@ -195,5 +195,19 @@ return {
 				require("lspconfig").rust_analyzer.capabilities or {}
 			),
 		})
+
+		--emmet
+		require("lspconfig").emmet_language_server.setup({
+			filetypes = {
+				"css",
+				"scss",
+				"html",
+				"javascriptreact",
+				"typescriptreact",
+			},
+		})
+
+		--tailwind
+		require("lspconfig").tailwindcss.setup({})
 	end,
 }
