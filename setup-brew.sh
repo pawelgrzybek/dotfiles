@@ -25,7 +25,6 @@ brew install zellij
 
 # Install casks
 brew install 1password
-brew install affinity-designer
 brew install alacritty
 brew install --cask docker
 brew install figma
