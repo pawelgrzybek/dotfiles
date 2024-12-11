@@ -23,6 +23,7 @@ return { -- Highlight, edit, and navigate code
 			"typescript",
 			"vim",
 			"vimdoc",
+			"yaml",
 		},
 		-- Autoinstall languages that are not installed
 		highlight = {
