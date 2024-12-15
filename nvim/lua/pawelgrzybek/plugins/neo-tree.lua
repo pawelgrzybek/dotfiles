@@ -11,6 +11,12 @@ return {
 		window = {
 			width = 50,
 		},
+		filesystem = {
+			follow_current_file = {
+				enabled = true,
+				leave_dirs_open = false,
+			},
+		},
 	},
 	keys = {
 		{ "\\", ":Neotree toggle last<CR>", desc = "[E]xplorer toggle", silent = true },
