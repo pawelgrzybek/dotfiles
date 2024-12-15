@@ -32,3 +32,5 @@ vim.keymap.set("n", "<leader>a", "ggVG")
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open [q]uickfix list (local)" })
 vim.keymap.set("n", "<leader>Q", vim.diagnostic.setqflist, { desc = "Open [Q]uickfix list (global)" })
+vim.keymap.set("n", "[q", "<cmd>:cprev<Cr>")
+vim.keymap.set("n", "]q", "<cmd>:cnext<Cr>")
