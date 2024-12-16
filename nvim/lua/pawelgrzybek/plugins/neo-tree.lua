@@ -17,6 +17,12 @@ return {
 				leave_dirs_open = false,
 			},
 		},
+		buffers = {
+			follow_current_file = {
+				enabled = true,
+				leave_dirs_open = false,
+			},
+		},
 	},
 	keys = {
 		{ "\\", ":Neotree toggle last<CR>", desc = "[E]xplorer toggle", silent = true },

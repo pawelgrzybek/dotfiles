@@ -30,9 +30,10 @@ vim.keymap.set("v", "<leader>p", '"+p')
 vim.keymap.set("n", "<leader>a", "ggVG")
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "<leader>d", vim.diagnostic.setloclist, { desc = "Open [q]uickfix list (local)" })
-vim.keymap.set("n", "<leader>D", vim.diagnostic.setqflist, { desc = "Open [Q]uickfix list (global)" })
--- Toggle quickfix
+vim.keymap.set("n", "<leader>d", vim.diagnostic.setloclist, { desc = "Open [d]iagnostics (locatoin list)" })
+vim.keymap.set("n", "<leader>D", vim.diagnostic.setqflist, { desc = "Open [D]iagnostics (quickfix list)" })
+
+-- Quickfix stuff
 vim.keymap.set("n", "<leader>q", function()
 	local windows = vim.fn.getwininfo()
 	for _, win in pairs(windows) do
@@ -42,8 +43,11 @@ vim.keymap.set("n", "<leader>q", function()
 		end
 	end
 	vim.cmd("copen")
-end, { desc = "toggle quickfix list" })
--- Toggle quickfix
+end, { desc = "Toggle quickfix list" })
+vim.keymap.set("n", "[q", "<cmd>:cprev<Cr>", { desc = "Quick fix next" })
+vim.keymap.set("n", "]q", "<cmd>:cnext<Cr>", { desc = "Quick fix next" })
+
+-- Location list stuff
 vim.keymap.set("n", "<leader>l", function()
 	local windows = vim.fn.getwininfo()
 	for _, win in pairs(windows) do
@@ -53,10 +57,6 @@ vim.keymap.set("n", "<leader>l", function()
 		end
 	end
 	vim.cmd("lopen")
-end, { desc = "toggle locatoin list" })
--- navigate between items in quicklist
-vim.keymap.set("n", "[q", "<cmd>:cprev<Cr>")
-vim.keymap.set("n", "]q", "<cmd>:cnext<Cr>")
--- navigate between items in locatoin list
-vim.keymap.set("n", "[l", "<cmd>:lprev<Cr>")
-vim.keymap.set("n", "]l", "<cmd>:lnext<Cr>")
+end, { desc = "Toggle locatoin list" })
+vim.keymap.set("n", "[l", "<cmd>:lprev<Cr>", { desc = "Location list previous" })
+vim.keymap.set("n", "]l", "<cmd>:lnext<Cr>", { desc = "Location list next" })
