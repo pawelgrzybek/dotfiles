@@ -60,3 +60,9 @@ vim.keymap.set("n", "<leader>l", function()
 end, { desc = "Toggle locatoin list" })
 vim.keymap.set("n", "[l", "<cmd>:lprev<Cr>", { desc = "Location list previous" })
 vim.keymap.set("n", "]l", "<cmd>:lnext<Cr>", { desc = "Location list next" })
+
+-- quickly navigate between buffers
+vim.keymap.set("n", "[b", "<cmd>:bprevious<Cr>")
+vim.keymap.set("n", "]b", "<cmd>:bnext<Cr>")
+vim.keymap.set("n", "[B", "<cmd>:bfirst<Cr>")
+vim.keymap.set("n", "]B", "<cmd>:blast<Cr>")
