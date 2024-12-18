@@ -66,3 +66,9 @@ vim.keymap.set("n", "[b", "<cmd>:bprevious<Cr>")
 vim.keymap.set("n", "]b", "<cmd>:bnext<Cr>")
 vim.keymap.set("n", "[B", "<cmd>:bfirst<Cr>")
 vim.keymap.set("n", "]B", "<cmd>:blast<Cr>")
+
+-- quickly navigate between tabs
+vim.keymap.set("n", "[t", "<cmd>:tabprevious<Cr>")
+vim.keymap.set("n", "]t", "<cmd>:tabnext<Cr>")
+vim.keymap.set("n", "[T", "<cmd>:tabfirst<Cr>")
+vim.keymap.set("n", "]T", "<cmd>:tablast<Cr>")

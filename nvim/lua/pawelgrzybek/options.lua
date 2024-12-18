@@ -5,7 +5,7 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
-vim.opt.showmode = false -- Don't show the mode, since it's already in the status line
+-- vim.opt.showmode = false -- Don't show the mode, since it's already in the status line
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -37,9 +37,8 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.termguicolors = true
 
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- netrw tree like
+vim.g.netrw_liststyle = 3
 
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",
