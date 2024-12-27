@@ -1,0 +1,11 @@
+command = /opt/homebrew/bin/fish
+macos-option-as-alt = left
+
+font-family = MonaspiceNe NFM
+font-family-bold = MonaspiceNe NFM
+font-family-italic = MonaspiceNe NFM
+font-family-bold-italic = MonaspiceNe NFM
+font-size = 15
+adjust-cell-height = 20
+
+theme = light:oktheme,dark:oktheme
