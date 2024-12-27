@@ -9,3 +9,4 @@ font-size = 15
 adjust-cell-height = 20
 
 theme = light:oktheme,dark:oktheme
+cursor-style-blink = false
