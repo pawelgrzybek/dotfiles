@@ -25,17 +25,19 @@ brew install zellij
 
 # Install casks
 brew install 1password
-brew install alacritty
+brew install discord
 brew install --cask docker
 brew install figma
 brew install firefox
 brew install firefox@developer-edition
 brew install forklift
+brew install --cask ghostty
 brew install google-chrome
 brew install google@chrome-canary
 brew install imageoptim
 brew install insomnia
 brew install logi-options+
+brew install polypane
 brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
@@ -43,6 +45,7 @@ brew install signal
 brew install slack
 brew install tuple
 brew install visual-studio-code
+brew install zed
 
 # Install tap formulas
 brew install joedrago/repo/avifenc
