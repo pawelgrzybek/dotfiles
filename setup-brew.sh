@@ -21,7 +21,6 @@ brew install ripgrep
 brew install rustup-init
 brew install webp
 brew install yazi
-brew install zellij
 
 # Install casks
 brew install 1password
