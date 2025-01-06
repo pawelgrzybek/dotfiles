@@ -9,5 +9,6 @@ ln -s ~/.dotfiles/nvim ~/.config/
 ln -s ~/.dotfiles/ghostty ~/.config/
 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.hushogin ~/.hushlogin
 
 
