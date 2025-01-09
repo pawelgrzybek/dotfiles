@@ -53,6 +53,18 @@ return {
 					vim.lsp.buf.code_action,
 					{ buffer = event.buf, desc = "[G]o to [A]ctions" }
 				)
+				vim.keymap.set(
+					{ "n", "x" },
+					"<leader>gci",
+					require("telescope.builtin").lsp_incoming_calls,
+					{ buffer = event.buf, desc = "[G]o to calls [i]ncoming" }
+				)
+				vim.keymap.set(
+					{ "n", "x" },
+					"<leader>gco",
+					require("telescope.builtin").lsp_outgoing_calls,
+					{ buffer = event.buf, desc = "[G]o to calls [o]utgoing" }
+				)
 				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename member" })
 				vim.keymap.set(
 					"n",
