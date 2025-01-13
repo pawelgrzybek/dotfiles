@@ -122,7 +122,15 @@ return {
 		require("mason").setup()
 		require("mason-lspconfig").setup({
 			automatic_installation = false,
-			ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "denols", "emmet_language_server", "tailwindcss" },
+			ensure_installed = {
+				"lua_ls",
+				"rust_analyzer",
+				"ts_ls",
+				"denols",
+				"emmet_language_server",
+				"tailwindcss",
+				"gopls",
+			},
 		})
 
 		-- lua
@@ -205,6 +213,16 @@ return {
 				{},
 				capabilities_extended,
 				require("lspconfig").rust_analyzer.capabilities or {}
+			),
+		})
+
+		-- go
+		require("lspconfig").gopls.setup({
+			capabilities = vim.tbl_deep_extend(
+				"force",
+				{},
+				capabilities_extended,
+				require("lspconfig").gopls.capabilities or {}
 			),
 		})
 
