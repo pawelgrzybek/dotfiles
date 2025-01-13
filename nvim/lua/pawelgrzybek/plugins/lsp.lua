@@ -130,6 +130,7 @@ return {
 				"emmet_language_server",
 				"tailwindcss",
 				"gopls",
+				"buf_ls",
 			},
 		})
 
@@ -223,6 +224,16 @@ return {
 				{},
 				capabilities_extended,
 				require("lspconfig").gopls.capabilities or {}
+			),
+		})
+		--
+		-- go
+		require("lspconfig").buf_ls.setup({
+			capabilities = vim.tbl_deep_extend(
+				"force",
+				{},
+				capabilities_extended,
+				require("lspconfig").buf_ls.capabilities or {}
 			),
 		})
 
