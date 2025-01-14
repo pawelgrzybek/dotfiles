@@ -19,6 +19,7 @@
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "NonText", { ctermbg = "NONE" })
 
-vim.api.nvim_set_hl(0, "Comment", { ctermfg = 8, fg = "#3c3b4c" })
-vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 8, fg = "#3c3b4c" })
-vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8, fg = "#3c3b4c" })
+vim.api.nvim_set_hl(0, "Comment", { ctermfg = 8 })
+vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 8 })
+vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8 })
+vim.api.nvim_set_hl(0, "LineNr", { fg = 7, blend = 20 })
