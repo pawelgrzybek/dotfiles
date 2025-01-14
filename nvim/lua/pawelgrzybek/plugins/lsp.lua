@@ -129,7 +129,6 @@ return {
 				"denols",
 				"emmet_language_server",
 				"tailwindcss",
-				"gopls",
 				"buf_ls",
 			},
 		})
