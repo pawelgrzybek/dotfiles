@@ -1,25 +1,41 @@
--- TerminalColor0  - Black
--- TerminalColor1  - Red
--- TerminalColor2  - Green
--- TerminalColor3  - Yellow
--- TerminalColor4  - Blue
--- TerminalColor5  - Magenta
--- TerminalColor6  - Cyan
--- TerminalColor7  - White
---
--- TerminalColor8  - Bright Black (Gray)
--- TerminalColor9  - Bright Red
--- TerminalColor10 - Bright Green
--- TerminalColor11 - Bright Yellow
--- TerminalColor12 - Bright Blue
--- TerminalColor13 - Bright Magenta
--- TerminalColor14 - Bright Cyan
--- TerminalColor15 - Bright White
+-- normal
+-- 0
+local black = "#282737"
+-- 1
+local red = "#ea9799"
+-- 2
+local green = "#7ec39b"
+-- 3
+local yellow = "#c6ae7e"
+-- 4
+local blue = "#95b5d6"
+-- 5
+local magenta = "#bba2e7"
+-- 6
+local cyan = "#71c2be"
+-- 7
+local white = "#b0b0b8"
+
+-- light
+-- 8
+local blackLight = "#5d5b6e"
+-- 9
+local redLight = "#ffaaab"
+-- 10
+local greenLight = "#91d6ae"
+-- 11
+local yellowLight = "#d9c191"
+-- 12
+local blueLight = "#a7c8ea"
+-- 13
+local magentaLight = "#cfb5fb"
+-- 14
+local cyanLight = "#84d5d1"
+-- 15
+local whiteLight = "#e4e4ec"
 
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "NonText", { ctermbg = "NONE" })
-
-vim.api.nvim_set_hl(0, "Comment", { ctermfg = 8 })
-vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 8 })
-vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8 })
-vim.api.nvim_set_hl(0, "LineNr", { fg = 7, blend = 20 })
+vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8, fg = blackLight })
+vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 8, fg = blackLight })
+vim.api.nvim_set_hl(0, "CursorLine", { ctermbg = 0, bg = black })
