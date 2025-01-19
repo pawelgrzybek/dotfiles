@@ -37,9 +37,6 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.termguicolors = true
 
--- netrw tree like
-vim.g.netrw_liststyle = 3
-
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }

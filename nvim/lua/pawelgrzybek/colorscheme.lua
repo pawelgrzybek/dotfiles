@@ -1,6 +1,6 @@
 -- normal
 -- 0
-local black = "#282737"
+local black = "#323141"
 -- 1
 local red = "#ea9799"
 -- 2
@@ -18,7 +18,7 @@ local white = "#b0b0b8"
 
 -- light
 -- 8
-local blackLight = "#5d5b6e"
+local blackLight = "#747286"
 -- 9
 local redLight = "#ffaaab"
 -- 10
@@ -36,6 +36,17 @@ local whiteLight = "#e4e4ec"
 
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "NonText", { ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8, fg = blackLight })
-vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 8, fg = blackLight })
+vim.api.nvim_set_hl(0, "LineNr", { ctermfg = 8, fg = blackLight })
+vim.api.nvim_set_hl(0, "StatusLine", { ctermbg = 7, bg = white, ctermfg = 0, fg = black })
+vim.api.nvim_set_hl(0, "StatusLineNC", { ctermbg = 8, bg = blackLight, ctermfg = 0, fg = black })
+vim.api.nvim_set_hl(0, "WinSeparator", { ctermbg = "NONE", bg = "NONE", ctermfg = 8, fg = blackLight })
+vim.api.nvim_set_hl(0, "VertSplit", { ctermbg = "NONE", bg = "NONE", ctermfg = 8, fg = blackLight })
+vim.api.nvim_set_hl(0, "Visual", { ctermbg = 8, bg = blackLight })
+vim.api.nvim_set_hl(0, "ErrorMsg", { ctermfg = 9, fg = redLight })
+vim.api.nvim_set_hl(0, "WarningMsg", { ctermfg = 11, fg = yellowLight })
+
+vim.api.nvim_set_hl(0, "Comment", { ctermfg = 8, fg = blackLight, italic = true })
+vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8, fg = blackLight, italic = true })
+vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 0, fg = black })
 vim.api.nvim_set_hl(0, "CursorLine", { ctermbg = 0, bg = black })
+vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = black })

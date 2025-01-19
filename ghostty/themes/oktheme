@@ -1,7 +1,7 @@
-# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcID2BrALgCxrABACgBMIAnFAShABoQMBXGAZwQG1RJYEQAhAGwgGMUVEPyQ8kxJvGYgAxACYAHPIDsAZhXDZAVgLaARgDY4AXQC%2BlNtDiIASjALDR4ySzkwIAThWfPWgGb%2BEMH6IOaW4NacAOLEMDBgTmISUjKyKjD8ap6h1LKeAIwEhhCmFlYciACaMDziAO5JLqly-CUwGVoEnvwFhWHlkZXcPPRNKW75BrqGWhAq-IoeAxHsNiAAshAA5gloEOOu0nL6%2BhDyHVr8-vraNysV6wDCAJ4QidTOE8fpBfzy%2BjgeUUABY9AQCg8husAOoYACWaCBImSRzS%2BgADJj9IotDAQfjMgMTNQ0EgwIw3GAJFAIDxhDx4dsMGgBkA
+# https://huetone.ardov.me/?palette=N4IgdghgtgpiBcID2BrALgCxrABACgBMIAnFAShABoQMBXGAZwQG1RJYEQAhAGwgGMUVEPyQ8kxJvGYgAxABYAjPIAMAVkXDZAdgjaAHPv4gAugF9KbaHEQAlGAWGjxklnJgQAnNs%2BetAM38IYIAjUwsrDkQAcWIYGDAnMQkpGR0YfgBmTzDqWU9FAgA2CDhzS3BrTgBNGB5xAHckl1S5fhKYbTg8gk9%2BRQLwivYbbh56ZpS3fLUQtWKtPX59DyHI0YBZCABzBLQISddpORCQiAAmTq1%2BfznbtcqokABhAE8IROpnKeOdRX5ziFunJ9PICPNNOV1pwAOoYACWaGB3yOaRCKnRIX0Whg8lxGXCJmoaCQYEYbjAEigEB4wh48O2GDQ4SAA
 
 #normal
-palette = 0=#282737
+palette = 0=#323141
 palette = 1=#ea9799
 palette = 2=#7ec39b
 palette = 3=#c6ae7e
@@ -11,7 +11,7 @@ palette = 6=#71c2be
 palette = 7=#b0b0b8
 
 #light
-palette = 8=#5d5b6e
+palette = 8=#747286
 palette = 9=#ffaaab
 palette = 10=#91d6ae
 palette = 11=#d9c191
