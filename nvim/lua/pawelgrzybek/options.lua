@@ -35,7 +35,7 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",

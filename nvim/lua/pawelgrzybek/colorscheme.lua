@@ -37,8 +37,8 @@ local whiteLight = "#e4e4ec"
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "NonText", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "LineNr", { ctermfg = 8, fg = blackLight })
-vim.api.nvim_set_hl(0, "StatusLine", { ctermbg = 7, bg = white, ctermfg = 0, fg = black })
-vim.api.nvim_set_hl(0, "StatusLineNC", { ctermbg = 8, bg = blackLight, ctermfg = 0, fg = black })
+vim.api.nvim_set_hl(0, "StatusLine", { ctermbg = 0, bg = black, ctermfg = 15, fg = whiteLight })
+vim.api.nvim_set_hl(0, "StatusLineNC", { ctermbg = 0, bg = black, ctermfg = 7, fg = blackLight })
 vim.api.nvim_set_hl(0, "WinSeparator", { ctermbg = "NONE", bg = "NONE", ctermfg = 8, fg = blackLight })
 vim.api.nvim_set_hl(0, "VertSplit", { ctermbg = "NONE", bg = "NONE", ctermfg = 8, fg = blackLight })
 vim.api.nvim_set_hl(0, "Visual", { ctermbg = 8, bg = blackLight })
@@ -50,3 +50,9 @@ vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8, fg = blackLight, italic = 
 vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 0, fg = black })
 vim.api.nvim_set_hl(0, "CursorLine", { ctermbg = 0, bg = black })
 vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = black })
+
+-- popup menu
+vim.api.nvim_set_hl(0, "Pmenu", { ctermbg = 0, bg = black })
+vim.api.nvim_set_hl(0, "PmenuSel", { ctermbg = 8, bg = blackLight })
+vim.api.nvim_set_hl(0, "PmenuSbar", { ctermbg = 7, bg = white })
+vim.api.nvim_set_hl(0, "PmenuThumb", { ctermbg = 15, bg = whiteLight })
