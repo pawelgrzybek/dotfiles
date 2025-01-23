@@ -45,7 +45,7 @@ vim.api.nvim_set_hl(0, "Visual", { ctermbg = 8, bg = blackLight })
 vim.api.nvim_set_hl(0, "ErrorMsg", { ctermfg = 9, fg = redLight })
 vim.api.nvim_set_hl(0, "WarningMsg", { ctermfg = 11, fg = yellowLight })
 
-vim.api.nvim_set_hl(0, "Comment", { ctermfg = 8, fg = blackLight, italic = true })
+vim.api.nvim_set_hl(0, "Comment", { ctermfg = 7, fg = white, italic = true })
 vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8, fg = blackLight, italic = true })
 vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 0, fg = black })
 vim.api.nvim_set_hl(0, "CursorLine", { ctermbg = 0, bg = black })
