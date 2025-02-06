@@ -4,10 +4,6 @@ return {
 	build = ":Copilot auth",
 	event = "InsertEnter",
 	config = function()
-		require("copilot").setup({
-			suggestion = {
-				auto_trigger = true,
-			},
-		})
+		require("copilot").setup({})
 	end,
 }
