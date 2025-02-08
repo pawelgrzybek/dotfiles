@@ -72,3 +72,7 @@ vim.keymap.set("n", "[t", "<cmd>:tabprevious<Cr>")
 vim.keymap.set("n", "]t", "<cmd>:tabnext<Cr>")
 vim.keymap.set("n", "[T", "<cmd>:tabfirst<Cr>")
 vim.keymap.set("n", "]T", "<cmd>:tablast<Cr>")
+
+-- oil
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "_", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
