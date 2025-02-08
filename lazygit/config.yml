@@ -3,5 +3,8 @@ gui:
   authorColors:
     "Pawel Grzybek": "yellow"
     "*": "default"
+  theme:
+    selectedLineBgColor:
+      - black
 os:
   editPreset: "nvim"
