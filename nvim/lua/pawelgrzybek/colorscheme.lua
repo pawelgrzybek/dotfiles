@@ -50,6 +50,7 @@ vim.api.nvim_set_hl(0, "Comment", { ctermfg = 7, fg = white, italic = true })
 vim.api.nvim_set_hl(0, "LspInlayHint", { ctermfg = 8, fg = blackLight, italic = true })
 vim.api.nvim_set_hl(0, "Whitespace", { ctermfg = 0, fg = black })
 vim.api.nvim_set_hl(0, "CursorLine", { ctermbg = 0, bg = black })
+vim.api.nvim_set_hl(0, "CursorColumn", { ctermbg = 0, bg = black })
 vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = black })
 
 -- popup menu
@@ -57,3 +58,7 @@ vim.api.nvim_set_hl(0, "Pmenu", { ctermbg = 0, bg = black })
 vim.api.nvim_set_hl(0, "PmenuSel", { ctermbg = 8, bg = blackLight })
 vim.api.nvim_set_hl(0, "PmenuSbar", { ctermbg = 7, bg = white })
 vim.api.nvim_set_hl(0, "PmenuThumb", { ctermbg = 15, bg = whiteLight })
+
+-- float window
+vim.api.nvim_set_hl(0, "NormalFloat", { ctermbg = "NONE", bg = "NONE" })
+vim.api.nvim_set_hl(0, "FloatBorder", { ctermbg = "NONE", bg = "NONE" })
