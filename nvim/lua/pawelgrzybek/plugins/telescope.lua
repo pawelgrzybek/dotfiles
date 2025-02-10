@@ -61,6 +61,9 @@ return { -- Fuzzy Finder (files, lsp, etc)
 				lsp_references = {
 					show_line = false,
 				},
+				lsp_incoming_calls = {
+					show_line = false,
+				},
 			},
 			extensions = {
 				["ui-select"] = {
