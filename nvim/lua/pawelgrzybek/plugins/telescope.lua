@@ -89,5 +89,13 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		vim.keymap.set("n", "<leader>fc", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "[F]ind [c]onfig files" })
+
+		-- disable cursorline for Telescope prompt
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = "TelescopePrompt",
+			callback = function()
+				vim.opt_local.cursorline = false
+			end,
+		})
 	end,
 }
