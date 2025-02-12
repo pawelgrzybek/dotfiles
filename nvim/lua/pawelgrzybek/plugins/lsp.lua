@@ -115,6 +115,11 @@ return {
 			end,
 		})
 
+		-- add boarder around hovers
+		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+			border = "single",
+		})
+
 		local capabilities_extended = vim.lsp.protocol.make_client_capabilities()
 		capabilities_extended =
 			vim.tbl_deep_extend("force", capabilities_extended, require("blink.cmp").get_lsp_capabilities())
