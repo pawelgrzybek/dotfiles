@@ -4,6 +4,7 @@ return {
 		require("oil").setup({
 			win_options = {
 				cursorcolumn = true,
+				colorcolumn = "",
 			},
 			columns = {},
 			float = {
