@@ -3,7 +3,6 @@ return {
 	config = function()
 		require("oil").setup({
 			win_options = {
-				cursorcolumn = true,
 				colorcolumn = "",
 			},
 			columns = {},
