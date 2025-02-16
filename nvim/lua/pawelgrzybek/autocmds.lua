@@ -22,10 +22,17 @@ vim.api.nvim_create_autocmd({ "WinLeave" }, {
 		vim.opt_local.cursorcolumn = false
 	end,
 })
-
 vim.api.nvim_create_autocmd({ "WinEnter" }, {
 	callback = function()
 		vim.opt_local.cursorline = true
 		vim.opt_local.cursorcolumn = true
+	end,
+})
+
+-- enable line wrapping in quickfix window
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "qf",
+	callback = function()
+		vim.opt_local.wrap = true
 	end,
 })
