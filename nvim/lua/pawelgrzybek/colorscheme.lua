@@ -35,13 +35,13 @@ local cyanLight = "#84d5d1"
 local whiteLight = "#e4e4ec"
 
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "NormalFloat", { ctermbg = 0 })
+vim.api.nvim_set_hl(0, "NormalFloat", { ctermbg = "NONE", bg = "NONE" })
+vim.api.nvim_set_hl(0, "FloatBorder", { ctermbg = "NONE", bg = "NONE" })
 vim.api.nvim_set_hl(0, "NonText", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "LineNr", { ctermfg = 8, fg = blackLight })
 vim.api.nvim_set_hl(0, "StatusLine", { ctermbg = 0, bg = black, ctermfg = 15, fg = whiteLight })
 vim.api.nvim_set_hl(0, "StatusLineNC", { ctermbg = 0, bg = black, ctermfg = 7, fg = blackLight })
-vim.api.nvim_set_hl(0, "WinSeparator", { ctermbg = "NONE", bg = "NONE", ctermfg = 8, fg = blackLight })
-vim.api.nvim_set_hl(0, "VertSplit", { ctermbg = "NONE", bg = "NONE", ctermfg = 8, fg = blackLight })
+vim.api.nvim_set_hl(0, "WinSeparator", { ctermbg = "NONE", bg = "NONE", ctermfg = 0, fg = black })
 vim.api.nvim_set_hl(0, "Visual", { ctermbg = 8, bg = blackLight })
 vim.api.nvim_set_hl(0, "ErrorMsg", { ctermfg = 9, fg = redLight })
 vim.api.nvim_set_hl(0, "WarningMsg", { ctermfg = 11, fg = yellowLight })
@@ -58,7 +58,3 @@ vim.api.nvim_set_hl(0, "Pmenu", { ctermbg = 0, bg = black })
 vim.api.nvim_set_hl(0, "PmenuSel", { ctermbg = 8, bg = blackLight })
 vim.api.nvim_set_hl(0, "PmenuSbar", { ctermbg = 7, bg = white })
 vim.api.nvim_set_hl(0, "PmenuThumb", { ctermbg = 15, bg = whiteLight })
-
--- float window
-vim.api.nvim_set_hl(0, "NormalFloat", { ctermbg = "NONE", bg = "NONE" })
-vim.api.nvim_set_hl(0, "FloatBorder", { ctermbg = "NONE", bg = "NONE" })
