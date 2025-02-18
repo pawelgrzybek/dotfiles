@@ -60,4 +60,4 @@ vim.api.nvim_set_hl(0, "PmenuSbar", { ctermbg = 7, bg = white })
 vim.api.nvim_set_hl(0, "PmenuThumb", { ctermbg = 15, bg = whiteLight })
 
 -- gitsigns
-vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { ctermfg = 7, fg = white, italic = true, underline = true })
+vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { ctermfg = 8, fg = blackLight, italic = true })
