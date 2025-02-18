@@ -8,6 +8,7 @@ return { -- Collection of various small independent plugins/modules
 				delay = 0,
 				animation = require("mini.indentscope").gen_animation.none(),
 			},
+			symbol = "┆",
 		})
 	end,
 }
