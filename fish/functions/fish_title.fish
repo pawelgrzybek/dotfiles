@@ -7,7 +7,7 @@ function fish_title
         end
 
         echo (prompt_pwd --dir-length=0)"$git_repo_dirty"
-	else
-		echo (prompt_pwd --dir-length=0)
+    else
+        echo (prompt_pwd --dir-length=0)
     end
 end
