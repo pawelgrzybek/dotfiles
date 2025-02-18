@@ -1,12 +1,8 @@
 return {
 	"lewis6991/gitsigns.nvim",
-	opts = {
-		current_line_blame_opts = {
-			delay = 300,
-		},
-	},
 	config = function()
 		require("gitsigns").setup({
+			current_line_blame = true,
 			on_attach = function(bufnr)
 				local gitsigns = require("gitsigns")
 
