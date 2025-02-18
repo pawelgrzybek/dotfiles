@@ -36,7 +36,7 @@ local whiteLight = "#e4e4ec"
 
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "NormalFloat", { ctermbg = "NONE", bg = "NONE" })
-vim.api.nvim_set_hl(0, "FloatBorder", { ctermbg = "NONE", bg = "NONE" })
+vim.api.nvim_set_hl(0, "FloatBorder", { ctermbg = "NONE", bg = "NONE", ctermfg = 15, fg = whiteLight })
 vim.api.nvim_set_hl(0, "NonText", { ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "LineNr", { ctermfg = 8, fg = blackLight })
 vim.api.nvim_set_hl(0, "StatusLine", { ctermbg = 0, bg = black, ctermfg = 15, fg = whiteLight })

@@ -124,7 +124,11 @@ return {
 		capabilities_extended =
 			vim.tbl_deep_extend("force", capabilities_extended, require("blink.cmp").get_lsp_capabilities())
 
-		require("mason").setup()
+		require("mason").setup({
+			ui = {
+				border = "rounded",
+			},
+		})
 		require("mason-lspconfig").setup({
 			automatic_installation = false,
 			ensure_installed = {
@@ -135,6 +139,7 @@ return {
 				"emmet_language_server",
 				"tailwindcss",
 				"buf_ls",
+				"astro",
 			},
 		})
 

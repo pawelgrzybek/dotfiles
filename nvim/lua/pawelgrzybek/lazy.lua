@@ -24,4 +24,7 @@ require("lazy").setup({
 	pkg = {
 		sources = { "lazy", "packspec" }, -- rockspec is removed
 	},
+	ui = {
+		border = "single",
+	},
 })
