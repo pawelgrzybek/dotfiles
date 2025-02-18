@@ -43,7 +43,6 @@ brew install screen-studio
 brew install signal
 brew install slack
 brew install tuple
-brew install visual-studio-code
 brew install zed
 
 # Install tap formulas
