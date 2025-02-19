@@ -61,3 +61,9 @@ vim.api.nvim_set_hl(0, "PmenuThumb", { ctermbg = 15, bg = whiteLight })
 
 -- gitsigns
 vim.api.nvim_set_hl(0, "GitSignsCurrentLineBlame", { ctermfg = 8, fg = blackLight, italic = true })
+
+-- todo/fix comments
+vim.api.nvim_set_hl(0, "TodoBgTODO", { ctermbg = 9, bg = redLight, ctermfg = 0, fg = black, bold = true })
+vim.api.nvim_set_hl(0, "TodoFgTODO", { ctermfg = 9, fg = redLight, bold = true })
+vim.api.nvim_set_hl(0, "TodoBgFIX", { ctermbg = 9, bg = redLight, ctermfg = 0, fg = black, bold = true })
+vim.api.nvim_set_hl(0, "TodoFgFIX", { ctermfg = 9, fg = redLight, bold = true })
