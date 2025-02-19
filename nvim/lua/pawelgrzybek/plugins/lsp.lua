@@ -10,6 +10,9 @@ return {
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
 			callback = function(event)
+				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename member" })
+
+				-- go to
 				vim.keymap.set(
 					"n",
 					"<leader>gd",
@@ -47,38 +50,51 @@ return {
 					require("telescope.builtin").lsp_dynamic_workspace_symbols,
 					{ buffer = event.buf, desc = "[F]ind [s]ymbols (global)" }
 				)
+
+				-- function calls
 				vim.keymap.set(
 					{ "n", "x" },
-					"<leader>ga",
-					vim.lsp.buf.code_action,
-					{ buffer = event.buf, desc = "[G]o to [A]ctions" }
-				)
-				vim.keymap.set(
-					{ "n", "x" },
-					"<leader>gci",
+					"<leader>ci",
 					require("telescope.builtin").lsp_incoming_calls,
-					{ buffer = event.buf, desc = "[G]o to calls [i]ncoming" }
+					{ buffer = event.buf, desc = "[C]alls [i]ncoming" }
 				)
 				vim.keymap.set(
 					{ "n", "x" },
-					"<leader>gco",
+					"<leader>co",
 					require("telescope.builtin").lsp_outgoing_calls,
-					{ buffer = event.buf, desc = "[G]o to calls [o]utgoing" }
+					{ buffer = event.buf, desc = "[C]alls [o]utgoing" }
 				)
-				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename member" })
+
+				-- show
+				vim.keymap.set(
+					{ "n", "x" },
+					"<leader>sa",
+					vim.lsp.buf.code_action,
+					{ buffer = event.buf, desc = "[S]how [a]ctions" }
+				)
 				vim.keymap.set(
 					"n",
 					"<leader>ss",
 					vim.lsp.buf.signature_help,
 					{ buffer = event.buf, desc = "[S]how [s]ignature" }
 				)
+				-- The following code creates a keymap to toggle inlay hints in your
+				-- code, if the language server you are using supports them
+				-- This may be unwanted, since they displace some of your code
+				local client = vim.lsp.get_client_by_id(event.data.client_id)
+				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
+					vim.lsp.inlay_hint.enable(true)
+
+					vim.keymap.set("n", "<leader>sh", function()
+						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
+					end, { buffer = event.buf, desc = "[S]how inlay [h]ints" })
+				end
 
 				-- The following two autocommands are used to highlight references of the
 				-- word under your cursor when your cursor rests there for a little while.
 				--    See `:help CursorHold` for information about when this is executed
 				--
 				-- When you move your cursor, the highlights will be cleared (the second autocommand).
-				local client = vim.lsp.get_client_by_id(event.data.client_id)
 				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
 					local highlight_augroup = vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
 					vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
@@ -100,17 +116,6 @@ return {
 							vim.api.nvim_clear_autocmds({ group = "kickstart-lsp-highlight", buffer = event2.buf })
 						end,
 					})
-				end
-
-				-- The following code creates a keymap to toggle inlay hints in your
-				-- code, if the language server you are using supports them
-				-- This may be unwanted, since they displace some of your code
-				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
-					vim.lsp.inlay_hint.enable(true)
-
-					vim.keymap.set("n", "<leader>sh", function()
-						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
-					end, { buffer = event.buf, desc = "[S]how inlay [h]ints" })
 				end
 			end,
 		})
