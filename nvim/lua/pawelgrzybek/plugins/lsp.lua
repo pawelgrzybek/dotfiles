@@ -125,9 +125,10 @@ return {
 			border = "single",
 		})
 
-		local capabilities_extended = vim.lsp.protocol.make_client_capabilities()
-		capabilities_extended =
-			vim.tbl_deep_extend("force", capabilities_extended, require("blink.cmp").get_lsp_capabilities())
+		local capabilities = require("blink.cmp").get_lsp_capabilities()
+		-- local capabilities_extended = vim.lsp.protocol.make_client_capabilities()
+		-- capabilities_extended =
+		-- 	vim.tbl_deep_extend("force", capabilities_extended, require("blink.cmp").get_lsp_capabilities())
 
 		require("mason").setup({
 			ui = {
@@ -157,12 +158,7 @@ return {
 					},
 				},
 			},
-			capabilities = vim.tbl_deep_extend(
-				"force",
-				{},
-				capabilities_extended,
-				require("lspconfig").lua_ls.capabilities or {}
-			),
+			capabilities = capabilities,
 		})
 
 		-- ts
@@ -181,33 +177,18 @@ return {
 					importModuleSpecifierPreference = "non-relative",
 				},
 			},
-			capabilities = vim.tbl_deep_extend(
-				"force",
-				{},
-				capabilities_extended,
-				require("lspconfig").ts_ls.capabilities or {}
-			),
+			capabilities = capabilities,
 		})
 
 		-- astro
 		require("lspconfig").astro.setup({
-			capabilities = vim.tbl_deep_extend(
-				"force",
-				{},
-				capabilities_extended,
-				require("lspconfig").astro.capabilities or {}
-			),
+			capabilities = capabilities,
 		})
 
 		-- deno
 		require("lspconfig").denols.setup({
 			root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
-			capabilities = vim.tbl_deep_extend(
-				"force",
-				{},
-				capabilities_extended,
-				require("lspconfig").denols.capabilities or {}
-			),
+			capabilities = capabilities,
 			init_options = {
 				lint = true,
 				unstable = true,
@@ -223,32 +204,17 @@ return {
 
 		-- rust
 		require("lspconfig").rust_analyzer.setup({
-			capabilities = vim.tbl_deep_extend(
-				"force",
-				{},
-				capabilities_extended,
-				require("lspconfig").rust_analyzer.capabilities or {}
-			),
+			capabilities = capabilities,
 		})
 
 		-- go
 		require("lspconfig").gopls.setup({
-			capabilities = vim.tbl_deep_extend(
-				"force",
-				{},
-				capabilities_extended,
-				require("lspconfig").gopls.capabilities or {}
-			),
+			capabilities = capabilities,
 		})
-		--
-		-- go
+
+		-- buf
 		require("lspconfig").buf_ls.setup({
-			capabilities = vim.tbl_deep_extend(
-				"force",
-				{},
-				capabilities_extended,
-				require("lspconfig").buf_ls.capabilities or {}
-			),
+			capabilities = capabilities,
 		})
 
 		--emmet
@@ -260,9 +226,12 @@ return {
 				"javascriptreact",
 				"typescriptreact",
 			},
+			capabilities = capabilities,
 		})
 
 		--tailwind
-		require("lspconfig").tailwindcss.setup({})
+		require("lspconfig").tailwindcss.setup({
+			capabilities = capabilities,
+		})
 	end,
 }
