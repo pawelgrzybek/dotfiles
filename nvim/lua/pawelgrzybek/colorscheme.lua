@@ -54,7 +54,7 @@ vim.api.nvim_set_hl(0, "CursorColumn", { ctermbg = 0, bg = black })
 vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 0, bg = black })
 
 -- popup menu
-vim.api.nvim_set_hl(0, "Pmenu", { ctermbg = 0, bg = black })
+vim.api.nvim_set_hl(0, "Pmenu", { ctermbg = "NONE", bg = "NONE" })
 vim.api.nvim_set_hl(0, "PmenuSel", { ctermbg = 8, bg = blackLight })
 vim.api.nvim_set_hl(0, "PmenuSbar", { ctermbg = 7, bg = white })
 vim.api.nvim_set_hl(0, "PmenuThumb", { ctermbg = 15, bg = whiteLight })
