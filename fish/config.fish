@@ -14,7 +14,7 @@ set fish_color_comment brblack
 set fish_color_selection green
 set fish_color_operator white
 set fish_color_escape white
-set fish_color_autosuggestion --dim blue
+set fish_color_autosuggestion brblack
 # set fish_color_cwd white
 # set fish_color_cwd_root white
 # set fish_color_user white
@@ -30,15 +30,15 @@ set fish_color_history_current green
 set fish_pager_color_progress green
 # set fish_pager_color_background --background=brblack
 set fish_pager_color_prefix white --bold
-set fish_pager_color_completion --dim blue
+set fish_pager_color_completion brblack
 set fish_pager_color_description white
-set fish_pager_color_selected_background --background=blue
-set fish_pager_color_selected_prefix brblack --bold
-set fish_pager_color_selected_completion brblack
+set fish_pager_color_selected_background --background=black
+set fish_pager_color_selected_prefix white
+set fish_pager_color_selected_completion white
 set fish_pager_color_selected_description brblack
 # set fish_pager_color_secondary_background --background=brblack
 set fish_pager_color_secondary_prefix white --bold
-set fish_pager_color_secondary_completion --dim blue
+set fish_pager_color_secondary_completion brblack
 set fish_pager_color_secondary_description white
 
 # utility shortcuts improved

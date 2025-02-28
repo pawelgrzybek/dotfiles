@@ -2,8 +2,8 @@
 # VERSION: 3.0
 SETUVAR --export --path GOPATH:/Users/pawelgrzybek/Developer/go
 SETUVAR --export PNPM_HOME:/Users/pawelgrzybek/Library/pnpm
-SETUVAR __fish_initialized:3400
-SETUVAR fish_color_autosuggestion:\x2d\x2ddim\x1eblue
+SETUVAR __fish_initialized:3800
+SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:red\x1e\x2d\x2dbold
 SETUVAR fish_color_command:white
 SETUVAR fish_color_comment:brblack
@@ -15,7 +15,7 @@ SETUVAR fish_color_escape:white
 SETUVAR fish_color_history_current:green
 SETUVAR fish_color_host:normal
 SETUVAR fish_color_host_remote:yellow
-SETUVAR fish_color_normal:white
+SETUVAR fish_color_normal:brwhite
 SETUVAR fish_color_operator:white
 SETUVAR fish_color_param:white
 SETUVAR fish_color_quote:white
@@ -27,9 +27,9 @@ SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:white
 SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_pager_color_completion:\x2d\x2ddim\x1eblue
+SETUVAR fish_pager_color_completion:brblack
 SETUVAR fish_pager_color_description:white
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold
 SETUVAR fish_pager_color_progress:green
-SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dblue
+SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dblack
 SETUVAR fish_user_paths:/Users/pawelgrzybek/Library/pnpm\x1e/opt/homebrew/bin
