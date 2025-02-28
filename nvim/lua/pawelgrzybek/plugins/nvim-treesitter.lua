@@ -1,8 +1,7 @@
-return { -- Highlight, edit, and navigate code
-
+return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
-	main = "nvim-treesitter.configs", -- Sets main module to use for opts
+	main = "nvim-treesitter.configs",
 	opts = {
 		ensure_installed = {
 			"astro",
@@ -25,7 +24,6 @@ return { -- Highlight, edit, and navigate code
 			"vimdoc",
 			"yaml",
 		},
-		-- Autoinstall languages that are not installed
 		highlight = {
 			enable = true,
 			additional_vim_regex_highlighting = { "ruby" },
