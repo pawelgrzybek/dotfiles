@@ -18,6 +18,8 @@ adjust-cursor-thickness = 4
 adjust-underline-thickness = 1
 adjust-cursor-height = 20
 cursor-style = block
+# currently not working, but to be fixed soon: https://github.com/ghostty-org/ghostty/issues/5928
+maximize = true
 window-padding-x = 7
 window-padding-y = 7
 window-padding-balance = true
