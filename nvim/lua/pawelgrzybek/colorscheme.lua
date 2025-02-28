@@ -70,3 +70,6 @@ vim.api.nvim_set_hl(0, "TodoFgFIX", { ctermfg = 9, fg = redLight, bold = true })
 
 -- more prominenet matching brackets
 vim.api.nvim_set_hl(0, "MatchParen", { ctermbg = 8, bg = blackLight, underline = true })
+
+-- changed indicator omre prominent, the default cyan is not too different to added green
+vim.api.nvim_set_hl(0, "Changed", { ctermfg = 11, fg = yellowLight })
