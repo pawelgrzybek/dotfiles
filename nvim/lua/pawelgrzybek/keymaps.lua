@@ -31,6 +31,7 @@ vim.keymap.set("n", "<leader>a", "ggVG")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>d", vim.diagnostic.setloclist, { desc = "Open [d]iagnostics (locatoin list)" })
+vim.keymap.set("n", "<leader><A-d>", vim.diagnostic.open_float, { desc = "Open [d]iagnostics (float)" })
 vim.keymap.set("n", "<leader>D", vim.diagnostic.setqflist, { desc = "Open [D]iagnostics (quickfix list)" })
 
 -- Quickfix stuff

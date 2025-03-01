@@ -1,15 +1,57 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
-		{ "j-hui/fidget.nvim", opts = {} },
 		"saghen/blink.cmp",
 	},
 	config = function()
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
 			callback = function(event)
+				-- Get all active clients
+				local active_clients = vim.lsp.get_clients()
+				local client_names = {}
+				local linter_names = {}
+				local formatter_names = {}
+
+				-- Collect names of all active clients
+				for _, active_client in pairs(active_clients) do
+					if active_client and active_client.name then
+						table.insert(client_names, active_client.name)
+					end
+				end
+
+				-- Collect names of all formatters
+				local conform = require("conform")
+				local formatters = conform.list_formatters(0)
+				if #formatters > 0 then
+					for _, formatter in ipairs(formatters) do
+						table.insert(formatter_names, formatter.name)
+					end
+				end
+
+				-- Get nvim-lint linters for current buffer
+				local lint = require("lint")
+				local buf_ft = vim.bo.filetype
+				local linters = lint.linters_by_ft[buf_ft]
+				if linters then
+					for _, linter in ipairs(linters) do
+						table.insert(linter_names, linter)
+					end
+				end
+
+				-- Join all client names with commas
+				local message = "🔍 Linters: "
+					.. table.concat(linter_names, ", ")
+					.. " • "
+					.. "💅 Formatters: "
+					.. table.concat(formatter_names, ", ")
+					.. " • "
+					.. "✨ LSPs: "
+					.. table.concat(client_names, ", ")
+
+				vim.notify(message, vim.log.levels.INFO)
+
+				-- rename
 				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename member" })
 
 				-- go to
@@ -126,28 +168,6 @@ return {
 		})
 
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
-		-- local capabilities_extended = vim.lsp.protocol.make_client_capabilities()
-		-- capabilities_extended =
-		-- 	vim.tbl_deep_extend("force", capabilities_extended, require("blink.cmp").get_lsp_capabilities())
-
-		require("mason").setup({
-			ui = {
-				border = "rounded",
-			},
-		})
-		require("mason-lspconfig").setup({
-			automatic_installation = false,
-			ensure_installed = {
-				"lua_ls",
-				"rust_analyzer",
-				"ts_ls",
-				"denols",
-				"emmet_language_server",
-				"tailwindcss",
-				"buf_ls",
-				"astro",
-			},
-		})
 
 		-- lua
 		require("lspconfig").lua_ls.setup({
