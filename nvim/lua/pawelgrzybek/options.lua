@@ -40,3 +40,9 @@ vim.opt.termguicolors = false
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }
+
+vim.diagnostic.config({
+	float = {
+		border = "single",
+	},
+})
