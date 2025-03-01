@@ -7,47 +7,53 @@ return {
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
 			callback = function(event)
-				-- Get all active clients
-				local active_clients = vim.lsp.get_clients()
-				local client_names = {}
-				local linter_names = {}
-				local formatter_names = {}
-
-				-- Collect names of all active clients
-				for _, active_client in pairs(active_clients) do
-					if active_client and active_client.name then
-						table.insert(client_names, active_client.name)
-					end
-				end
-
-				-- Collect names of all formatters
-				local conform = require("conform")
-				local formatters = conform.list_formatters(0)
-				if #formatters > 0 then
-					for _, formatter in ipairs(formatters) do
-						table.insert(formatter_names, formatter.name)
-					end
-				end
-
 				-- Get nvim-lint linters for current buffer
 				local lint = require("lint")
 				local buf_ft = vim.bo.filetype
 				local linters = lint.linters_by_ft[buf_ft]
+				local linter_names = {}
 				if linters then
 					for _, linter in ipairs(linters) do
 						table.insert(linter_names, linter)
 					end
 				end
 
-				-- Join all client names with commas
-				local message = "🔍 Linters: "
-					.. table.concat(linter_names, ", ")
-					.. " • "
-					.. "💅 Formatters: "
-					.. table.concat(formatter_names, ", ")
-					.. " • "
-					.. "✨ LSPs: "
-					.. table.concat(client_names, ", ")
+				-- Collect names of all formatters
+				local conform = require("conform")
+				local formatters = conform.list_formatters(0)
+				local formatter_names = {}
+				if #formatters > 0 then
+					for _, formatter in ipairs(formatters) do
+						table.insert(formatter_names, formatter.name)
+					end
+				end
+
+				-- Collect names of all active clients
+				local active_clients = vim.lsp.get_clients()
+				local client_names = {}
+				for _, active_client in pairs(active_clients) do
+					if active_client and active_client.name then
+						table.insert(client_names, active_client.name)
+					end
+				end
+
+				-- Build message parts conditionally
+				local message_parts = {}
+
+				if #linter_names > 0 then
+					table.insert(message_parts, "🔍 Linters: " .. table.concat(linter_names, ", "))
+				end
+
+				if #formatter_names > 0 then
+					table.insert(message_parts, "💅 Formatters: " .. table.concat(formatter_names, ", "))
+				end
+
+				if #client_names > 0 then
+					table.insert(message_parts, "✨ LSPs: " .. table.concat(client_names, ", "))
+				end
+
+				-- Join all parts with bullet points
+				local message = table.concat(message_parts, " • ")
 
 				vim.notify(message, vim.log.levels.INFO)
 
