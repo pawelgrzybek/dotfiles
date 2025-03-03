@@ -1,14 +1,14 @@
 # Syntax highlighting variables
 # https://fishshell.com/docs/current/interactive.html#syntax-highlighting-variables
-set fish_color_normal white
-set fish_color_command white
-set fish_color_keyword white
-set fish_color_quote white
+set fish_color_normal magenta
+set fish_color_command brwhite
+set fish_color_keyword yellow
+set fish_color_quote brwhite
 set fish_color_redirection white
 set fish_color_end white
 set fish_color_error red
-set fish_color_param white
-set fish_color_valid_path white
+set fish_color_param brwhite
+set fish_color_valid_path brwhite
 set fish_color_option white
 set fish_color_comment brblack
 set fish_color_selection green
