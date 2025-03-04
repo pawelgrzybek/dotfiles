@@ -8,16 +8,16 @@ return {
 			lint.linters_by_ft = {
 				javascript = vim.fn.filereadable("deno.json") == 1 and {
 					"deno",
-				} or { "eslint_d" },
+				} or { "eslint" },
 				javascriptreact = vim.fn.filereadable("deno.json") == 1 and {
 					"deno",
-				} or { "eslint_d" },
+				} or { "eslint" },
 				typescript = vim.fn.filereadable("deno.json") == 1 and {
 					"deno",
-				} or { "eslint_d" },
+				} or { "eslint" },
 				typescriptreact = vim.fn.filereadable("deno.json") == 1 and {
 					"deno",
-				} or { "eslint_d" },
+				} or { "eslint" },
 			}
 
 			vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
