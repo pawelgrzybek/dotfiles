@@ -2,44 +2,44 @@
 # https://fishshell.com/docs/current/interactive.html#syntax-highlighting-variables
 set fish_color_normal magenta
 set fish_color_command brwhite
-set fish_color_keyword yellow
+set fish_color_keyword brwhite
 set fish_color_quote brwhite
-set fish_color_redirection white
-set fish_color_end white
+set fish_color_redirection brwhite
+set fish_color_end brwhite
 set fish_color_error red
 set fish_color_param brwhite
 set fish_color_valid_path brwhite
-set fish_color_option white
+set fish_color_option brwhite
 set fish_color_comment brblack
-set fish_color_selection green
-set fish_color_operator white
-set fish_color_escape white
+set fish_color_selection brwhite --background brblack
+set fish_color_operator brwhite
+set fish_color_escape brwhite
 set fish_color_autosuggestion brblack
-# set fish_color_cwd white
-# set fish_color_cwd_root white
-# set fish_color_user white
-# set fish_color_host white
-# set fish_color_host_remote white
-# set fish_color_status white
+set fish_color_cwd magenta
+set fish_color_cwd_root magenta
+set fish_color_user brwhite
+set fish_color_host brwhite
+set fish_color_host_remote brwhite
+set fish_color_status white
 set fish_color_cancel red --bold
 set fish_color_search_match green
 set fish_color_history_current green
 
 # Pager color variables
 # https://fishshell.com/docs/current/interactive.html#pager-color-variables
-set fish_pager_color_progress green
-# set fish_pager_color_background --background=brblack
-set fish_pager_color_prefix white --bold
+set fish_pager_color_progress magenta
+set fish_pager_color_background normal
+set fish_pager_color_prefix brwhite --bold
 set fish_pager_color_completion brblack
-set fish_pager_color_description white
-set fish_pager_color_selected_background --background=black
-set fish_pager_color_selected_prefix white
+set fish_pager_color_description brblack
+set fish_pager_color_selected_background --background=brblack
+set fish_pager_color_selected_prefix brwhite
 set fish_pager_color_selected_completion white
 set fish_pager_color_selected_description brblack
-# set fish_pager_color_secondary_background --background=brblack
+set fish_pager_color_secondary_background normal
 set fish_pager_color_secondary_prefix white --bold
 set fish_pager_color_secondary_completion brblack
-set fish_pager_color_secondary_description white
+set fish_pager_color_secondary_description brblack
 
 # utility shortcuts improved
 abbr --add mv mv -iv
@@ -84,6 +84,7 @@ alias v="nvim"
 alias vim="nvim"
 alias y="yazi"
 
+set -g fish_key_bindings fish_vi_key_bindings
 set -gx EDITOR nvim
 
 set PATH $PATH ~/.cargo/bin
