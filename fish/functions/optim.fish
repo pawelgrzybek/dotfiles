@@ -8,7 +8,6 @@ function optim
 
 	for file in $argv
 		set filePath (realpath $file)
-		set filePathNoExtension (string split -r -m 1 . -- $filePath)[1]
 		set filePathWebp $filePathNoExtension.webp
 		set filePathAvif $filePathNoExtension.avif
 
