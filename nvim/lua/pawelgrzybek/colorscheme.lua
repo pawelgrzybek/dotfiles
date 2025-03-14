@@ -74,3 +74,9 @@ vim.api.nvim_set_hl(0, "MatchParen", { ctermbg = 8, bg = blackLight, underline =
 -- changed indicator omre prominent, the default cyan is not too different to added green
 vim.api.nvim_set_hl(0, "Changed", { ctermfg = 11, fg = yellowLight })
 vim.api.nvim_set_hl(0, "MarkSignHL", { ctermfg = 13, fg = magentaLight })
+
+-- diff
+vim.api.nvim_set_hl(0, "DiffAdd", { ctermbg = 2, bg = green })
+-- vim.api.nvim_set_hl(0, "DiffChange", { ctermbg = 3, bg = yellow })
+vim.api.nvim_set_hl(0, "DiffText", { ctermbg = 4, bg = blue })
+vim.api.nvim_set_hl(0, "DiffDelete", { ctermbg = 1, bg = red })
