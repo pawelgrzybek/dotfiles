@@ -32,6 +32,7 @@ return {
 				"markdown_inline",
 				"mermaid",
 				"proto",
+				"query",
 				"regex",
 				"rust",
 				"scss",
