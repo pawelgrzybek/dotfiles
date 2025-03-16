@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-fields
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
@@ -8,6 +9,7 @@ return {
 			ensure_installed = {
 				"astro",
 				"bash",
+				"c",
 				"comment",
 				"css",
 				"csv",
@@ -35,6 +37,8 @@ return {
 				"scss",
 				"tsx",
 				"typescript",
+				"vim",
+				"vimdoc",
 				"yaml",
 			},
 			sync_install = false,
