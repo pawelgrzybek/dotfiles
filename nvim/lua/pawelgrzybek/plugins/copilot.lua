@@ -27,7 +27,6 @@ return {
 		vim.api.nvim_create_autocmd("User", {
 			pattern = "BlinkCmpMenuClose",
 			callback = function()
-				-- in case the auto_trigger is enabled, call the next() method here
 				require("copilot.suggestion").next()
 				vim.b.copilot_suggestion_hidden = false
 			end,
