@@ -2,6 +2,7 @@
 -- https://github.com/windwp/nvim-autopairs
 
 return {
+	enabled = false,
 	"windwp/nvim-autopairs",
 	event = "InsertEnter",
 	-- dependencies = { "hrsh7th/nvim-cmp" },

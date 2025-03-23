@@ -1,7 +1,8 @@
-return { -- Collection of various small independent plugins/modules
+return {
 	"echasnovski/mini.nvim",
+	version = false,
 	config = function()
-		require("mini.ai").setup({ n_lines = 500 })
+		require("mini.ai").setup()
 		require("mini.surround").setup({})
 		require("mini.indentscope").setup({
 			draw = {
@@ -10,5 +11,6 @@ return { -- Collection of various small independent plugins/modules
 			},
 			symbol = "┆",
 		})
+		require("mini.pairs").setup()
 	end,
 }

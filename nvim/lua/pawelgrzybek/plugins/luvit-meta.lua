@@ -1,1 +1,5 @@
-return { "Bilal2453/luvit-meta", lazy = true }
+return {
+	"Bilal2453/luvit-meta",
+	enabled = false,
+	lazy = true,
+}
