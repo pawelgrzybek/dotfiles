@@ -56,7 +56,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 					i = { ["<C-y>"] = "select_default" },
 					n = { ["<C-y>"] = "select_default" },
 				},
-				borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+				-- borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
 			},
 			pickers = {
 				buffers = {

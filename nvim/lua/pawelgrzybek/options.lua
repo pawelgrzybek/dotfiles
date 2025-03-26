@@ -13,6 +13,7 @@ vim.opt.updatetime = 250
 vim.opt.timeoutlen = 1000
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.winborder = "single"
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
@@ -41,8 +42,4 @@ vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }
 
-vim.diagnostic.config({
-	float = {
-		border = "single",
-	},
-})
+vim.diagnostic.config({ virtual_text = true })
