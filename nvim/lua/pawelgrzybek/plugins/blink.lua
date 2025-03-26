@@ -2,7 +2,7 @@ return {
 	"saghen/blink.cmp",
 
 	-- use a release tag to download pre-built binaries
-	version = "v0.*",
+	version = "v1.*",
 	-- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
 	-- build = 'cargo build --release',
 	-- If you use nix, you can build from source using latest nightly rust with:
@@ -13,17 +13,19 @@ return {
 	opts = {
 		enabled = function()
 			return not vim.tbl_contains({ "markdown" }, vim.bo.filetype)
-				and vim.bo.buftype ~= "prompt"
-				and vim.b.completion ~= false
 		end,
 
 		completion = {
+			-- Disable auto brackets
+			-- NOTE: some LSPs may add auto brackets themselves anyway
+			accept = { auto_brackets = { enabled = false } },
 			menu = {
 				border = "single",
 				draw = {
+					gap = 2,
 					columns = {
-						{ "label", "label_description", gap = 1 },
-						{ "kind_icon", "kind", gap = 1 },
+						{ "kind_icon", "label", "label_description", gap = 1 },
+						{ "kind", "source_name", gap = 1 },
 					},
 				},
 			},
@@ -62,4 +64,6 @@ return {
 	-- allows extending the providers array elsewhere in your config
 	-- without having to redefine it
 	opts_extend = { "sources.default" },
+	-- Experimental signature help support
+	signature = { enabled = true },
 }
