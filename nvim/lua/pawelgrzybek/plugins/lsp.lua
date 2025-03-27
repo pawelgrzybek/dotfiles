@@ -118,11 +118,6 @@ return {
 			end,
 		})
 
-		-- add boarder around hovers
-		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-			border = "single",
-		})
-
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 		-- lua
