@@ -56,7 +56,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 					i = { ["<C-y>"] = "select_default" },
 					n = { ["<C-y>"] = "select_default" },
 				},
-				-- borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+				borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
 			},
 			pickers = {
 				buffers = {
@@ -104,6 +104,21 @@ return { -- Fuzzy Finder (files, lsp, etc)
 			pattern = "TelescopePrompt",
 			callback = function()
 				vim.opt_local.cursorline = false
+			end,
+		})
+
+		-- this is a hack to make it look right after 0.11 upgrade
+		-- 	https://github.com/nvim-telescope/telescope.nvim/issues/3436
+		vim.api.nvim_create_autocmd("User", {
+			pattern = "TelescopeFindPre",
+			callback = function()
+				vim.opt_local.winborder = "none"
+				vim.api.nvim_create_autocmd("WinLeave", {
+					once = true,
+					callback = function()
+						vim.opt_local.winborder = "single"
+					end,
+				})
 			end,
 		})
 	end,
