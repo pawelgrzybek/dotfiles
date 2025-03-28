@@ -12,7 +12,7 @@ brew install fd
 brew install fish
 brew install git
 brew install hugo
-brew install jesseduffield/lazygit/lazygit
+brew install lazygit
 brew install jq
 brew install neovim
 brew install oven-sh/bun/bun

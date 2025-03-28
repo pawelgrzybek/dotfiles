@@ -42,4 +42,6 @@ vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }
 
-vim.diagnostic.config({ virtual_text = true, virtual_lines = true })
+vim.diagnostic.config({ virtual_text = true, virtual_lines = {
+	current_line = true,
+} })
