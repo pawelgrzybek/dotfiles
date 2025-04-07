@@ -45,10 +45,20 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		-- [[ Configure Telescope ]]
 		-- See `:help telescope` and `:help telescope.setup()`
 		local actions = require("telescope.actions")
+		local telescopeConfig = require("telescope.config")
+		local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
+
+		-- I want to search in hidden/dot files.
+		table.insert(vimgrep_arguments, "--hidden")
+		-- I don't want to search in the `.git` directory.
+		table.insert(vimgrep_arguments, "--glob")
+		table.insert(vimgrep_arguments, "!**/.git/*")
+		--
 		require("telescope").setup({
 			-- You can put your default mappings / updates / etc. in here
 			--  All the info you're looking for is in `:help telescope.setup()`
 			--
+			-- Clone the default Telescope configuration
 			defaults = {
 				path_display = { "truncate" },
 				color_devicons = false,
@@ -57,6 +67,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 					n = { ["<C-y>"] = "select_default" },
 				},
 				borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+				vimgrep_arguments = vimgrep_arguments,
 			},
 			pickers = {
 				buffers = {
