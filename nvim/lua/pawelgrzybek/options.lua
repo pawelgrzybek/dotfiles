@@ -42,9 +42,20 @@ vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }
 
-vim.diagnostic.config({ virtual_text = true, virtual_lines = {
-	current_line = true,
-} })
+vim.diagnostic.config({
+	virtual_text = true,
+	virtual_lines = {
+		current_line = true,
+	},
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "󰅚 ",
+			[vim.diagnostic.severity.WARN] = "󰀪 ",
+			[vim.diagnostic.severity.INFO] = "󰋽 ",
+			[vim.diagnostic.severity.HINT] = "󰌶 ",
+		},
+	},
+})
 
 -- enables lsps configured under .config/nvim/lsp
 vim.lsp.enable({
