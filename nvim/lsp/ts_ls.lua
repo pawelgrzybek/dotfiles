@@ -12,6 +12,7 @@ return {
 		"typescript.tsx",
 	},
 	init_options = {
+		hostInfo = "neovim",
 		preferences = {
 			includeInlayParameterNameHints = "all",
 			includeInlayParameterNameHintsWhenArgumentMatchesName = true,
