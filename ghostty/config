@@ -30,5 +30,5 @@ background-opacity = 0.97
 background-blur-radius = 20
 unfocused-split-opacity = 0.25
 
-keybind = cmd+[=previous_tab
-keybind = cmd+]=next_tab
+keybind = cmd+alt+[=previous_tab
+keybind = cmd+alt+]=next_tab
