@@ -87,9 +87,12 @@ alias y="yazi"
 set -g fish_key_bindings fish_vi_key_bindings
 set -gx EDITOR nvim
 
+# setup rust toolchain
 set PATH $PATH ~/.cargo/bin
-# set PATH $PATH ~/go/Developer/bin
-set -x -U GOPATH $HOME/Developer/go
+
+# setup go toolchain
+set -gx PATH $PATH (go env GOPATH)/bin
+
 
 # pnpm
 set -gx PNPM_HOME /Users/pawelgrzybek/Library/pnpm
