@@ -61,7 +61,7 @@ vim.diagnostic.config({
 vim.lsp.enable({
 	"astro",
 	"buf_ls",
-	"deno",
+	-- "deno",
 	"emmet_language_server",
 	"gopls",
 	"lua_ls",
