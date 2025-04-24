@@ -2,7 +2,6 @@
 brew upgrade
 
 # Add some taps
-brew tap joedrago/repo
 brew tap homebrew/cask-versions
 
 # Install CLI tools
@@ -44,9 +43,6 @@ brew install signal
 brew install slack
 brew install tuple
 brew install zed
-
-# Install tap formulas
-brew install joedrago/repo/avifenc
 
 # Remove outdated versions from the cellar.
 brew cleanup
