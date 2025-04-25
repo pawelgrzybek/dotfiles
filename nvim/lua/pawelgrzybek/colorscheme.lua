@@ -82,3 +82,5 @@ vim.api.nvim_set_hl(0, "DiffText", { ctermbg = 4, bg = blue })
 vim.api.nvim_set_hl(0, "DiffDelete", { ctermbg = 1, bg = red })
 
 vim.api.nvim_set_hl(0, "BlinkCmpSource", { ctermfg = 7, fg = white })
+vim.api.nvim_set_hl(0, "DiffAdd", { ctermbg = 0, bg = black })
+vim.api.nvim_set_hl(0, "DiffDelete", { ctermbg = 0, bg = black })

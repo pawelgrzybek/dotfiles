@@ -77,3 +77,11 @@ end, { desc = "Toggle locatoin list" })
 -- vim.keymap.set("n", "]t", "<cmd>:tabnext<Cr>")
 -- vim.keymap.set("n", "[T", "<cmd>:tabfirst<Cr>")
 -- vim.keymap.set("n", "]T", "<cmd>:tablast<Cr>")
+--
+vim.keymap.set("n", "<leader>v", function()
+	if next(require("diffview.lib").views) == nil then
+		vim.cmd("DiffviewOpen")
+	else
+		vim.cmd("DiffviewClose")
+	end
+end)
