@@ -4,6 +4,19 @@ return {
 	root_markers = {
 		"deno.json",
 	},
+	---@diagnostic disable-next-line: unused-local
+	root_dir = function(bufnr, on_dir)
+		local root_path = vim.fs.find("deno.json", {
+			upward = true,
+			type = "file",
+			path = vim.fn.getcwd(),
+		})[1]
+
+		if root_path then
+			on_dir(vim.fn.fnamemodify(root_path, ":h"))
+		end
+	end,
+
 	filetypes = {
 		"javascript",
 		"javascriptreact",
@@ -24,15 +37,4 @@ return {
 			},
 		},
 	},
-	on_attach = function(client)
-		if client.config.root_dir == nil then
-			client.stop(client, true)
-			return
-		end
-
-		local denoJsonExists = vim.fn.filereadable(client.config.root_dir .. "/deno.json") == 1
-		if denoJsonExists == false then
-			client.stop(client, true)
-		end
-	end,
 }
