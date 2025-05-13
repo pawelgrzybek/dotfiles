@@ -87,6 +87,9 @@ alias y="yazi"
 set -g fish_key_bindings fish_vi_key_bindings
 set -gx EDITOR nvim
 
+# use nvim to browse man pages
+set -gx MANPAGER "nvim +Man!"
+
 # setup rust toolchain
 set PATH $PATH ~/.cargo/bin
 
