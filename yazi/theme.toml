@@ -13,3 +13,9 @@ rules = [
 	{ name = "*/", fg = "blue" },
 	{ name = "*", fg = "white" }
 ]
+
+[tabs]
+active   = { fg = "lightcyan", bg = "reset", bold = true }
+inactive = { fg = "darkgray", bg = "reset" }
+ sep_inner = { open = "", close = "" }
+ sep_outer = { open = "", close = "" }
