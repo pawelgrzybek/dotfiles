@@ -55,6 +55,9 @@ vim.diagnostic.config({
 	},
 })
 
+-- treesitter code folding
+vim.opt.foldcolumn = "auto"
+
 -- enables lsps configured under .config/nvim/lsp
 vim.lsp.enable({
 	"astro",
