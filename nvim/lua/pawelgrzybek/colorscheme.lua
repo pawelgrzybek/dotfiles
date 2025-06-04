@@ -86,4 +86,3 @@ vim.api.nvim_set_hl(0, "DiffAdd", { ctermbg = 0, bg = black })
 vim.api.nvim_set_hl(0, "DiffDelete", { ctermbg = 0, bg = black })
 
 vim.api.nvim_set_hl(0, "Folded", { ctermfg = 13, fg = magentaLight })
-vim.api.nvim_set_hl(0, "FoldColumn", { ctermfg = 13, fg = magentaLight })

@@ -56,7 +56,10 @@ vim.diagnostic.config({
 })
 
 -- treesitter code folding
-vim.opt.foldcolumn = "auto"
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
 
 -- enables lsps configured under .config/nvim/lsp
 vim.lsp.enable({
