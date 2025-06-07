@@ -43,8 +43,8 @@ vim.g.markdown_fenced_languages = {
 }
 
 vim.diagnostic.config({
-	-- virtual_text = true,
-	virtual_lines = true,
+	virtual_text = true,
+	-- virtual_lines = true,
 	signs = {
 		text = {
 			[vim.diagnostic.severity.ERROR] = "󰅚 ",
