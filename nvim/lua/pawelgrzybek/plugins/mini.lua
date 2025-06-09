@@ -6,10 +6,15 @@ return {
 		"JoosepAlviste/nvim-ts-context-commentstring",
 	},
 	config = function()
+		-- ai
 		require("mini.ai").setup({
 			n_lines = 500,
 		})
+
+		-- surround
 		require("mini.surround").setup({})
+
+		-- indentscope
 		require("mini.indentscope").setup({
 			draw = {
 				delay = 0,
@@ -17,9 +22,11 @@ return {
 			},
 			symbol = "┆",
 		})
-		require("mini.pairs").setup({
-			modes = { insert = true, command = true, terminal = false },
-		})
+
+		-- pairs
+		require("mini.pairs").setup({})
+
+		-- comment
 		require("mini.comment").setup({
 			options = {
 				custom_commentstring = function()
