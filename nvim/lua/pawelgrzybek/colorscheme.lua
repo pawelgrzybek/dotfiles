@@ -86,3 +86,7 @@ vim.api.nvim_set_hl(0, "DiffAdd", { ctermbg = 0, bg = black })
 vim.api.nvim_set_hl(0, "DiffDelete", { ctermbg = 0, bg = black })
 
 vim.api.nvim_set_hl(0, "Folded", { ctermfg = 13, fg = magentaLight })
+
+-- snacks
+vim.api.nvim_set_hl(0, "SnacksPickerCursorLine", { link = "NONE" })
+-- vim.api.nvim_set_hl(0, "SnacksPickerInputCursorLine", { ctermbg = "NONE", bg = "NONE" })

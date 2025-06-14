@@ -46,38 +46,44 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set(
 			"n",
 			"<leader>gd",
-			require("telescope.builtin").lsp_definitions,
+			Snacks.picker.lsp_definitions,
+			-- require("telescope.builtin").lsp_definitions,
 			{ buffer = event.buf, desc = "[G]o to [d]efinition" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gt",
-			require("telescope.builtin").lsp_type_definitions,
+			Snacks.picker.lsp_type_definitions,
+			-- require("telescope.builtin").lsp_type_definitions,
 			{ buffer = event.buf, desc = "[G]o to [t]ype" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gi",
-			require("telescope.builtin").lsp_implementations,
+			Snacks.picker.lsp_implementations,
+			-- require("telescope.builtin").lsp_implementations,
 			{ buffer = event.buf, desc = "[G]o to [i]mplementation" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gr",
-			require("telescope.builtin").lsp_references,
+			Snacks.picker.lsp_references,
+			-- require("telescope.builtin").lsp_references,
 			{ buffer = event.buf, desc = "[G]oto [r]eferences" }
 		)
 
 		vim.keymap.set(
 			"n",
 			"<leader>gs",
-			require("telescope.builtin").lsp_document_symbols,
+			Snacks.picker.lsp_symbols,
+			-- require("telescope.builtin").lsp_document_symbols,
 			{ buffer = event.buf, desc = "[F]ind symbols (local)" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gS",
-			require("telescope.builtin").lsp_dynamic_workspace_symbols,
+			Snacks.picker.lsp_workspace_symbols,
+			-- require("telescope.builtin").lsp_dynamic_workspace_symbols,
 			{ buffer = event.buf, desc = "[F]ind [s]ymbols (global)" }
 		)
 
@@ -85,13 +91,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set(
 			{ "n", "x" },
 			"<leader>ci",
-			require("telescope.builtin").lsp_incoming_calls,
+			vim.lsp.buf.incoming_calls,
 			{ buffer = event.buf, desc = "[C]alls [i]ncoming" }
 		)
+
 		vim.keymap.set(
 			{ "n", "x" },
 			"<leader>co",
-			require("telescope.builtin").lsp_outgoing_calls,
+			vim.lsp.buf.outgoing_calls,
 			{ buffer = event.buf, desc = "[C]alls [o]utgoing" }
 		)
 
