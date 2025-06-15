@@ -47,28 +47,24 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			"n",
 			"<leader>gd",
 			Snacks.picker.lsp_definitions,
-			-- require("telescope.builtin").lsp_definitions,
 			{ buffer = event.buf, desc = "[G]o to [d]efinition" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gt",
 			Snacks.picker.lsp_type_definitions,
-			-- require("telescope.builtin").lsp_type_definitions,
 			{ buffer = event.buf, desc = "[G]o to [t]ype" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gi",
 			Snacks.picker.lsp_implementations,
-			-- require("telescope.builtin").lsp_implementations,
 			{ buffer = event.buf, desc = "[G]o to [i]mplementation" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gr",
 			Snacks.picker.lsp_references,
-			-- require("telescope.builtin").lsp_references,
 			{ buffer = event.buf, desc = "[G]oto [r]eferences" }
 		)
 
@@ -76,14 +72,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			"n",
 			"<leader>gs",
 			Snacks.picker.lsp_symbols,
-			-- require("telescope.builtin").lsp_document_symbols,
 			{ buffer = event.buf, desc = "[F]ind symbols (local)" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>gS",
 			Snacks.picker.lsp_workspace_symbols,
-			-- require("telescope.builtin").lsp_dynamic_workspace_symbols,
 			{ buffer = event.buf, desc = "[F]ind [s]ymbols (global)" }
 		)
 

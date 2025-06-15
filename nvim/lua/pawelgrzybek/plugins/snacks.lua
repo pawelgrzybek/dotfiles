@@ -2,6 +2,12 @@ return {
 	"folke/snacks.nvim",
 	---@type snacks.Config
 	opts = {
+		scroll = {
+			animate = {
+				duration = { step = 10, total = 100 },
+				easing = "linear",
+			},
+		},
 		picker = {
 			layout = {
 				layout = {
@@ -16,7 +22,15 @@ return {
 						{ win = "input", height = 1, border = "bottom" },
 						{ win = "list", border = "none" },
 					},
-					{ win = "preview", title = "{preview}", width = 0.5, border = "single" },
+					{
+						win = "preview",
+						title = "{preview}",
+						width = 0.5,
+						border = "single",
+						wo = {
+							cursorcolumn = false,
+						},
+					},
 				},
 			},
 			win = {
@@ -56,9 +70,9 @@ return {
 		{
 			"<leader>fg",
 			function()
-				Snacks.picker.git_status()
+				Snacks.picker.git_diff()
 			end,
-			desc = "[F]ind [g]it changes",
+			desc = "[F]ind [g]it diffs",
 		},
 		{
 			"<leader>fh",
@@ -112,7 +126,7 @@ return {
 		{
 			"<leader>fc",
 			function()
-				Snacks.picker.buffers({ cwd = vim.fn.stdpath("config") })
+				Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
 			end,
 			desc = "[F]ind [c]onfig",
 		},
