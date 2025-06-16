@@ -2,4 +2,7 @@
 return {
 	"pawelgrzybek/oktheme.nvim",
 	-- dir = "/Users/pawelgrzybek/Developer/nvim-plugins/oktheme.nvim",
+	config = function()
+		require("oktheme").setup()
+	end,
 }

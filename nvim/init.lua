@@ -1,6 +1,5 @@
 require("pawelgrzybek.options")
 require("pawelgrzybek.lazy")
-require("pawelgrzybek.colorscheme")
 require("pawelgrzybek.keymaps")
 require("pawelgrzybek.autocmds")
 require("pawelgrzybek.user_commands")
