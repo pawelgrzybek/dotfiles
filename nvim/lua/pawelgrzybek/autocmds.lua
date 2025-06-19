@@ -68,12 +68,30 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			{ buffer = event.buf, desc = "[G]oto [r]eferences" }
 		)
 
-		vim.keymap.set(
-			"n",
-			"<leader>gs",
-			Snacks.picker.lsp_symbols,
-			{ buffer = event.buf, desc = "[F]ind symbols (local)" }
-		)
+		vim.keymap.set("n", "<leader>gs", function()
+			Snacks.picker.lsp_symbols({
+				filter = {
+					default = {
+						"Class",
+						"Constructor",
+						"Enum",
+						"Field",
+						"Function",
+						"Interface",
+						"Method",
+						"Module",
+						"Namespace",
+						"Package",
+						"Property",
+						"Struct",
+						"Trait",
+						"Variable",
+						"Constant",
+						"Object",
+					},
+				},
+			})
+		end, { buffer = event.buf, desc = "[F]ind symbols (local)" })
 		vim.keymap.set(
 			"n",
 			"<leader>gS",
