@@ -54,63 +54,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		-- rename
 		vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = event.buf, desc = "[R]ename member" })
 
-		vim.keymap.set(
-			"n",
-			"<leader>gd",
-			Snacks.picker.lsp_definitions,
-			{ buffer = event.buf, desc = "[G]o to [d]efinition" }
-		)
-		vim.keymap.set(
-			"n",
-			"<leader>gt",
-			Snacks.picker.lsp_type_definitions,
-			{ buffer = event.buf, desc = "[G]o to [t]ype" }
-		)
-		vim.keymap.set(
-			"n",
-			"<leader>gi",
-			Snacks.picker.lsp_implementations,
-			{ buffer = event.buf, desc = "[G]o to [i]mplementation" }
-		)
-		vim.keymap.set(
-			"n",
-			"<leader>gr",
-			Snacks.picker.lsp_references,
-			{ buffer = event.buf, desc = "[G]oto [r]eferences" }
-		)
-
-		vim.keymap.set("n", "<leader>gs", function()
-			Snacks.picker.lsp_symbols({
-				filter = {
-					default = {
-						"Class",
-						"Constructor",
-						"Enum",
-						"Field",
-						"Function",
-						"Interface",
-						"Method",
-						"Module",
-						"Namespace",
-						"Package",
-						"Property",
-						"Struct",
-						"Trait",
-						"Variable",
-						"Constant",
-						"Object",
-					},
-				},
-			})
-		end, { buffer = event.buf, desc = "[F]ind symbols (local)" })
-		vim.keymap.set(
-			"n",
-			"<leader>gS",
-			Snacks.picker.lsp_workspace_symbols,
-			{ buffer = event.buf, desc = "[F]ind [s]ymbols (global)" }
-		)
-
 		-- function calls
+		-- I would love this one to be in the `Snacks.picker`
 		vim.keymap.set(
 			{ "n", "x" },
 			"<leader>ci",

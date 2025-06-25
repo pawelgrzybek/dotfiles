@@ -35,6 +35,17 @@ return {
 					},
 				},
 			},
+			sources = {
+				explorer = {
+					layout = {
+						layout = {
+							preset = "sidebar",
+							width = 50,
+							position = "right",
+						},
+					},
+				},
+			},
 		},
 	},
 	keys = {
@@ -113,7 +124,7 @@ return {
 		{
 			"<leader><leader>",
 			function()
-				Snacks.picker.smart()
+				Snacks.picker.resume()
 			end,
 			desc = "[F]ind ??",
 		},
@@ -123,6 +134,78 @@ return {
 				Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
 			end,
 			desc = "[F]ind [c]onfig",
+		},
+		{
+			"<leader>gd",
+			function()
+				Snacks.picker.lsp_definitions()
+			end,
+			desc = "[G]o to [d]efinition",
+		},
+		{
+			"<leader>gt",
+			function()
+				Snacks.picker.lsp_type_definitions()
+			end,
+			desc = "[G]o to [t]ype definition",
+		},
+		{
+			"<leader>gi",
+			function()
+				Snacks.picker.lsp_implementations()
+			end,
+			desc = "[G]o to [i]mplementations",
+		},
+		{
+			"<leader>gr",
+			function()
+				Snacks.picker.lsp_references()
+			end,
+			desc = "[G]o to [r]eferences",
+		},
+		{
+			"<leader>gs",
+			function()
+				Snacks.picker.lsp_symbols({
+					filter = {
+						default = {
+							"Class",
+							"Constructor",
+							"Enum",
+							"Field",
+							"Function",
+							"Interface",
+							"Method",
+							"Module",
+							"Namespace",
+							"Package",
+							"Property",
+							"Struct",
+							"Trait",
+							"Variable",
+							"Constant",
+							"Object",
+						},
+					},
+				})
+			end,
+			desc = "[F]ind [s]ymbols (local)",
+		},
+		{
+			"<leader>gS",
+			function()
+				Snacks.picker.lsp_workspace_symbols()
+			end,
+			desc = "[F]ind [s]ymbols (global)",
+		},
+
+		-- explorer
+		{
+			"<leader>e",
+			function()
+				Snacks.explorer()
+			end,
+			desc = "[E]xplorer",
 		},
 	},
 }
