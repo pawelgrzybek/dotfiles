@@ -37,11 +37,25 @@ return {
 			},
 			sources = {
 				explorer = {
+					hidden = true,
 					layout = {
 						layout = {
-							preset = "sidebar",
-							width = 50,
+							backdrop = false,
+							width = 55,
+							min_width = 55,
+							height = 0,
 							position = "right",
+							border = "none",
+							box = "vertical",
+							-- {
+							-- 	win = "input",
+							-- 	height = 1,
+							-- 	border = "single",
+							-- 	title = "{title} {live} {flags}",
+							-- 	title_pos = "center",
+							-- },
+							{ win = "list", border = "none" },
+							-- { win = "preview", title = "{preview}", height = 0.4, border = "top" },
 						},
 					},
 				},
