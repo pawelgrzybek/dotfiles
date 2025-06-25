@@ -61,6 +61,11 @@ return {
 				},
 			},
 		},
+		indent = {
+			animate = {
+				enabled = false,
+			},
+		},
 	},
 	keys = {
 		{

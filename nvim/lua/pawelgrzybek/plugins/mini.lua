@@ -14,15 +14,6 @@ return {
 		-- surround
 		require("mini.surround").setup({})
 
-		-- indentscope
-		require("mini.indentscope").setup({
-			draw = {
-				delay = 0,
-				animation = require("mini.indentscope").gen_animation.none(),
-			},
-			symbol = "┆",
-		})
-
 		-- pairs
 		require("mini.pairs").setup({})
 
