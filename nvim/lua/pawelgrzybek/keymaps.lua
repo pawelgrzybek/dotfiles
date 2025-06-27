@@ -52,11 +52,6 @@ vim.keymap.set("n", "<leader>l", function()
 	vim.cmd("lopen")
 end, { desc = "Toggle locatoin list" })
 
--- Toggle diffview
-vim.keymap.set("n", "<leader>v", function()
-	if next(require("diffview.lib").views) == nil then
-		vim.cmd("DiffviewOpen")
-	else
-		vim.cmd("DiffviewClose")
-	end
-end)
+-- Tab navigation
+vim.keymap.set("n", "]t", "gt")
+vim.keymap.set("n", "[t", "gT")
