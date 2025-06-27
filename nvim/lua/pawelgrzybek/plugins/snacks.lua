@@ -30,7 +30,7 @@ return {
 			win = {
 				input = {
 					keys = {
-						["<Esc>"] = { "close", mode = { "n", "i" } },
+						-- ["<Esc>"] = { "close", mode = { "n", "i" } },
 						["<c-y>"] = { "confirm", mode = { "n", "i" } },
 					},
 				},
