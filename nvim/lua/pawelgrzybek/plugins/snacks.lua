@@ -4,6 +4,10 @@ return {
 	lazy = false,
 	---@type snacks.Config
 	opts = {
+		image = {
+			enabled = false, -- NOTE: Disable snacks.image
+			formats = {}, -- HACK: Disable image preview for other modules like picker
+		},
 		picker = {
 			layout = {
 				layout = {
