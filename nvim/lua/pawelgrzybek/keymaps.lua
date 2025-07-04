@@ -55,3 +55,6 @@ end, { desc = "Toggle locatoin list" })
 -- Tab navigation
 vim.keymap.set("n", "]t", "gt")
 vim.keymap.set("n", "[t", "gT")
+
+-- Undotree toggle
+vim.keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<CR>", { desc = "[U]ndotree toggle" })
