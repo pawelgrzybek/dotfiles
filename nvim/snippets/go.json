@@ -1,0 +1,12 @@
+{
+  "For loop": {
+    "prefix": "for",
+    "body": [
+      "for i := ${1:init_value}; i < ${2:stop value}; i++ {",
+      "  fmt.Println(\"i: \", ${3:body})",
+      "}",
+      ""
+    ],
+    "description": "For loop"
+  }
+}
