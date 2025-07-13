@@ -4,25 +4,17 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- vim.api.nvim_create_autocmd("FileType", {
--- 	pattern = { "markdown" },
--- 	callback = function()
--- 		vim.opt_local.wrap = true
--- 		vim.opt_local.linebreak = true
---
--- 		vim.keymap.set("n", "k", "gk", { buffer = true })
--- 		vim.keymap.set("n", "j", "gj", { buffer = true })
--- 	end,
--- })
-
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "markdown",
+	pattern = { "markdown", "txt" },
 	callback = function()
 		vim.opt_local.wrap = true
 		vim.opt_local.linebreak = true
 		vim.opt_local.breakindent = true
+
 		vim.keymap.set("n", "k", "gk", { buffer = true })
 		vim.keymap.set("n", "j", "gj", { buffer = true })
+		vim.keymap.set("n", "$", "g$", { buffer = true })
+		vim.keymap.set("n", "0", "g0", { buffer = true })
 	end,
 })
 

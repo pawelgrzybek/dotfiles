@@ -4,7 +4,6 @@ vim.g.maplocalleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
--- vim.opt.showmode = false -- Don't show the mode, since it's already in the status line
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
