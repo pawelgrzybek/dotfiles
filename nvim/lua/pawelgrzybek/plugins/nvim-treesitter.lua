@@ -36,6 +36,7 @@ return {
 				"regex",
 				"rust",
 				"scss",
+				"sql",
 				"tsx",
 				"typescript",
 				"vim",
