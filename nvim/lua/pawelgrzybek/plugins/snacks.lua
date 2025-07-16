@@ -19,8 +19,8 @@ return {
 						box = "vertical",
 						border = "single",
 						title = "{title}",
-						{ win = "input", height = 1, border = "bottom" },
-						{ win = "list", border = "none" },
+						{ win = "input", height = 1,     border = "bottom" },
+						{ win = "list",  border = "none" },
 					},
 					{
 						win = "preview",
@@ -38,6 +38,9 @@ return {
 					keys = {
 						-- ["<Esc>"] = { "close", mode = { "n", "i" } },
 						["<c-y>"] = { "confirm", mode = { "n", "i" } },
+					},
+					wo = {
+						cursorlineopt = "line",
 					},
 				},
 			},
