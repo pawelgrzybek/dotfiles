@@ -1,6 +1,4 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
+vim.opt.autoindent = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
@@ -38,6 +36,12 @@ vim.opt.wrap = false
 vim.opt.termguicolors = false
 vim.opt.undofile = true
 
+-- treesitter code folding
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
+
 vim.g.markdown_fenced_languages = {
 	"ts=typescript",
 }
@@ -45,12 +49,6 @@ vim.g.markdown_fenced_languages = {
 vim.diagnostic.config({
 	virtual_text = true,
 })
-
--- treesitter code folding
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.opt.foldenable = false
-vim.opt.foldlevel = 99
 
 -- enables lsps configured under .config/nvim/lsp
 vim.lsp.enable({
