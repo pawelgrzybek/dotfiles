@@ -44,15 +44,6 @@ vim.g.markdown_fenced_languages = {
 
 vim.diagnostic.config({
 	virtual_text = true,
-	-- virtual_lines = true,
-	signs = {
-		text = {
-			[vim.diagnostic.severity.ERROR] = "󰅚 ",
-			[vim.diagnostic.severity.WARN] = "󰀪 ",
-			[vim.diagnostic.severity.INFO] = "󰋽 ",
-			[vim.diagnostic.severity.HINT] = "󰌶 ",
-		},
-	},
 })
 
 -- treesitter code folding
