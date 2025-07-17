@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 vim.opt.autoindent = true
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -43,22 +46,22 @@ vim.opt.foldenable = false
 vim.opt.foldlevel = 99
 
 vim.g.markdown_fenced_languages = {
-	"ts=typescript",
+  "ts=typescript",
 }
 
 vim.diagnostic.config({
-	virtual_text = true,
+  virtual_text = true,
 })
 
 -- enables lsps configured under .config/nvim/lsp
 vim.lsp.enable({
-	"astro",
-	"buf_ls",
-	"deno",
-	"emmet_language_server",
-	"gopls",
-	"lua_ls",
-	"rust_analyzer",
-	"tailwindcss",
-	"ts_ls",
+  "astro",
+  "buf_ls",
+  "deno",
+  "emmet_language_server",
+  "gopls",
+  "lua_ls",
+  "rust_analyzer",
+  "tailwindcss",
+  "ts_ls",
 })

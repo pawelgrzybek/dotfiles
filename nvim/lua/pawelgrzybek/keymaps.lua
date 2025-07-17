@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 -- Disable arrow keys in normal mode
 vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
@@ -35,24 +32,24 @@ vim.keymap.set("n", "<leader>D", vim.diagnostic.setqflist, { desc = "Open [D]iag
 
 -- Toggle quickfix/location list
 vim.keymap.set("n", "<leader>q", function()
-	local windows = vim.fn.getwininfo()
-	for _, win in pairs(windows) do
-		if win.quickfix == 1 then
-			vim.cmd("cclose")
-			return
-		end
-	end
-	vim.cmd("copen")
+  local windows = vim.fn.getwininfo()
+  for _, win in pairs(windows) do
+    if win.quickfix == 1 then
+      vim.cmd("cclose")
+      return
+    end
+  end
+  vim.cmd("copen")
 end, { desc = "Toggle quickfix list" })
 vim.keymap.set("n", "<leader>l", function()
-	local windows = vim.fn.getwininfo()
-	for _, win in pairs(windows) do
-		if win.loclist == 1 then
-			vim.cmd("lclose")
-			return
-		end
-	end
-	vim.cmd("lopen")
+  local windows = vim.fn.getwininfo()
+  for _, win in pairs(windows) do
+    if win.loclist == 1 then
+      vim.cmd("lclose")
+      return
+    end
+  end
+  vim.cmd("lopen")
 end, { desc = "Toggle locatoin list" })
 
 -- Tab navigation
