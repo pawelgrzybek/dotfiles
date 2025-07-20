@@ -1,0 +1,52 @@
+{
+  "PSQL - Create a table": {
+    "prefix": "psql - create a table",
+    "body": [
+      "CREATE TABLE \"user\" (",
+      "    id SERIAL PRIMARY KEY,",
+      "    email VARCHAR(255) NOT NULL UNIQUE,",
+      "    username VARCHAR(50) NOT NULL UNIQUE,",
+      "    password VARCHAR(255) NOT NULL,",
+      "    bio TEXT,",
+      "    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,",
+      "    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
+      ");"
+    ],
+    "description": "PSQL - Create a table"
+  },
+  "PSQL - Insert into a table": {
+    "prefix": "psql - insert into a table",
+    "body": [
+      "INSERT INTO \"user\" (email, username, password, bio) VALUES (",
+      "  'test@test.com',",
+      "  'test user',",
+      "  'test password',",
+      "  'test bio'",
+      ");"
+    ],
+    "description": "PSQL - Insert into a table"
+  },
+  "PSQL - Select from": {
+    "prefix": "psql - select from",
+    "body": ["SELECT * FROM \"user\" order by id asc limit 1000;"],
+    "description": "PSQL - Select from"
+  },
+  "PSQL - Alter column": {
+    "prefix": "psql - alter column",
+    "body": ["ALTER TABLE \"user\"", "ALTER COLUMN bio TYPE VARCHAR(255);"],
+    "description": "PSQL - Alter column"
+  },
+  "PSQL - Add column": {
+    "prefix": "psql - add column",
+    "body": [
+      "ALTER TABLE \"user\"",
+      "ADD favourite BOOLEAN NOT NULL DEFAULT false;"
+    ],
+    "description": "PSQL - Add column"
+  },
+  "PSQL - Drop column": {
+    "prefix": "psql - drop column",
+    "body": ["ALTER TABLE \"user\" DROP COLUMN favourite;"],
+    "description": "PSQL - Drop column"
+  }
+}
