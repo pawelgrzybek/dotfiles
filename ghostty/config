@@ -32,3 +32,4 @@ unfocused-split-opacity = 0.25
 
 keybind = cmd+alt+left=previous_tab
 keybind = cmd+alt+right=next_tab
+keybind = shift+enter=text:\n
