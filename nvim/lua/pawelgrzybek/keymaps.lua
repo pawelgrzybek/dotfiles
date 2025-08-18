@@ -26,30 +26,39 @@ vim.keymap.set("v", "<leader>p", '"+p')
 vim.keymap.set("n", "<leader>a", "ggVG")
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "<leader>d", vim.diagnostic.setloclist, { desc = "Open [d]iagnostics (locatoin list)" })
+vim.keymap.set("n", "<leader>d", function()
+	local windows = vim.fn.getwininfo()
+	for _, win in pairs(windows) do
+		if win.loclist == 1 then
+			vim.cmd("lclose")
+			return
+		end
+	end
+	vim.diagnostic.setloclist()
+end, { desc = "Toggle [d]iagnostics (location list)" })
 vim.keymap.set("n", "<leader><A-d>", vim.diagnostic.open_float, { desc = "Open [d]iagnostics (float)" })
 vim.keymap.set("n", "<leader>D", vim.diagnostic.setqflist, { desc = "Open [D]iagnostics (quickfix list)" })
 
 -- Toggle quickfix/location list
 vim.keymap.set("n", "<leader>q", function()
-  local windows = vim.fn.getwininfo()
-  for _, win in pairs(windows) do
-    if win.quickfix == 1 then
-      vim.cmd("cclose")
-      return
-    end
-  end
-  vim.cmd("copen")
+	local windows = vim.fn.getwininfo()
+	for _, win in pairs(windows) do
+		if win.quickfix == 1 then
+			vim.cmd("cclose")
+			return
+		end
+	end
+	vim.cmd("copen")
 end, { desc = "Toggle quickfix list" })
 vim.keymap.set("n", "<leader>l", function()
-  local windows = vim.fn.getwininfo()
-  for _, win in pairs(windows) do
-    if win.loclist == 1 then
-      vim.cmd("lclose")
-      return
-    end
-  end
-  vim.cmd("lopen")
+	local windows = vim.fn.getwininfo()
+	for _, win in pairs(windows) do
+		if win.loclist == 1 then
+			vim.cmd("lclose")
+			return
+		end
+	end
+	vim.cmd("lopen")
 end, { desc = "Toggle locatoin list" })
 
 -- Tab navigation
