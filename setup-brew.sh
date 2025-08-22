@@ -12,7 +12,6 @@ brew install fish
 brew install git
 brew install hugo
 brew install lazygit
-brew install jj
 brew install jq
 brew install neovim
 brew install oven-sh/bun/bun
