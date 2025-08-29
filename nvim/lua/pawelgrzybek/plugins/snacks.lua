@@ -19,8 +19,8 @@ return {
 						box = "vertical",
 						border = "single",
 						title = "{title}",
-						{ win = "input", height = 1,     border = "bottom" },
-						{ win = "list",  border = "none" },
+						{ win = "input", height = 1, border = "bottom" },
+						{ win = "list", border = "none" },
 					},
 					{
 						win = "preview",
