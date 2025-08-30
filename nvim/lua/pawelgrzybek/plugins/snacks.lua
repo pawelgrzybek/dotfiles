@@ -103,9 +103,23 @@ return {
 		{
 			"<leader>fg",
 			function()
-				Snacks.picker.git_diff()
+				Snacks.picker.git_status()
 			end,
 			desc = "[F]ind [g]it diffs",
+		},
+		{
+			"<leader>fl",
+			function()
+				Snacks.picker.git_log()
+			end,
+			desc = "[F]ind [l]og",
+		},
+		{
+			"<leader>fL",
+			function()
+				Snacks.picker.git_log_file()
+			end,
+			desc = "[F]ind [L]og file",
 		},
 		{
 			"<leader>fh",
