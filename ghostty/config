@@ -30,6 +30,9 @@ background-opacity = 0.97
 background-blur-radius = 20
 unfocused-split-opacity = 0.25
 
+# i dont like this global setting, so i nuke it
+keybind = super+enter=ignore
+
 keybind = cmd+alt+left=previous_tab
 keybind = cmd+alt+right=next_tab
 keybind = shift+enter=text:\n
