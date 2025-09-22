@@ -18,7 +18,6 @@ adjust-cursor-thickness = 4
 adjust-underline-thickness = 1
 adjust-cursor-height = 20
 cursor-style = block
-# currently not working, but to be fixed soon: https://github.com/ghostty-org/ghostty/issues/5928
 maximize = true
 window-padding-x = 7
 window-padding-y = 7
@@ -36,3 +35,6 @@ keybind = super+enter=ignore
 keybind = cmd+alt+left=previous_tab
 keybind = cmd+alt+right=next_tab
 keybind = shift+enter=text:\n
+
+keybind = global:ctrl+alt+t=toggle_quick_terminal
+
