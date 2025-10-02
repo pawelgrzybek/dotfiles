@@ -20,6 +20,7 @@ brew install oven-sh/bun/bun
 brew install pnpm
 brew install postgresql@14
 brew install ripgrep
+brew install tree-sitter-cli
 brew install webp
 brew install yazi
 

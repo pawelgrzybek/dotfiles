@@ -9,7 +9,7 @@
   "mason.nvim": { "branch": "main", "commit": "ad7146aa61dcaeb54fa900144d768f040090bff0" },
   "mini.nvim": { "branch": "main", "commit": "126ce3328c78399dcff58272f6f540a373b62a75" },
   "nvim-lint": { "branch": "master", "commit": "335a6044be16d7701001059cba9baa36fbeef422" },
-  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
+  "nvim-treesitter": { "branch": "main", "commit": "99bd52ba56a4b7c9a8cc50a6140180755e76fac6" },
   "nvim-ts-autotag": { "branch": "main", "commit": "c4ca798ab95b316a768d51eaaaee48f64a4a46bc" },
   "nvim-ts-context-commentstring": { "branch": "main", "commit": "1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f" },
   "oil.nvim": { "branch": "master", "commit": "919e155fdf38e9148cdb5304faaaf53c20d703ea" },
@@ -19,5 +19,6 @@
   "siema.nvim": { "branch": "main", "commit": "3110ce5c4e040bc72b48ab3e90b1b670bf2af9cf" },
   "snacks.nvim": { "branch": "main", "commit": "bfe8c26dbd83f7c4fbc222787552e29b4eccfcc0" },
   "todo-comments.nvim": { "branch": "main", "commit": "304a8d204ee787d2544d8bc23cd38d2f929e7cc5" },
+  "treesitter-modules.nvim": { "branch": "main", "commit": "415a69079db7254c456b62b18849a36cdba7e005" },
   "undotree": { "branch": "master", "commit": "0f1c9816975b5d7f87d5003a19c53c6fd2ff6f7f" }
 }
