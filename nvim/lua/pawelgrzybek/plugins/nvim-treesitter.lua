@@ -1,6 +1,5 @@
 local languages = {
 	"astro",
-	"bash",
 	"c",
 	"comment",
 	"css",
@@ -22,17 +21,13 @@ local languages = {
 	"luadoc",
 	"markdown",
 	"markdown_inline",
-	"mermaid",
 	"proto",
 	"query",
 	"regex",
-	"rust",
 	"scss",
 	"sql",
 	"tsx",
 	"typescript",
-	"vim",
-	"vimdoc",
 	"yaml",
 }
 
