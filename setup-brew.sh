@@ -1,9 +1,6 @@
 # Upgrade brew
 brew upgrade
 
-# Add some taps
-brew tap homebrew/cask-versions
-
 # Install CLI tools
 brew install awscli
 brew install deno
@@ -18,7 +15,6 @@ brew install lazygit
 brew install neovim
 brew install oven-sh/bun/bun
 brew install pnpm
-brew install postgresql@14
 brew install ripgrep
 brew install tree-sitter-cli
 brew install webp
@@ -34,7 +30,7 @@ brew install firefox@developer-edition
 brew install forklift
 brew install --cask ghostty
 brew install google-chrome
-brew install google@chrome-canary
+brew install google-chrme@canary
 brew install imageoptim
 brew install insomnia
 brew install logi-options+

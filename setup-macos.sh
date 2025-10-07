@@ -1,9 +1,8 @@
 ################################################################################
-# System Preferences > Sound
+# System Preferences > General > AirDrop & Handoff
 ################################################################################
 
-# Play feedback when volume is changed
-defaults write -globalDomain "com.apple.sound.beep.feedback" -int 1
+defaults write "com.apple.sharingd" DiscoverableMode -string "Everyone"
 
 
 ################################################################################
@@ -12,17 +11,6 @@ defaults write -globalDomain "com.apple.sound.beep.feedback" -int 1
 
 defaults write ".GlobalPreferences_m" AppleLanguages -array en-GB pl-GB
 defaults write -globalDomain AppleLanguages -array en-GB pl-GB
-
-
-################################################################################
-# System Preferences > Appearance
-################################################################################
-
-# Appearance: Auto
-defaults write -globalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
-
-# Click in the scrollbar to: Jump to the spot that's clicked
-defaults write -globalDomain AppleScrollerPagingBehavior -bool true
 
 
 ################################################################################
@@ -35,19 +23,22 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 
 
 ################################################################################
-# System Preferences > Control Centre
+# System Preferences > Menu Bar
 ################################################################################
 
-# Control Centre Modules > Bluetooth > Show in Menu Bar
+# Menu Bar Controls > Bluetooth > Show in Menu Bar
+defaults write "com.apple.controlcenter" "NumberOfRecents" -int 0
+
+# Menu Bar Controls > Bluetooth > Show in Menu Bar
 defaults write "com.apple.controlcenter" "NSStatusItem Visible Bluetooth" -bool true
 
-# Control Centre Modules > Screen Mirroring > Don't Show in Menu Bar
+# Menu Bar Controls > Screen Mirroring > Don't Show in Menu Bar
 defaults write "com.apple.airplay" showInMenuBarIfPresent -bool false
 
-# Control Centre Modules > Sound > Always Show in Menu Bar
+# Menu Bar Controls > Sound > Always Show in Menu Bar
 defaults write "com.apple.controlcenter" "NSStatusItem Visible Sound" -bool true
 
-# Control Centre Modules > Now Playing > Don't Show in Menu Bar
+# Menu Bar Controls > Now Playing > Don't Show in Menu Bar
 defaults write "com.apple.airplay" "NSStatusItem Visible NowPlaying" -bool false
 
 # Menu Bar Only > Clock Options > Show Date: Never
@@ -108,6 +99,14 @@ defaults write "com.apple.WindowManager" EnableStandardClickToShowDesktop -bool 
 
 # Mission Controll > Automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
+
+
+################################################################################
+# System Preferences > Sound
+################################################################################
+
+# Play feedback when volume is changed
+defaults write -globalDomain "com.apple.sound.beep.feedback" -int 1
 
 
 ################################################################################
