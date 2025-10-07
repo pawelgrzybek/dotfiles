@@ -9,7 +9,7 @@ Before doing anything, make sure you know what you're doing! The settings applie
    `git clone https://github.com/pawelgrzybek/dotfiles.git ~/.dotfiles`
 1. Install brew formulas and casks - `source ~/.dotfiles/setup-brew.sh`
 1. Download your fav apps from app store- (Keynote, Ivory, Numbers, Pages,
-   Photomator, Pixelmator Pro, Reeder)
+   Photomator, Pixelmator Pro, Reeder Classic)
 1. Setup macOS - `source ~/.dotfiles/setup-macos.sh`
 1. Setup symlinks - `source ~/.dotfiles/setup-symlinks.sh`
 1. Setup pnpm globals - `source ~/.dotfiles/setup-pnpm.sh`
