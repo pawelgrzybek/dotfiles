@@ -90,9 +90,6 @@ set -gx EDITOR nvim
 # use nvim to browse man pages
 set -gx MANPAGER "nvim +Man!"
 
-# setup rust toolchain
-set PATH $PATH ~/.cargo/bin
-
 # setup go toolchain
 set -gx PATH $PATH (go env GOPATH)/bin
 
