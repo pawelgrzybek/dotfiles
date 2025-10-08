@@ -32,4 +32,4 @@ SETUVAR fish_pager_color_description:brblack
 SETUVAR fish_pager_color_prefix:brwhite\x1e\x2d\x2dbold
 SETUVAR fish_pager_color_progress:magenta
 SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
-SETUVAR fish_user_paths:/Users/pawelgrzybek/Library/pnpm\x1e/opt/homebrew/bin
+SETUVAR fish_user_paths:/Users/pawelgrzybek/Library/pnpm\x1e/opt/homebrew/bin\x1e/Applications/Ghostty\x2eapp/Contents/MacOS
