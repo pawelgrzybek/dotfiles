@@ -1,5 +1,9 @@
+-- globals
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.g.markdown_fenced_languages = {
+	"ts=typescript",
+}
 
 vim.opt.autoindent = true
 vim.opt.number = true
@@ -14,6 +18,8 @@ vim.opt.timeoutlen = 1000
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.winborder = "single"
+vim.opt.incsearch = true
+vim.o.spelloptions = "camel"
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
@@ -45,23 +51,19 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldenable = false
 vim.opt.foldlevel = 99
 
-vim.g.markdown_fenced_languages = {
-  "ts=typescript",
-}
-
 vim.diagnostic.config({
-  virtual_text = true,
+	virtual_text = true,
 })
 
 -- enables lsps configured under .config/nvim/lsp
 vim.lsp.enable({
-  "astro",
-  "buf_ls",
-  "deno",
-  "emmet_language_server",
-  "gopls",
-  "lua_ls",
-  "rust_analyzer",
-  "tailwindcss",
-  "ts_ls",
+	"astro",
+	"buf_ls",
+	"deno",
+	"emmet_language_server",
+	"gopls",
+	"lua_ls",
+	"rust_analyzer",
+	"tailwindcss",
+	"ts_ls",
 })
