@@ -1,0 +1,14 @@
+{
+  "React component": {
+    "prefix": "rc",
+    "body": [
+      "const Component = () => {",
+      "  return <div>Component</div>;",
+      "};",
+      "",
+      "export { Component };",
+      ""
+    ],
+    "description": "React component"
+  }
+}
