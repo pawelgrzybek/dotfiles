@@ -9,7 +9,7 @@
   "mason.nvim": { "branch": "main", "commit": "ad7146aa61dcaeb54fa900144d768f040090bff0" },
   "mini.nvim": { "branch": "main", "commit": "89eecd8b4c15f8de72dd4b5244534abed8dc086f" },
   "nvim-lint": { "branch": "master", "commit": "9da1fb942dd0668d5182f9c8dee801b9c190e2bb" },
-  "nvim-treesitter": { "branch": "main", "commit": "0606c7a9dcaa5c5beee0b0f09043e9fdd1ba0a68" },
+  "nvim-treesitter": { "branch": "main", "commit": "4968877bb2dceac45948e24ee14298b1006b4cbf" },
   "nvim-ts-autotag": { "branch": "main", "commit": "c4ca798ab95b316a768d51eaaaee48f64a4a46bc" },
   "nvim-ts-context-commentstring": { "branch": "main", "commit": "1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f" },
   "oil.nvim": { "branch": "master", "commit": "71948729cda5fc1b761d6ae60ff774b5525f1d50" },
