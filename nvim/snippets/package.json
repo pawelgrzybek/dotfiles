@@ -13,7 +13,7 @@
       {
         "language": "go",
         "path": "./go.json"
-      }
+      },
       {
         "language": "typescriptreact",
         "path": "./tsx.json"
