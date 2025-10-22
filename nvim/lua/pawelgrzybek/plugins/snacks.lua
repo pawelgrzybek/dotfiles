@@ -206,6 +206,13 @@ return {
 			desc = "[G]o to [r]eferences",
 		},
 		{
+			"<leader>gc",
+			function()
+				Snacks.picker.lsp_incoming_calls()
+			end,
+			desc = "[G]o to incoming [c]alls",
+		},
+		{
 			"<leader>gs",
 			function()
 				Snacks.picker.lsp_symbols({
