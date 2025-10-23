@@ -1,6 +1,6 @@
 {
   "blink.cmp": { "branch": "main", "commit": "327fff91fe6af358e990be7be1ec8b78037d2138" },
-  "conform.nvim": { "branch": "master", "commit": "235dd79731c1dc51ec04abb4045cbc54727a172a" },
+  "conform.nvim": { "branch": "master", "commit": "9fd3d5e0b689ec1bf400c53cbbec72c6fdf24081" },
   "copilot.lua": { "branch": "master", "commit": "3123983d00ae6859f8bc987d14ebb524bb41b618" },
   "gitsigns.nvim": { "branch": "main", "commit": "20ad4419564d6e22b189f6738116b38871082332" },
   "lazy.nvim": { "branch": "main", "commit": "1ea3c4085785f460fb0e46d2fe1ee895f5f9e7c1" },
@@ -17,7 +17,7 @@
   "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
   "screenkey.nvim": { "branch": "main", "commit": "16390931d847b1d5d77098daccac4e55654ac9e2" },
   "siema.nvim": { "branch": "main", "commit": "3110ce5c4e040bc72b48ab3e90b1b670bf2af9cf" },
-  "snacks.nvim": { "branch": "main", "commit": "889515a336fe2ae7911d29a8d30b4f30baa90041" },
+  "snacks.nvim": { "branch": "main", "commit": "4236c8b772eb69a89a95051a2921907df6f7910f" },
   "todo-comments.nvim": { "branch": "main", "commit": "19d461ddd543e938eb22505fb03fa878800270b6" },
   "treesitter-modules.nvim": { "branch": "main", "commit": "30fd3750c04a1bcbcf08a73890911167546de209" },
   "undotree": { "branch": "master", "commit": "0f1c9816975b5d7f87d5003a19c53c6fd2ff6f7f" }
