@@ -1,10 +1,10 @@
 command = /opt/homebrew/bin/fish
 macos-option-as-alt = left
 
-font-family = MonaspiceNe NFM
-font-family-bold = MonaspiceNe NFM
-font-family-italic = MonaspiceNe NFM
-font-family-bold-italic = MonaspiceNe NFM
+font-family = Menlo
+font-family-bold = Menlo Bold
+font-family-italic = Menlo Italic
+font-family-bold-italic = Menlo Bold Italic
 font-style = Regular
 font-style-bold = Bold
 font-style-italic = Italic
