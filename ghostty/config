@@ -1,14 +1,12 @@
 command = /opt/homebrew/bin/fish
 macos-option-as-alt = left
 
-font-family = Monaspace Neon NF Regular
-font-family-bold = Monaspace Neon NF Bold
-font-family-italic = Monaspace Neon NF Italic
-font-family-bold-italic = Monaspace Neon NF Bold Italic
+font-family = Monaspace Neon NF
 font-style = Regular
 font-style-bold = Bold
 font-style-italic = Italic
 font-style-bold-italic = Bold Italic
+font-feature === "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'liga'",
 font-size = 14
 font-thicken = true
 adjust-cell-height = 20
@@ -18,6 +16,7 @@ adjust-cursor-thickness = 4
 adjust-underline-thickness = 1
 adjust-cursor-height = 20
 cursor-style = block
+mouse-hide-while-typing = true
 maximize = true
 window-padding-x = 7
 window-padding-y = 7
@@ -32,8 +31,8 @@ unfocused-split-opacity = 0.25
 # i dont like this global setting, so i nuke it
 keybind = super+enter=ignore
 
-keybind = cmd+alt+left=previous_tab
-keybind = cmd+alt+right=next_tab
+keybind = cmd+bracket_left=previous_tab
+keybind = cmd+bracket_right=next_tab
 keybind = shift+enter=text:\n
 
 keybind = global:ctrl+alt+t=toggle_quick_terminal
