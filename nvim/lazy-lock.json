@@ -17,7 +17,7 @@
   "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
   "screenkey.nvim": { "branch": "main", "commit": "16390931d847b1d5d77098daccac4e55654ac9e2" },
   "siema.nvim": { "branch": "main", "commit": "3110ce5c4e040bc72b48ab3e90b1b670bf2af9cf" },
-  "snacks.nvim": { "branch": "main", "commit": "a9b57b2a7ee0642f5c5c2c3f39d7e57fadafa1af" },
+  "snacks.nvim": { "branch": "main", "commit": "6ca541747c09962f87fc42b858249e4f9d2bbf2d" },
   "todo-comments.nvim": { "branch": "main", "commit": "411503d3bedeff88484de572f2509c248e499b38" },
   "treesitter-modules.nvim": { "branch": "main", "commit": "30fd3750c04a1bcbcf08a73890911167546de209" },
   "undotree": { "branch": "master", "commit": "0f1c9816975b5d7f87d5003a19c53c6fd2ff6f7f" }
