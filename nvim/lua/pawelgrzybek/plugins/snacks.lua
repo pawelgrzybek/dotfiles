@@ -4,6 +4,12 @@ return {
 	lazy = false,
 	---@type snacks.Config
 	opts = {
+		scroll = {
+			animate = {
+				duration = { step = 6, total = 140 },
+				easing = "linear",
+			},
+		},
 		image = {
 			enabled = false, -- NOTE: Disable snacks.image
 			formats = {}, -- HACK: Disable image preview for other modules like picker
