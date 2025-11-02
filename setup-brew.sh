@@ -23,6 +23,8 @@ brew install yazi
 
 # Install casks
 brew install 1password
+brew install affinity
+brew install bruno
 brew install discord
 brew install --cask docker
 brew install figma
@@ -33,7 +35,6 @@ brew install --cask ghostty
 brew install google-chrome
 brew install google-chrme@canary
 brew install imageoptim
-brew install insomnia
 brew install logi-options+
 brew install raycast
 brew install safari-technology-preview
