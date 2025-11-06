@@ -6,6 +6,7 @@ return {
 			local lint = require("lint")
 
 			lint.linters_by_ft = {
+				go = { "golangcilint" },
 				javascript = vim.fn.filereadable("deno.json") == 1 and {
 					"deno",
 				} or { "eslint_d" },
