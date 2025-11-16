@@ -64,6 +64,7 @@ vim.lsp.enable({
 	"gopls",
 	"lua_ls",
 	"rust_analyzer",
+	"sql",
 	"tailwindcss",
 	"ts_ls",
 })
