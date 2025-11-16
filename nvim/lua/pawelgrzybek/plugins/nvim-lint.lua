@@ -5,17 +5,7 @@ return {
 		config = function()
 			local lint = require("lint")
 
-			-- Extent the golangci-lint configuratoin to display more error messages
-			local golangcilint = require("lint").linters.golangcilint
-			golangcilint.args = vim.list_extend(golangcilint.args, {
-				"--max-same-issues",
-				"0",
-				"--max-issues-per-linter",
-				"0",
-			})
-
 			lint.linters_by_ft = {
-				go = { "golangcilint" },
 				sql = { "sqruff" },
 				javascript = vim.fn.filereadable("deno.json") == 1 and {
 					"deno",
