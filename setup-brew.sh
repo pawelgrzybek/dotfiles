@@ -27,7 +27,7 @@ brew install 1password
 brew install affinity
 brew install bruno
 brew install discord
-brew install --cask docker
+brew install docker-desktop
 brew install figma
 brew install firefox
 brew install firefox@developer-edition
@@ -37,6 +37,7 @@ brew install google-chrome
 brew install google-chrme@canary
 brew install imageoptim
 brew install logi-options+
+brew install pgadmin4
 brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
