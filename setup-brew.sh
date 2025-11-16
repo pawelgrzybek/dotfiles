@@ -3,6 +3,7 @@ brew upgrade
 
 # Install CLI tools
 brew install awscli
+brew install bufbuild/buf/buf
 brew install deno
 brew install fd
 brew install fish
@@ -13,9 +14,9 @@ brew install hugo
 brew install jq
 brew install lazygit
 brew install neovim
-brew install node
 brew install oven-sh/bun/bun
 brew install pnpm
+brew install protobuf
 brew install ripgrep
 brew install tree-sitter-cli
 brew install webp
