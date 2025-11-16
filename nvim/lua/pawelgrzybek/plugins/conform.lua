@@ -27,6 +27,7 @@ return {
 			graphql = { "prettier" },
 			lua = { "stylua" },
 			go = { "gofmt" },
+			sql = { "sqruff" },
 		},
 	},
 }
