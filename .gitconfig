@@ -12,7 +12,7 @@
   showUntrackedFiles = all
 [core]
 	fileMode = false
-	editor = hx
+	editor = nvim
 [init]
 	defaultBranch = main
 [rerere]
