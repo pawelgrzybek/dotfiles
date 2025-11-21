@@ -74,6 +74,23 @@ return {
 						},
 					},
 				},
+				spelling = {
+					layout = {
+						layout = {
+							box = "horizontal",
+							width = 0.6,
+							min_width = 60,
+							height = 0.8,
+							{
+								box = "vertical",
+								border = "single",
+								title = "{title}",
+								{ win = "input", height = 1, border = "bottom" },
+								{ win = "list", border = "none" },
+							},
+						},
+					},
+				},
 			},
 		},
 		indent = {
@@ -252,6 +269,13 @@ return {
 				Snacks.picker.lsp_workspace_symbols()
 			end,
 			desc = "[F]ind [s]ymbols (global)",
+		},
+		{
+			"<leader>ss",
+			function()
+				Snacks.picker.spelling()
+			end,
+			desc = "[F]ind [s]show [s]pelling suggestions",
 		},
 
 		-- explorer
