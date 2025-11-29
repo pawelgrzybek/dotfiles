@@ -20,6 +20,7 @@ vim.opt.splitbelow = true
 vim.opt.winborder = "single"
 vim.opt.incsearch = true
 vim.o.spelloptions = "camel"
+vim.o.autoread = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
