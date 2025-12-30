@@ -2,34 +2,6 @@
 # VERSION: 3.0
 SETUVAR --export --path GOPATH:/Users/pawelgrzybek/Developer/go
 SETUVAR --export PNPM_HOME:/Users/pawelgrzybek/Library/pnpm
-SETUVAR __fish_initialized:3800
-SETUVAR fish_color_autosuggestion:brblack
-SETUVAR fish_color_cancel:red\x1e\x2d\x2dbold
-SETUVAR fish_color_command:brwhite
-SETUVAR fish_color_comment:brblack
-SETUVAR fish_color_cwd:magenta
-SETUVAR fish_color_cwd_root:magenta
-SETUVAR fish_color_end:brwhite
-SETUVAR fish_color_error:red
-SETUVAR fish_color_escape:brwhite
-SETUVAR fish_color_history_current:green
-SETUVAR fish_color_host:brwhite
-SETUVAR fish_color_host_remote:brwhite
-SETUVAR fish_color_normal:magenta
-SETUVAR fish_color_operator:brwhite
-SETUVAR fish_color_param:brwhite
-SETUVAR fish_color_quote:brwhite
-SETUVAR fish_color_redirection:brwhite
-SETUVAR fish_color_search_match:green
-SETUVAR fish_color_selection:brwhite\x1e\x2d\x2dbackground\x1ebrblack
-SETUVAR fish_color_status:white
-SETUVAR fish_color_user:brwhite
-SETUVAR fish_color_valid_path:brwhite
+SETUVAR __fish_initialized:4300
 SETUVAR fish_greeting:\x1d
-SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_pager_color_completion:brblack
-SETUVAR fish_pager_color_description:brblack
-SETUVAR fish_pager_color_prefix:brwhite\x1e\x2d\x2dbold
-SETUVAR fish_pager_color_progress:magenta
-SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_user_paths:/Users/pawelgrzybek/Library/pnpm\x1e/opt/homebrew/bin\x1e/Applications/Ghostty\x2eapp/Contents/MacOS
