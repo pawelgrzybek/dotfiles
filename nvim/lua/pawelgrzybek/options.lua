@@ -45,6 +45,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.termguicolors = false
 vim.opt.undofile = true
+vim.o.fillchars = "eob: "
 
 -- treesitter code folding
 vim.opt.foldmethod = "expr"
