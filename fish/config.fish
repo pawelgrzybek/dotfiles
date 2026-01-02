@@ -101,31 +101,3 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
-set -gx fish_color_autosuggestion brblack
-set -gx fish_color_cancel red\x1e\x2d\x2dbold
-set -gx fish_color_command brwhite
-set -gx fish_color_comment brblack
-set -gx fish_color_cwd magenta
-set -gx fish_color_cwd_root magenta
-set -gx fish_color_end brwhite
-set -gx fish_color_error red
-set -gx fish_color_escape brwhite
-set -gx fish_color_history_current green
-set -gx fish_color_host brwhite
-set -gx fish_color_host_remote brwhite
-set -gx fish_color_normal magenta
-set -gx fish_color_operator brwhite
-set -gx fish_color_param brwhite
-set -gx fish_color_quote brwhite
-set -gx fish_color_redirection brwhite
-set -gx fish_color_search_match green
-set -gx fish_color_selection brwhite\x1e\x2d\x2dbackground\x1ebrblack
-set -gx fish_color_status white
-set -gx fish_color_user brwhite
-set -gx fish_color_valid_path brwhite
-set -gx fish_key_bindings fish_default_key_bindings
-set -gx fish_pager_color_completion brblack
-set -gx fish_pager_color_description brblack
-set -gx fish_pager_color_prefix brwhite\x1e\x2d\x2dbold
-set -gx fish_pager_color_progress magenta
-set -gx fish_pager_color_selected_background \x2d\x2dbackground\x3dbrblack
