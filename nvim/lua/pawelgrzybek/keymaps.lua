@@ -18,6 +18,12 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<A-J>", ":t-1<CR>gv", { noremap = true, silent = true })
 vim.keymap.set("v", "<A-K>", ":t'><CR>gv", { noremap = true, silent = true })
 
+-- Window navigation with Ctrl+hjkl
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to window below" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to window above" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
+
 -- Copy/paste to system clipboard
 vim.keymap.set("v", "<leader>y", '"+y')
 vim.keymap.set("v", "<leader>p", '"+p')
