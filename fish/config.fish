@@ -93,7 +93,6 @@ set -gx MANPAGER "nvim +Man!"
 # setup go toolchain
 set -gx PATH $PATH (go env GOPATH)/bin
 
-
 # pnpm
 set -gx PNPM_HOME /Users/pawelgrzybek/Library/pnpm
 if not string match -q -- $PNPM_HOME $PATH
