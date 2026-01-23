@@ -3,7 +3,6 @@ brew upgrade
 
 # Install CLI tools
 brew install awscli
-brew install bufbuild/buf/buf
 brew install deno
 brew install fd
 brew install fish
@@ -17,7 +16,6 @@ brew install mole
 brew install neovim
 brew install oven-sh/bun/bun
 brew install pnpm
-brew install protobuf
 brew install ripgrep
 brew install tree-sitter-cli
 brew install webp
@@ -43,8 +41,6 @@ brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
 brew install signal
-brew install slack
-brew install tuple
 brew install zed
 
 # Remove outdated versions from the cellar.
