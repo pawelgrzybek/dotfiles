@@ -1,5 +1,5 @@
 return {
-	cmd = { "typescript-language-server", "--stdio" },
+	cmd = { "tsgo", "--lsp", "--stdio" },
 	root_markers = { "package.json" },
 	workspace_required = true,
 	filetypes = {

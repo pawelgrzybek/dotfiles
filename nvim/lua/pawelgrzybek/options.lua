@@ -68,5 +68,5 @@ vim.lsp.enable({
 	"rust_analyzer",
 	"sql",
 	"tailwindcss",
-	"ts_ls",
+	"tsgo",
 })
