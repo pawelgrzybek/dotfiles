@@ -16,7 +16,19 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./tsx.json"
+        "path": "./js.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./js.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./js.json"
       }
     ]
   }

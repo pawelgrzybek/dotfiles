@@ -1,0 +1,27 @@
+{
+  "for loop": {
+    "prefix": "for-loop",
+    "body": ["for (let i = 0; i < iterator.length; i++) {", "  ${0}", "}", ""],
+    "description": "For loop"
+  },
+  "for of loop": {
+    "prefix": "for-of-loop",
+    "body": ["for (const item of iterator) {", "  ${1:// body}", "}", ""],
+    "description": "For of loop"
+  },
+  "For in loop": {
+    "prefix": "for-in-loop",
+    "body": ["for (const item in object) {", "  ${1:// body}", "}", ""],
+    "description": "For in loop"
+  },
+  "while loop": {
+    "prefix": "while-loop",
+    "body": ["while (condition) {", "  ${1:// body}", "}"],
+    "description": "While loop"
+  },
+  "do while loop": {
+    "prefix": "do-while-loop",
+    "body": ["do {", "  ${1:// body}", "} while (condition);"],
+    "description": "do while loop"
+  }
+}
