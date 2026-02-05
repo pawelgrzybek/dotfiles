@@ -26,7 +26,7 @@ theme = light:oktheme,dark:oktheme
 cursor-style-blink = false
 background-opacity = 0.97
 background-blur-radius = 20
-unfocused-split-opacity = 0.25
+unfocused-split-opacity = 0.5
 
 # i dont like this global setting, so i nuke it
 keybind = super+enter=ignore
