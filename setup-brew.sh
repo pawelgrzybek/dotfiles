@@ -36,6 +36,7 @@ brew install google-chrome
 brew install google-chrme@canary
 brew install imageoptim
 brew install logi-options+
+brew install netnewswire
 brew install pgadmin4
 brew install raycast
 brew install safari-technology-preview
