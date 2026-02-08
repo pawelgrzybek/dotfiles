@@ -14,6 +14,9 @@ return {
 		-- surround
 		require("mini.surround").setup({})
 
+		-- tabline
+		require("mini.tabline").setup({})
+
 		-- pairs
 		require("mini.pairs").setup({})
 

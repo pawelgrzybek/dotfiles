@@ -2,12 +2,12 @@ function fish_mode_prompt
     switch $fish_bind_mode
         case default
             set_color brgreen
-            echo '[N] '
+            echo '[n] '
         case insert
             set_color brblack
-            echo '[I] '
+            echo '[i] '
         case visual
             set_color brgreen
-            echo '[V] '
+            echo '[v] '
     end
 end

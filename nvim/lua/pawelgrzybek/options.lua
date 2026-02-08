@@ -21,6 +21,7 @@ vim.opt.winborder = "single"
 vim.opt.incsearch = true
 vim.o.spelloptions = "camel"
 vim.o.autoread = true
+vim.o.statusline = "[%{mode()}] %f %m%h %= %l:%c | %L | %p%%"
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
