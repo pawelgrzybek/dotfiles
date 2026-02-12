@@ -24,6 +24,7 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to window below" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to window above" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 vim.keymap.set("n", "<C-q>", "<C-w>q", { desc = "Close window" })
+vim.keymap.set("n", "<C-x>", "<C-w>x", { desc = "Swap windows" })
 
 -- Copy/paste to system clipboard
 vim.keymap.set("v", "<leader>y", '"+y')
