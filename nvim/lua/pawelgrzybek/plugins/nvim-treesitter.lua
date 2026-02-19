@@ -21,7 +21,6 @@ local languages = {
 	"luadoc",
 	"markdown",
 	"markdown_inline",
-	"proto",
 	"query",
 	"regex",
 	"scss",
