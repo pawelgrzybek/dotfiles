@@ -25,6 +25,7 @@ brew install yazi
 brew install 1password
 brew install affinity
 brew install bruno
+brew install --cask claude-code
 brew install discord
 brew install docker-desktop
 brew install figma
