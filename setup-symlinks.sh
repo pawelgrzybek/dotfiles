@@ -6,6 +6,7 @@ ln -s ~/.dotfiles/lazygit ~/.config/
 ln -s ~/.dotfiles/yazi ~/.config/
 ln -s ~/.dotfiles/nvim ~/.config/
 ln -s ~/.dotfiles/ghostty ~/.config/
+ln -s ~/.dotfiles/claude/commands ~/.claude/
 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.hushlogin ~/.hushlogin
