@@ -20,6 +20,9 @@ return {
 		-- pairs
 		require("mini.pairs").setup({})
 
+		-- notify
+		require("mini.notify").setup({})
+
 		-- comment
 		require("mini.comment").setup({
 			options = {
