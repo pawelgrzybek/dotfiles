@@ -3,6 +3,7 @@ brew upgrade
 
 # Install CLI tools
 brew install awscli
+brew install copilot-cli
 brew install deno
 brew install fd
 brew install fish
@@ -22,7 +23,6 @@ brew install webp
 brew install yazi
 
 # Install casks
-brew install 1password
 brew install affinity
 brew install bruno
 brew install --cask claude-code
