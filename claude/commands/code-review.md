@@ -6,6 +6,7 @@ allowed-tools: Bash(git *)
 ## Context:
 
 - Current git status: !`git status`
+- Current changes: !`git diff HEAD`
 
 ## Task
 
