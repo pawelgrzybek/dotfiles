@@ -20,5 +20,5 @@
   "snacks.nvim": { "branch": "main", "commit": "9912042fc8bca2209105526ac7534e9a0c2071b2" },
   "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
   "treesitter-modules.nvim": { "branch": "main", "commit": "0cc09da40061051b0186479203faa75052cddab6" },
-  "undotree": { "branch": "master", "commit": "d8f99084d98c32f651860eb0baaf89759f91debc" }
+  "undotree": { "branch": "master", "commit": "6fa6b57cda8459e1e4b2ca34df702f55242f4e4d" }
 }
