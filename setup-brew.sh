@@ -3,7 +3,6 @@ brew upgrade
 
 # Install CLI tools
 brew install awscli
-brew install copilot-cli
 brew install deno
 brew install fd
 brew install fish
