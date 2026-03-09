@@ -37,3 +37,14 @@ keybind = shift+enter=text:\n
 
 keybind = global:ctrl+alt+t=toggle_quick_terminal
 
+keybind = split/j=deactivate_key_table
+keybind = chain=new_split:down
+keybind = split/k=deactivate_key_table
+keybind = chain=new_split:up
+keybind = split/h=deactivate_key_table
+keybind = chain=new_split:left
+keybind = split/l=deactivate_key_table
+keybind = chain=new_split:right
+keybind = split/cmd+d=deactivate_key_table
+
+keybind = cmd+d=activate_key_table:split
