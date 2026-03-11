@@ -28,15 +28,19 @@ background-opacity = 0.97
 background-blur-radius = 20
 unfocused-split-opacity = 0.5
 
-# i dont like this global setting, so i nuke it
-keybind = super+enter=ignore
-
-keybind = cmd+bracket_left=previous_tab
-keybind = cmd+bracket_right=next_tab
+# i think claude code set this one for me
 keybind = shift+enter=text:\n
+
+# jump quickly between tabs and splits
+keybind = super+bracket_left=previous_tab
+keybind = super+bracket_right=next_tab
+keybind = super+alt+bracket_left=goto_split:previous
+keybind = super+alt+bracket_right=goto_split:next
 
 keybind = global:ctrl+alt+t=toggle_quick_terminal
 
+# split
+keybind = cmd+d=activate_key_table:split
 keybind = split/j=deactivate_key_table
 keybind = chain=new_split:down
 keybind = split/k=deactivate_key_table
@@ -46,5 +50,6 @@ keybind = chain=new_split:left
 keybind = split/l=deactivate_key_table
 keybind = chain=new_split:right
 keybind = split/cmd+d=deactivate_key_table
+keybind = split/escape=deactivate_key_table
+keybind = resize/catch_all=ignore
 
-keybind = cmd+d=activate_key_table:split
