@@ -53,3 +53,12 @@ keybind = split/cmd+d=deactivate_key_table
 keybind = split/escape=deactivate_key_table
 keybind = resize/catch_all=ignore
 
+keybind = resize/k=resize_split:up,10
+keybind = resize/j=resize_split:down,10
+keybind = resize/h=resize_split:left,10
+keybind = resize/l=resize_split:right,10
+keybind = resize/escape=deactivate_key_table
+keybind = resize/catch_all=ignore
+
+keybind = super+r=activate_key_table:resize
+
