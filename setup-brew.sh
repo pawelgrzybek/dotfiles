@@ -41,6 +41,7 @@ brew install pgadmin4
 brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
+brew install slack
 brew install signal
 brew install zed
 
