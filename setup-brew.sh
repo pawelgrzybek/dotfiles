@@ -14,6 +14,7 @@ brew install jq
 brew install lazygit
 brew install mole
 brew install neovim
+brew install node
 brew install oven-sh/bun/bun
 brew install pnpm
 brew install ripgrep
