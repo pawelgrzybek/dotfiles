@@ -33,7 +33,7 @@ brew install firefox@developer-edition
 brew install forklift
 brew install --cask ghostty
 brew install google-chrome
-brew install google-chrme@canary
+brew install --cask google-chrme@canary
 brew install imageoptim
 brew install logi-options+
 brew install netnewswire
