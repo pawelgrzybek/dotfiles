@@ -56,6 +56,13 @@ vim.opt.foldlevel = 99
 
 vim.diagnostic.config({
 	virtual_text = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = true,
+	float = {
+		border = "single",
+		source = true,
+	},
 })
 
 -- enables lsps configured under .config/nvim/lsp

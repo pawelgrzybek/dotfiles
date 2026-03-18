@@ -43,8 +43,17 @@ vim.keymap.set("n", "<leader>d", function()
 	end
 	vim.diagnostic.setloclist()
 end, { desc = "Toggle [d]iagnostics (location list)" })
-vim.keymap.set("n", "<leader><A-d>", vim.diagnostic.open_float, { desc = "Open [d]iagnostics (float)" })
-vim.keymap.set("n", "<leader>D", vim.diagnostic.setqflist, { desc = "Open [D]iagnostics (quickfix list)" })
+vim.keymap.set("n", "<leader>D", function()
+	local windows = vim.fn.getwininfo()
+	for _, win in pairs(windows) do
+		if win.quickfix == 1 then
+			vim.cmd("cclose")
+			return
+		end
+	end
+	vim.diagnostic.setqflist()
+end, { desc = "Toggle [D]iagnostics (quickfix list)" })
+vim.keymap.set("n", "<leader>F", vim.diagnostic.open_float, { desc = "Open [d]iagnostics (float)" })
 
 -- Toggle quickfix/location list
 vim.keymap.set("n", "<leader>q", function()
