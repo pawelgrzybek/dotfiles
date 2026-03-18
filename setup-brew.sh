@@ -44,7 +44,6 @@ brew install safari-technology-preview
 brew install screen-studio
 brew install slack
 brew install signal
-brew install zed
 
 # Remove outdated versions from the cellar.
 brew cleanup
