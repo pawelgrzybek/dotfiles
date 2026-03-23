@@ -23,18 +23,19 @@ brew install webp
 brew install yazi
 
 # Install casks
+brew install --cask claude-code
+brew install --cask ghostty
+brew install --cask google-chrme@canary
 brew install affinity
 brew install bruno
-brew install --cask claude-code
 brew install discord
 brew install docker-desktop
 brew install figma
 brew install firefox
 brew install firefox@developer-edition
 brew install forklift
-brew install --cask ghostty
 brew install google-chrome
-brew install --cask google-chrme@canary
+brew install handy
 brew install imageoptim
 brew install logi-options+
 brew install netnewswire
@@ -42,8 +43,8 @@ brew install pgadmin4
 brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
-brew install slack
 brew install signal
+brew install slack
 
 # Remove outdated versions from the cellar.
 brew cleanup
