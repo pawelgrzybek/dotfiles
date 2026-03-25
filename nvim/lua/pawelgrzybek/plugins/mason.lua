@@ -2,7 +2,6 @@
 -- Current list of stuff that I use
 --   ◍ astro-language-server
 --   ◍ buf
---   ◍ deno
 --   ◍ emmet-language-server
 --   ◍ eslint-lsp
 --   ◍ gopls
