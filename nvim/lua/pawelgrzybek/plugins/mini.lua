@@ -2,9 +2,11 @@ return {
 
 	"nvim-mini/mini.nvim",
 	version = false,
-	dependencies = {
-		"JoosepAlviste/nvim-ts-context-commentstring",
-	},
+	-- TODO: on 0.12 this fails
+	-- will need to find a way for smooth ts/tsx commenting
+	-- dependencies = {
+	-- 	"JoosepAlviste/nvim-ts-context-commentstring",
+	-- },
 	config = function()
 		-- ai
 		require("mini.ai").setup({
@@ -25,12 +27,14 @@ return {
 
 		-- comment
 		require("mini.comment").setup({
-			options = {
-				custom_commentstring = function()
-					return require("ts_context_commentstring.internal").calculate_commentstring()
-						or vim.bo.commentstring
-				end,
-			},
+			-- TODO: on 0.12 this fails
+			-- will need to find a way for smooth ts/tsx commenting
+			-- options = {
+			-- 	custom_commentstring = function()
+			-- 		return require("ts_context_commentstring.internal").calculate_commentstring()
+			-- 			or vim.bo.commentstring
+			-- 	end,
+			-- },
 		})
 	end,
 }

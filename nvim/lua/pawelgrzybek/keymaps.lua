@@ -41,6 +41,10 @@ vim.keymap.set("n", "<leader>d", function()
 			return
 		end
 	end
+	-- TODO: 0.12
+	--  |vim.diagnostic.setloclist()| and |vim.diagnostic.setqflist()| now support a
+	-- `format` function to modify (or filter) diagnostics before being set in the
+	-- location/quickfix list.
 	vim.diagnostic.setloclist()
 end, { desc = "Toggle [d]iagnostics (location list)" })
 vim.keymap.set("n", "<leader>D", function()
@@ -51,6 +55,10 @@ vim.keymap.set("n", "<leader>D", function()
 			return
 		end
 	end
+	-- TODO: 0.12
+	--  |vim.diagnostic.setloclist()| and |vim.diagnostic.setqflist()| now support a
+	-- `format` function to modify (or filter) diagnostics before being set in the
+	-- location/quickfix list.
 	vim.diagnostic.setqflist()
 end, { desc = "Toggle [D]iagnostics (quickfix list)" })
 vim.keymap.set("n", "<leader>F", vim.diagnostic.open_float, { desc = "Open [d]iagnostics (float)" })
@@ -82,4 +90,6 @@ vim.keymap.set("n", "]t", "gt")
 vim.keymap.set("n", "[t", "gT")
 
 -- Undotree toggle
-vim.keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<CR>", { desc = "[U]ndotree toggle" })
+-- TODO: 0.12
+-- undotree comes built-in
+-- vim.keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<CR>", { desc = "[U]ndotree toggle" })
