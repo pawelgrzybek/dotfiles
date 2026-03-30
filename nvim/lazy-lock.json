@@ -7,7 +7,6 @@
   "lazydev.nvim": { "branch": "main", "commit": "ff2cbcba459b637ec3fd165a2be59b7bbaeedf0d" },
   "marks.nvim": { "branch": "master", "commit": "f353e8c08c50f39e99a9ed474172df7eddd89b72" },
   "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },
-  "mini.nvim": { "branch": "main", "commit": "af5f75c9ce572a4d1f0c77d6fb4ea764d16c1b3c" },
   "nvim-lint": { "branch": "master", "commit": "4b03656c09c1561f89b6aa0665c15d292ba9499d" },
   "nvim-treesitter": { "branch": "main", "commit": "7caec274fd19c12b55902a5b795100d21531391f" },
   "nvim-ts-autotag": { "branch": "main", "commit": "8e1c0a389f20bf7f5b0dd0e00306c1247bda2595" },
@@ -17,7 +16,5 @@
   "screenkey.nvim": { "branch": "main", "commit": "16390931d847b1d5d77098daccac4e55654ac9e2" },
   "siema.nvim": { "branch": "main", "commit": "3110ce5c4e040bc72b48ab3e90b1b670bf2af9cf" },
   "snacks.nvim": { "branch": "main", "commit": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e" },
-  "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
-  "treesitter-modules.nvim": { "branch": "main", "commit": "0cc09da40061051b0186479203faa75052cddab6" },
-  "undotree": { "branch": "master", "commit": "6fa6b57cda8459e1e4b2ca34df702f55242f4e4d" }
+  "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" }
 }

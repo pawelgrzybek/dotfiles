@@ -1,4 +1,5 @@
 require("pawelgrzybek.options")
+require("pawelgrzybek.native-plugins.mini")
 require("pawelgrzybek.lazy")
 require("pawelgrzybek.keymaps")
 require("pawelgrzybek.autocmds")
