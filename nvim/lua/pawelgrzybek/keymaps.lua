@@ -59,7 +59,8 @@ vim.keymap.set("n", "<leader>D", function()
 	--  |vim.diagnostic.setloclist()| and |vim.diagnostic.setqflist()| now support a
 	-- `format` function to modify (or filter) diagnostics before being set in the
 	-- location/quickfix list.
-	vim.diagnostic.setqflist()
+	-- vim.diagnostic.setqflist()
+	vim.lsp.buf.workspace_diagnostics()
 end, { desc = "Toggle [D]iagnostics (quickfix list)" })
 vim.keymap.set("n", "<leader>F", vim.diagnostic.open_float, { desc = "Open [d]iagnostics (float)" })
 
@@ -90,6 +91,22 @@ vim.keymap.set("n", "]t", "gt")
 vim.keymap.set("n", "[t", "gT")
 
 -- Undotree toggle
--- TODO: 0.12
--- undotree comes built-in
--- vim.keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<CR>", { desc = "[U]ndotree toggle" })
+vim.cmd("packadd nvim.undotree")
+vim.keymap.set("n", "<leader>u", "<cmd>Undotree<CR>", { desc = "[U]ndotree toggle" })
+
+-- incremental selection treesitter/lsp
+vim.keymap.set({ "n", "x", "o" }, "<A-o>", function()
+	if vim.treesitter.get_parser(nil, nil, { error = false }) then
+		require("vim.treesitter._select").select_parent(vim.v.count1)
+	else
+		vim.lsp.buf.selection_range(vim.v.count1)
+	end
+end, { desc = "Select parent treesitter node or outer incremental lsp selections" })
+
+vim.keymap.set({ "n", "x", "o" }, "<A-i>", function()
+	if vim.treesitter.get_parser(nil, nil, { error = false }) then
+		require("vim.treesitter._select").select_child(vim.v.count1)
+	else
+		vim.lsp.buf.selection_range(-vim.v.count1)
+	end
+end, { desc = "Select child treesitter node or inner incremental lsp selections" })
