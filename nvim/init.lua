@@ -1,4 +1,4 @@
-require("pawelgrzybek.options")
-require("pawelgrzybek.keymaps")
-require("pawelgrzybek.autocmds")
-require("pawelgrzybek.user_commands")
+require("options")
+require("keymaps")
+require("autocmds")
+require("user_commands")
