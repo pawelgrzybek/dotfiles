@@ -1,6 +1,7 @@
 -- globals
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
 -- options
 vim.opt.autoindent = true
 vim.opt.number = true
