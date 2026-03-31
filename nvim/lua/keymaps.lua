@@ -83,7 +83,11 @@ vim.keymap.set("n", "[t", "gT")
 
 -- Undotree toggle
 vim.cmd("packadd nvim.undotree")
-vim.keymap.set("n", "<leader>u", "<cmd>Undotree<CR>", { desc = "[U]ndotree toggle" })
+vim.keymap.set("n", "<leader>u", function()
+	require("undotree").open({
+		command = math.floor(vim.api.nvim_win_get_width(0) / 3) .. "vnew",
+	})
+end, { desc = "[U]ndotree toggle" })
 
 -- incremental selection treesitter/lsp
 vim.keymap.set({ "n", "x", "o" }, "<A-o>", function()
