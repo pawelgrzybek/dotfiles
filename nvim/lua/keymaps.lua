@@ -41,10 +41,6 @@ vim.keymap.set("n", "<leader>d", function()
 			return
 		end
 	end
-	-- TODO: 0.12
-	--  |vim.diagnostic.setloclist()| and |vim.diagnostic.setqflist()| now support a
-	-- `format` function to modify (or filter) diagnostics before being set in the
-	-- location/quickfix list.
 	vim.diagnostic.setloclist()
 end, { desc = "Toggle [d]iagnostics (location list)" })
 vim.keymap.set("n", "<leader>D", function()
@@ -55,11 +51,6 @@ vim.keymap.set("n", "<leader>D", function()
 			return
 		end
 	end
-	-- TODO: 0.12
-	--  |vim.diagnostic.setloclist()| and |vim.diagnostic.setqflist()| now support a
-	-- `format` function to modify (or filter) diagnostics before being set in the
-	-- location/quickfix list.
-	-- vim.diagnostic.setqflist()
 	vim.lsp.buf.workspace_diagnostics()
 end, { desc = "Toggle [D]iagnostics (quickfix list)" })
 vim.keymap.set("n", "<leader>F", vim.diagnostic.open_float, { desc = "Open [d]iagnostics (float)" })

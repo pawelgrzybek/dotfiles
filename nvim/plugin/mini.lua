@@ -18,13 +18,4 @@ require("mini.pairs").setup({})
 require("mini.notify").setup({})
 
 -- comment
-require("mini.comment").setup({
-	-- TODO: on 0.12 this fails
-	-- will need to find a way for smooth ts/tsx commenting
-	-- options = {
-	-- 	custom_commentstring = function()
-	-- 		return require("ts_context_commentstring.internal").calculate_commentstring()
-	-- 			or vim.bo.commentstring
-	-- 	end,
-	-- },
-})
+require("mini.comment").setup({})

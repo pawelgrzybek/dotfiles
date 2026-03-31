@@ -21,9 +21,6 @@ vim.opt.winborder = "single"
 vim.opt.incsearch = true
 vim.o.spelloptions = "camel"
 vim.o.autoread = true
--- TODO: 0.12
---  |vim.diagnostic.status()| returns a status description of current buffer
--- diagnostics.
 vim.o.statusline = "[%{mode()}] %f %m%h %= %l:%c | %L | %p%%"
 
 -- Sets how neovim will display certain whitespace characters in the editor.

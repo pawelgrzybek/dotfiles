@@ -100,11 +100,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 				end,
 			})
 		end
-
-		-- TODO: nvim 0.12 supports it but i dont know how to use it yet
-		-- if client:supports_method("textDocument/documentColor") then
-		-- 	vim.lsp.document_color.enable(true, event.buf)
-		-- end
 	end,
 })
 
