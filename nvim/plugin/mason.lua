@@ -12,11 +12,12 @@
 --   ◍ tailwindcss-language-server
 --   ◍ typescript-language-server
 
-return {
-	"mason-org/mason.nvim",
-	opts = {
-		ui = {
-			border = "single",
-		},
-	},
-}
+
+vim.pack.add({"https://github.com/mason-org/mason.nvim"})
+
+require("mason").setup({
+  ui = {
+    border = "single",
+  },
+
+})

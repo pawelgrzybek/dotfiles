@@ -1,11 +1,4 @@
-require("pawelgrzybek.native-plugins.mini")
-require("pawelgrzybek.native-plugins.marks")
-require("pawelgrzybek.native-plugins.nvim-ts-autotag")
-require("pawelgrzybek.native-plugins.siema")
-require("pawelgrzybek.native-plugins.oktheme")
-
 require("pawelgrzybek.options")
-require("pawelgrzybek.lazy")
 require("pawelgrzybek.keymaps")
 require("pawelgrzybek.autocmds")
 require("pawelgrzybek.user_commands")

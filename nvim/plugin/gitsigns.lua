@@ -1,7 +1,6 @@
-return {
-	"lewis6991/gitsigns.nvim",
-	config = function()
-		require("gitsigns").setup({
+vim.pack.add({"https://github.com/lewis6991/gitsigns.nvim"})
+
+require("gitsigns").setup({
 			signs              = {
 				add    = { text = '▪︎' },
 				change = { text = '▪︎' },
@@ -32,5 +31,3 @@ return {
 				end, { buffer = bufnr })
 			end,
 		})
-	end,
-}
