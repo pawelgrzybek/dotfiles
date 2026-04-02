@@ -14,7 +14,7 @@
       "src": "https://github.com/zbirenbaum/copilot.lua"
     },
     "gitsigns.nvim": {
-      "rev": "0f00d07c2c3106ba6abd594ac1c17f211141b7b5",
+      "rev": "e1fb5425c8812214209b3f24eaa582c6c552cf98",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "lazydev.nvim": {
@@ -38,7 +38,7 @@
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-treesitter": {
-      "rev": "c82bf96f0a773d85304feeb695e1e23b2207ac35",
+      "rev": "539abf6da5ee8702e37b82cc953131dadd570da2",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -55,7 +55,7 @@
       "src": "https://github.com/pawelgrzybek/oktheme.nvim"
     },
     "screenkey.nvim": {
-      "rev": "8edc1c05340046855db3b35849d700ea854a981f",
+      "rev": "4e9cb2e43126df9996a1f1d510355a74c1aa6927",
       "src": "https://github.com/NStefan002/screenkey.nvim"
     },
     "siema.nvim": {
