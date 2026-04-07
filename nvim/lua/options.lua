@@ -73,3 +73,5 @@ vim.lsp.enable({
 	"tailwindcss",
 	"tsgo",
 })
+
+require("vim._core.ui2").enable({})
