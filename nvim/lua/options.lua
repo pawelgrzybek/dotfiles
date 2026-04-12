@@ -30,6 +30,7 @@ vim.opt.wrap = false
 vim.opt.termguicolors = false
 vim.opt.undofile = true
 vim.o.fillchars = "eob: "
+vim.o.nrformats = "blank"
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
