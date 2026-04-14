@@ -30,7 +30,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "c67822c53e8e282fe863343e88aa0a8ca3534059",
+      "rev": "27a3e747a4e603b4121f5759e74020430ec7b7d5",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "nvim-lint": {
