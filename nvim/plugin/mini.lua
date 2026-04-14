@@ -19,3 +19,13 @@ require("mini.notify").setup({})
 
 -- comment
 require("mini.comment").setup({})
+
+-- files
+require("mini.files").setup({
+	windows = {
+		width_focus = 50,
+		width_nofocus = 50,
+	},
+})
+
+vim.keymap.set("n", "<leader>-", require("mini.files").open, { desc = "Open mini files" })
