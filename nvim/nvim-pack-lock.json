@@ -30,7 +30,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "29447d7b0e1fc9bc9d0384953e63be3fae816736",
+      "rev": "418ef4930ddabe80f449c6f1323f8b6abb172d1c",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "nvim-lint": {
@@ -55,7 +55,7 @@
       "src": "https://github.com/pawelgrzybek/oktheme.nvim"
     },
     "screenkey.nvim": {
-      "rev": "12d70b39744adb4262fda7c994b37636c741e79c",
+      "rev": "56d19178935dedaac2757ab11fbb8d304c39126c",
       "src": "https://github.com/NStefan002/screenkey.nvim"
     },
     "siema.nvim": {
