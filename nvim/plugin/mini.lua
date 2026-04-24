@@ -28,4 +28,9 @@ require("mini.files").setup({
 	},
 })
 
-vim.keymap.set("n", "<leader>-", require("mini.files").open, { desc = "Open mini files" })
+vim.keymap.set("n", "<leader>-", function()
+	local mf = require("mini.files")
+	if not mf.close() then
+		mf.open(vim.api.nvim_buf_get_name(0))
+	end
+end, { desc = "Open mini files" })
