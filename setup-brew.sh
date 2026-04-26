@@ -3,6 +3,7 @@ brew upgrade
 
 # Install CLI tools
 brew install awscli
+brew install difftastic
 brew install fd
 brew install fish
 brew install gh

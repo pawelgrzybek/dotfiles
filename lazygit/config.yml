@@ -1,5 +1,6 @@
 gui:
   border: single
+  sidePanelWidth: 0.3
   authorColors:
     "Pawel Grzybek": "yellow"
     "*": "default"
@@ -8,3 +9,6 @@ gui:
       - black
 os:
   editPreset: "nvim"
+git:
+  pagers:
+    - externalDiffCommand: difft --syntax-highlight=off
