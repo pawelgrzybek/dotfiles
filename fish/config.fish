@@ -94,9 +94,9 @@ set -gx MANPAGER "nvim +Man!"
 set -gx PATH $PATH (go env GOPATH)/bin
 
 # pnpm
-set -gx PNPM_HOME /Users/pawelgrzybek/Library/pnpm
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
+set -gx PNPM_HOME "/Users/pawelgrzybek/Library/pnpm"
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+  set -gx PATH "$PNPM_HOME/bin" $PATH
 end
 # pnpm end
 
