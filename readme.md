@@ -12,4 +12,3 @@ Before doing anything, make sure you know what you're doing! The settings applie
    Photomator, Pixelmator Pro)
 1. Setup macOS - `source ~/.dotfiles/setup-macos.sh`
 1. Setup symlinks - `source ~/.dotfiles/setup-symlinks.sh`
-1. Setup pnpm globals - `source ~/.dotfiles/setup-pnpm.sh`

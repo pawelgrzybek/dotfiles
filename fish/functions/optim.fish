@@ -1,8 +1,8 @@
 function optim
 	# For this one to run you need to install a few CLIs
 	# brew install webp
-	# pnpm add --global avif
-	# pnpm add --global imageoptim-cli
+	# brew install  avifenc
+	# brew install imageoptim-cli
 
 	echo 
 
@@ -26,7 +26,7 @@ function optim
 		    echo (set_color blue)i $filePathAvif already exists(set_color normal);
 		else
 			echo (set_color blue)i Running avif(set_color normal)
-			avif --input="$filePath"
+      avifenc -q 50 -s 4 $filePath $filePathAvif
 			echo (set_color green)✓ Finished(set_color normal)
 		end
 

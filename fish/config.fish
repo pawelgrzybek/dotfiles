@@ -47,7 +47,7 @@ abbr --add cp cp -riv
 abbr --add mkdir mkdir -vp
 abbr --add ls ls -F
 abbr --add ll ls -la
-abbr --add yolo "brew upgrade && pnpm update --global --latest"
+abbr --add yolo "brew upgrade"
 abbr --add byebye_node_modules find . -name node_modules -type d -prune -exec rm -rf '{}' +
 
 # some git shortcuts
