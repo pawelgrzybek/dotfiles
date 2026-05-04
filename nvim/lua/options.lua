@@ -65,7 +65,6 @@ vim.diagnostic.config({
 -- enables lsps configured under .config/nvim/lsp
 vim.lsp.enable({
 	"astro",
-	"biome",
 	"buf_ls",
 	"emmet_language_server",
 	"gopls",
