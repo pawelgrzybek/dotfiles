@@ -10,9 +10,33 @@ conds = [
 
 [filetype]
 rules = [
-	{ name = "*/", fg = "blue" },
-	{ name = "*", fg = "white" }
+	{ url = "*/", fg = "white" },
+	{ url = "*", fg = "white" }
 ]
+
+[mode]
+normal_main = { fg = "black", bg = "white", bold = true }
+normal_alt = { fg = "black", bg = "gray" }
+select_main = { fg = "black", bg = "lightyellow" , bold = true}
+select_alt = { fg = "black", bg = "gray" }
+unset_main = { fg = "black", bg = "lightred" , bold = true}
+unset_alt = { fg = "black", bg = "gray" }
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+perm_type = { fg = "white", bg = "reset" }
+perm_read = { fg = "white", bg = "reset" }
+perm_write = { fg = "white", bg = "reset" }
+perm_exec = { fg = "white", bg = "reset" }
+perm_sep = { fg = "white", bg = "reset" }
+
+[input]
+border = { fg = "white", bg = "reset" }
+
+[confirm]
+border = { fg = "white", bg = "reset" }
+title = { fg = "white", bg = "reset" }
 
 [tabs]
 active   = { fg = "lightcyan", bg = "reset", bold = true }
