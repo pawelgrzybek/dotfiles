@@ -91,6 +91,7 @@ set -gx EDITOR nvim
 set -gx MANPAGER "nvim +Man!"
 
 # setup go toolchain
+set -gx GOPATH $HOME/Developer/go
 set -gx PATH $PATH (go env GOPATH)/bin
 
 # pnpm
