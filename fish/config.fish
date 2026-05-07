@@ -87,6 +87,10 @@ alias y="yazi"
 set -g fish_key_bindings fish_vi_key_bindings
 set -gx EDITOR nvim
 
+set -g fish_greeting ""
+
+set -gx PATH /opt/homebrew/bin /Applications/Ghostty.app/Contents/MacOS $PATH
+
 # use nvim to browse man pages
 set -gx MANPAGER "nvim +Man!"
 
@@ -94,10 +98,4 @@ set -gx MANPAGER "nvim +Man!"
 set -gx GOPATH $HOME/Developer/go
 set -gx PATH $PATH (go env GOPATH)/bin
 
-# pnpm
-set -gx PNPM_HOME "/Users/pawelgrzybek/Library/pnpm"
-if not string match -q -- "$PNPM_HOME/bin" $PATH
-  set -gx PATH "$PNPM_HOME/bin" $PATH
-end
-# pnpm end
 

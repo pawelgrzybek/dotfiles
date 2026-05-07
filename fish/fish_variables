@@ -1,6 +1,3 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export PNPM_HOME:/Users/pawelgrzybek/Library/pnpm
 SETUVAR __fish_initialized:4300
-SETUVAR fish_greeting:\x1d
-SETUVAR fish_user_paths:/Users/pawelgrzybek/Library/pnpm\x1e/opt/homebrew/bin\x1e/Applications/Ghostty\x2eapp/Contents/MacOS
