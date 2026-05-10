@@ -17,7 +17,6 @@ brew install mole
 brew install neovim
 brew install node
 brew install oven-sh/bun/bun
-brew install pnpm
 brew install protobuf
 brew install ripgrep
 brew install tree-sitter-cli
