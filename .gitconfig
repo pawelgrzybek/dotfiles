@@ -22,4 +22,4 @@
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [diff]
-    external = difft --syntax-highlight=off
+  external = difft --syntax-highlight=off --context=6

@@ -11,4 +11,4 @@ os:
   editPreset: "nvim"
 git:
   pagers:
-    - externalDiffCommand: difft --syntax-highlight=off
+    - externalDiffCommand: difft --syntax-highlight=off --context=6
