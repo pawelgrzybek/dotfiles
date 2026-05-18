@@ -8,6 +8,7 @@ ln -s ~/.dotfiles/nvim ~/.config/
 ln -s ~/.dotfiles/ghostty ~/.config/
 ln -s ~/.dotfiles/claude/commands ~/.claude/
 ln -s ~/.dotfiles/claude/skills ~/.claude/
+ln -s ~/.dotfiles/claude/settings.json ~/.claude/settings.json
 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.hushlogin ~/.hushlogin
