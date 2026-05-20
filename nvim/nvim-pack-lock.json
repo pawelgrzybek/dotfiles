@@ -30,11 +30,11 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "6a8aab4b07c6caa1d0643c1c9dccd5b2d5f5e094",
+      "rev": "264b5c8fc6e82212af0dc5c345145cfa916efeb6",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "nvim-lint": {
-      "rev": "8b06eeec3c674744b993caecd73343df108c052d",
+      "rev": "d48f3a76189d03b2239f6df1b2f7e3fa8353743b",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-treesitter": {

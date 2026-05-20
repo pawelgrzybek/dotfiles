@@ -25,6 +25,12 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to window above" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 vim.keymap.set("n", "<C-q>", "<C-w>q", { desc = "Close window" })
 
+-- Tabs navigation with Ctrl+HL
+vim.keymap.set("n", "<C-S-t>", ":tabnew<CR>", { desc = "New tab" })
+vim.keymap.set("n", "<C-S-h>", ":tabprevious<CR>", { desc = "Move to previous tab" })
+vim.keymap.set("n", "<C-S-l>", ":tabnext<CR>", { desc = "Move to next tab" })
+vim.keymap.set("n", "<C-s-q>", ":tabclose<CR>", { desc = "Close tab" })
+
 -- Copy/paste to system clipboard
 vim.keymap.set("v", "<leader>y", '"+y')
 vim.keymap.set("v", "<leader>p", '"+p')

@@ -34,3 +34,5 @@ vim.keymap.set("n", "<leader>-", function()
 		mf.open(vim.api.nvim_buf_get_name(0))
 	end
 end, { desc = "Open mini files" })
+
+vim.api.nvim_set_hl(0, "MiniTablineTabpagesection", { ctermbg = 4, ctermfg = 0 })
