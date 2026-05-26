@@ -1,16 +1,25 @@
 # Create directory if it doesn't exist
 [ -d ~/.config ] || mkdir ~/.config
 
-ln -s ~/.dotfiles/fish ~/.config/
-ln -s ~/.dotfiles/lazygit ~/.config/
-ln -s ~/.dotfiles/yazi ~/.config/
-ln -s ~/.dotfiles/nvim ~/.config/
-ln -s ~/.dotfiles/ghostty ~/.config/
-ln -s ~/.dotfiles/claude/commands ~/.claude/
-ln -s ~/.dotfiles/claude/skills ~/.claude/
-ln -s ~/.dotfiles/claude/settings.json ~/.claude/settings.json
+function _link
+    if test -e $argv[2]
+        echo "Hey $argv[2] already exists"
+    else
+        ln -s $argv[1] $argv[2]
+        echo "symlink for $argv[2] setup"
+    end
+end
 
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.hushlogin ~/.hushlogin
+_link ~/.dotfiles/fish ~/.config/fish
+_link ~/.dotfiles/lazygit ~/.config/lazygit
+_link ~/.dotfiles/yazi ~/.config/yazi
+_link ~/.dotfiles/nvim ~/.config/nvim
+_link ~/.dotfiles/ghostty ~/.config/ghostty
+_link ~/.dotfiles/claude/commands ~/.claude/commands
+_link ~/.dotfiles/claude/skills ~/.claude/skills
+_link ~/.dotfiles/claude/settings.json ~/.claude/settings.json
+_link ~/.dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
+_link ~/.dotfiles/.gitconfig ~/.gitconfig
+_link ~/.dotfiles/.hushlogin ~/.hushlogin
 
-
+functions -e _link
