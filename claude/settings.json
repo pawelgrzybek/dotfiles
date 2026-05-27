@@ -1,7 +1,14 @@
 {
   "model": "opus",
-  "statusLine": {
-    "type": "command",
-    "command": "input=$(cat); printf '\\033[94;4m%s\\033[0m' \"$(echo \"$input\" | jq -r '.workspace.current_dir')\""
+  "extraKnownMarketplaces": {
+    "googlechrome": {
+      "source": {
+        "source": "github",
+        "repo": "GoogleChrome/modern-web-guidance"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "modern-web-guidance@googlechrome": true
   }
 }
