@@ -23,3 +23,7 @@
 	insteadOf = https://github.com/
 [diff]
   external = difft --syntax-highlight=off --context=6
+[includeIf "gitdir/i:~/Developer/fes-gaming/"]
+	path = ~/Developer/fes-gaming/.gitconfig
+[includeIf "gitdir/i:~/Developer/fes-commerce/"]
+	path = ~/Developer/fes-commerce/.gitconfig
