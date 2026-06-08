@@ -100,6 +100,7 @@ require("snacks").setup({
 vim.keymap.set("n", "<leader>ff", function()
 	Snacks.picker.files({
 		hidden = true,
+		ignored = true,
 	})
 end, { desc = "[F]ind [f]iles" })
 
