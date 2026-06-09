@@ -132,7 +132,7 @@ vim.keymap.set("n", "<leader>fk", function()
 	Snacks.picker.keymaps()
 end, { desc = "[F]ind [k]eymaps" })
 
-vim.keymap.set("n", "<leader>fw", function()
+vim.keymap.set({ "n", "x" }, "<leader>fw", function()
 	Snacks.picker.grep_word()
 end, { desc = "[F]ind [w]ord" })
 
