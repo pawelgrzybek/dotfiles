@@ -16,7 +16,6 @@ brew install lazygit
 brew install mole
 brew install neovim
 brew install node
-brew install oven-sh/bun/bun
 brew install protobuf
 brew install ripgrep
 brew install tree-sitter-cli
