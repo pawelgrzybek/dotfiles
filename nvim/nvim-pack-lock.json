@@ -34,7 +34,7 @@
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "nvim-lint": {
-      "rev": "99cbc3ca8a76845fca50e496be7212bebf907dd3",
+      "rev": "adb42c20f04e35b8406800de2d454cf8d196ed10",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-treesitter": {
