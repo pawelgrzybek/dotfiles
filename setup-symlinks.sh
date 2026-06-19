@@ -15,6 +15,7 @@ _link ~/.dotfiles/lazygit ~/.config/lazygit
 _link ~/.dotfiles/yazi ~/.config/yazi
 _link ~/.dotfiles/nvim ~/.config/nvim
 _link ~/.dotfiles/ghostty ~/.config/ghostty
+_link ~/.dotfiles/git ~/.config/git
 _link ~/.dotfiles/claude/commands ~/.claude/commands
 _link ~/.dotfiles/claude/skills ~/.claude/skills
 _link ~/.dotfiles/claude/settings.json ~/.claude/settings.json
