@@ -12,3 +12,12 @@ Before doing anything, make sure you know what you're doing! The settings applie
    Photomator, Pixelmator Pro)
 1. Setup macOS - `source ~/.dotfiles/setup-macos.sh`
 1. Setup symlinks - `source ~/.dotfiles/setup-symlinks.sh`
+
+## Claude setup
+
+Claude Code stores MCP servers in `~/.claude.json`, which isn't practical to track here. Instead, re-add user-scoped MCP servers manually on each machine so they're available across all projects.
+
+```sh
+claude mcp add --transport http mdn -s user https://mcp.mdn.mozilla.net/
+claude mcp add safari-mcp-stp -s user -- "/Applications/Safari Technology Preview.app/Contents/MacOS/safaridriver" --mcp
+```
