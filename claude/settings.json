@@ -1,5 +1,8 @@
 {
   "model": "opus",
+  "enabledPlugins": {
+    "modern-web-guidance@googlechrome": true
+  },
   "extraKnownMarketplaces": {
     "googlechrome": {
       "source": {
@@ -8,7 +11,5 @@
       }
     }
   },
-  "enabledPlugins": {
-    "modern-web-guidance@googlechrome": true
-  }
+  "effortLevel": "high"
 }
