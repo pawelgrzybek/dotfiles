@@ -28,7 +28,6 @@ brew install --cask ghostty
 brew install --cask google-chrme@canary
 brew install affinity
 brew install bruno
-brew install discord
 brew install docker-desktop
 brew install figma
 brew install firefox
@@ -43,7 +42,6 @@ brew install raycast
 brew install safari-technology-preview
 brew install screen-studio
 brew install signal
-brew install slack
 brew install tableplus
 
 # Remove outdated versions from the cellar.
