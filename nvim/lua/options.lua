@@ -3,7 +3,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- options
-vim.opt.autoindent = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
@@ -12,13 +11,10 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 250
-vim.opt.timeoutlen = 1000
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.winborder = "single"
-vim.opt.incsearch = true
 vim.o.spelloptions = "camel"
-vim.o.autoread = true
 vim.o.statusline = "[%{mode()}] %f %m%h %= %l:%c | %L | %p%%"
 vim.opt.guicursor = ""
 vim.opt.tabstop = 2
@@ -55,11 +51,8 @@ vim.opt.foldlevel = 99
 
 vim.diagnostic.config({
 	virtual_text = true,
-	underline = true,
-	update_in_insert = false,
 	severity_sort = true,
 	float = {
-		border = "single",
 		source = true,
 	},
 })
