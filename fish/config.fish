@@ -1,3 +1,16 @@
+fish_add_path -gP /opt/homebrew/bin /Applications/Ghostty.app/Contents/MacOS
+
+set -gx EDITOR nvim
+
+# use nvim to browse man pages
+set -gx MANPAGER "nvim +Man!"
+
+# setup go toolchain
+set -gx GOPATH $HOME/Developer/go
+fish_add_path -gPa $GOPATH/bin
+
+status is-interactive; or exit 0
+
 # Syntax highlighting variables
 # https://fishshell.com/docs/current/interactive.html#syntax-highlighting-variables
 set fish_color_normal magenta
@@ -14,7 +27,6 @@ set fish_color_comment brblack
 set fish_color_selection brwhite --background brblack
 set fish_color_operator brwhite
 set fish_color_escape brwhite
-set fish_color_autosuggestion brblack
 set fish_color_cwd magenta
 set fish_color_cwd_root magenta
 set fish_color_user brwhite
@@ -68,7 +80,6 @@ abbr --add gprmaster git pull --rebase origin master
 abbr --add gprmain git pull --rebase origin main
 abbr --add gpfwl git push --force-with-lease
 abbr --add gitupdatemaster "git switch master && git pull && git switch -"
-abbr --add gitcleanup git branch | grep -v master | xargs git branch -D
 
 abbr --add lg lazygit --use-config-file="$HOME/.config/lazygit/config.yml"
 
@@ -85,16 +96,6 @@ alias vim="nvim"
 alias y="yazi"
 
 set -g fish_key_bindings fish_vi_key_bindings
-set -gx EDITOR nvim
 bind --mode insert \el accept-autosuggestion
 
 set -g fish_greeting ""
-
-set -gx PATH /opt/homebrew/bin /Applications/Ghostty.app/Contents/MacOS $PATH
-
-# use nvim to browse man pages
-set -gx MANPAGER "nvim +Man!"
-
-# setup go toolchain
-set -gx GOPATH $HOME/Developer/go
-set -gx PATH $PATH $GOPATH/bin

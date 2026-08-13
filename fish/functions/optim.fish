@@ -1,7 +1,7 @@
 function optim
 	# For this one to run you need to install a few CLIs
 	# brew install webp
-	# brew install  avifenc
+	# brew install libavif
 	# brew install imageoptim-cli
 
 	echo 
