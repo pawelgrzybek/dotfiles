@@ -3,12 +3,10 @@ vim.pack.add({ { src = "https://github.com/saghen/blink.cmp", version = vim.vers
 require("blink.cmp").setup({
 	-- when i write, i write, do not interupt please
 	enabled = function()
-		return not vim.tbl_contains({ "markdown" }, vim.bo.filetype)
+		return vim.bo.filetype ~= "markdown"
 	end,
 
 	completion = {
-		-- im testing this out
-		-- accept = { auto_brackets = { enabled = false } },
 		menu = {
 			draw = {
 				gap = 2,
@@ -31,7 +29,5 @@ require("blink.cmp").setup({
 			},
 		},
 	},
-	-- im testing this out
-	-- Experimental signature help support
 	signature = { enabled = true },
 })
