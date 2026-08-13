@@ -88,6 +88,29 @@ require("snacks").setup({
 					},
 				},
 			},
+			projects = {
+				dev = { "~/Developer", "~/Sites" },
+				projects = { vim.fn.expand("~/.dotfiles") },
+				patterns = { ".git" },
+				max_depth = 3,
+				recent = false,
+				cwd = vim.fn.expand("~"),
+				layout = {
+					layout = {
+						box = "horizontal",
+						width = 0.4,
+						min_width = 40,
+						height = 0.6,
+						{
+							box = "vertical",
+							border = "single",
+							title = "{title}",
+							{ win = "input", height = 1, border = "bottom" },
+							{ win = "list", border = "none" },
+						},
+					},
+				},
+			},
 		},
 	},
 	indent = {
@@ -212,3 +235,7 @@ end, { desc = "[F]ind [s]show [s]pelling suggestions" })
 vim.keymap.set("n", "<leader>e", function()
 	Snacks.explorer()
 end, { desc = "[E]xplorer" })
+
+vim.keymap.set("n", "<leader>p", function()
+	Snacks.picker.projects()
+end, { desc = "[P]rojects" })
