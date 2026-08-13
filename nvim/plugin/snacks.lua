@@ -32,7 +32,6 @@ require("snacks").setup({
 	scroll = {
 		animate = {
 			duration = { step = 6, total = 140 },
-			easing = "linear",
 		},
 	},
 	image = {
