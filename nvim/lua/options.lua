@@ -43,12 +43,6 @@ vim.opt.scrolloff = 6
 
 vim.opt.colorcolumn = "80,120"
 
--- treesitter code folding
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.opt.foldenable = false
-vim.opt.foldlevel = 99
-
 vim.diagnostic.config({
 	virtual_text = true,
 	severity_sort = true,

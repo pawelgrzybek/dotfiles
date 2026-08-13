@@ -63,12 +63,3 @@ vim.pack.add({
 local ts = require("nvim-treesitter")
 
 ts.install(languages)
-
--- equivalent to :TSUpdate
-ts.update("all")
-
-vim.api.nvim_create_autocmd("PackChanged", {
-	callback = function()
-		ts.update()
-	end,
-})
