@@ -7,16 +7,6 @@ require("oil").setup({
 	columns = {},
 	float = {
 		padding = 3,
-		border = "single",
-	},
-	confirmation = {
-		border = "single",
-	},
-	progress = {
-		border = "single",
-	},
-	keymaps_help = {
-		border = "single",
 	},
 	watch_for_changes = true,
 	keymaps = {
@@ -30,8 +20,6 @@ require("oil").setup({
 			desc = "Refresh oil",
 			mode = "n",
 		},
-		-- the default is <c-l>, which i use for window navigation
-		-- also, r for refresh makes more sense to me
 		["<C-s>"] = {
 			callback = "actions.select",
 			desc = "Split (horizontal)",
@@ -42,7 +30,7 @@ require("oil").setup({
 		},
 		["<C-v>"] = {
 			callback = "actions.select",
-			desc = "Split (vertival)",
+			desc = "Split (vertical)",
 			mode = "n",
 			opts = {
 				vertical = true,
