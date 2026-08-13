@@ -1,5 +1,5 @@
-# Create directory if it doesn't exist
-[ -d ~/.config ] || mkdir ~/.config
+# Create directories if they don't exist
+mkdir -p ~/.config ~/.claude
 
 function _link
     if test -e $argv[2]

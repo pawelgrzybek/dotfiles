@@ -2,47 +2,49 @@
 brew upgrade
 
 # Install CLI tools
-brew install awscli
-brew install avifenc
-brew install difftastic
-brew install fd
-brew install fish
-brew install gh
-brew install git
-brew install go
-brew install hugo
-brew install jq
-brew install lazygit
-brew install mole
-brew install neovim
-brew install node
-brew install protobuf
-brew install ripgrep
-brew install tree-sitter-cli
-brew install webp
-brew install yazi
+brew install \
+    awscli \
+    difftastic \
+    fd \
+    fish \
+    gh \
+    git \
+    go \
+    hugo \
+    jq \
+    lazygit \
+    libavif \
+    mole \
+    neovim \
+    node \
+    protobuf \
+    ripgrep \
+    tree-sitter-cli \
+    webp \
+    yazi
 
 # Install casks
-brew install --cask claude-code
-brew install --cask ghostty
-brew install --cask google-chrme@canary
-brew install affinity
-brew install bruno
-brew install docker-desktop
-brew install figma
-brew install firefox
-brew install firefox@developer-edition
-brew install forklift
-brew install google-chrome
-brew install handy
-brew install imageoptim
-brew install logi-options+
-brew install netnewswire
-brew install raycast
-brew install safari-technology-preview
-brew install screen-studio
-brew install signal
-brew install tableplus
+brew install --cask \
+    affinity \
+    bruno \
+    claude-code \
+    docker-desktop \
+    figma \
+    firefox \
+    firefox@developer-edition \
+    forklift \
+    ghostty \
+    google-chrome \
+    google-chrome@canary \
+    handy \
+    imageoptim \
+    logi-options+ \
+    netnewswire \
+    raycast \
+    safari-technology-preview \
+    screen-studio \
+    signal \
+    tableplus
 
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -9,7 +9,7 @@ defaults write "com.apple.sharingd" DiscoverableMode -string "Everyone"
 # System Preferences > General > Language & Region
 ################################################################################
 
-defaults write ".GlobalPreferences_m" AppleLanguages -array en-GB pl-GB
+defaults write ".GlobalPreferences" AppleLanguages -array en-GB pl-GB
 defaults write -globalDomain AppleLanguages -array en-GB pl-GB
 
 
@@ -26,7 +26,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 # System Preferences > Menu Bar
 ################################################################################
 
-# Menu Bar Controls > Bluetooth > Show in Menu Bar
+# Menu Bar Controls > keep no recent items
 defaults write "com.apple.controlcenter" "NumberOfRecents" -int 0
 
 # Menu Bar Controls > Bluetooth > Show in Menu Bar
@@ -44,7 +44,7 @@ defaults write "com.apple.airplay" "NSStatusItem Visible NowPlaying" -bool false
 # Menu Bar Only > Clock Options > Show Date: Never
 defaults write "com.apple.menuextra.clock" ShowDate -int 2
 
-# Menu Bar Only > Clock Options > Show tyhe day of a week
+# Menu Bar Only > Clock Options > Show the day of the week
 defaults write "com.apple.menuextra.clock" ShowDayOfWeek -bool false
 
 # Menu Bar Only > Spotlight > Don't Show in Menu Bar
@@ -97,7 +97,7 @@ defaults write -globalDomain AppleWindowTabbingMode -string "always"
 # Desktop & Stage Manager > Click Wallpaper to reveal desktop > Only in Stage Manager
 defaults write "com.apple.WindowManager" EnableStandardClickToShowDesktop -bool false
 
-# Mission Controll > Automatically rearrange Spaces based on most recent use
+# Mission Control > Automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
 
@@ -159,10 +159,10 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 # Show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Show wraning before changing an extension
+# Show warning before changing an extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Show wraning before removing from iCloud Drive
+# Show warning before removing from iCloud Drive
 defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 
 # Finder > View > As List
@@ -173,9 +173,9 @@ defaults write com.apple.finder ShowPathbar -bool true
 
 
 # Kill affected apps
-for app in "Dock" "Finder"; do
-  killall "${app}" > /dev/null 2>&1
-done
+for app in Dock Finder
+    killall $app >/dev/null 2>&1
+end
 
 # Done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
