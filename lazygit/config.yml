@@ -10,5 +10,6 @@ gui:
 os:
   editPreset: "nvim"
 git:
-  pagers:
-    - externalDiffCommand: difft --syntax-highlight=off --context=6
+  diffRenderers:
+    - command: difft --syntax-highlight=off --context=6
+      type: extDiff
