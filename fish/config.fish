@@ -1,4 +1,4 @@
-fish_add_path -gP /opt/homebrew/bin /Applications/Ghostty.app/Contents/MacOS
+fish_add_path -gPm /opt/homebrew/bin /Applications/Ghostty.app/Contents/MacOS
 
 set -gx EDITOR nvim
 

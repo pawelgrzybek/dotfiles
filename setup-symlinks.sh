@@ -2,12 +2,18 @@
 mkdir -p ~/.config ~/.claude
 
 function _link
-    if test -e $argv[2]
-        echo "Hey $argv[2] already exists"
-    else
-        ln -s $argv[1] $argv[2]
-        echo "symlink for $argv[2] setup"
+    # A real file/dir in the way is usually a tool's own scaffolding - fish
+    # recreates ~/.config/fish every time it starts, so this cannot be avoided
+    # by ordering alone. Move it aside rather than skip, or the symlink never
+    # gets created on a fresh machine.
+    if test -e $argv[2]; and not test -L $argv[2]
+        set --local backup $argv[2].bak.(date +%Y%m%d%H%M%S)
+        mv $argv[2] $backup
+        echo "moved existing $argv[2] to $backup"
     end
+
+    ln -sfn $argv[1] $argv[2]
+    echo "symlink for $argv[2] setup"
 end
 
 _link ~/.dotfiles/fish ~/.config/fish
