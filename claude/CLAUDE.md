@@ -1,0 +1,2 @@
+- Do not add comments to my code unless explicitly asked for it.
+- Be as concise as possible; I don't have time to read your long messages. I prefer short, on-point explanations over verbose stories.
