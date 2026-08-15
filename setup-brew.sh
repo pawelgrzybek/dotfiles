@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Upgrade brew
 brew upgrade
 
