@@ -29,6 +29,7 @@ vim.o.fillchars = "eob: "
 vim.o.nrformats = "blank"
 vim.o.laststatus = 3
 vim.o.cmdheight = 0
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,localoptions,tabpages,terminal,winsize"
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true

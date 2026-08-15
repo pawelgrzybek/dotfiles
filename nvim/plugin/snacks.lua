@@ -131,6 +131,37 @@ require("snacks").setup({
 				max_depth = 3,
 				recent = false,
 				cwd = vim.fn.expand("~"),
+				confirm = function(picker, item)
+					picker:close()
+					if not item then
+						return
+					end
+
+					local unsaved = vim.tbl_filter(function(buf)
+						return vim.bo[buf.bufnr].buftype == ""
+					end, vim.fn.getbufinfo({ buflisted = 1, bufmodified = 1 }))
+
+					local modified = vim.tbl_map(function(buf)
+						return buf.name ~= "" and vim.fn.fnamemodify(buf.name, ":~:.") or "[No Name]"
+					end, unsaved)
+
+					if #modified > 0 then
+						vim.notify(
+							"Cannot switch project, unsaved changes:\n" .. table.concat(modified, "\n"),
+							vim.log.levels.WARN
+						)
+						return
+					end
+
+					local auto_session = require("auto-session")
+
+					auto_session.auto_save_session()
+					vim.fn.chdir(item.file)
+
+					if not auto_session.restore_session(nil, { show_message = false }) then
+						vim.cmd("silent! tabonly | silent! only | silent! %bw!")
+					end
+				end,
 				layout = {
 					preset = "compact",
 					layout = { width = 0.4, min_width = 50, height = 0.6 },
