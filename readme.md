@@ -7,11 +7,10 @@ Before doing anything, make sure you know what you're doing! The settings applie
 1. Clone this repo to the hidden `.dotfile` directory in your home directory
    (`git` comes with brew) -
    `git clone https://github.com/pawelgrzybek/dotfiles.git ~/.dotfiles`
-1. Install brew formulas and casks - `source ~/.dotfiles/setup-brew.sh`
-1. Download your fav apps from app store - (Keynote, Numbers, Pages,
-   Photomator, Pixelmator Pro)
-1. Setup macOS - `source ~/.dotfiles/setup-macos.sh`
-1. Setup symlinks - `source ~/.dotfiles/setup-symlinks.sh`
+1. Install brew formulas and casks - `~/.dotfiles/setup-brew.sh`
+1. Setup macOS - `~/.dotfiles/setup-macos.sh`
+1. Setup symlinks - `~/.dotfiles/setup-symlinks.sh`
+1. Download apps from App Store - (Keynote, Numbers, Pages, Photomator, Pixelmator Pro)
 
 ## Claude setup
 
