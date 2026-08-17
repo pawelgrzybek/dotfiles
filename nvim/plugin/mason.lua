@@ -10,7 +10,7 @@ local ensure_installed = {
 	"prettier",
 	"sqruff",
 	"stylua",
-	"tsgo",
+	"tsc",
 }
 
 vim.pack.add({ "https://github.com/mason-org/mason.nvim" })

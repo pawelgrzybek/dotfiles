@@ -62,7 +62,7 @@ vim.lsp.enable({
 	"rust_analyzer",
 	"sql",
 	"tailwindcss",
-	"tsgo",
+	"tsc",
 })
 
 require("vim._core.ui2").enable({})
