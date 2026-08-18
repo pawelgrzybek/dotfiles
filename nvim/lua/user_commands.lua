@@ -4,7 +4,7 @@ vim.api.nvim_create_user_command("ESLintFix", function()
 end, {})
 
 vim.api.nvim_create_user_command("CopyPath", function()
-	vim.fn.setreg("+", vim.fn.expand("%"))
+	vim.fn.setreg("+", vim.fn.expand("%:."))
 end, {})
 
 vim.api.nvim_create_user_command("CopyPathAbsolute", function()
