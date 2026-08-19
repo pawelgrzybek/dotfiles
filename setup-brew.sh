@@ -40,8 +40,8 @@ brew install --cask \
     google-chrome@canary \
     handy \
     imageoptim \
-    logi-options+ \
     netnewswire \
+    openlogi
     raycast \
     safari-technology-preview \
     screen-studio \
