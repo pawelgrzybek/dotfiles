@@ -1,5 +1,7 @@
 {
-  "model": "opus",
+  "worktree": {
+    "baseRef": "fresh"
+  },
   "enabledPlugins": {
     "modern-web-guidance@googlechrome": true
   },
@@ -11,5 +13,9 @@
       }
     }
   },
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "editorMode": "vim",
+  "verbose": false,
+  "preferredNotifChannel": "ghostty",
+  "agentPushNotifEnabled": true
 }
