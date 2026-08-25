@@ -124,49 +124,6 @@ require("snacks").setup({
 					layout = { width = 0.6, min_width = 60, height = 0.8 },
 				},
 			},
-			projects = {
-				dev = { "~/Developer", "~/Sites" },
-				projects = { vim.fn.expand("~/.dotfiles") },
-				patterns = { ".git" },
-				max_depth = 3,
-				recent = false,
-				cwd = vim.fn.expand("~"),
-				confirm = function(picker, item)
-					picker:close()
-					if not item then
-						return
-					end
-
-					local unsaved = vim.tbl_filter(function(buf)
-						return vim.bo[buf.bufnr].buftype == ""
-					end, vim.fn.getbufinfo({ buflisted = 1, bufmodified = 1 }))
-
-					local modified = vim.tbl_map(function(buf)
-						return buf.name ~= "" and vim.fn.fnamemodify(buf.name, ":~:.") or "[No Name]"
-					end, unsaved)
-
-					if #modified > 0 then
-						vim.notify(
-							"Cannot switch project, unsaved changes:\n" .. table.concat(modified, "\n"),
-							vim.log.levels.WARN
-						)
-						return
-					end
-
-					local auto_session = require("auto-session")
-
-					auto_session.auto_save_session()
-					vim.fn.chdir(item.file)
-
-					if not auto_session.restore_session(nil, { show_message = false }) then
-						vim.cmd("silent! tabonly | silent! only | silent! %bw!")
-					end
-				end,
-				layout = {
-					preset = "compact",
-					layout = { width = 0.4, min_width = 50, height = 0.6 },
-				},
-			},
 		},
 	},
 	indent = {
@@ -201,4 +158,48 @@ vim.keymap.set("n", "<leader>ss", Snacks.picker.spelling, { desc = "[S]how [s]pe
 vim.keymap.set("n", "<leader>e", function()
 	Snacks.explorer()
 end, { desc = "[E]xplorer" })
-vim.keymap.set("n", "<leader>p", Snacks.picker.projects, { desc = "[P]rojects" })
+vim.keymap.set("n", "<leader>p", function()
+	local sessions = require("sessions")
+
+	Snacks.picker.pick({
+		source = "sessions",
+		title = "Sessions 🫶",
+		items = sessions.list(),
+		format = function(item)
+			return { { item.text, "SnacksPickerDirectory" } }
+		end,
+		layout = {
+			preset = "compact",
+			layout = { width = 0.4, min_width = 50, height = 0.6 },
+		},
+		confirm = function(picker, item)
+			picker:close()
+			if not item then
+				return
+			end
+
+			local unsaved = vim.tbl_filter(function(buf)
+				return vim.bo[buf.bufnr].buftype == ""
+			end, vim.fn.getbufinfo({ buflisted = 1, bufmodified = 1 }))
+
+			local modified = vim.tbl_map(function(buf)
+				return buf.name ~= "" and vim.fn.fnamemodify(buf.name, ":~:.") or "[No Name]"
+			end, unsaved)
+
+			if #modified > 0 then
+				vim.notify(
+					"Cannot switch project, unsaved changes:\n" .. table.concat(modified, "\n"),
+					vim.log.levels.WARN
+				)
+				return
+			end
+
+			sessions.save()
+			vim.fn.chdir(item.dir)
+
+			if not sessions.restore() then
+				vim.cmd("silent! tabonly | silent! only | silent! %bw!")
+			end
+		end,
+	})
+end, { desc = "[P]rojects (sessions)" })
