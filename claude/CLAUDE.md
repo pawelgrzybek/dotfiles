@@ -1,2 +1,3 @@
 - Do not add comments to my code unless explicitly asked for it.
 - Be as concise as possible; I don't have time to read your long messages. I prefer short, on-point explanations over verbose stories.
+- When asked for an feedback on something, do not give me a long list of things that are done right. Only list all the things that need some improvements unless asked otherwise.
