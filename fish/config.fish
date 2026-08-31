@@ -66,6 +66,8 @@ abbr --add byebye_node_modules find . -name node_modules -type d -prune -exec rm
 abbr --add gti git
 abbr --add g git
 abbr --add gs git status
+abbr --add gp git pull
+abbr --add gP git push
 abbr --add gl git log
 abbr --add gc git commit
 abbr --add ga git add
