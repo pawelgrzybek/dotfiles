@@ -25,7 +25,7 @@ local symbol_kinds = {
 local search_opts = {
 	hidden = true,
 	ignored = true,
-	exclude = { "node_modules" },
+	exclude = { "node_modules", ".jj" },
 }
 
 require("snacks").setup({
