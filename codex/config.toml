@@ -1,0 +1,5 @@
+[tui]
+  vim_mode_default = true
+
+[projects."/Users/pawelgrzybek/.dotfiles"]
+trust_level = "trusted"

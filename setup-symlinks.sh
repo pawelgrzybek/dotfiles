@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Create directories if they don't exist
-mkdir -p ~/.config ~/.claude
+mkdir -p ~/.config ~/.claude ~/.codex ~/.agents
 
 _link() {
     # early return if it exists
@@ -31,8 +31,11 @@ _link ~/.dotfiles/nvim ~/.config/nvim
 _link ~/.dotfiles/ghostty ~/.config/ghostty
 _link ~/.dotfiles/git ~/.config/git
 _link ~/.dotfiles/claude/commands ~/.claude/commands
-_link ~/.dotfiles/claude/skills ~/.claude/skills
+_link ~/.dotfiles/skills ~/.claude/skills
+_link ~/.dotfiles/skills ~/.agents/skills
 _link ~/.dotfiles/claude/settings.json ~/.claude/settings.json
 _link ~/.dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
+_link ~/.dotfiles/codex/config.toml ~/.codex/config.toml
+_link ~/.dotfiles/codex/AGENTS.md ~/.codex/AGENTS.md
 
 unset -f _link
