@@ -3,3 +3,6 @@
 
 [projects."/Users/pawelgrzybek/.dotfiles"]
 trust_level = "trusted"
+
+[projects."/Users/pawelgrzybek/Developer/nn1.dev/website"]
+trust_level = "trusted"

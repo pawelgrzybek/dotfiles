@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/pawelgrzybek/.docker/bin"
+# End of Docker Desktop section.
+
 fish_add_path -gPm /opt/homebrew/bin /Applications/Ghostty.app/Contents/MacOS
 
 set -gx EDITOR nvim
