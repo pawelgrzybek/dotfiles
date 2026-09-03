@@ -86,6 +86,7 @@ abbr --add gprmaster git pull --rebase origin master
 abbr --add gprmain git pull --rebase origin main
 abbr --add gpfwl git push --force-with-lease
 abbr --add gitupdatemaster "git switch master && git pull && git switch -"
+abbr --add gitkick "git commit --allow-empty -m 'Trigger CI/CD' && git push"
 
 abbr --add lg lazygit --use-config-file="$HOME/.config/lazygit/config.yml"
 
