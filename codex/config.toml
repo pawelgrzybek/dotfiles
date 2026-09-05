@@ -6,3 +6,9 @@ trust_level = "trusted"
 
 [projects."/Users/pawelgrzybek/Developer/nn1.dev/website"]
 trust_level = "trusted"
+
+[projects."/Users/pawelgrzybek/Developer/url.space/website"]
+trust_level = "trusted"
+
+[projects."/Users/pawelgrzybek/Developer/url.space/api"]
+trust_level = "trusted"
