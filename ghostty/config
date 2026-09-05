@@ -1,7 +1,7 @@
 command = /opt/homebrew/bin/fish
 macos-option-as-alt = left
 
-font-family = Monaspace Neon NF
+font-family = JetBrains Mono
 font-style = Regular
 font-style-bold = Bold
 font-style-italic = Italic
