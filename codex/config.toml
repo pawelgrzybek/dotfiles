@@ -1,6 +1,9 @@
 [tui]
   vim_mode_default = true
 
+[tui.model_availability_nux]
+gpt-6-astra = 1
+
 [projects."/Users/pawelgrzybek/.dotfiles"]
 trust_level = "trusted"
 
