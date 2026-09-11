@@ -38,7 +38,6 @@ brew install --cask \
     ghostty \
     google-chrome \
     google-chrome@canary \
-    handy \
     imageoptim \
     netnewswire \
     openlogi
