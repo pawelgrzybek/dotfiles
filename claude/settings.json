@@ -17,5 +17,6 @@
   "editorMode": "vim",
   "verbose": false,
   "preferredNotifChannel": "ghostty",
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "outputStyle": "Concise"
 }
