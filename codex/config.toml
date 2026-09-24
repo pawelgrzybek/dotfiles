@@ -1,5 +1,6 @@
 [tui]
   vim_mode_default = true
+screen_reader_detection_done = true
 
 [tui.model_availability_nux]
 gpt-6-astra = 4
