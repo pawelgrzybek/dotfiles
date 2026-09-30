@@ -22,3 +22,10 @@ trust_level = "trusted"
 
 [projects."/Users/pawelgrzybek/Developer/nn1.dev/api"]
 trust_level = "trusted"
+
+[marketplaces.googlechrome]
+source_type = "git"
+source = "https://github.com/GoogleChrome/modern-web-guidance.git"
+
+[plugins."modern-web-guidance@googlechrome"]
+enabled = true
