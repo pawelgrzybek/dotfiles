@@ -13,6 +13,7 @@
       }
     }
   },
+  "outputStyle": "Concise",
   "effortLevel": "high",
   "editorMode": "vim",
   "verbose": false,
