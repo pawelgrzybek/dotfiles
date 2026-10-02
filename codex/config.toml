@@ -4,6 +4,7 @@ screen_reader_detection_done = true
 
 [tui.model_availability_nux]
 gpt-6-astra = 4
+"gpt-6.1-sol" = 4
 
 [projects."/Users/pawelgrzybek/.dotfiles"]
 trust_level = "trusted"
