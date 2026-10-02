@@ -6,7 +6,7 @@ function fish_title
             set git_repo_dirty ' ✔'
         end
 
-        echo (prompt_pwd --dir-length=0)"$git_repo_dirty"
+        echo (path basename $PWD)"$git_repo_dirty"
     else
         echo (prompt_pwd --dir-length=0)
     end
