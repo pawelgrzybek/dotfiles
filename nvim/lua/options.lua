@@ -27,7 +27,6 @@ vim.opt.termguicolors = false
 vim.opt.undofile = true
 vim.o.fillchars = "eob: "
 vim.o.nrformats = "blank"
-vim.o.laststatus = 3
 vim.o.cmdheight = 0
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,localoptions,tabpages,terminal,winsize"
 
