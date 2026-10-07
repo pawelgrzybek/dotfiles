@@ -1,12 +1,12 @@
 gui:
   border: single
   sidePanelWidth: 0.3
-  authorColors:
-    "Pawel Grzybek": "yellow"
-    "*": "default"
   theme:
     selectedLineBgColor:
       - black
+    authorColors:
+      "Pawel Grzybek": "yellow"
+      "*": "default"
 os:
   editPreset: "nvim"
 git:
