@@ -15,7 +15,8 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.winborder = "single"
 vim.o.spelloptions = "camel"
-vim.o.statusline = "[%{mode()}] %f %m%h %= %l:%c | %L | %p%%"
+vim.o.statusline = "[%{mode()}] %f %m%h %= %(%S | %)%l:%c | %L | %p%%"
+vim.o.showcmdloc = "statusline"
 vim.opt.guicursor = ""
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
