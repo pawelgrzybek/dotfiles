@@ -14,7 +14,7 @@
       "src": "https://github.com/zbirenbaum/copilot.lua"
     },
     "gitsigns.nvim": {
-      "rev": "851a051e2bd2caba97e23314c68d69f1b1cf5d19",
+      "rev": "aa6cc2d7addb288cfd79a05ac257695d5ff61deb",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "lazydev.nvim": {
