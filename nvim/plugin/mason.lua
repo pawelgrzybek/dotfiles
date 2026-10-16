@@ -6,6 +6,8 @@ local ensure_installed = {
 	"eslint_d",
 	"gopls",
 	"lua-language-server",
+	"oxlint",
+	"oxfmt",
 	"postgres-language-server",
 	"prettier",
 	"sqruff",

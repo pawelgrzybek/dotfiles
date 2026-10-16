@@ -59,6 +59,7 @@ vim.lsp.enable({
 	"emmet_language_server",
 	"gopls",
 	"lua_ls",
+	"oxlint",
 	"rust_analyzer",
 	"sql",
 	"tailwindcss",
