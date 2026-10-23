@@ -10,11 +10,11 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "copilot.lua": {
-      "rev": "3f1f8cc30783ca905224eadebaa6ddfd73c28828",
+      "rev": "9d23575513f1d934c28b9f933b9dd680c0dcd9e3",
       "src": "https://github.com/zbirenbaum/copilot.lua"
     },
     "gitsigns.nvim": {
-      "rev": "fd780920613e541cbdfac41bf711583ed49f9249",
+      "rev": "683137003522aebd6948358334164a6ba2ca7cd5",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "lazydev.nvim": {
@@ -30,7 +30,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "e4e61006afcf6b399924e64b43c1168fca7b4301",
+      "rev": "a6e23131010b800ecbab85fa6adc0ff38eae2c2d",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "nvim-lint": {
