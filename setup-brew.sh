@@ -6,6 +6,7 @@ brew upgrade
 # Install CLI tools
 brew install \
     awscli \
+    cloudflared \
     difftastic \
     fd \
     fish \
