@@ -7,10 +7,9 @@ function optim
 	echo 
 
 	for file in $argv
-		set filePath (realpath $file)
-		set filePathNoExtension (string split -r -m 1 . -- $filePath)[1]
-		set filePathWebp $filePathNoExtension.webp
-		set filePathAvif $filePathNoExtension.avif
+		set filePath (path resolve -- $file)
+		set filePathWebp (path change-extension webp -- $filePath)
+		set filePathAvif (path change-extension avif -- $filePath)
 
 		# webp
 		if test -e $filePathWebp

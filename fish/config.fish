@@ -1,5 +1,5 @@
 # The following lines were added by Docker Desktop to add commands to your PATH.
-export PATH="$PATH:/Users/pawelgrzybek/.docker/bin"
+fish_add_path -gPa ~/.docker/bin
 # End of Docker Desktop section.
 
 fish_add_path -gPm /opt/homebrew/bin /Applications/Ghostty.app/Contents/MacOS
@@ -106,3 +106,13 @@ set -g fish_key_bindings fish_vi_key_bindings
 bind --mode insert \el accept-autosuggestion
 
 set -g fish_greeting ""
+
+function __git_status_update --on-event fish_prompt
+    set -g __git_repo 0
+    set -l lines (command git status --porcelain=v2 --branch 2>/dev/null); or return
+    set -g __git_repo 1
+    set -g __git_head (string replace -f '# branch.head ' '' -- $lines)
+    set -g __git_oid (string replace -f '# branch.oid ' '' -- $lines)
+    set -g __git_dirty 0
+    string match -qv '#*' -- $lines; and set -g __git_dirty 1
+end

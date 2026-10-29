@@ -1,6 +1,6 @@
 function fish_title 
-    if command git rev-parse --is-inside-work-tree >/dev/null 2>&1
-        if test $(git status --porcelain | count) -gt 0
+    if test "$__git_repo" = 1
+        if test $__git_dirty = 1
             set git_repo_dirty ' ✘'
         else
             set git_repo_dirty ' ✔'
