@@ -6,6 +6,8 @@ brew upgrade
 # Install CLI tools
 brew install \
     awscli \
+    chatgpt \
+    claude \
     cloudflared \
     difftastic \
     fd \
