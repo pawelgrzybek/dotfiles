@@ -4,7 +4,7 @@ Before doing anything, make sure you know what you're doing! The settings applie
 
 1. Install [brew](https://brew.sh).
 1. SSH setup.
-1. Clone this repo to the hidden `.dotfile` directory in your home directory
+1. Clone this repo to the hidden `.dotfiles` directory in your home directory
    (`git` comes with brew) -
    `git clone https://github.com/pawelgrzybek/dotfiles.git ~/.dotfiles`
 1. Install brew formulas and casks - `~/.dotfiles/setup-brew.sh`
@@ -12,7 +12,9 @@ Before doing anything, make sure you know what you're doing! The settings applie
 1. Setup symlinks - `~/.dotfiles/setup-symlinks.sh`
 1. Download apps from App Store - (Keynote, Numbers, Pages, Photomator, Pixelmator Pro)
 
-## Claude setup
+## Claude and Codex setup
+
+Only the shared `AGENTS.md` and `skills/` are tracked here. Harness settings (`~/.claude/settings.json`, `~/.codex/config.toml`) are managed by the apps themselves. After adding a new skill, re-run `~/.dotfiles/setup-symlinks.sh` so Claude Code picks it up.
 
 Claude Code stores MCP servers in `~/.claude.json`, which isn't practical to track here. Instead, re-add user-scoped MCP servers manually on each machine so they're available across all projects.
 
