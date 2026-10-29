@@ -30,7 +30,12 @@ _link ~/.dotfiles/yazi ~/.config/yazi
 _link ~/.dotfiles/nvim ~/.config/nvim
 _link ~/.dotfiles/ghostty ~/.config/ghostty
 _link ~/.dotfiles/git ~/.config/git
-_link ~/.dotfiles/skills ~/.claude/skills
+# link skills one by one for claude, as the claude app syncs its own skills into ~/.claude/skills/synced
+# codex gets the whole dir linked, as nothing else writes into ~/.agents/skills
+mkdir -p ~/.claude/skills
+for skill in ~/.dotfiles/skills/*/; do
+    _link "${skill%/}" ~/.claude/skills/"$(basename "$skill")"
+done
 _link ~/.dotfiles/skills ~/.agents/skills
 _link ~/.dotfiles/AGENTS.md ~/.claude/CLAUDE.md
 _link ~/.dotfiles/AGENTS.md ~/.codex/AGENTS.md
