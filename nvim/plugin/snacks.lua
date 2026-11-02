@@ -203,3 +203,21 @@ vim.keymap.set("n", "<leader>p", function()
 		end,
 	})
 end, { desc = "[P]rojects (sessions)" })
+
+vim.keymap.set("n", "<leader>ft", function()
+	local buf = vim.api.nvim_get_current_buf()
+	Snacks.picker.pick({
+		title = "Filetype",
+		items = vim.tbl_map(function(ft)
+			return { text = ft }
+		end, vim.fn.getcompletion("", "filetype")),
+		format = "text",
+		layout = { preset = "select" },
+		confirm = function(picker, item)
+			picker:close()
+			if item then
+				vim.bo[buf].filetype = item.text
+			end
+		end,
+	})
+end, { desc = "Set filetype" })
