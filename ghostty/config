@@ -31,12 +31,6 @@ unfocused-split-opacity = 0.5
 # i think claude code set this one for me
 keybind = shift+enter=text:\n
 
-# jump quickly between tabs and splits
-keybind = super+bracket_left=previous_tab
-keybind = super+bracket_right=next_tab
-keybind = super+alt+bracket_left=goto_split:previous
-keybind = super+alt+bracket_right=goto_split:next
-
 keybind = global:ctrl+alt+t=toggle_quick_terminal
 
 # split
