@@ -5,9 +5,8 @@ brew upgrade
 
 # Install CLI tools
 brew install \
+    aws-cdk \
     awscli \
-    chatgpt \
-    claude \
     cloudflared \
     difftastic \
     fd \
@@ -16,13 +15,12 @@ brew install \
     git \
     go \
     hugo \
-    jq \
+    imageoptim-cli \
     lazygit \
     libavif \
     mole \
     neovim \
     node \
-    protobuf \
     ripgrep \
     tree-sitter-cli \
     webp \
@@ -32,7 +30,11 @@ brew install \
 brew install --cask \
     affinity \
     bruno \
+    chatgpt \
+    claude \
     claude-code \
+    codex \
+    copilot-cli \
     docker-desktop \
     figma \
     firefox \
