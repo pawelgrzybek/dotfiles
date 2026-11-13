@@ -30,8 +30,6 @@ brew install \
 brew install --cask \
     affinity \
     bruno \
-    chatgpt \
-    claude \
     claude-code \
     codex \
     copilot-cli \
