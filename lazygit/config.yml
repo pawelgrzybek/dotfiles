@@ -9,7 +9,3 @@ gui:
       "*": "default"
 os:
   editPreset: "nvim"
-# git:
-#   diffRenderers:
-#     - command: difft --syntax-highlight=off --context=6
-#       type: extDiff
